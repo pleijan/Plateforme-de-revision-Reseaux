@@ -13,20 +13,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Objectif 
 
-Le but de ce projet tutoré est de créer une application web (page PHP) pédagogique pour l’UE Réseau du département informatique
+Le but de ce projet tutoré est de créer une application web (page PHP) pédagogique pour l’UE Réseau en première année pour le département informatique
 
 ### Contenu
 
 L’application web devra permettre aux étudiants débutants d’aborder les notions de réseau vue au semestre 1 sous un angle pédagogique et ludique au travers de possibles animations, elle sera composée : 
 
-D’une page d’accueil (index) qui permettra de naviguer parmi tous les pages.
-D’une page PHP composée d’une zone de texte permettant d’introduire une adresse IP en décimale ou en hexadécimal et d’un bouton qui aura pour action d’appeler cette même page en récupérant les information de la zone de texte par méthode GET permettant a la page appelée de traduire l’adresse décimale en hexadécimal et inversement.
-D’une page PHP composée d’une zone de texte permettant d’introduire une adresse IP en décimale ou en binaire et d’un bouton qui aura pour action d’appeler cette même page en récupérant les information de la zone de texte par méthode GET permettant a la page appelée de traduire l’adresse décimale en binaire et inversement.
-D’une page PHP composé d’une zone pour indiquer son adresse IP et le nombre de sous réseau à créer et un bouton qui aura pour action de d’appeler cette même page en récupérant les information des zones de texte par méthode GET permettant a la page appelée de faire de l’adressage de sous réseau avec notation VLSM et CIDR.
-D’une page PHP composé d’une zone de texte qui sera remplie par la variable $_SERVER ['REMOTE_ADDR'] qui permet a un serveur de trouver l’adresse IP de l'utilisateur à partir duquel la page actuelle est affichée
-
-Une page permettant de Calculer un CRC de type Ethernet
-Une page permettant de Proposer un sniffer nmap
+* D’une page d’accueil (index) qui permettra de naviguer parmi tous les pages.
+* D’une page PHP composée d’une zone de texte permettant d’introduire une adresse IP en décimale ou en hexadécimal et d’un bouton qui aura pour action d’appeler cette même page en récupérant les information de la zone de texte par méthode POST permettant a la page appelée de traduire l’adresse décimale en hexadécimal et inversement.
+* D’une page PHP composée d’une zone de texte permettant d’introduire une adresse IP en décimale ou en binaire et d’un bouton qui aura pour action d’appeler cette même page en récupérant les information de la zone de texte par méthode GET permettant a la page appelée de traduire l’adresse décimale en binaire et inversement.
+* D’une page PHP composé d’une zone pour indiquer son adresse IP et le nombre de sous réseau à créer et un bouton qui aura pour action d’appeler cette même page en récupérant les information des zones de texte par méthode GET permettant a la page appelée de faire de l’adressage de sous réseau avec notation VLSM et CIDR.
+* D'une page PHP expliquant la notation CIDR
+* D’une page PHP composée d’une zone de texte qui sera remplie par la variable $_SERVER ['REMOTE_ADDR'] qui permet a un serveur de trouver l’adresse IP de l'utilisateur à partir duquel la page actuelle est affichée
+* Une page permettant de Calculer un CRC de type Ethernet
+* Une page permettant de Proposer un sniffer nmap
 
 
 D’autres idées pourront venir au cours du projet et de l’ambition du groupe d’étudiants qui auront à travailler sur ce projet.
@@ -34,6 +34,17 @@ D’autres idées pourront venir au cours du projet et de l’ambition du groupe
 ### Question
 
 1.	Est-ce que l’application web devra être hébergée sur internet
+
+L'application sera hébergée en intranet
+
 2.	Préférez-vous une seul page avec toute la fonctionnalité ou une page index avec une page par fonctionnalité
+
+Il serait préférable d'avoir un menu pour choisir ce que l'on veut faire
+
 3.	Comment calculer un crc
+
+Je vous donerai les éléments en temps voulu.
+
 4.	Comment proposer un sniffer de nmap
+
+Il faut trouver le moyen d'accéder au ssytème pour éxécuter la commande nmap, peut-être regarder `exec` en PHP
