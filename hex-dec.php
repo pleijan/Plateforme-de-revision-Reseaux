@@ -109,7 +109,7 @@ if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4']))
 
     if (isset($_GET['id'])){
         if($_GET['id']=='0'){
-            echo"<p style='color:red'>je sais pas invalide</p>";
+            echo"<p style='color:red'>asresse ip entree invalide</p>";
         }
         if($_GET['id']=='1'){
             echo"<p style='color:red'>adresse ip entree invalide</p>";
