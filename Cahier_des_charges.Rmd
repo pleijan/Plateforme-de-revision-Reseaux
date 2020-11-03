@@ -48,3 +48,7 @@ Je vous donerai les éléments en temps voulu.
 4.	Comment proposer un sniffer de nmap
 
 Il faut trouver le moyen d'accéder au ssytème pour éxécuter la commande nmap, peut-être regarder `exec` en PHP
+
+5. les adresses ip a traduire seront ipv4 ou ipv6 ou les deux ?
+6. quel nom donner au site
+7.
