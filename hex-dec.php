@@ -12,7 +12,7 @@ hexa -> decimal <input type='radio' name='trad' value='hextodec' checked>| decim
 
 </form>";
 
-if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4']))
+if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4'])){
     if($_POST['trad']=='dectohex'){
         foreach ($_POST as $val){
             if ($val == "Valider" or $val == "dectohex")
@@ -121,4 +121,5 @@ if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4']))
             echo"<p style='color:red'>adresse ip entree invalide</p>";
         }
     }
+}
 ?>
