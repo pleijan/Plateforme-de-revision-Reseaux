@@ -1,5 +1,5 @@
 ---
-title: "Projet tutorée"
+title: "Projet tutoré"
 author: "PIERRE Tom"
 date: "02/11/2020"
 output: pdf_document
