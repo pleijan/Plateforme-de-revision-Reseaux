@@ -56,12 +56,12 @@ Puis nous avons commencer a coder les fonctionnalitée une par une mais dans l'o
 Le but de ce projet tutoré est de créer une application web pédagogique pour l’UE Réseau du département informatique
 - Contenu
 L’application web devra permettre aux étudiants débutants d’aborder les notions de réseau vue au semestre 1 sous un angle pédagogique et ludique au travers de possibles animations
- Adresses IP traduite en hexadécimal et inversement
- Adresses IP traduite en binaire et inversement
- Adressage de sous réseau avec notation VLSM et CIDR
- Calculer un CRC de type Ethernet
- Proposer un sniffer nmap
- Trouver l’adresse IP d’une machine extérieure
+ Adresses IP traduite en hexadécimal et inversement
+ Adresses IP traduite en binaire et inversement
+ Adressage de sous réseau avec notation VLSM et CIDR
+ Calculer un CRC de type Ethernet
+ Proposer un sniffer nmap
+ Trouver l’adresse IP d’une machine extérieure
 D’autres idées pourront venir au cours du projet et de l’ambition du groupe d’étudiants qui auront à travailler sur ce projet.
 Prérequis
 Avoir envie de travailler sur une application web et sur les connexions avec les outils réseaux
