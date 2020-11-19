@@ -85,14 +85,14 @@ margin-top: -10px;
 
 #blocmenu li {
   float: left;
-  margin-left: 227px;
-  margin-right: -180px;
+  margin-left: 10%;
+  margin-right: -9%;
 }
 #blocmenu li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 22px 24px;
+  padding: 10px 10px;
   text-decoration: none;
   margin-top: 10px;
 }
@@ -101,7 +101,7 @@ margin-top: -10px;
   display: block;
   color: white;
   text-align: center;
-  padding: 22px 24px;
+  padding: 10px 10px;
   text-decoration: none;
   margin-top: 10px;
 }
@@ -111,7 +111,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: gray;
+  background-color: rgb(255, 255, 255);
 }
 
 #fleche{
