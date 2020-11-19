@@ -1,0 +1,89 @@
+---
+title: "Projet tutorée"
+author: "PIERRE Tom - GIANNICO Rafaele - PARISOT Theo - MANOHARAN Anushan"
+date: "09/11/2020"
+output:
+  pdf_document:
+    toc: yes
+    number_sections: yes
+  word_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
+# Rapport
+## La comprehension du sujet
+On a commencer par aller voir notre client (M.HOGUIN) pour lui poser des questions sur le sujet et si il avais des choses a nous dire dessus.
+
+L’objectif final que nous devrons présenter sera de faire une application web pédagogique pour apprendre au étudiant, ainsi que pour les non initié, les fondamentaux du réseau au travers d’une interface web. Cette interface web  sera constituée de plusieurs page internet contenant chacun une fonctionnalié de l'application (les fonctionalitée sont décrite dans le cahier des charges qui sera transmis en Annexe 1) ainsi nous apporterons une explication pour faire comprendre de manière simple le réseau aux étudiants , il faudra alors réfléchir a notre interface web que nous allons mettre en place , et donc on doit non seulement se mettre a la place d’un développeur mais aussi du connaisseur du problème et de savoir comment attirer des étudiants.
+
+Tout d’abord nous avons pris connaissance de gitlab , une plateforme permettant d’héberger et de gérer des projets ainsi ses dépôts , il nous permettra de une meilleure collaboration sur le projet , c’est une plateforme gratuite , notre client peut voir avec nous les évolutions apporté par le groupe , ainsi nous dire si des point ne correspondent pas a ses attente on peut alors travailler avec le client en direct , il est conseillé qu’a chaque programme de mettre a jours le gitlab ainsi que de partager le rapport pour un meilleur suivis de projet.
+
+Une fois avoir pris connaissance de Gitlab nous devrons récrire complètement le cahier des charges de notre point de vue  , faire l’analyse des besoins et ensuite voir avec le client pour se mettre d’accord , en ajoutant a la fin du cahier des charges toutes les questions que nous nous posions (avec la réponse de notre client dans l’annexe 2):
+
+Nous avons ensuite fait des recherches sur chaque fonctionnalitée (la récupération de l’adresse IP d’un client ou d’une personne qui se connecte sur une page web , comment affiché son adresse IP ,comment à partir du PHP ou d’un autre langage web nous pouvons lancer un «nslookup» , un « ping»).
+
+Nous allons ensuite présenter des maquettes de notre interface web pour avoir une idée de la forme final , nous présenterons cette maquette au client et on verra avec lui si il est d’accord 
+
+Avant de programmer nous devons apprendre des notions avec  M.HOGUIN qui est professeur de Reseau car a cause du covid19  n'avons pas pu aprendre l'année derniere.Tout d’abord on va devoir apprendre le VLSM pour savoir faire une page qui nous permettrait de partager un réseau en sous réseau  , ensuite nous devons apprendre le calcul d’un crc de type Ethernet , connaître un sniffer , savoir trouver une adresse IP d’une machine extérieur.
+
+
+
+## L'organisation du travail 
+Nous avons utilisé GitLab pour mieux collaborer entre nous mais aussi avec le client pour que nous puissions voir les évolutions.
+
+Notre manière de communiqué était sûr un groupe privé sur le logiciel Discord , et de temps en temps nous nous échangions nos évolutions , ou alors nos idées 
+
+Mais nous avons utilisé la plateforme Zoom pour communiqué avec notre client , faire une réunion avec lui pour faire un point sur la situation , lui poser des questions, savoir ce qu’il pense de notre avancé 
+
+nous avons fait un diagrame de gant pour nous repartir le travail que vous trouverez en annexe ?
+
+## La programation
+
+Donc nous avons coder toutes nos page en php qui contient du html et du css, nous avons commencer a coder une page index qui serais le menu pour choisir la fonctionalitée voulue ou vous pouvez retrouvez un apercu en annexe ?.
+Puis nous avons commencer a coder les fonctionnalitée une par une mais dans l'ordre citée dans le cahier des charges
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
+# Annexes
+
+## annexe 1 : cahier des charges
+- Objectif
+Le but de ce projet tutoré est de créer une application web pédagogique pour l’UE Réseau du département informatique
+- Contenu
+L’application web devra permettre aux étudiants débutants d’aborder les notions de réseau vue au semestre 1 sous un angle pédagogique et ludique au travers de possibles animations
+ Adresses IP traduite en hexadécimal et inversement
+ Adresses IP traduite en binaire et inversement
+ Adressage de sous réseau avec notation VLSM et CIDR
+ Calculer un CRC de type Ethernet
+ Proposer un sniffer nmap
+ Trouver l’adresse IP d’une machine extérieure
+D’autres idées pourront venir au cours du projet et de l’ambition du groupe d’étudiants qui auront à travailler sur ce projet.
+Prérequis
+Avoir envie de travailler sur une application web et sur les connexions avec les outils réseaux
+
+## annexe 2 : question (reponses du client entre parentheses)
+
+-Est ce que l’application web doit être compatible avec Android? 
+(Non ce n’étais  pas dans mon esprits,  je considère qu’on est que sur une application web  classique.)
+
+- le dernier fonctionnalité: «trouver l’adresse ip d’une machine extérieure» ça sera celle de la personne qui se connecte a l’interface web?
+(Non , je veux par exemple, un formulaire je tape www.uvsq.fr et quand je vais faire «valider» il va me retourner l’adresse ip du site web.)
+
+- Est-ce que l’application web devra être hébergée sur internet?
+  (L'application sera hébergée en intranet)
+
+- Préférez-vous une seul page avec toute la fonctionnalité ou une page index avec une page par fonctionnalité?
+  (Il serait préférable d'avoir un menu pour choisir ce que l'on veut faire)
+
+-Comment proposer un sniffer de nmap?
+  (Il faut trouver le moyen d'accéder au système pour éxécuter la commande nmap, peut-être regarder `exec` en PHP)
+
+-Comment calculer un crc ?
+  (Je vous donerai les éléments en temps voulu.)
+
+
