@@ -27,15 +27,24 @@ function estUnePuissance2($n){
     return $n != 0 && ($n & ($n-1)) == 0;
 }
 
-echo "Une page PHP composé d’une zone pour indiquer son adresse IP et le nombre de sous réseau à créer et un bouton qui aura pour action d’appeler cette même page en récupérant les information des zones de texte par méthode GET permettant a la page appelée de faire de l’adressage de sous réseau avec notation VLSM et CIDR.
-<br>
+echo "
+<h2>Sur cette page vous pourrez apprendre a partionner votre réseau en different sous réseau.</p></h2>
+<HR width=1240>
+    <h1 align='center'>Cours</h1>
+<HR width=1240>
+
+<p> explication de comment ça marche </p>
+
+<HR width=1240>
+    <h1 align='center'>Application</h1>
+<HR width=1240>
 <br>
 ";
 echo"
 <form action='sousReseaux.php' method='get'>
-<table cellpading='4' cellspacing='4'>
+<table cellpading='4' cellspacing='4' align= center>
 
-<tr>Adresse ip: <td><input name='part1' type='text'> .</td>
+<tr><td>Adresse ip:</td> <td><input name='part1' type='text'> .</td>
 <td><input name='part2' type='text'> .</td>
 <td><input name='part3' type='text'> .</td>
 <td><input name='part4' type='text'> </td>

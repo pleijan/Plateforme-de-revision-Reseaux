@@ -17,7 +17,7 @@
 
 <?php
 echo"
-<h2 align='center'><p>Sur cette page vous pourrez apprendre a traduire une adresse IPV4 de hexadecimal a decimal et inversement</p></h2>
+<h2 align='center'><p>Sur cette page vous pourrez apprendre a traduire une adresse IPV4 de hexadecimal a decimal et inversement.</p></h2>
 <HR width=1240>
     <h1 align='center'>Cours</h1>
 <HR width=1240>
@@ -31,7 +31,7 @@ echo"
 <form action='hex-dec.php' method='post' >
 <table cellpading='4' cellspacing='4' align='center'>
 
-<tr>adresse ip: <td><input name='part1' type='text'> .</td>
+<tr><td>adresse ip: </td><td><input name='part1' type='text'> .</td>
 <td><input name='part2' type='text'> .</td>
 <td><input name='part3' type='text'> .</td>
 <td><input name='part4' type='text'> </td></tr></table>
