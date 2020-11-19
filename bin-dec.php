@@ -28,7 +28,13 @@ function display($a){
 
 echo"
 
-<h2 align='center'><p>Sur cette page vous pourrez apprendre a traduire une adresse IPV4 de hexadecimal a decimal et inversement</p></h2>
+<h2 align='center'><p>Sur cette page vous pourrez apprendre a traduire une adresse IPV4 de binaire a decimal et inversement</p></h2>
+<HR width=1240>
+    <h1 align='center'>Cours</h1>
+<HR width=1240>
+
+<p> explication de comment ça marche </p>
+
 <HR width=1240>
     <h1 align='center'>Application</h1>
 <HR width=1240>
@@ -177,7 +183,5 @@ if (isset($_GET['id'])){
 
 
 ?>
-<HR width=1240>
-    <h1 align='center'>Cours</h1>
-<HR width=1240>
+
 </body>
