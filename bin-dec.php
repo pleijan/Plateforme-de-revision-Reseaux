@@ -27,10 +27,16 @@ function display($a){
 
 
 echo"
-<form action='' method='post'>
-<table cellpading='4' cellspacing='4'>
 
-<tr>adresse ip: <td><input name='part1' type='text'> .</td>
+<h2 align='center'><p>Sur cette page vous pourrez apprendre a traduire une adresse IPV4 de hexadecimal a decimal et inversement</p></h2>
+<HR width=1240>
+    <h1 align='center'>Application</h1>
+<HR width=1240>
+
+<form action='' method='post'>
+<table cellpading='4' cellspacing='4' align='center'>
+
+<tr><td>adresse ip: </td><td><input name='part1' type='text'> .</td>
 <td><input name='part2' type='text'> .</td>
 <td><input name='part3' type='text'> .</td>
 <td><input name='part4' type='text'> </td></tr></table>
@@ -59,7 +65,7 @@ if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4'])){
             }   
         }
         
-        echo"<table cellpading='20' cellspacing='20'>
+        echo"<table cellpading='20' cellspacing='20' align='center'>
         <tr><td>adresse ip original:</td>";
         foreach($_POST as $val){
             if ($val == "Valider" or $val == "dectobin" or $val == "bintodec")
@@ -100,7 +106,7 @@ if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4'])){
 
 
     else {
-        echo"<table cellpading='4' cellspacing='4'>
+        echo"<table cellpading='4' cellspacing='4' align='center'>
         <tr><td>adresse ip original:</td>";
         $i = 0;
         foreach($_POST as $val){
@@ -167,5 +173,11 @@ if (isset($_GET['id'])){
         echo"<p style='color:red'>adresse ip entree invalide</p>";
     }
 } 
+
+
+
 ?>
+<HR width=1240>
+    <h1 align='center'>Cours</h1>
+<HR width=1240>
 </body>

@@ -6,6 +6,7 @@ body {
   font-family: Arial, sans-serif;  
   font-size: 13px;
   margin-top: 100px;
+  text-align: center;
 }
 
 html{
@@ -15,80 +16,7 @@ scroll-behavior: smooth;
 
 /************ Image Accueil *************/ 
 
-#monde{ 
-width: 98%; 
-margin-left: 10px;
-margin-top: -50px;
-}
 
-#tel{ 
-width: 50%; 
-margin-left: -180px;
-}
-
-#tel:hover{
-  background:#2F3031;
-  opacity:0.7;
-  transition: .5s ease;
-}
-
-#pc{ 
-width: 50%; 
-margin-left: -180px;
-margin-top: -18px;
-}
-
-#pc:hover {
-  background:#2F3031;
-  opacity:0.7;
-  transition: .5s ease;
-}
-
-#internet{ 
-width: 142%; 
-margin-left: -180px;
-margin-top: -13px;
-}
-
-#internet:hover {
-  background:#2F3031;
-  opacity:0.7;
-  transition: .5s ease;
-}
-
-#console{ 
-width: 90.4%; 
-margin-left: 270px;
-margin-top: -430px;
-margin-bottom: 11px;
-}
-
-#console:hover {
-  background:#2F3031;
-  opacity:0.7;
-  transition: .5s ease;
-}
-
-#tv{ 
-width: 90.4%; 
-margin-left: 270px;
-margin-top: -430px;
-margin-bottom: 12px;
-}
-
-#tv:hover {
-  background:#2F3031;
-  opacity:0.7;
-  transition: .5s ease;
-}
-
-#console:hover {
-  background:#2F3031;
-  opacity:0.7;
-  transition: .5s ease;
-}
-
-/***************************************/ 
 
 #global { 
 width: 900px; 
@@ -169,6 +97,15 @@ margin-top: -10px;
   margin-top: 10px;
 }
 
+#blocmenu li ul {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 22px 24px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
 li a:hover:not(.active) {
   background-color: #111;
 }
@@ -210,137 +147,3 @@ margin-left: -150px;
 
 /*************************/
 
-
-/***** page telephone ******/
-
-#evTel{
-  margin-left: -140px;
-  width: 90%;
-}
-
-#pTel{
-  margin-left: 0px;
-}
-
-h1{
-  color: #EAEAEA;
-  font-weight: bold;
-}
-
-/****************************/
-
-/***** page ordinateur ******/
-
-#eniac{
-  width: 40%;
-}
-#ordi{
-  width: 27%;
-}
-#ibm{
-  width: 27%;
-}
-
-/****************************/
-
-/***** page console ******/
-#maniavox{
-  width: 35%;
-  margin-left: 12%;
-}
-
-#Fairchild{
-  width: 35%;
-  margin-left: 12%;
-}
-
-#nes{
-  width: 35%;
-  margin-left: 12%;
-}
-
-#gameboy{
-  width: 35%;
-  margin-left: 12%;
-}
-
-#mega{
-  width: 35%;
-}
-
-#saturn{
-  width: 45%;
-}
-
-#ps1{
-  width: 40%;
-}
-
-#ps2{
-  width: 30%;
-  margin-left: 12%;
-}
-
-#psp{
-  width: 30%;
-  margin-left: 12%;
-}
-
-#ps4x{
-  width: 40%;
-  margin-left: 12%;
-}
-
-#histconsole{
-  width: 80%;
-}
-
-/****************************/
-
-/***** page tv ******/
-
-#evoltv{
- margin-left: -7%;
-
-}
-
-#noiretblanc{
-  width: 35%;
-  margin-left: 12%;
-}
-
-#couleur{
-  width: 35%;
-  margin-left: 12%;
-}
-
-#smart{
-  width: 35%;
-  margin-left: 12%;
-}
-
-
-/****************************/
-
-
-/***** page internet ******/
-#iticon{
-  width: 65%;
-
-}
-
-#www{
-  width: 35%;
-  margin-left: 12%;
-}
-
-#web1{
-  width: 60%;
-  margin-left: 12%;
-}
-
-#web2{
-  width: 50%;
-  margin-left: 12%;
-}
-/****************************/

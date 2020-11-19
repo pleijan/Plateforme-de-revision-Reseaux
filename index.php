@@ -23,11 +23,13 @@
 
 <div id="global"> 
   <div id="entete">   
-      <h1><p>PRO - RESEAU</p></h1>
+      <h1><p>titre du site</p></h1>
       <HR width=1240>
-       <h3><p>ici vous pourrez réviser tout les modules de l'INM2013 : réseau</p></h3>
+      <h3><p>ici vous pourrez réviser tout les modules de l'INM2013 : réseau</p></h3>
       <p>
       <HR width=1240>
+
+      
   </div> 
   
 
