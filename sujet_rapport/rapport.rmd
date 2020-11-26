@@ -17,6 +17,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Rapport
 ## La comprehension du sujet
+dans cette partie on parlera du recueil des exigences du projet 
+
 On a commencer par aller voir notre client (M.HOGUIN) pour lui poser des questions sur le sujet et si il avais des choses a nous dire dessus.
 
 L’objectif final que nous devrons présenter sera de faire une application web pédagogique pour apprendre au étudiant, ainsi que pour les non initié, les fondamentaux du réseau au travers d’une interface web. Cette interface web  sera constituée de plusieurs page internet contenant chacun une fonctionnalié de l'application (les fonctionalitée sont décrite dans le cahier des charges qui sera transmis en Annexe 1) ainsi nous apporterons une explication pour faire comprendre de manière simple le réseau aux étudiants , il faudra alors réfléchir a notre interface web que nous allons mettre en place , et donc on doit non seulement se mettre a la place d’un développeur mais aussi du connaisseur du problème et de savoir comment attirer des étudiants.
@@ -29,7 +31,7 @@ Nous avons ensuite fait des recherches sur chaque fonctionnalitée (la récupér
 
 Nous allons ensuite présenter des maquettes de notre interface web pour avoir une idée de la forme final , nous présenterons cette maquette au client et on verra avec lui si il est d’accord 
 
-Avant de programmer nous devons apprendre des notions avec  M.HOGUIN qui est professeur de Reseau car a cause du covid19  n'avons pas pu aprendre l'année derniere.Tout d’abord on va devoir apprendre le VLSM pour savoir faire une page qui nous permettrait de partager un réseau en sous réseau  , ensuite nous devons apprendre le calcul d’un crc de type Ethernet , connaître un sniffer , savoir trouver une adresse IP d’une machine extérieur.
+
 
 
 
@@ -43,6 +45,8 @@ Mais nous avons utilisé la plateforme Zoom pour communiqué avec notre client ,
 nous avons fait un diagrame de gant pour nous repartir le travail que vous trouverez en annexe ?
 
 ## La programation
+
+Avant de programmer nous devons apprendre des notions avec  M.HOGUIN qui est professeur de Reseau car a cause du covid19  n'avons pas pu aprendre l'année derniere.Tout d’abord on va devoir apprendre le VLSM pour savoir faire une page qui nous permettrait de partager un réseau en sous réseau  , ensuite nous devons apprendre le calcul d’un crc de type Ethernet , connaître un sniffer et savoir trouver une adresse IP d’une machine extérieur.
 
 Donc nous avons coder toutes nos page en php qui contient du html et du css, nous avons commencer a coder une page index qui serais le menu pour choisir la fonctionalitée voulue ou vous pouvez retrouvez un apercu en annexe ?.
 Puis nous avons commencer a coder les fonctionnalitée une par une mais dans l'ordre citée dans le cahier des charges
@@ -86,4 +90,4 @@ Avoir envie de travailler sur une application web et sur les connexions avec les
 -Comment calculer un crc ?
   (Je vous donerai les éléments en temps voulu.)
 
-
+## annexe ? : photo du diagrame de gantt du projet
