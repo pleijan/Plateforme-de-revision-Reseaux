@@ -92,18 +92,18 @@ Les objets sont : application WEB, menu, Adresses IP, masque, traduction, binair
 
 Les actions sont donc :
 - choisir une fonctionnalité dans le menu,
-- ecrire dans les champs de textes l'adresse IP,
+- ecrire dans les champs de textes l'adresse IP hex-dec,
 - traduire une adresse ip de décimal à héxadécimal,
 - traduire une adresse ip de héxadécimal à décimal,
-- valider,
-- ecrire dans les champs de textes l'adresse IP,
+- valider hex-dec,
+- ecrire dans les champs de textes l'adresse IP bin-dec,
 - traduire une adresse ip de décimal à binaire,
 - traduire une adresse ip de binaire à décimal,
-- valider,
-- ecrire dans les champs de texte l'adresse IP,
+- valider bin-dec,
+- ecrire dans les champs de texte l'adresse IP pour les Sous-réseaux,
 - ecrire le masque avec la notation CIDR ou VLSM
 - ecrire le nombre de sous-réseaux
-- valider,
+- valider pour les Sous-réseaux,
 - calcul du CRC,
 - sniffer nmap,
 - ecrire dans les champs de textes l'adresse de la machine,
@@ -182,6 +182,50 @@ Les fonctionnalitées passent avant l'esthétique.
 | Document : cas d’utilisations                                                            | Date: <20/11/2020> |   |   |   |
 | Responsable de la Redaction: Raffaele                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
+
+| Niveau Stratégique                        |   |   |   |   |
+|-------------------------------------------|---|---|---|---|
+| - choisir une fonctionnalité dans le menu |   |   |   |   |
+|                                           |   |   |   |   |
+|                                           |   |   |   |   |
+
+| Niveau Utilisateur                                                   |
+|----------------------------------------------------------------------|
+| - ecrire dans les champs de textes l'adresse IP hex-dec              |
+| - ecrire dans les champs de textes l'adresse IP hex-dec              |
+| - valider hex-dec                                                    |
+| - ecrire dans les champs de textes l'adresse IP bin-dec              |
+| - valider bin-dec                                                    |
+| - ecrire dans les champs de texte l'adresse IP pour les Sous-réseaux |
+| - ecrire le masque avec la notation CIDR ou VLSM                     |
+| - ecrire le nombre de sous-réseaux                                   |
+| - valider pour les Sous-réseaux                                      |
+| - ecrire dans les champs de textes l'adresse de la machine           |
+
+| Niveau Sous Fonction                               |
+|----------------------------------------------------|
+| - traduire une adresse ip de décimal à héxadécimal |
+| - traduire une adresse ip de héxadécimal à décimal |
+| - traduire une adresse ip de décimal à binaire     |
+| - traduire une adresse ip de binaire à décimal     |
+| - calcul du CRC                                    |
+| - sniffer nmap                                     |
+| - trouver une adresse ip d'une machine extérieure  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
