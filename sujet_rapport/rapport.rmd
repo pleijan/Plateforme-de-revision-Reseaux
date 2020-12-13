@@ -219,6 +219,7 @@ Les fonctionnalitées passent avant l'esthétique.
 | - traduire une adresse ip de décimal à binaire                     |
 | - traduire une adresse ip de binaire à décimal                     |
 | - valider bin-dec                                                  |
+| - divise le réseau en sous-réseaux                                 |
 | - valider pour les Sous-réseaux                                    |
 | - calcul du CRC                                                    |
 | - sniffer nmap                                                     |
