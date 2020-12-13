@@ -87,16 +87,19 @@ Réponses :
 ## Les cas d'utilisations
 
 Les acteurs de ce projet sont les étudiants de première année du département Informatique de l'iut de Vélizy.
-Les objets sont : application WEB, Adresses IP, traduction, binaire, héxadécimal, décimal, valider CIDR, VLSM, Calcul CRC, sniffer nmap
+Les objets sont : application WEB, menu, Adresses IP, traduction, binaire, héxadécimal, décimal, valider, CIDR, VLSM, Calcul CRC, sniffer nmap
 
 Les actions sont donc :
+- choisir une fonctionnalité dans le menu,
+- ecrire dans les champs de textes,
 - traduire une adresse ip de décimal à héxadécimal,
 - traduire une adresse ip de héxadécimal à décimal,
 - traduire une adresse ip de décimal à binaire,
 - traduire une adresse ip de binaire à décimal,
-- valider
-- 
-- 
+- valider,
+- calcul du CRC,
+- sniffer nmap,
+- trouver une adresse ip d'une machine extérieure.
 
 
 
@@ -126,8 +129,8 @@ Les fonctionnalitées passent avant l'esthétique.
 Ce projet tutoré qui nous a été confié par M.Hoguin professeur à l'iut de Vélizy est de créer une application web pédagogique afin d'aider les premières Années dans le module Réseau du département informatique.
 
 - Enoncé
-L’application web devra permettre aux étudiants débutants d’aborder les notions de réseau vue au semestre 1 sous un angle pédagogique et ludique au travers de possibles animations. L'application WEB classique sera hébergé en intranet et devra contenir divers fonctionnalitées accessible depuis un menu. Il y aura une fonction qui traduit les Adresses IP décimal en hexadécimal ou binaire et inversement.
-Une fonction permettant de diviser un réseau en sous-réseaux avec la notation VLSM et CIDR.
+L’application web devra permettre aux étudiants débutants d’aborder les notions de réseau vue au semestre 1 sous un angle pédagogique et ludique au travers de possibles animations. L'application WEB classique sera hébergé en intranet et devra contenir divers fonctionnalitées accessible depuis un menu. L'utilisateur entre l'adresse IP dans des champs de texte, et le programme traduit ces Adresses IP décimal en hexadécimal ou binaire et inversement.
+L'utilisateur entre l'adresse IP dans des champs de textes, entre le masque avec la notation CIDR, et le nombre de sous-réseaux souhaiter, le programme se chargera de diviser ce réseau en sous-réseaux avec la notation CIDR et VLSM.
 De plus, l'application devrait proposer une fonctionnalité permettant de calculer un CRC de type ethernet.
 Aussi, nous devons proposer un sniffer nmap. Et enfin, il sera possible de trouver l’adresse IP d’une machine extérieure, l'utilisateur entre par exemple www.uvsq.fr lors de la validation et le programme retourner l’adresse ip du site web.
 D’autres idées pourront venir au cours du projet et de l’ambition du groupe d’étudiants qui auront à travailler sur ce projet.
