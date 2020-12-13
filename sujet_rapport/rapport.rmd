@@ -16,7 +16,6 @@ knitr::opts_chunk$set(echo = TRUE)
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 
-
 #Introduction 
 ## Compréhension du sujet 
 
@@ -47,12 +46,20 @@ Aussi nous avons utilisé la plateforme Zoom pour communiquer avec notre client,
 
 De plus, nous avons fait un diagramme de Gantt pour pouvoir situé les différentes tâches du projet dans le temps (cf. Annexe ?)
 
+Apres discussion, nous avons aboutis à un accord. En effet, deux personnes s'occuperaient du developpement, et les deux autres du rapport.
+Les deux personnes qui se chargent de programmer sont donc : Tom PIERRE et Raffaele GIANNICO.
+Les deux personnes qui se chargent de d'ecrire le rapport sont donc : Anushan MANOHARAN et Théo PARISOT.
+Mais c'est tâche peuvent aussi varier en fonction de la disponibilité de chacun.
+
 ## La programmation
 
 Nous avons coder toutes nos pages en php qui contient du html et du css. Puis nous avons commencé à coder une page index qui serait la page d'accueil du site qui contient un menu pour choisir la fonctionnalité souhaiter, où vous pouvez retrouvez un aperçu en annexe ?.
 De plus, nous avons commencer à coder les fonctionnalitées une par une, dans l'ordre citée dans le cahier des charges.
 
-
+Tom a codé la partie où l'utilisateur peut traduire une adresse IP décimal en hexadécimal ou inversement.
+Théo s'est occupé la partie où l'utilisateur peut traduire une adresse IP décimal en binaire ou inversement.
+Raffaele s'est occupé de la fonctionnalité qui permet de diviser le réseau en sous-réseaux avec la notation CIDR.
+Anushan écrivait le rapport au fur et à mesure.
 
 
 ## Questions/réponses
@@ -116,8 +123,6 @@ Avoir envie de travailler sur une application web et sur les connexions avec les
 
 - Priorités
 Les fonctionnalitées passent avant l'esthétique.
-
-## Annexe 3 :
 
 
 ## annexe ? : photo du diagrame de gantt du projet
