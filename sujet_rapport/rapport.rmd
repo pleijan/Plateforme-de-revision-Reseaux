@@ -201,7 +201,6 @@ Les fonctionnalitées passent avant l'esthétique.
 | Niveau Utilisateur                                                   |
 |----------------------------------------------------------------------|
 | - écrire dans les champs de textes l'adresse IP hex-dec              |
-| - écrire dans les champs de textes l'adresse IP hex-dec              |
 | - valider hex-dec                                                    |
 | - écrire dans les champs de textes l'adresse IP bin-dec              |
 | - valider bin-dec                                                    |
