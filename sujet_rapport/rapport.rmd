@@ -93,24 +93,24 @@ Les objets sont :  menu, Adresses IP, masque, traduction, binaire, héxadécimal
 Les actions sont donc :
 
 - choisir une fonctionnalité dans le menu, 
-- ecrire dans les champs de textes l'adresse IP hex-dec, 
+- écrire dans les champs de textes l'adresse IP hex-dec, 
 - traduire une adresse ip de décimal à héxadécimal, 
 - traduire une adresse ip de héxadécimal à décimal, 
 - valider hex-dec, 
 - Erreur apparait si adresse IP hex-dec invalide, 
-- ecrire dans les champs de textes l'adresse IP bin-dec, 
+- écrire dans les champs de textes l'adresse IP bin-dec, 
 - traduire une adresse ip de décimal à binaire, 
 - traduire une adresse ip de binaire à décimal, 
 - valider bin-dec, 
 - Erreur apparait si adresse IP bin-dec invalide, 
-- ecrire dans les champs de texte l'adresse IP pour les Sous-réseaux, 
-- ecrire le masque avec la notation CIDR ou VLSM 
-- ecrire le nombre de sous-réseaux 
+- écrire dans les champs de texte l'adresse IP pour les Sous-réseaux, 
+- écrire le masque avec la notation CIDR ou VLSM 
+- écrire le nombre de sous-réseaux 
 - valider pour les Sous-réseaux, 
 - Erreur apparait si adresse IP pour les Sous-réseaux est invalide, 
 - calcul du CRC, 
 - sniffer nmap, 
-- ecrire dans les champs de textes l'adresse de la machine, 
+- écrire dans les champs de textes l'adresse de la machine, 
 - trouver une adresse ip d'une machine extérieure. 
 
 Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en annexes 4.
@@ -200,16 +200,16 @@ Les fonctionnalitées passent avant l'esthétique.
 
 | Niveau Utilisateur                                                   |
 |----------------------------------------------------------------------|
-| - ecrire dans les champs de textes l'adresse IP hex-dec              |
-| - ecrire dans les champs de textes l'adresse IP hex-dec              |
+| - écrire dans les champs de textes l'adresse IP hex-dec              |
+| - écrire dans les champs de textes l'adresse IP hex-dec              |
 | - valider hex-dec                                                    |
-| - ecrire dans les champs de textes l'adresse IP bin-dec              |
+| - écrire dans les champs de textes l'adresse IP bin-dec              |
 | - valider bin-dec                                                    |
-| - ecrire dans les champs de texte l'adresse IP pour les Sous-réseaux |
-| - ecrire le masque avec la notation CIDR ou VLSM                     |
-| - ecrire le nombre de sous-réseaux                                   |
+| - écrire dans les champs de texte l'adresse IP pour les Sous-réseaux |
+| - écrire le masque avec la notation CIDR ou VLSM                     |
+| - écrire le nombre de sous-réseaux                                   |
 | - valider pour les Sous-réseaux                                      |
-| - ecrire dans les champs de textes l'adresse de la machine           |
+| - écrire dans les champs de textes l'adresse de la machine           |
 
 | Niveau Sous Fonction                                               |
 |--------------------------------------------------------------------|
