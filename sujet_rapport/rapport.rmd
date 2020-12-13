@@ -66,20 +66,20 @@ Anushan écrivait le rapport au fur et à mesure.
 Lors de nos réunions avec notre client nous avons pu échanger des questions, (date des réunion). Voici les questions posées au client ainsi que ces réponses :
 
 Questions :
-1) Est ce que l’application web doit être compatible avec Android? 
-2) la dernière fonctionnalité: «trouver l’adresse ip d’une machine extérieure» ça sera celle de la personne qui se connecte à l'interface web?
-3) Est-ce que l’application web devra être hébergée sur internet?
-4) Préférez-vous une seule page avec toute la fonctionnalité ou une page index avec une page par fonctionnalité?
-5) Comment proposer un sniffer de nmap?
-6) Comment calculer un crc ?
+1. Est ce que l’application web doit être compatible avec Android? 
+2. la dernière fonctionnalité: «trouver l’adresse ip d’une machine extérieure» ça sera celle de la personne qui se connecte à l'interface web?
+3. Est-ce que l’application web devra être hébergée sur internet?
+4. Préférez-vous une seule page avec toute la fonctionnalité ou une page index avec une page par fonctionnalité?
+5. Comment proposer un sniffer de nmap?
+6. Comment calculer un crc ?
 
 Réponses : 
-1) Non ce n’étais pas dans mon esprit,  je considère qu’on est que sur une application web classique.	
-2) Non , je veux par exemple, un formulaire je tape www.uvsq.fr et quand je vais faire «valider» il va me retourner l’adresse ip du site web.
-3) L'application sera hébergée en intranet
-4) Il faut trouver le moyen d'accéder au système pour exécuter la commande nmap, peut-être regarder `exec` en PHP
-5) Il faut trouver le moyen d'accéder au système pour exécuter la commande nmap, peut-être regarder `exec` en PHP.
-6) Je vous donnerai les éléments en temps voulu.
+1. Non ce n’étais pas dans mon esprit,  je considère qu’on est que sur une application web classique.	
+2. Non , je veux par exemple, un formulaire je tape www.uvsq.fr et quand je vais faire «valider» il va me retourner l’adresse ip du site web.
+3. L'application sera hébergée en intranet
+4. Il faut trouver le moyen d'accéder au système pour exécuter la commande nmap, peut-être regarder `exec` en PHP
+5. Il faut trouver le moyen d'accéder au système pour exécuter la commande nmap, peut-être regarder `exec` en PHP.
+6. Je vous donnerai les éléments en temps voulu.
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
@@ -181,6 +181,7 @@ Les fonctionnalitées passent avant l'esthétique.
 | Document : cas d’utilisations                                                            | Date: <20/11/2020> |   |   |   |
 | Responsable de la Redaction: Raffaele                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
+
 
 
 
