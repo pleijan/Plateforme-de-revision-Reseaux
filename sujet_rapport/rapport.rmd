@@ -15,15 +15,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
-# Plan du rapport
-Introduction	 	
-Questions/réponses	
-Les cas d’utilisations	
-Le recueil des besoins	
-Annexe 1 : Cahier des charges original du projet	
-Annexe 2 : Cahier des charges, modifié après discussion, du projet	
-Annexe 3 : Recueil des besoins	
-Annexe 4 : Les cas d’utilisations 	
 
 
 #Introduction 
