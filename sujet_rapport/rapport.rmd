@@ -88,7 +88,7 @@ Réponses :
 ## Les cas d'utilisations
 
 Les acteurs de ce projet sont les étudiants de première année du département Informatique de l'iut de Vélizy.
-Les objets sont : application WEB, menu, Adresses IP, masque, traduction, binaire, héxadécimal, décimal, valider, CIDR, VLSM, Calcul CRC, sniffer nmap, trouver, champs de textes.
+Les objets sont :  menu, Adresses IP, masque, traduction, binaire, héxadécimal, décimal, valider, CIDR, VLSM, Calcul CRC, sniffer nmap, trouver, champs de textes.
 
 Les actions sont donc :
 
