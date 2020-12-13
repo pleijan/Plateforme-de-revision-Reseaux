@@ -87,7 +87,16 @@ Réponses :
 ## Les cas d'utilisations
 
 Les acteurs de ce projet sont les étudiants de première année du département Informatique de l'iut de Vélizy.
-Les objets sont : application WEB, Adresses IP, traduction, binaire, héxadécimal, décimal, CIDR, VLSM, Calcul CRC, sniffer nmap
+Les objets sont : application WEB, Adresses IP, traduction, binaire, héxadécimal, décimal, valider CIDR, VLSM, Calcul CRC, sniffer nmap
+
+Les actions sont donc :
+- traduire une adresse ip de décimal à héxadécimal,
+- traduire une adresse ip de héxadécimal à décimal,
+- traduire une adresse ip de décimal à binaire,
+- traduire une adresse ip de binaire à décimal,
+- valider
+- 
+- 
 
 
 
@@ -131,3 +140,4 @@ Les fonctionnalitées passent avant l'esthétique.
 
 
 ## annexe ? : photo du diagrame de gantt du projet
+![gantt](../img/gantt.png)
