@@ -105,9 +105,10 @@ Les actions sont donc :
 - valider,
 - calcul du CRC,
 - sniffer nmap,
+- ecrire dans les champs de textes l'adresse de la machine,
 - trouver une adresse ip d'une machine extérieure.
 
-
+Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en annexes 4.
 
 # Annexes
 
@@ -148,5 +149,5 @@ Avoir envie de travailler sur une application web et sur les connexions avec les
 Les fonctionnalitées passent avant l'esthétique.
 
 
-## annexe ? : photo du diagramme de gantt du projet
+## annexe 3 : photo du diagramme de gantt du projet
 ![gantt](../img/gantt.png)
