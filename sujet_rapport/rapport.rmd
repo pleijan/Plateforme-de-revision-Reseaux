@@ -117,5 +117,7 @@ Avoir envie de travailler sur une application web et sur les connexions avec les
 - Priorités
 Les fonctionnalitées passent avant l'esthétique.
 
+## Annexe 3 :
+
 
 ## annexe ? : photo du diagrame de gantt du projet
