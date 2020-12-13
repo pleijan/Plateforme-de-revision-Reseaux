@@ -110,9 +110,17 @@ Les actions sont donc :
 
 Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en annexes 4.
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
 # Annexes
 
-## annexe 1 : cahier des charges
+## Annexe 1 : cahier des charges
+| Développement d'une Application Web,  qui va aider les premieres années a l'iut de velizy | Version : 1        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : Cahier des charges                                                             | Date: <20/11/2020> |   |   |   |
+| Responsable de la Redaction: Anushan                                                      |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
+
 - Introduction
 Ce projet tutoré qui nous a été confié par M.Hoguin professeur à l'iut de Vélizy est de créer une application web pédagogique afin d'aider les premières Années dans le module Réseau du département informatique.
 
@@ -130,8 +138,15 @@ Avoir envie de travailler sur une application web et sur les connexions avec les
 - Priorités
 Les fonctionnalitées passent avant l'esthétique.
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
-## annexe 2 : cahier des charges Modifié
+## Annexe 2 : cahier des charges Modifié
+| Développement d'une Application Web,  qui va aider les premieres années a l'iut de velizy | Version : 2        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : Cahier des charges                                                             | Date: <30/11/2020> |   |   |   |
+| Responsable de la Redaction: Raffaele                                                      |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
+
 - Introduction
 Ce projet tutoré qui nous a été confié par M.Hoguin professeur à l'iut de Vélizy est de créer une application web pédagogique afin d'aider les premières Années dans le module Réseau du département informatique.
 
@@ -148,6 +163,25 @@ Avoir envie de travailler sur une application web et sur les connexions avec les
 - Priorités
 Les fonctionnalitées passent avant l'esthétique.
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
-## annexe 3 : photo du diagramme de gantt du projet
+## Annexe 3 : diagramme de gantt du projet
+| Diagramme de Gantt du Projet tuteuré | Version : 1        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : Diagramme de Gantt                                                             | Date: <29/11/2020> |   |   |   |
+| Responsable de la Redaction: Tom                                                      |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
 ![gantt](../img/gantt.png)
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
+## Annexe 4 : Les cas d'utilisations
+| Les cas d’utilisations du projet tuteuré | Version : 1        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : cas d’utilisations                                                            | Date: <20/11/2020> |   |   |   |
+| Responsable de la Redaction: Raffaele                                                      |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
+
+
+
+
