@@ -91,6 +91,7 @@ Les acteurs de ce projet sont les étudiants de première année du département
 Les objets sont : application WEB, menu, Adresses IP, masque, traduction, binaire, héxadécimal, décimal, valider, CIDR, VLSM, Calcul CRC, sniffer nmap, trouver, champs de textes.
 
 Les actions sont donc :
+
 - choisir une fonctionnalité dans le menu, 
 - ecrire dans les champs de textes l'adresse IP hex-dec, 
 - traduire une adresse ip de décimal à héxadécimal, 
