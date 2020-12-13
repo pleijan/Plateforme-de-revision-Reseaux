@@ -1,6 +1,6 @@
 ---
 title: "Projet tutorée"
-author: "PIERRE Tom - GIANNICO Rafaele - PARISOT Theo - MANOHARAN Anushan"
+author: "PIERRE Tom - GIANNICO Raffaele - PARISOT Theo - MANOHARAN Anushan"
 date: "09/11/2020"
 output:
   pdf_document:
@@ -18,37 +18,37 @@ knitr::opts_chunk$set(echo = TRUE)
 #Projet 
 ## Compréhension du sujet 
 
-On a commencé par aller voir notre client (M.HOGUIN) pour lui poser des questions sur le sujet et s' il avait des choses à nous dire dessus.
+Tout d'abord, nous sommes aller voir notre client (M.HOGUIN) pour lui poser des questions sur le projet et nous voulions savoir s'il y avait des éléments à rajouter.
 
-L’objectif final que nous devrons présenter sera de faire une application web pédagogique pour apprendre aux étudiants, ainsi que pour les non initiés, les fondamentaux du réseau au travers d’une interface web. Cette interface web  sera constituée de plusieurs page internet contenant chacun une fonctionnalité de l'application (les fonctionnalitée sont décrite dans le cahier des charges qui sera transmis en Annexe 1) ainsi nous apporterons une explication pour faire comprendre de manière simple le réseau aux étudiants , il faudra alors réfléchir à notre interface web que nous allons mettre en place , et donc on doit non seulement se mettre à la place d’un développeur mais aussi du connaisseur du problème et de savoir comment attirer des étudiants.
+Le projet final que nous devrons présenter sera une application pédagogique pour apprendre aux étudiants de première année de l'iut de Vélizy, ainsi qu'aux non initiés, les fondamentaux du réseau au travers d’une interface web. Cette interface web sera constituée de plusieurs pages internet contenant chacun une fonctionnalité de l'application (les fonctionnalitées sont décrite dans le cahier des charges qui sera transmis en Annexe 1). Ainsi nous apporterons une explication pour faire comprendre de manière simple le réseau aux étudiants. Il faudra alors réfléchir à notre interface web que nous allons mettre en place. C'est pourquoi nous devons non seulement se mettre à la place d’un développeur, mais aussi à la place de l'utilisateur, et devons trouver comment attirer les étudiants, comment leur donner envie d'apprendre le réseau.
 
-Tout d’abord nous avons pris connaissance de gitlab , une plateforme permettant d’héberger et de gérer des projets ainsi ses dépôts , il nous permettra de une meilleure collaboration sur le projet , c’est une plateforme gratuite , notre client peut voir avec nous les évolutions apporté par le groupe , ainsi nous dire si des point ne correspondent pas a ses attente on peut alors travailler avec le client en direct , il est conseillé qu'à chaque programme de mettre a jours le gitlab ainsi que de partager le rapport pour un meilleur suivis de projet.
+Ensuite, nous avons pris connaissance de gitlab, une plateforme permettant d’héberger et de gérer des projets, il nous permettra une meilleure collaboration sur le projet. En effet, c'est un dépots commun, chaque membre du groupe peut accéder aux différents fichier du projet, même le client. C’est une plateforme gratuite, notre client peut donc voir les évolutions du projet apporté par le groupe. Il peut ainsi nous faire part des points qui ne correspondent pas à ses attentes. Nous pouvons alors travailler avec le client en direct, il est conseillé, après chaque modification apporté à un fichier, de les mettre à jour sur le gitlab. Ainsi que de partager le rapport pour un meilleur suivis de projet.
 
-Une fois avoir pris connaissance de Gitlab nous devons réécrire complètement le cahier des charges de notre point de vue  , faire l’analyse des besoins et ensuite voir avec le client pour se mettre d’accord , en ajoutant a la fin du cahier des charges toutes les questions que nous nous posions (avec la réponse de notre client dans l’annexe 2):
+Une fois avoir pris connaissance de Gitlab, nous devons réécrire complètement le cahier des charges de notre point de vue, faire l’analyse des besoins et ensuite prendre rendez-vous avec le client afin de se mettre d’accord. Puis nous ajoutons à la fin du cahier des charges toutes les questions que nous nous posions (avec la réponse de notre client dans l’annexe 2):
 
-Nous avons ensuite fait des recherches sur chaque fonctionnalitée (la récupération de l’adresse IP d’un client ou d’une personne qui se connecte sur une page web , comment afficher son adresse IP ,comment à partir du PHP ou d’un autre langage web nous pouvons lancer un «nslookup» , un « ping»).
+Nous avons ensuite fait des recherches sur chaque fonctionnalitées (la récupération de l’adresse IP d’un client ou d’une personne qui se connecte sur une page web, comment afficher son adresse IP, comment à partir du PHP ou d’un autre langage web nous pouvons lancer un «nslookup», un « ping»).
 
-Nous allons ensuite présenter des maquettes de notre interface web pour avoir une idée de la forme final , nous présenterons cette maquette au client et on verra avec lui si il est d’accord 
+Et nous devons présenter des maquettes de notre interface web pour avoir une idée de la forme finale du projet. Nous présenterons cette maquette au client afin d'obtenir son avis et ainsi changer les points souhaiter, pour que le client soit le plus satisfait possible.
 
-Avant de programmer nous devons apprendre des notions avec  M.HOGUIN qui est professeur de Réseau car a cause du covid19  n'avons pas pu apprendre l'année dernière.Tout d’abord on va devoir apprendre le VLSM pour savoir faire une page qui nous permettrait de partager un réseau en sous réseau  , ensuite nous devons apprendre le calcul d’un crc de type Ethernet , connaître un sniffer , savoir trouver une adresse IP d’une machine extérieur.
+Avant de programmer nous devons apprendre des notions avec M.HOGUIN qui est professeur de Réseau, car à cause du covid19, nous  n'avons pas pu apprendre ces notions l'année dernière. En effet, nous devions apprendre le CIDR et le VLSM qui nous permettrait de partager un réseau en sous réseau. Ensuite nous devons apprendre le calcul d’un crc de type Ethernet, connaître un sniffer nmap, et enfin savoir trouver une adresse IP d’une machine extérieur.
 
 ## L'organisation du travail 
 Nous avons utilisé GitLab pour mieux collaborer entre nous mais aussi avec le client pour que nous puissions voir les évolutions.
 
-Notre manière de communiquer était sûr un groupe privé sur le logiciel Discord , et de temps en temps nous nous échangions nos évolutions , ou alors nos idées 
+Notre manière de communiquer était sur un groupe privé du logiciel Discord. Et de manière réccurente, nous nous échangions nos évolutions, ou alors nos idées.
 
-Mais nous avons utilisé la plateforme Zoom pour communiquer avec notre client , faire une réunion avec lui pour faire un point sur la situation , lui poser des questions, savoir ce qu’il pense de notre avancé 
+Aussi nous avons utilisé la plateforme Zoom pour communiquer avec notre client, faire une réunion avec lui pour faire un point sur la situation, lui poser des questions, savoir ce qu’il pense de notre avancé du projet.
 
-nous avons fait un diagramme de gantt pour nous reparler du travail que vous trouverez en annexe ?
+De plus, nous avons fait un diagramme de Gantt pour pouvoir situé les différentes tâches du projet dans le temps (cf. Annexe ?)
 
 ## La programmation
 
-Donc nous avons coder toutes nos page en php qui contient du html et du css, nous avons commencé à coder une page index qui serait le menu pour choisir la fonctionnalité voulue ou vous pouvez retrouvez un aperçu en annexe ?.
-Puis nous avons commencer a coder les fonctionnalitée une par une mais dans l'ordre citée dans le cahier des charges
+Nous avons coder toutes nos pages en php qui contient du html et du css. Puis nous avons commencé à coder une page index qui serait la page d'accueil du site qui contient un menu pour choisir la fonctionnalité souhaiter, où vous pouvez retrouvez un aperçu en annexe ?.
+De plus, nous avons commencer à coder les fonctionnalitées une par une, dans l'ordre citée dans le cahier des charges.
 
 
 ## Questions/réponses
-Lors de nos réunions avec notre client nous avons pu échanger des questions , ( date des réunion) Voici les questions posées au client ainsi que ces réponses :
+Lors de nos réunions avec notre client nous avons pu échanger des questions, (date des réunion). Voici les questions posées au client ainsi que ces réponses :
 
 Questions :
 Est ce que l’application web doit être compatible avec Android? 
@@ -59,7 +59,7 @@ Comment proposer un sniffer de nmap?
 Comment calculer un crc ?
 
 Réponses : 
-Non ce n’étais  pas dans mon esprit,  je considère qu’on est que sur une application web  classique.	
+Non ce n’étais pas dans mon esprit,  je considère qu’on est que sur une application web classique.	
 Non , je veux par exemple, un formulaire je tape www.uvsq.fr et quand je vais faire «valider» il va me retourner l’adresse ip du site web.
 L'application sera hébergée en intranet
 Il faut trouver le moyen d'accéder au système pour exécuter la commande nmap, peut-être regarder `exec` en PHP
@@ -71,21 +71,42 @@ Je vous donnerai les éléments en temps voulu.
 # Annexes
 
 ## annexe 1 : cahier des charges
-- Objectif
-Le but de ce projet tutoré est de créer une application web pédagogique pour l’UE Réseau du département informatique
-- Contenu
-L’application web devra permettre aux étudiants débutants d’aborder les notions de réseau vue au semestre 1 sous un angle pédagogique et ludique au travers de possibles animations
- Adresses IP traduite en hexadécimal et inversement
- Adresses IP traduite en binaire et inversement
- Adressage de sous réseau avec notation VLSM et CIDR
- Calculer un CRC de type Ethernet
- Proposer un sniffer nmap
- Trouver l’adresse IP d’une machine extérieure
+- Introduction
+Ce projet tutoré qui nous a été confié par M.Hoguin professeur à l'iut de Vélizy est de créer une application web pédagogique afin d'aider les premières Années dans le module Réseau du département informatique.
+
+- Enoncé
+L’application web devra permettre aux étudiants débutants d’aborder les notions de réseau vue au semestre 1 sous un angle pédagogique et ludique au travers de possibles animations. L'application WEB devra contenir divers fonctionnalitées comme,
+une fonction qui traduit les Adresses IP décimal en hexadécimal ou binaire et inversement.
+Une fonction permettant de diviser un réseau en sous-réseaux avec la notation VLSM et CIDR.
+De plus, l'application devrait proposer une fonctionnalité permettant de calculer un CRC de type ethernet.
+Aussi, nous devons proposer un sniffer nmap. Et enfin, il sera possible de trouver l’adresse IP d’une machine extérieure.
 D’autres idées pourront venir au cours du projet et de l’ambition du groupe d’étudiants qui auront à travailler sur ce projet.
-Prérequis
+
+- Prérequis
 Avoir envie de travailler sur une application web et sur les connexions avec les outils réseaux
 
-## annexe 2 : question (reponses du client entre parentheses)
+- Priorités
+Les fonctionnalitées passent avant l'esthétique.
+
+
+## annexe 2 : cahier des charges Modifié
+- Introduction
+Ce projet tutoré qui nous a été confié par M.Hoguin professeur à l'iut de Vélizy est de créer une application web pédagogique afin d'aider les premières Années dans le module Réseau du département informatique.
+
+- Enoncé
+L’application web devra permettre aux étudiants débutants d’aborder les notions de réseau vue au semestre 1 sous un angle pédagogique et ludique au travers de possibles animations. L'application WEB classique sera hébergé en intranet et devra contenir divers fonctionnalitées accessible depuis un menu. Il y aura une fonction qui traduit les Adresses IP décimal en hexadécimal ou binaire et inversement.
+Une fonction permettant de diviser un réseau en sous-réseaux avec la notation VLSM et CIDR.
+De plus, l'application devrait proposer une fonctionnalité permettant de calculer un CRC de type ethernet.
+Aussi, nous devons proposer un sniffer nmap. Et enfin, il sera possible de trouver l’adresse IP d’une machine extérieure, l'utilisateur entre par exemple www.uvsq.fr lors de la validation et le programme retourner l’adresse ip du site web.
+D’autres idées pourront venir au cours du projet et de l’ambition du groupe d’étudiants qui auront à travailler sur ce projet.
+
+- Prérequis
+Avoir envie de travailler sur une application web et sur les connexions avec les outils réseaux
+
+- Priorités
+Les fonctionnalitées passent avant l'esthétique.
+
+## annexe 3 : question (reponses du client entre parentheses)
 
 -Est ce que l’application web doit être compatible avec Android? 
 (Non ce n’étais  pas dans mon esprits,  je considère qu’on est que sur une application web  classique.)
