@@ -210,16 +210,18 @@ Les fonctionnalitées passent avant l'esthétique.
 | - valider pour les Sous-réseaux                                      |
 | - ecrire dans les champs de textes l'adresse de la machine           |
 
-| Niveau Sous Fonction                               |
-|----------------------------------------------------|
-| - traduire une adresse ip de décimal à héxadécimal |
-| - traduire une adresse ip de héxadécimal à décimal |
-| - traduire une adresse ip de décimal à binaire     |
-| - traduire une adresse ip de binaire à décimal     |
-| - calcul du CRC                                    |
-| - sniffer nmap                                     |
-| - trouver une adresse ip d'une machine extérieure  |
-
+| Niveau Sous Fonction                                               |
+|--------------------------------------------------------------------|
+| - traduire une adresse ip de décimal à héxadécimal                 |
+| - traduire une adresse ip de héxadécimal à décimal                 |
+| - traduire une adresse ip de décimal à binaire                     |
+| - traduire une adresse ip de binaire à décimal                     |
+| - calcul du CRC                                                    |
+| - sniffer nmap                                                     |
+| - trouver une adresse ip d'une machine extérieure                  |
+| - Erreur apparait si adresse IP hex-dec invalide                   |
+| - Erreur apparait si adresse IP bin-dec invalide                   |
+| - Erreur apparait si adresse IP pour les Sous-réseaux est invalide |
 
 
 
