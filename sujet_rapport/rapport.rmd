@@ -16,8 +16,8 @@ knitr::opts_chunk$set(echo = TRUE)
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 
-#Introduction 
-## Compréhension du sujet 
+#Projet 
+## Introduction 
 
 La réalisation d'un projet tuteuré a de multiples objectifs: apprendre à travailler en groupe, se familiariser
 avec des outils et des langages, apprendre à définir, analyser, réaliser et tester un système informatique
@@ -54,7 +54,7 @@ Mais c'est tâche peuvent aussi varier en fonction de la disponibilité de chacu
 ## La programmation
 
 Nous avons coder toutes nos pages en php qui contient du html et du css. Puis nous avons commencé à coder une page index qui serait la page d'accueil du site qui contient un menu pour choisir la fonctionnalité souhaiter, où vous pouvez retrouvez un aperçu en annexe ?.
-De plus, nous avons commencer à coder les fonctionnalitées une par une, dans l'ordre citée dans le cahier des charges.
+De plus, nous avons commencer à coder les fonctionnalités une par une, dans l'ordre citée dans le cahier des charges.
 
 Tom a codé la partie où l'utilisateur peut traduire une adresse IP décimal en hexadécimal ou inversement.
 Théo s'est occupé la partie où l'utilisateur peut traduire une adresse IP décimal en binaire ou inversement.
@@ -84,8 +84,8 @@ Réponses :
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 ## Les cas d'utilisations
-
-
+Les acteurs de ce projet sont les étudiants de première année du département Informatique de l'iut de Vélizy.
+Les objets sont : application WEB, Adresses IP, traduction, binaire, héxadécimal, décimal, CIDR, VLSM, Calcul CRC, sniffer nmap
 # Annexes
 
 ## annexe 1 : cahier des charges
