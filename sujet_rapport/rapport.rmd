@@ -66,6 +66,7 @@ Anushan écrivait le rapport au fur et à mesure.
 Lors de nos réunions avec notre client nous avons pu échanger des questions, (date des réunion). Voici les questions posées au client ainsi que ces réponses :
 
 Questions :
+
 1. Est ce que l’application web doit être compatible avec Android? 
 2. la dernière fonctionnalité: «trouver l’adresse ip d’une machine extérieure» ça sera celle de la personne qui se connecte à l'interface web?
 3. Est-ce que l’application web devra être hébergée sur internet?
