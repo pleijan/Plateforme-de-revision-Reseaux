@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 
-#Projet 
+# Projet 
 ## Introduction 
 
 La réalisation d'un projet tuteuré a de multiples objectifs: apprendre à travailler en groupe, se familiariser
