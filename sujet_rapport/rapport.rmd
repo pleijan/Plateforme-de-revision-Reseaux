@@ -142,5 +142,5 @@ Avoir envie de travailler sur une application web et sur les connexions avec les
 Les fonctionnalitées passent avant l'esthétique.
 
 
-## annexe ? : photo du diagrame de gantt du projet
+## annexe ? : photo du diagramme de gantt du projet
 ![gantt](../img/gantt.png)
