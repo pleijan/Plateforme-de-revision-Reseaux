@@ -83,9 +83,14 @@ Réponses :
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
+
 ## Les cas d'utilisations
+
 Les acteurs de ce projet sont les étudiants de première année du département Informatique de l'iut de Vélizy.
 Les objets sont : application WEB, Adresses IP, traduction, binaire, héxadécimal, décimal, CIDR, VLSM, Calcul CRC, sniffer nmap
+
+
+
 # Annexes
 
 ## annexe 1 : cahier des charges
