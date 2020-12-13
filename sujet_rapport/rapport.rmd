@@ -192,11 +192,15 @@ Les fonctionnalitées passent avant l'esthétique.
 | Responsable de la Redaction: Raffaele                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 
-| Niveau Stratégique                        |
-|-------------------------------------------|
-| - choisir une fonctionnalité dans le menu |
-|                                           |
-|                                           |
+| Niveau Stratégique                             |
+|------------------------------------------------|
+| - choisir une fonctionnalité dans le menu      |
+| - Traduction Decimal <-> héxadécimal           |
+| - Traduction Decimal <-> binaire               |
+| - Sous-réseaux avec les notations CIDR/VLSM    |
+| - Calcul CIDR                                  |
+| - sniffer nmap                                 |
+| - Trouver l'adresse IP d'une machine exterieur |
 
 | Niveau Utilisateur                                                   |
 |----------------------------------------------------------------------|
