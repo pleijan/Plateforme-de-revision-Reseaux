@@ -15,12 +15,27 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
-#Projet 
+# Plan du rapport
+Introduction	 	
+Questions/réponses	
+Les cas d’utilisations	
+Le recueil des besoins	
+Annexe 1 : Cahier des charges original du projet	
+Annexe 2 : Cahier des charges, modifié après discussion, du projet	
+Annexe 3 : Recueil des besoins	
+Annexe 4 : Les cas d’utilisations 	
+
+
+#Introduction 
 ## Compréhension du sujet 
 
-Tout d'abord, nous sommes aller voir notre client (M.HOGUIN) pour lui poser des questions sur le projet et nous voulions savoir s'il y avait des éléments à rajouter.
+La réalisation d'un projet tuteuré a de multiples objectifs: apprendre à travailler en groupe, se familiariser
+avec des outils et des langages, apprendre à définir, analyser, réaliser et tester un système informatique
+complexe. C'est pourquoi, le département Informatique de l'IUT nous a confié ce projet. 
 
 Le projet final que nous devrons présenter sera une application pédagogique pour apprendre aux étudiants de première année de l'iut de Vélizy, ainsi qu'aux non initiés, les fondamentaux du réseau au travers d’une interface web. Cette interface web sera constituée de plusieurs pages internet contenant chacun une fonctionnalité de l'application (les fonctionnalitées sont décrite dans le cahier des charges qui sera transmis en Annexe 1). Ainsi nous apporterons une explication pour faire comprendre de manière simple le réseau aux étudiants. Il faudra alors réfléchir à notre interface web que nous allons mettre en place. C'est pourquoi nous devons non seulement se mettre à la place d’un développeur, mais aussi à la place de l'utilisateur, et devons trouver comment attirer les étudiants, comment leur donner envie d'apprendre le réseau.
+
+Tout d'abord, nous sommes aller voir notre client (M.HOGUIN) pour lui poser des questions sur le projet et nous voulions savoir s'il y avait des éléments à rajouter.
 
 Ensuite, nous avons pris connaissance de gitlab, une plateforme permettant d’héberger et de gérer des projets, il nous permettra une meilleure collaboration sur le projet. En effet, c'est un dépots commun, chaque membre du groupe peut accéder aux différents fichier du projet, même le client. C’est une plateforme gratuite, notre client peut donc voir les évolutions du projet apporté par le groupe. Il peut ainsi nous faire part des points qui ne correspondent pas à ses attentes. Nous pouvons alors travailler avec le client en direct, il est conseillé, après chaque modification apporté à un fichier, de les mettre à jour sur le gitlab. Ainsi que de partager le rapport pour un meilleur suivis de projet.
 
@@ -47,26 +62,31 @@ Nous avons coder toutes nos pages en php qui contient du html et du css. Puis no
 De plus, nous avons commencer à coder les fonctionnalitées une par une, dans l'ordre citée dans le cahier des charges.
 
 
+
+
 ## Questions/réponses
 Lors de nos réunions avec notre client nous avons pu échanger des questions, (date des réunion). Voici les questions posées au client ainsi que ces réponses :
 
 Questions :
-Est ce que l’application web doit être compatible avec Android? 
-la dernière fonctionnalité: «trouver l’adresse ip d’une machine extérieure» ça sera celle de la personne qui se connecte à l'interface web?
-Est-ce que l’application web devra être hébergée sur internet?
-Préférez-vous une seule page avec toute la fonctionnalité ou une page index avec une page par fonctionnalité?
-Comment proposer un sniffer de nmap?
-Comment calculer un crc ?
+1) Est ce que l’application web doit être compatible avec Android? 
+2) la dernière fonctionnalité: «trouver l’adresse ip d’une machine extérieure» ça sera celle de la personne qui se connecte à l'interface web?
+3) Est-ce que l’application web devra être hébergée sur internet?
+4) Préférez-vous une seule page avec toute la fonctionnalité ou une page index avec une page par fonctionnalité?
+5) Comment proposer un sniffer de nmap?
+6) Comment calculer un crc ?
 
 Réponses : 
-Non ce n’étais pas dans mon esprit,  je considère qu’on est que sur une application web classique.	
-Non , je veux par exemple, un formulaire je tape www.uvsq.fr et quand je vais faire «valider» il va me retourner l’adresse ip du site web.
-L'application sera hébergée en intranet
-Il faut trouver le moyen d'accéder au système pour exécuter la commande nmap, peut-être regarder `exec` en PHP
-Il faut trouver le moyen d'accéder au système pour exécuter la commande nmap, peut-être regarder `exec` en PHP.
-Je vous donnerai les éléments en temps voulu.
+1) Non ce n’étais pas dans mon esprit,  je considère qu’on est que sur une application web classique.	
+2) Non , je veux par exemple, un formulaire je tape www.uvsq.fr et quand je vais faire «valider» il va me retourner l’adresse ip du site web.
+3) L'application sera hébergée en intranet
+4) Il faut trouver le moyen d'accéder au système pour exécuter la commande nmap, peut-être regarder `exec` en PHP
+5) Il faut trouver le moyen d'accéder au système pour exécuter la commande nmap, peut-être regarder `exec` en PHP.
+6) Je vous donnerai les éléments en temps voulu.
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
+## Les cas d'utilisations
+
 
 # Annexes
 
@@ -106,24 +126,5 @@ Avoir envie de travailler sur une application web et sur les connexions avec les
 - Priorités
 Les fonctionnalitées passent avant l'esthétique.
 
-## annexe 3 : question (reponses du client entre parentheses)
-
--Est ce que l’application web doit être compatible avec Android? 
-(Non ce n’étais  pas dans mon esprits,  je considère qu’on est que sur une application web  classique.)
-
-- le dernier fonctionnalité: «trouver l’adresse ip d’une machine extérieure» ça sera celle de la personne qui se connecte a l’interface web?
-(Non , je veux par exemple, un formulaire je tape www.uvsq.fr et quand je vais faire «valider» il va me retourner l’adresse ip du site web.)
-
-- Est-ce que l’application web devra être hébergée sur internet?
-  (L'application sera hébergée en intranet)
-
-- Préférez-vous une seul page avec toute la fonctionnalité ou une page index avec une page par fonctionnalité?
-  (Il serait préférable d'avoir un menu pour choisir ce que l'on veut faire)
-
--Comment proposer un sniffer de nmap?
-  (Il faut trouver le moyen d'accéder au système pour éxécuter la commande nmap, peut-être regarder `exec` en PHP)
-
--Comment calculer un crc ?
-  (Je vous donerai les éléments en temps voulu.)
 
 ## annexe ? : photo du diagrame de gantt du projet
