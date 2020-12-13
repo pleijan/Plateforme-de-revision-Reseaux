@@ -44,7 +44,7 @@ Notre manière de communiquer était sur un groupe privé du logiciel Discord. E
 
 Aussi nous avons utilisé la plateforme Zoom pour communiquer avec notre client, faire une réunion avec lui pour faire un point sur la situation, lui poser des questions, savoir ce qu’il pense de notre avancé du projet.
 
-De plus, nous avons fait un diagramme de Gantt pour pouvoir situé les différentes tâches du projet dans le temps (cf. Annexe ?)
+De plus, nous avons fait un diagramme de Gantt pour pouvoir situé les différentes tâches du projet dans le temps,Comme on peut voir sur le diagramme mis en annexe (?) Nos travaux ont été répartie sur plusieurs semaines, nous avons d'abord réfléchis sur le projet avec tout le monde pendant une semaines, ensuite on a réécrit le cahier des charges qui nous a pris environ deux semaines, ensuite nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre date ou le rapport doit être rendu.  
 
 Apres discussion, nous avons aboutis à un accord. En effet, deux personnes s'occuperaient du developpement, et les deux autres du rapport.
 Les deux personnes qui se chargent de programmer sont donc : Tom PIERRE et Raffaele GIANNICO.
