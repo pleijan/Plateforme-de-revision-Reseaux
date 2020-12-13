@@ -205,21 +205,21 @@ Les fonctionnalitées passent avant l'esthétique.
 | Niveau Utilisateur                                                   |
 |----------------------------------------------------------------------|
 | - écrire dans les champs de textes l'adresse IP hex-dec              |
-| - valider hex-dec                                                    |
 | - écrire dans les champs de textes l'adresse IP bin-dec              |
-| - valider bin-dec                                                    |
 | - écrire dans les champs de texte l'adresse IP pour les Sous-réseaux |
 | - écrire le masque avec la notation CIDR ou VLSM                     |
 | - écrire le nombre de sous-réseaux                                   |
-| - valider pour les Sous-réseaux                                      |
 | - écrire dans les champs de textes l'adresse de la machine           |
 
 | Niveau Sous Fonction                                               |
 |--------------------------------------------------------------------|
 | - traduire une adresse ip de décimal à héxadécimal                 |
 | - traduire une adresse ip de héxadécimal à décimal                 |
+| - valider hex-dec                                                  |
 | - traduire une adresse ip de décimal à binaire                     |
 | - traduire une adresse ip de binaire à décimal                     |
+| - valider bin-dec                                                  |
+| - valider pour les Sous-réseaux                                    |
 | - calcul du CRC                                                    |
 | - sniffer nmap                                                     |
 | - trouver une adresse ip d'une machine extérieure                  |
