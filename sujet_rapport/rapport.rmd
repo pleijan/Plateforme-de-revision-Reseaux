@@ -93,6 +93,7 @@ Les objets sont :  menu, Adresses IP, masque, traduction, binaire, héxadécimal
 Les actions sont donc :
 
 - choisir une fonctionnalité dans le menu, 
+- consulter la page Traduction 
 - écrire dans les champs de textes l'adresse IP hex-dec, 
 - traduire une adresse ip de décimal à héxadécimal, 
 - traduire une adresse ip de héxadécimal à décimal, 
@@ -228,10 +229,87 @@ Les fonctionnalitées passent avant l'esthétique.
 | - Erreur apparait si adresse IP bin-dec invalide                   |
 | - Erreur apparait si adresse IP pour les Sous-réseaux est invalide |
 
+## Annexe 4 : Les cas d'utilisations
+| Le recueil des besoins du projet tuteuré | Version : 1        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : recueil des besoins                                                            | Date: <14/12/2020> |   |   |   |
+| Responsable de la Redaction: Anushan                                                      |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
 
 
+Chapitre 1 – Objectif et portée
+1. Quels sont la portée et les objectifs généraux ?
+
+La portée du projet est un site web, accompagné des demandes de notre client c’est a dire :
+
+-Traduire Décimal en Hexadécimal
+-Traduire Décimal en binaire
+-Afficher des sous réseaux
+- Le calcul du CIDR
+-Faire un sniffer nmap
+-Trouver l’adresse IP d’une machine extérieur
+ 
+	Les objectifs généraux sont de faire un site web qui a pour but pédagogique donc d’aider des étudiant pour la matière du réseau , répondre au attente de notre client , le
+
+2. Les intervenants. (Qui est concerné ?)
+
+Les intervenants sont les étudiants de Première année en IUT informatique , le client qui est aussi professeur dans cet matière
+
+3. Qu'est-ce qui entre dans cette portée ? Qu'est-ce qui est en dehors ? (Les limites du système.)
+Les étudiants et le client pourront consulter le site web et interagir avec les fonctionnalité proposé par le site
+ 
 
 
+ Chapitre 2 – Terminologie employée / Glossaire
+
+ Chapitre 3 – Les cas d'utilisation
+1. Les acteurs principaux et leurs objectifs généraux.
+Les étudiants, le client sont les acteurs principaux
+l’objectif des étudiants est de comprendre la matière du Réseaux donc aidé le client pour ses élèves
+
+2. Les cas d'utilisation métier (concepts opérationnels).
+
+3. Les cas d'utilisation système.
+
+
+Chapitre 4 – La technologie employée
+1. Quelles sont les exigences technologiques pour ce système ?
+Connaître les langages pour un site web , comprendre le réseaux ainsi que les formules ,
+
+2. Avec quels systèmes ce système s'interfacera-t-il et avec quelles exigences ?
+Sur un site web
+
+Chapitre 5 – Autres exigences
+
+1. Processus de développement
+
+i. Qui sont les participants au projet ?
+Un groupe de 4 étudiants qui font partie de l’UVSQ en second d’année d’informatique
+
+ii. Quelles valeurs devront être privilégiées ? (exemple : simplicité, disponibilité, rapidité, souplesse etc... )
+Pédagogique , simple , intuitif , efficace , compréhensible
+
+iii. Quels retours ou quelle visibilité sur le projet les utilisateurs et commanditaires 2/10 souhaitent-ils ?
+
+iv. Que peut-on acheter ? Que doit-on construire ? Qui sont nos concurrents ?
+
+v. Quels sont les autres exigences du processus ? (exemple : tests, installation, etc.)
+
+vi. A quelle dépendance le projet est-il soumis ?
+
+	2. Règles métier
+	3. Performances
+	4. Opérations, sécurité, documentation
+	5. Utilisation et utilisabilité
+	6. Maintenance et portabilité
+	7. Questions non résolues ou reportées à plus tard
+
+ Chapitre 6 – Recours humain, questions juridiques, politiques, organisationnelles.
+ 
+	1. Quel est le recours humain au fonctionnement du système ?
+	2. Quelles sont les exigences juridiques et politiques ?
+	3. Quelles sont les conséquences humaines de la réalisation du système ?
+	4. Quels sont les besoins en formation ? 5. Quelles sont les hypothèses et les dépendances affectant l'environnement humain ?
 
 
 
