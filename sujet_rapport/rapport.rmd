@@ -92,33 +92,47 @@ Les objets sont :  menu, Adresses IP, masque, traduction, binaire, héxadécimal
 
 Les actions sont donc :
 
-- choisir une fonctionnalité dans le menu      
-- Traduction Decimal <-> héxadécimal           
-- Traduction Decimal <-> binaire               
-- Sous-réseaux avec les notations CIDR/VLSM    
-- Calcul CIDR                                  
-- sniffer nmap                                 
-- Trouver l'adresse IP d'une machine exterieur 
+
+- choisir une fonctionnalité dans le menu      					 
+- Traduction des adresses IP Decimal <-> héxadécimal          	 
+- Traduction des adresses IP Decimal <-> binaire              	 
+- Diviser les réseaux en Sous-réseaux avec les notations CIDR/VLSM 
+- Fonction qui calcul des CRC                                  	 
+- sniffer nmap                                 					 
+- Trouver l'adresse IP des machines extérieures 					 
+- Consulter la page Traduction Decimal <-> héxadécimal			    
+- Consulter la page Traduction Decimal <-> binaire				    
+- Consulter la page Sous-réseaux avec les notations CIDR/VLSM		    
+- Consulter la page Calcul CIDR										
+- Consulter la page sniffer nmap										
+- Consulter la page pour Trouver l'adresse IP d'une machine exterieur 
+- Traduction d'une adresse IP Decimal <-> héxadécimal					
+- Traduction d'une adresse IP Decimal <-> binaire						
+- Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM		
+- Fonction qui calcul un CRC											
+- Trouver l'adresse IP d'une machine exterieur						
 - écrire dans les champs de textes l'adresse IP hex-dec              
 - écrire dans les champs de textes l'adresse IP bin-dec              
 - écrire dans les champs de texte l'adresse IP pour les Sous-réseaux 
 - écrire le masque avec la notation CIDR ou VLSM                     
 - écrire le nombre de sous-réseaux                                   
+- écrire dans les champs pour le CRC								   
 - écrire dans les champs de textes l'adresse de la machine           
-- traduire une adresse ip de décimal à héxadécimal                 
-- traduire une adresse ip de héxadécimal à décimal                 
-- valider hex-dec                                                  
-- traduire une adresse ip de décimal à binaire                     
-- traduire une adresse ip de binaire à décimal                     
-- valider bin-dec                                                  
-- divise le réseau en sous-réseaux                                
-- valider pour les Sous-réseaux                                    
-- calcul du CRC                                                    
-- sniffer nmap                                                     
-- trouver une adresse ip d'une machine extérieure                  
-- Erreur apparait si adresse IP hex-dec invalide                   
-- Erreur apparait si adresse IP bin-dec invalide                   
-- Erreur apparait si adresse IP pour les Sous-réseaux est invalide 
+- valider hex-dec                                                    
+- valider bin-dec                                                    
+- valider pour les Sous-réseaux                                      
+- valider pour le CRC												   
+- valider pour trouver l'adresse IP de la machine extérieur		   
+- Affiche l'adresse IP traduite hex-dec							   
+- Affiche l'adresse IP traduite bin-dec							  
+- Affiche les sous-réseaux										   
+- Affiche le CRC 													   
+- Affiche l'adresse IP de la machine extérieur					   
+- Erreur apparait si adresse IP hex-dec invalide                     
+- Erreur apparait si adresse IP bin-dec invalide                     
+- Erreur apparait si adresse IP pour les Sous-réseaux est invalide   
+- Erreur apparait si champ du CRC invalide						   
+- Erreur apparait si le nom de la machine extérieure est invalide	   
 
 
 Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en annexes 4.
