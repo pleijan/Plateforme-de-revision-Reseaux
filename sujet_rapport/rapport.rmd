@@ -517,19 +517,19 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 
 |                                 |             |
 |---------------------------------|-------------|
-| **Cas d'utilisation 5:**        | Calcul CIDR |
-| **Nom:**                        | Calcul CIDR |
-| **Contexte d'utilisation :**    |             |
-| **Portée:**                     |             |
-| **Acteur principal :**          |             |
+| **Cas d'utilisation 5:**        | Fonction qui calcul des CRC |
+| **Nom:**                        | Calcul CRC |
+| **Contexte d'utilisation :**    | L'utilisateur souhaite pouvoir calculer les CRC            |
+| **Portée:**                     | site web            |
+| **Acteur principal :**          | utilisateur            |
 | **Intervenants et Intérêts:**   |             |
-| **Précondition:**               |             |
-| **Scénario nominal:**           |             |
+| **Précondition:**               | l'utilisateur doit avoir choisie la fonctionnalité dans le menu            |
+| **Scénario nominal:**           | 1.l'utilisateur choisi la fonctionnalité calcul CRC dans le menu          |
 | **Extensions:**                 |             |
 | **Garantie minimale :**         |             |
-| **Garantie en cas de succès :** |             |
-| **Déclencheur :**               |             |
-| **informations connexes :**     |             |
+| **Garantie en cas de succès :** | l'utilisateur arrive sur la page du calcul CRC souhaité            |
+| **Déclencheur :**               | clique sur Calcul CRC dans le menu            |
+| **informations connexes :**     | la page contient les éléments nécessaire au calcul de CRC            |
                                                                                                            |
 |                                 |              |
 |---------------------------------|--------------|
