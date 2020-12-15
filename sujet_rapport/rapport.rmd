@@ -404,9 +404,68 @@ Niveau : Sous-fonction
 
 ### Les différents cas d'utilisation selon le style étoffé
 
-| Cas d'utilisation 1: Choisir une fonctionnalité dans le menu<br>Nom: Choisir une fonctionnalité dans le menu<br>Contexte d'utilisation : L’utilisateur aura le choix de consulter les différente fonctionnalité <br>Portée: site web?<br>Acteur principal : Utilisateur<br>Intervenants et Intérêts: <br>Précondition:<br>Scénario nominal: 1.L’utilisateur accède a la fonctionnalité qu’il souhaite <br>Extensions: <br>Garantie minimale :  Accéder a la page souhaité par l’utilisateur <br>Garantie en cas de succès : La page s’affiche et la fonction affiche un résultat donc répond a l’utilisateur<br>Déclencheur : L’utilisateur doit sélectionner de lui même la fonction qu’il veut voir <br>informations connexes : L’utilisateur ne peux pas modifier le site web comme il souhaite |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+**Cas d'utilisation 1**: Choisir une fonctionnalité dans le menu
+**Nom**: Choisir une fonctionnalité dans le menu
+**Contexte d'utilisation** : L’utilisateur aura le choix de consulter les différente fonctionnalité 
+**Portée**: site web?
+**Acteur principal** : Utilisateur
+**Intervenants et Intérêts**: 
+**Précondition**:
+**Scénario nominal**: 1.L’utilisateur accède a la fonctionnalité qu’il souhaite 
+**Extensions**: 
+**Garantie minimale** :  Accéder a la page souhaité par l’utilisateur 
+**Garantie en cas de succès** : La page s’affiche et la fonction affiche un résultat donc répond a l’utilisateur
+**Déclencheur** : L’utilisateur doit sélectionner de lui même la fonction qu’il veut voir 
+**informations connexes** : L’utilisateur ne peux pas modifier le site web comme il souhaite 
 
+**Cas d'utilisation 2**: Traduction Décimal < - > Hexadécimal  
+**Nom**:Traduction Décimal < - > Hexadécimal   
+**Contexte d'utilisation** : L’utilisateur souhaite traduire des décimal en hexadécimal ou inverse  
+**Portée**: ?
+**Acteur principal** : Utilisateur
+**Intervenants et Intérêts**: 
+**Précondition**: Avoir des décimal ou Hexadécimal a traduire 
+**Scénario nominal**: 1.L’utilisateur choisis si il veut traduire de décimal a hexadécimal 
+		     	  2.L’utilisateur entre ses valeurs
+		     	  3. Le résultat s’affiche ou un message d’erreur s’affiche
+**Extensions**: 
+**Garantie minimale** : Traduis des deux sens
+**Garantie en cas de succès** : Traduis des deux sens et affiche un message d’erreur si besoin
+**Déclencheur** : L’utilisateur doit entrer ses valeurs et ensuite appuyer  sur Valider 
+**informations connexes** : 
+
+**Cas d'utilisation 3**: Traduction Décimal < - > Binaire
+**Nom**:Traduction Décimal < - > Binaire
+**Contexte d'utilisation** : L’utilisateur souhaite traduire des décimal en hexadécimal ou inverse 
+**Portée**: 
+**Acteur principal** : 
+**Intervenants et Intérêts**: 
+**Précondition**: Avoir des décimal ou Binaire a traduire 
+**Scénario nominal**: 1.L’utilisateur choisis si il veut traduire de décimal en Binaire
+		     2.L’utilisateur entre ses valeurs
+		     3. Le résultat s’affiche ou un message d’erreur s’affiche
+**Extensions**: 
+**Garantie minimale **: Traduis des deux sens
+**Garantie en cas de succès** : Traduis des deux sens et affiche un message d’erreur si besoin
+**Déclencheur** : L’utilisateur doit entrer ses valeurs et ensuite appuyer  sur Valider 
+**informations connexes** : 
+
+**Cas d'utilisation 4**: Sous réseaux avec les notations CIDR/VLSM
+**Nom**:Sous réseaux avec les notations CIDR/VLSM
+**Contexte d'utilisation** : L’utilisateur entre une adresse IP et il aura en résultat les sous réseaux , il choisis le nombre de sous  réseaux qu’il souhaite et il choisis aussi sous quelle notation il veut 
+**Portée**: ?
+**Acteur principal** : 
+**Intervenants et Intérêts**: 
+**Précondition**: Entrer une adresse IP
+**Scénario nominal**: 1.L’utilisateur entre une adresse IP
+		     2.L’utilisateur Choisis le nombre de sous réseaux 
+		     3. L’utilisateur choisis la notation entre CIDR et VLSM
+		     4. Le résultat s’affiche ou un message d’erreur s’affiche
+**Extensions**: 
+**Garantie minimale **: affiche un message d’erreur
+**Garantie en cas de succès **: Affiche le résultat 
+**Déclencheur** : L’utilisateur doit entrer ses valeurs choisir le nombre de sous réseaux et choisir la notation et ensuite appuyer  sur Valider 
+**informations connexes **: 
 
 ## Annexe 5 : Le recueil des besoins
 | Le recueil des besoins du projet tuteuré | Version : 1        |   |   |   |
