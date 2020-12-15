@@ -236,7 +236,9 @@ Les fonctionnalitées passent avant l'esthétique.
 | - Erreur apparait si adresse IP bin-dec invalide                   |
 | - Erreur apparait si adresse IP pour les Sous-réseaux est invalide |
 
-## Annexe 4 : Les cas d'utilisations
+![figure : cas d'utilisations](../img/casUtilisation.png)
+
+## Annexe 5 : Le recueil des besoins
 | Le recueil des besoins du projet tuteuré | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : recueil des besoins                                                            | Date: <14/12/2020> |   |   |   |
