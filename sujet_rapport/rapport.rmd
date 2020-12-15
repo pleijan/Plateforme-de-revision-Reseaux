@@ -566,6 +566,7 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 | **informations connexes :**     |                                                                                                                       |
 
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 ## Annexe 5 : Le recueil des besoins
 | Le recueil des besoins du projet tuteuré | Version : 1        |   |   |   |
