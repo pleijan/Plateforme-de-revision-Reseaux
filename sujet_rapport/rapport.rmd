@@ -404,6 +404,22 @@ Niveau : Sous-fonction
 
 ### Les différents cas d'utilisation selon le style étoffé
 
+|                                 |                                                                                  |
+|---------------------------------|----------------------------------------------------------------------------------|
+| **Cas d'utilisation 1:**        | Choisir une fonctionnalité dans le menu                                          |
+| **Nom:**                        | Choisir une fonctionnalité dans le menu                                          |
+| **Contexte d'utilisation :**    | L’utilisateur aura le choix de consulter les différente fonctionnalité           |
+| **Portée:**                     | site web                                                                         |
+| **Acteur principal :**          | Utilisateur                                                                      |
+| **Intervenants et Intérêts:**   |                                                                                  |
+| **Précondition:**               |                                                                                  |
+| **Scénario nominal:**           | La page s’affiche et la fonction affiche un résultat donc répond a l’utilisateur |
+| **Extensions:**                 |                                                                                  |
+| **Garantie minimale :**         | Accéder a la page souhaité par l’utilisateur                                     |
+| **Garantie en cas de succès :** | La page s’affiche et la fonction affiche un résultat donc répond a l’utilisateur |
+| **Déclencheur :**               | L’utilisateur doit sélectionner de lui même la fonction qu’il veut voir          |
+| **informations connexes :**     | L’utilisateur ne peux pas modifier le site web comme il souhaite                 |
+
 **Cas d'utilisation 1**: Choisir une fonctionnalité dans le menu
 **Nom**: Choisir une fonctionnalité dans le menu
 **Contexte d'utilisation** : L’utilisateur aura le choix de consulter les différente fonctionnalité 
