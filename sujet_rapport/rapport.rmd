@@ -291,6 +291,8 @@ Cas d'utilisation 3 : Traduction Decimal <-> binaire
 
 - Niveau : Stratégique
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
 Cas d'utilisation 4  : Diviser les réseaux en Sous-réseaux avec les notations CIDR/VLSM
 
 - Niveau : Stratégique     					 
