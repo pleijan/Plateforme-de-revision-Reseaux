@@ -273,6 +273,35 @@ Comme on peut voir sur le diagramme mis en annexe (?) Nos travaux ont été rép
 
 ![figure : cas d'utilisations](../img/casUtilisation.png)
 
+Cas d'utilisation 1 : choisir une fonctionnalité dans le menu 
+Niveau : Stratégique
+ 
+Cas d'utilisation 2 : Traduction Decimal <-> héxadécimal
+Niveau : Stratégique
+
+Cas d'utilisation 3 : Traduction Decimal <-> binaire
+Niveau : Stratégique
+
+Cas d'utilisation 4  : Diviser les réseaux en Sous-réseaux avec les notations CIDR/VLSM
+Niveau : Stratégique     					 
+
+Cas d'utilisation 5 : Fonction qui calcul des CRC 
+Niveau : Stratégique
+ 
+Cas d'utilisation 6 : sniffer nmap
+Niveau : Stratégique
+
+Cas d'utilisation 7 : Trouver l'adresse IP des machines extérieures
+Niveau : Stratégique
+
+Cas d'utilisation 8  : Sous-réseaux avec les notations CIDR/VLSM
+Niveau : Stratégique
+
+
+
+
+
+
 ## Annexe 5 : Le recueil des besoins
 | Le recueil des besoins du projet tuteuré | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
