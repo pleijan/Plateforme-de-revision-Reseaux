@@ -280,13 +280,13 @@ Comme on peut voir sur le diagramme mis en annexe (?) Nos travaux ont été rép
 ### Les différents Cas d'utilisations
 
 Cas d'utilisation 1 : choisir une fonctionnalité dans le menu 
-Niveau : Stratégique
+- Niveau : Stratégique
  
 Cas d'utilisation 2 : Traduction Decimal <-> héxadécimal
-Niveau : Stratégique
+- Niveau : Stratégique
 
 Cas d'utilisation 3 : Traduction Decimal <-> binaire
-Niveau : Stratégique
+- Niveau : Stratégique
 
 Cas d'utilisation 4  : Diviser les réseaux en Sous-réseaux avec les notations CIDR/VLSM
 Niveau : Stratégique     					 
