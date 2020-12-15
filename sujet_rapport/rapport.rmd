@@ -216,8 +216,20 @@ Comme on peut voir sur le diagramme mis en annexe (?) Nos travaux ont été rép
 | - sniffer nmap                                 					 |
 | - Trouver l'adresse IP des machines extérieures 					 |
 
-| Niveau Utilisateur                                                   |
-|----------------------------------------------------------------------|
+| Niveau Utilisateur                                                    |
+|-----------------------------------------------------------------------|
+| - Consulter la page Traduction Decimal <-> héxadécimal			    | 
+| - Consulter la page Traduction Decimal <-> binaire				    |
+| - Consulter la page Sous-réseaux avec les notations CIDR/VLSM		    |
+| - Consulter la page Calcul CIDR										|
+| - Consulter la page sniffer nmap										|
+| - Consulter la page pour Trouver l'adresse IP d'une machine exterieur |
+| - Traduction d'une adresse IP Decimal <-> héxadécimal					|
+| - Traduction d'une adresse IP Decimal <-> binaire						|
+| - Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM		|
+| - Fonction qui calcul un CRC											|
+| - Trouver l'adresse IP d'une machine exterieur						|
+
 | - écrire dans les champs de textes l'adresse IP hex-dec              |
 | - écrire dans les champs de textes l'adresse IP bin-dec              |
 | - écrire dans les champs de texte l'adresse IP pour les Sous-réseaux |
