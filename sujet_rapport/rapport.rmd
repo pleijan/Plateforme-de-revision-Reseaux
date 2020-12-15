@@ -340,6 +340,8 @@ Cas d'utilisation 15 : Traduction d'une adresse IP Decimal <-> binaire
 
 - Niveau : Utilisateur
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
 Cas d'utilisation 16  : Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM
 
 - Niveau : Utilisateur
@@ -441,6 +443,7 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 
 - Niveau : Sous-fonction
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 ### Les différents cas d'utilisation selon le style étoffé
 
@@ -460,6 +463,7 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 | **Déclencheur :**               | L’utilisateur doit sélectionner de lui même la fonction qu’il veut voir          |
 | **informations connexes :**     | L’utilisateur ne peux pas modifier le site web comme il souhaite                 |
 
+
 |                                 |                                                                                                                                                                             |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 2:**        | Traduction Décimal < - > Hexadécimal                                                                                                                                        |
@@ -475,7 +479,7 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 | **Garantie en cas de succès :** | Traduis des deux sens et affiche un message d’erreur si besoin                                                                                                              |
 | **Déclencheur :**               | L’utilisateur doit entrer ses valeurs et ensuite appuyer  sur Valider                                                                                                       |
 | **informations connexes :**     |                                                                                                                                                                             |
-
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 |                                 |                                                                                                                                                                         |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 3:**        | Traduction Décimal < - > Binaire                                                                                                                                        |
