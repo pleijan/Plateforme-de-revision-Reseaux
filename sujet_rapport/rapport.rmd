@@ -191,6 +191,12 @@ Les fonctionnalitées passent avant l'esthétique.
 |                                                                                           |                    |   |   |   |
 ![gantt](../img/gantt.png)
 
+Diagramme de Gantt : 
+
+
+Comme on peut voir sur le diagramme mis en annexe (?) Nos travaux ont été répartie sur plusieurs semaines, nous avons d'abord réfléchis sur le projet avec tout le monde pendant une semaines, ensuite on a réécrit le cahier des charges qui nous a pris environ deux semaines, ensuite nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre date ou le rapport doit être rendu  
+
+
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 ## Annexe 4 : Les cas d'utilisations
