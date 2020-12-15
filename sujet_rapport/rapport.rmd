@@ -401,9 +401,11 @@ Niveau : Sous-fonction
 Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est invalide
 Niveau : Sous-fonction
 
+
 ### Les différents cas d'utilisation selon le style étoffé
 
-
+| Cas d'utilisation 1: Choisir une fonctionnalité dans le menu<br>Nom: Choisir une fonctionnalité dans le menu<br>Contexte d'utilisation : L’utilisateur aura le choix de consulter les différente fonctionnalité <br>Portée: site web?<br>Acteur principal : Utilisateur<br>Intervenants et Intérêts: <br>Précondition:<br>Scénario nominal: 1.L’utilisateur accède a la fonctionnalité qu’il souhaite <br>Extensions: <br>Garantie minimale :  Accéder a la page souhaité par l’utilisateur <br>Garantie en cas de succès : La page s’affiche et la fonction affiche un résultat donc répond a l’utilisateur<br>Déclencheur : L’utilisateur doit sélectionner de lui même la fonction qu’il veut voir <br>informations connexes : L’utilisateur ne peux pas modifier le site web comme il souhaite |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
 ## Annexe 5 : Le recueil des besoins
