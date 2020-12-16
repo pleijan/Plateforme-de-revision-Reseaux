@@ -600,16 +600,27 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 | **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
 | **informations connexes :**     |                                                                                                         |
 
+|                                 |                                                                                                         |
+|---------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 10:**       | Consulter la page Sous-réseaux avec les notations CIDR/VLSM                                             |
+| **Nom:**                        | Consulter la page Sous-réseaux avec les notations CIDR/VLSM                                             |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaité |
+| **Portée:**                     | site web                                                                                                |
+| **Acteur principal :**          | Utilisateur                                                                                             |
+| **Intervenants et Intérêts:**   |                                                                                                         |
+| **Précondition:**               | Être sur la page d’accueil et sélectionné la fonctionnalité Traduction Décimal <-> binaire              |
+| **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité  2. Une page s’ouvre                                  |
+| **Extensions:**                 |                                                                                                         |
+| **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                             |
+| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les texte etc                                                           |
+| **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
+| **informations connexes :**     |                                                                                                         |
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 
 
-
-
-
-
-
-
-
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Annexe 5 : Le recueil des besoins
