@@ -779,7 +779,7 @@ La portée du projet est un site web, accompagné des demandes de notre client c
 -Faire un sniffer nmap
 -Trouver l’adresse IP d’une machine extérieur
  
-	Les objectifs généraux sont de faire un site web qui a pour but pédagogique donc d’aider des étudiant pour la matière du réseau , répondre au attente de notre client , le
+	Les objectifs généraux sont de faire un site web qui a pour but pédagogique donc d’aider des étudiants pour le module réseau, répondre au attente de notre client.
 
 2. Les intervenants. (Qui est concerné ?)
 
