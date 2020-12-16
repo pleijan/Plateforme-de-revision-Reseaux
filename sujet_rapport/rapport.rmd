@@ -1,22 +1,52 @@
 ---
-title: "Projet tutorée"
-author: "PIERRE Tom - GIANNICO Raffaele - PARISOT Theo - MANOHARAN Anushan"
+title: "Projet tutorée : Outil pédagogique pour le module de réseau"
+author: ""
 date: "09/11/2020"
 output:
   pdf_document:
-    toc: yes
     number_sections: yes
   word_document:
     toc: yes
 ---
+\centering
 
+![](logo.jpg)
+
+\Large Année : 2020/2021\hspace{50pt} IUT de Vélizy \hspace{50pt} Tuteur: M.Hoguin
+\vfill
+\large \hspace{10pt} PIERRE Tom - GIANNICO Raffaele - PARISOT Theo - MANOHARAN Anushan
+\raggedright
+\clearpage
+\tableofcontents
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
+# Remerciements
+\centering
+\vspace{75mm}
+En premier lieu, nous tenons à remercier M. Hoguin, enseignant à l'Iut de Vélizy. En tant que qu'enseignant, il nous a beaucoup appris et a partagé ses connaissances dans le domaine du réseau.
+
+\vspace{5mm}
+
+Nous souhaitons adresser nos remerciements aux enseignant du module Méthodologie de Production et d'Application de l'Iut de Vélizy, pour la qualité de l’enseignement.
+
+\vspace{5mm}
+
+Nous désirons aussi remercier tout les enseignants de l'Iut de Vélizy, car sans eux nous n'aurions pas pu faire ce travail.
+
+\vspace{5mm}
+
+Un grand merci à nos famille, pour leurs conseils ainsi que leur soutien moral.
+
+\raggedright
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 # Projet 
+
 ## Introduction 
 
 La réalisation d'un projet tuteuré a de multiples objectifs: apprendre à travailler en groupe, se familiariser
@@ -138,6 +168,13 @@ Les actions sont donc :
 Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en annexes 4.
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
+# Conclusion
+Toutes les exigences n'ont pour le moment pas été satisfaite. Environ la moitié du travail à été fait. Nous devons acquérir les compétences nécéssaires pour pouvoir continuer le projet.
+Nous avons atteint nos objectif c'est à dire programmer toute les fonctionnalité que nous savons faire en attendant de connaitre les autres compétences nécéssaire à la poursuite du projet et livrer un rapport complet.
+Notre client, M.Hoguin a mentionné qu'il pouvait y avoir des améliorations.
+Ce projet nous permet de consolider nos connaissance en réseau mais aussi en programmation WEB. De plus, ce projet nous apprend à travailler en équipe, et nous apprend a créer un rapport complet et bien structuré.
+
 
 # Annexes
 
