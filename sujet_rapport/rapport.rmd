@@ -471,7 +471,7 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 | **Cas d'utilisation 2:**        | Traduction Décimal < - > Hexadécimal                                                                                                                                        |
 | **Nom:**                        | Traduction Décimal < - > Hexadécimal                                                                                                                                        |
 | **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des décimal en hexadécimal ou inverse                                                                                                       |
-| **Portée:**                     |                                                                                                                                                                             |
+| **Portée:**                     |système                                                                                                                                                                             |
 | **Acteur principal :**          | Utilisateur                                                                                                                                                                 |
 | **Intervenants et Intérêts:**   |                                                                                                                                                                             |
 | **Précondition:**               | Avoir des décimal ou Hexadécimal a traduire                                                                                                                                 |
