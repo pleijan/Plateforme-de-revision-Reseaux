@@ -741,7 +741,21 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 | **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page calcul un CRC                                                                                                 |
 
 
-
+|                                 |                                                                                                                       |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 18:**       | Trouver l'adresse IP d'une machine extérieur                                                                          |
+| **Nom:**                        | Trouver l'adresse IP d'une machine extérieur                                                                          |
+| **Contexte d'utilisation :**    | L’utilisateur tape le nom d’un site et il aura en retour l’adresse IP du site voulu                                   |
+| **Portée:**                     | systeme                                                                                                               |
+| **Acteur principal :**          | Utilisateur                                                                                                           |
+| **Intervenants et Intérêts:**   |                                                                                                                       |
+| **Précondition:**               | Avoir remplit le champ                                                                                                |
+| **Scénario nominal:**           | 1.L’utilisateur entre le nom du site  2. L’utilisateur clique sur validé 3. L’adresse IP du site voulu sera retourner |
+| **Extensions:**                 | 3.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entrer l'adresse IP            |
+| **Garantie minimale :**         | affiche un message d’erreur                                                                                           |
+| **Garantie en cas de succès :** | La fonctionnalité lui retourne l’adresse IP                                                                           |
+| **Déclencheur :**               | L’utilisateur entre Le nom du site puis clique sur le bouton validé pour avoir un résultat ou un message d’erreur     |
+| **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Trouver l'adresse IP d'une machine extérieur     |
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
