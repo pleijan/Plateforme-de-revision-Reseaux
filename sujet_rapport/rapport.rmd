@@ -10,7 +10,7 @@ output:
 ---
 \centering
 
-![](logo.jpg)
+![](../img/IUT_Velizy_Villacoublay_logo_2020_ecran.png)
 
 \Large Année : 2020/2021\hspace{50pt} IUT de Vélizy \hspace{50pt} Tuteur: M.Hoguin
 \vfill
