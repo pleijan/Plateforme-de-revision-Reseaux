@@ -296,9 +296,11 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 
 
 |Degré |1          |2                   |3                    |4                  |5                                |
-|------|-----------|--------------------|---------------------|-------------------|---------------------------------|
+|------|---------------------|--------------------|---------------------|-------------------|---------------------------------|
 |def   |Improbable |Faiblement probable |Moyennement probable |Fortement probable |Déjà arrivé ou certain d’arriver |
 
+Tableau de l'echelle de probabilitée du risque.
+1 Improbable, 5 Déjà arrivé ou certain d’arriver
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Annexe 5 : tableau de l'echelle de l'impact d'un risque sur le projet
@@ -312,7 +314,8 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 |------|---------------|-------------|---------------|
 |def   |Impact faible  |Impact moyen |Impact retard  |
 
-
+Tableau de l'echelle de l'impact d'un risque sur le projet.
+1 Impact faible, 3 Impact retard
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Annexe 6 : tableau des differents risque avec leur impact
