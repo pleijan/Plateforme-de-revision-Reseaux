@@ -83,6 +83,8 @@ Mais, ces tâches peuvent aussi varier en fonction de la disponibilité de chacu
 
 ## Probleme a resoudre
 
+Avec l'université, il était difficile de continuer a programmé et écrire le rapport. En effet, nous avions une multitude de DS un réviser et des travaux à rendre. Par conséquent, nous avons du travailler deux fois plus pour finir les travaux. Cela a fonctionné.
+
 Tout d'abord voici la liste des risques qui pourrais arriver pendant notre projet :
 
 - Absences pour de certains membres pour des raisons quelconques 
@@ -203,9 +205,9 @@ Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le s
 
 
 # Conclusion
-Toutes les exigences n'ont pour le moment pas été satisfaites. Environ la moitié du travail à été fait. Nous devons acquérir les compétences nécessaires pour pouvoir continuer le projet.
+Toutes les exigences n'ont pour le moment pas été satisfaites. Environ la moitié du travail à été fait. En effet, il nous reste à programmer le VLSM, le calcul CRC, proposer un sniffer nmap, et programmer une fonctionnalité pour trouver l'adresse d'une machine extérieure. Nous devons acquérir les compétences nécessaires pour pouvoir continuer le projet et satisfaire ces exigences.
 Nous avons atteint nos objectifs c'est-à-dire programmer toute les fonctionnalités que nous savons faire en attendant de connaître les autres compétences nécessaires à la poursuite du projet et livrer un rapport complet.
-Notre client, M.Hoguin a mentionné qu'il pouvait y avoir des améliorations.
+Notre client, M.Hoguin a mentionné qu'il pouvait y avoir des améliorations.  
 Ce projet nous permet de consolider nos connaissances en réseau mais aussi en programmation WEB. De plus, ce projet nous apprend à travailler en équipe, et nous apprend à créer un rapport complet et bien structuré.
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
