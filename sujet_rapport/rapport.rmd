@@ -83,6 +83,8 @@ Mais, ces tâches peuvent aussi varier en fonction de la disponibilité de chacu
 
 ## Probleme a resoudre
 
+Avec l'université, il était difficile de continuer a programmé et écrire le rapport. En effet, nous avions une multitude de DS un réviser et des travaux à rendre. Par conséquent, nous avons du travailler deux fois plus pour finir les travaux. Cela a fonctionné.
+
 Tout d'abord voici la liste des risques qui pourrais arriver pendant notre projet :
 
 - Absences pour de certains membres pour des raisons quelconques 
@@ -200,12 +202,13 @@ Les actions sont donc :
 
 Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en Annexe 7.
 
-
+## Le recueil des besoins
+Vous pourrez trouvez le recueil des besoins dans l'annexe 8.
 
 # Conclusion
-Toutes les exigences n'ont pour le moment pas été satisfaites. Environ la moitié du travail à été fait. Nous devons acquérir les compétences nécessaires pour pouvoir continuer le projet.
+Toutes les exigences n'ont pour le moment pas été satisfaites. Environ la moitié du travail à été fait. En effet, il nous reste à programmer le VLSM, le calcul CRC, proposer un sniffer nmap, et programmer une fonctionnalité pour trouver l'adresse d'une machine extérieure. Nous devons acquérir les compétences nécessaires pour pouvoir continuer le projet et satisfaire ces exigences.
 Nous avons atteint nos objectifs c'est-à-dire programmer toute les fonctionnalités que nous savons faire en attendant de connaître les autres compétences nécessaires à la poursuite du projet et livrer un rapport complet.
-Notre client, M.Hoguin a mentionné qu'il pouvait y avoir des améliorations.
+Notre client, M.Hoguin a mentionné qu'il pouvait y avoir des améliorations.  
 Ce projet nous permet de consolider nos connaissances en réseau mais aussi en programmation WEB. De plus, ce projet nous apprend à travailler en équipe, et nous apprend à créer un rapport complet et bien structuré.
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
@@ -345,7 +348,7 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 | Les cas d’utilisations du projet tuteuré | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : cas d’utilisations                                                            | Date: <18/12/2020> |   |   |   |
-| Responsable de la Redaction: Tom                                                      |                    |   |   |   |
+| Responsable de la Redaction: Anushan et Raffaele                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 
 
@@ -582,6 +585,7 @@ Cas d'utilisation 40 : Erreur apparaît si le nom de la machine extérieure est 
 
 ### Les différents cas d'utilisation selon le style étoffé
 
+
 |                                 |                                                                                  |
 |---------------------------------|----------------------------------------------------------------------------------|
 | **Cas d'utilisation 1:**        | Choisir une fonctionnalité dans le menu                                          |
@@ -716,7 +720,7 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 | **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                               |
 | **informations connexes :**     | l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                        |
 
-
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 |                                 |                                                                                                         |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -750,7 +754,7 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 | **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                               |
 | **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                         |
 
-
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 |                                 |                                                                                                         |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 11:**       | Consulter la page Calcul CIDR                                                                           |
@@ -766,7 +770,7 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 | **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                           |
 | **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                               |
 | **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                         |
-`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
 |                                 |                                                                                                         |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 12:**       | Consulter la page sniffer nmap                                                                          |
@@ -783,7 +787,7 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 | **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
 | **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                         |
 
-
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 
 |                                 |                                                                                                          |
@@ -822,7 +826,6 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 
 
 
-`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 |                                 |                                                                                                                                        |
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -841,6 +844,8 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 | **Déclencheur :**               | Valider                                                                  |
 | **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Traduction d'une adresse IP Décimal <-> binaire                   |
 
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 |                                 |                                                                                                                                                                                                                                                                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 16:**       | Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM                                                                                                                                                                                                                                                                             |
@@ -926,7 +931,7 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 | **Déclencheur :**               | L’utilisateur qui clique   |
 | **informations connexes :**     | Valider est le bouton qui permet l'exécution du programme|
 
-
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 |                                 |                                                                                                                       |
 |-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 **Cas d'utilisation 21:**        | Affiche l'adresse IP traduite hex-dec                                       |
@@ -943,7 +948,7 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 | **Déclencheur :**               | valider |
 | **informations connexes :**     | L'adresse IP traduite sera affiché sur la page web correspondant à la fonctionnalité. |
 
-`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
 |                                 |                                                                                                                       |
 |-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 **Cas d'utilisation 22:**        |Erreur apparaît si adresse IP hex-dec invalide                                           |
@@ -959,7 +964,6 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 | **Garantie en cas de succès :** |un message d’erreur apparaît si les normes ne sont pas respectées ou s’il n’entre pas de valeur ou bien s'il écrit de l’hexadécimal alors qu’il a sélectionné du décimal.  |
 | **Déclencheur :**               | L’utilisateur doit sélectionner si il veut traduire en hex ou en décimal ,entrer des valeurs erronées et clique ensuite sur valider|
 | **informations connexes :**     | Un message d'erreur apparaît. |
-
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
@@ -1046,8 +1050,6 @@ vi. A quelle dépendance le projet est-il soumis ?
 	3. Quelles sont les conséquences humaines de la réalisation du système ?
 	4. Quels sont les besoins en formation ? 
 	5. Quelles sont les hypothèses et les dépendances affectant l'environnement humain ?
-
-
 
 
 
