@@ -202,7 +202,8 @@ Les actions sont donc :
 
 Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en Annexe 7.
 
-
+## Le recueil des besoins
+Vous pourrez trouvez le recueil des besoins dans l'annexe 8.
 
 # Conclusion
 Toutes les exigences n'ont pour le moment pas été satisfaites. Environ la moitié du travail à été fait. En effet, il nous reste à programmer le VLSM, le calcul CRC, proposer un sniffer nmap, et programmer une fonctionnalité pour trouver l'adresse d'une machine extérieure. Nous devons acquérir les compétences nécessaires pour pouvoir continuer le projet et satisfaire ces exigences.
