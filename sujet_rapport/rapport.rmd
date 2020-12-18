@@ -109,17 +109,9 @@ Pour determiner la probabilitée des risques et leur impact on va créer des ech
 
 On va créer une échelle pour la probabilité de réalisation d’un risque qui va de 1 à 5, défini dans le tableau disponible en annexe 4
 
-
- 
-
 On va créer une deuxième échelle pour l’impact sur le projet allant de 1 à 3, défini dans le tableau disponible en annexe 5
 
-
-
 Et donc grace au differentes echelle on peux determiner un tableau avec les risque et leur probabilitée d'existences et leur impact qui est affichée dans l'annexe 6.
-
-
-
 
 ## La programmation
 
@@ -293,17 +285,17 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 ## Annexe 4 : tableau de l'echelle de probabilitée du risque 
-| Les cas d’utilisations du projet tuteuré | Version : 1        |   |   |   |
+| tableau de l'echelle de probabilitée du risque | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
-| Document : cas d’utilisations                                                            | Date: <20/11/2020> |   |   |   |
+| Document : tableau de l'echelle de probabilitée du risque                                                          | Date: <20/11/2020> |   |   |   |
 | Responsable de la Redaction: Raffaele                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-## Annexe 5 : tableau de l'echelle de l'impact d'un risque sur le projet'
-| Les cas d’utilisations du projet tuteuré | Version : 1        |   |   |   |
+## Annexe 5 : tableau de l'echelle de l'impact d'un risque sur le projet
+| tableau de l'echelle de l'impact d'un risque sur le projet | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
-| Document : cas d’utilisations                                                            | Date: <18/12/2020> |   |   |   |
+| Document : tableau de l'echelle de l'impact d'un risque sur le projet                     | Date: <18/12/2020> |   |   |   |
 | Responsable de la Redaction: Tom                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 
@@ -314,9 +306,9 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Annexe 6 : tableau des differents risque avec leur impact
-| Les cas d’utilisations du projet tuteuré | Version : 1        |   |   |   |
+| tableau des differents risque avec leur impact | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
-| Document : cas d’utilisations                                                            | Date: <18/12/2020> |   |   |   |
+| Document : tableau des differents risque avec leur impact                                                           | Date: <18/12/2020> |   |   |   |
 | Responsable de la Redaction: Tom                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 
@@ -330,6 +322,8 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 | Document : cas d’utilisations                                                            | Date: <18/12/2020> |   |   |   |
 | Responsable de la Redaction: Tom                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
+
+
 
 ### Les différents Niveaux
 
