@@ -829,6 +829,7 @@ Cas d'utilisation 20:        |valider hex-dec                                   
 | informations connexes :     | Valider est le bouton qui permet l'exécution du programme|
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
 Cas d'utilisation 21:        | Affiche l'adresse IP traduite hex-dec                                       |
 | Nom:                        | Affiche l'adresse IP traduite hex-dec                                        |
 | Contexte d'utilisation :    | L’utilisateur pourra voir le résultat obtenu lors de la traduction  |
@@ -842,6 +843,23 @@ Cas d'utilisation 21:        | Affiche l'adresse IP traduite hex-dec            
 | Garantie en cas de succès : |Si les normes sont respectées alors le résultat sera affiché |
 | Déclencheur :               | valider |
 | informations connexes :     | L'adresse IP traduite sera affiché sur la page web correspondant à la fonctionnalité. |
+
+
+
+**Cas d'utilisation 22:**        |Erreur apparaît si adresse IP hex-dec invalide                                           |
+| **Nom:**                        | Erreur apparaît si adresse IP hex-dec invalide                                          |
+| **Contexte d'utilisation :**    |Si l’utilisateur ne respecte pas la norme d’une adresse IP ou qu’il n’entre pas de valeur ou alors qu’il écrit de l’hexadécimal alors qu’il a sélectionné décimal une erreur apparaîtra |
+| **Portée:**                     | site web                                                                         |
+| **Acteur principal :**          | Système                                                                      |
+| **Intervenants et Intérêts:**   |le système a trouvé une erreur dans les données des champs que l'utilisateur à écrit.                                                                                  |
+| **Précondition:**               |Être sur la page Traduction Hexadécimal < - > décimal , choisir s'il veut traduire en hexadécimal ou en décimal et cliquer sur valider                                                                                   |
+| **Scénario nominal:**           | Une fois que l’utilisateur a entré les valeurs, sélectionné en quoi il voulait traduire et valider, le résultat apparaîtra ou alors un message d’erreur |
+| **Extensions:**                 |le système n'a pas pu traduire                                                                                 |
+| **Garantie minimale :**         |Si une erreur est présente,le site va se rafraîchir sans indiquer un message d’erreur pour que l’utilisateur recommence                                   |
+| **Garantie en cas de succès :** |un message d’erreur apparaît si les normes ne sont pas respectées ou s’il n’entre pas de valeur ou bien s'il écrit de l’hexadécimal alors qu’il a sélectionné du décimal.  |
+| **Déclencheur :**               | L’utilisateur doit sélectionner si il veut traduire en hex ou en décimal ,entrer des valeurs erronées et clique ensuite sur valider|
+| **informations connexes :**     | Un message d'erreur apparaît. |
+
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
