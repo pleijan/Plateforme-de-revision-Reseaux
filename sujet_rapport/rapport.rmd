@@ -324,6 +324,27 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 |                                                                                           |                    |   |   |   |
 
 
+|Risque  |Probabilité du risque  |Impact  |
+|-|-|-|
+|Absence de membres pour raison quelconque  |4 |1 |
+|Abandon de certains membres de l’équipe  |2 |3 |
+|travail en simultanée pour l’université |5 |2 |
+|Manque de connaissances |3 |2 |
+|Matériel défectueux |2 |1 |
+|Mauvaise communication |2 |2| 
+|Mauvaise répartition des tâches |1 |2 |
+|Erreur de commit (pertes des données) |1 |2 |
+|Sous-estimer de la complexité d’une tache. |2 |2| 
+|Insatisfaction du client |2 |2 |
+| Pertes de motivation de l’équipe |3 |3 |
+|Mauvaise exécution des tests |3 |2| 
+|Mauvaise cohésion d’équipe |3 |2| 
+|Evolution du projet  |4 |2 |
+|client injoignable |3 |2|
+|Mauvaise entente avec le client |2 |3 | 
+|Client incertain  |2 |2|
+|Conflit au sein de l’équipe |2 |3|
+
 
 ### Les différents Niveaux
 
