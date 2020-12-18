@@ -346,7 +346,7 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 | Les cas d’utilisations du projet tuteuré | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : cas d’utilisations                                                            | Date: <18/12/2020> |   |   |   |
-| Responsable de la Redaction: Tom                                                      |                    |   |   |   |
+| Responsable de la Redaction: Anushan et Raffaele                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 
 
