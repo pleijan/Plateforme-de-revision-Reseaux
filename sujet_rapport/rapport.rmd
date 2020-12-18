@@ -81,6 +81,46 @@ Les deux personnes qui se chargent de programmer sont donc : Tom PIERRE et Raffa
 Les deux personnes qui se chargent de d'écrire le rapport sont donc : Anushan MANOHARAN et Théo PARISOT.
 Mais, ces tâches peuvent aussi varier en fonction de la disponibilité de chacun.
 
+## Probleme a resoudre
+
+Tout d'abord voici la liste des risques qui pourrais arriver pendant notre projet :
+
+- Absences pour de certains membres pour des raisons quelconques 
+- Abandon de certains membres de l’équipe.  
+- Travail en simultanée pour l’université  
+- Manque de connaissances 
+- Matériels défectueux  
+- Mauvaise communication 
+- Mauvaise répartition des tâches 
+- Erreur de commit (pertes des données) 
+- Sous-estimer de la complexité d’une tâche. (Compétences) 
+- Insatisfaction du client 
+- Pertes de motivation de l’équipe 
+- Mauvaise exécution des tests 
+- Mauvaise cohésion d’équipe. 
+- Évolution du projet 
+- Mauvaise méthode de travail 
+- Client injoignable  
+- Mauvaise entente avec le client 
+- Client incertain 
+- Conflit au sein de l’équipe 
+
+Pour determiner la probabilitée des risques et leur impact on va créer des echelles définie ci-dessous :
+
+On va créer une échelle pour la probabilité de réalisation d’un risque qui va de 1 à 5, défini dans le tableau disponible en annexe 4
+
+
+ 
+
+On va créer une deuxième échelle pour l’impact sur le projet allant de 1 à 3, défini dans le tableau disponible en annexe 5
+
+
+
+Et donc grace au differentes echelle on peux determiner un tableau avec les risque et leur probabilitée d'existences et leur impact qui est affichée dans l'annexe 6.
+
+
+
+
 ## La programmation
 
 Nous avons programmé toutes nos pages en PHP qui contient du HTML et du CSS. Puis nous avons commencé à programmer une page index qui serait la page d'accueil du site qui contient un menu pour choisir la fonctionnalité souhaitée.
@@ -166,7 +206,7 @@ Les actions sont donc :
 - Erreur apparaît si le nom de la machine extérieure est invalide	   
 
 
-Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en Annexe 4.
+Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en Annexe 7.
 
 
 
@@ -252,11 +292,43 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
-## Annexe 4 : Les cas d'utilisations
+## Annexe 4 : tableau de l'echelle de probabilitée du risque 
 | Les cas d’utilisations du projet tuteuré | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : cas d’utilisations                                                            | Date: <20/11/2020> |   |   |   |
 | Responsable de la Redaction: Raffaele                                                      |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+## Annexe 5 : tableau de l'echelle de l'impact d'un risque sur le projet'
+| Les cas d’utilisations du projet tuteuré | Version : 1        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : cas d’utilisations                                                            | Date: <18/12/2020> |   |   |   |
+| Responsable de la Redaction: Tom                                                      |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
+
+|Degré |1 |2 |3 |4 |5 |
+|def |Improbable |Faiblement probable |Moyennement probable |Fortement probable |Déjà arrivé ou certain d’arriver |
+
+
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+## Annexe 6 : tableau des differents risque avec leur impact
+| Les cas d’utilisations du projet tuteuré | Version : 1        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : cas d’utilisations                                                            | Date: <18/12/2020> |   |   |   |
+| Responsable de la Redaction: Tom                                                      |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
+
+|Degré |1 |2 |3 |
+|def |Impact faible  |Impact moyen |Impact retard  |
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+## Annexe 7 : Les cas d'utilisations
+| Les cas d’utilisations du projet tuteuré | Version : 1        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : cas d’utilisations                                                            | Date: <18/12/2020> |   |   |   |
+| Responsable de la Redaction: Tom                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 
 ### Les différents Niveaux
@@ -874,7 +946,7 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
-## Annexe 5 : Le recueil des besoins
+## Annexe 8 : Le recueil des besoins
 | Le recueil des besoins du projet tuteuré | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : recueil des besoins                                                            | Date: <14/12/2020> |   |   |   |
