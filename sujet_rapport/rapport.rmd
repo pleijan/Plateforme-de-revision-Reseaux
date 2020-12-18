@@ -804,14 +804,14 @@ Cas d'utilisation 19:|écrire dans les champs de textes l'adresse IP hex-dec    
 | Contexte d'utilisation :    | L’utilisateur peut écrire des hexadécimal ou des décimal dans les champs afin de traduire les adresses IP           |
 | Portée:                     | site web                                                                         |
 | Acteur principal :          | Utilisateur                                                                      |
-| Intervenants et Intérêts:   | Utilisateur écrit dans ces champs, le système récupère                                                                                   |
+| Intervenants et Intérêts:   | Utilisateur écrit dans ces champs, le système récupère les données des champs                                                                                   |
 | Précondition:   |Être sur la page Traduction Hexadécimal < - > décimal   |
 | Scénario nominal:           | L’utilisateur peut entrer les valeurs qu’il veut |
-| Extensions:                 |                                                                                  |
-| Garantie minimale :         |?                                     |
+| Extensions:                 |le systeme récupère ces données                                                                                  |
+| Garantie minimale :         |les données écrites dans les champs seront traités.                                     |
 | Garantie en cas de succès : |l’utilisateur peut écrire des chiffres et des lettres  |
 | Déclencheur :               | L’utilisateur doit sélectionner la case pour écrire des chiffres ou des lettres       |
-| informations connexes :     |  |
+| informations connexes :     | L'utilisateur peut écrire ce qu'il veut mais attention car un message d'erreur peut s'afficher lors de l'execution d'une fonctionnalité. Ces champs se trouvent dans la page liée à la fontionnalité.  |
 
 
 Cas d'utilisation 20:        |valider hex-dec                                         |
@@ -819,22 +819,22 @@ Cas d'utilisation 20:        |valider hex-dec                                   
 | Contexte d'utilisation :    | L’utilisateur peut valider pour traduire les chiffre qu’il veut en hex ou en decimal   |
 | Portée:                     | site web                                                                         |
 | Acteur principal :          | Utilisateur                                                                      |
-| Intervenants et Intérêts:   |                                                                                  |
+| Intervenants et Intérêts:   | Utilisateur qui clique sur le bouton valider, système qui s'active à l'appuie du bouton valider.                                                                                 |
 | Précondition:               | Être sur la page Traduction Hexadécimal < - > décimal , choisir si il veut traduire en hex ou en dec                                                                         |
 | Scénario nominal:           | L’utilisateur choisi si il veut traduire en hex ou en dec et ensuite il entre ses nombres et enfin sur valider|
 | Extensions:                 |                                                                                  |
-| Garantie minimale :         | Accéder a la page souhaité par l’utilisateur                                     |
-| Garantie en cas de succès : | L’utilisateur choisi si il veut traduire en hex ou en dec et ensuite il entre ses nombres et enfin sur valider pour avoir un resultat  |
-| Déclencheur :               | L’utilisateur doit sélectionner si il veut traduire en hex ou en decimal et ensuite valider   |
-| informations connexes :     | |
+| Garantie minimale :         | un message s'affiche.                                     |
+| Garantie en cas de succès : | L'adresse IP sera traduite et affichée ensuite. |
+| Déclencheur :               | L’utilisateur qui clique   |
+| informations connexes :     | Valider est le bouton qui permet l'exécution du programme|
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 Cas d'utilisation 21:        | Affiche l'adresse IP traduite hex-dec                                       |
 | Nom:                        | Affiche l'adresse IP traduite hex-dec                                        |
 | Contexte d'utilisation :    | L’utilisateur pourra voir le résultat obtenu lors de la traduction  |
 | Portée:                     | site web                                                                         |
-| Acteur principal :          | Utilisateur                                                                      |
-| Intervenants et Intérêts:   |                                                                                  |
+| Acteur principal :          | Système                                                                      |
+| Intervenants et Intérêts:   | Système qui affiche la traduction.                                                                                 |
 | Précondition:               |  Être sur la page Traduction Hexadécimal < - > décimal , choisir si il veut traduire en hex ou en dec et cliquer sur valider                                                                                     |
 | Scénario nominal:           | Une fois que l’utilisateur a entrer les valeurs , sélectionné en quoi il voulait traduire et valider , le résultat apparaîtra |
 | Extensions:                 |                                                                                  |
