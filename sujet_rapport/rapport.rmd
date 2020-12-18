@@ -31,7 +31,7 @@ En premier lieu, nous tenons à remercier M. Hoguin, enseignant à l'Iut de Vél
 
 \vspace{5mm}
 
-Nous souhaitons adresser nos remerciements aux enseignant du module Méthodologie de Production et d'Application de l'Iut de Vélizy, pour la qualité de l’enseignement.
+Nous souhaitons adresser nos remerciements aux enseignants du module Méthodologie de Production et d'Application de l'Iut de Vélizy, pour la qualité de l’enseignement.
 
 \vspace{5mm}
 
@@ -39,7 +39,7 @@ Nous désirons aussi remercier tout les enseignants de l'Iut de Vélizy, car san
 
 \vspace{5mm}
 
-Un grand merci à nos famille, pour leurs conseils ainsi que leur soutien moral.
+Un grand merci à nos familles, pour leurs conseils ainsi que leurs soutiens moral.
 
 \raggedright
 
@@ -53,19 +53,19 @@ La réalisation d'un projet tuteuré a de multiples objectifs: apprendre à trav
 avec des outils et des langages, apprendre à définir, analyser, réaliser et tester un système informatique
 complexe. C'est pourquoi, le département Informatique de l'IUT nous a confié ce projet. 
 
-Le projet final que nous devrons présenter sera une application pédagogique pour apprendre aux étudiants de première année de l'iut de Vélizy, ainsi qu'aux non initiés, les fondamentaux du réseau au travers d’une interface web. Cette interface web sera constituée de plusieurs pages internet contenant chacun une fonctionnalité de l'application (les fonctionnalitées sont décrite dans le cahier des charges qui sera transmis en Annexe 1). Ainsi nous apporterons une explication pour faire comprendre de manière simple le réseau aux étudiants. Il faudra alors réfléchir à notre interface web que nous allons mettre en place. C'est pourquoi nous devons non seulement se mettre à la place d’un développeur, mais aussi à la place de l'utilisateur, et devons trouver comment attirer les étudiants, comment leur donner envie d'apprendre le réseau.
+Le projet final que nous devrons présenter sera une application pédagogique pour apprendre aux étudiants de première année de l'iut de Vélizy, les fondamentaux du réseau au travers d’une interface web. Cette interface web sera constituée de plusieurs pages internet contenant chacun une fonctionnalité de l'application (les fonctionnalités sont décrite dans le cahier des charges qui sera transmis en Annexe 1). Ainsi nous apporterons une explication pour faire comprendre de manière simple le réseau aux étudiants. Il faudra alors réfléchir à notre interface web que nous allons mettre en place. C'est pourquoi nous devons non seulement se mettre à la place d’un développeur, mais aussi à la place de l'utilisateur, et devons trouver comment attirer les étudiants, comment leur donner envie d'apprendre le réseau.
 
 Tout d'abord, nous sommes aller voir notre client (M.HOGUIN) pour lui poser des questions sur le projet et nous voulions savoir s'il y avait des éléments à rajouter.
 
-Ensuite, nous avons pris connaissance de gitlab, une plateforme permettant d’héberger et de gérer des projets, il nous permettra une meilleure collaboration sur le projet. En effet, c'est un dépots commun, chaque membre du groupe peut accéder aux différents fichier du projet, même le client. C’est une plateforme gratuite, notre client peut donc voir les évolutions du projet apporté par le groupe. Il peut ainsi nous faire part des points qui ne correspondent pas à ses attentes. Nous pouvons alors travailler avec le client en direct, il est conseillé, après chaque modification apporté à un fichier, de les mettre à jour sur le gitlab. Ainsi que de partager le rapport pour un meilleur suivis de projet.
+Ensuite, nous avons pris connaissance de gitlab, une plateforme permettant d’héberger et de gérer des projets, il nous permettra une meilleure collaboration sur le projet. En effet, c'est un dépot commun, chaque membre du groupe peut accéder aux différents fichiers du projet, même le client. C’est une plateforme gratuite, notre client peut donc voir les évolutions du projet apportées par le groupe. Il peut ainsi nous faire part des points qui ne correspondent pas à ses attentes. Nous pouvons alors travailler avec le client en direct, il est conseillé, de mettre à jour les fichiers sur gitlab après chaque modification apportées. Ainsi que de partager le rapport pour un meilleur suivi du projet.
 
-Une fois avoir pris connaissance de Gitlab, nous devons réécrire complètement le cahier des charges de notre point de vue, faire l’analyse des besoins et ensuite prendre rendez-vous avec le client afin de se mettre d’accord. Puis nous ajoutons à la fin du cahier des charges toutes les questions que nous nous posions (avec la réponse de notre client dans l’annexe 2):
+Après avoir pris connaissance de Gitlab, nous devons réécrire complètement le cahier des charges de notre point de vue, faire l’analyse des besoins et ensuite prendre rendez-vous avec le client afin de se mettre d’accord et éclaircir certains points. Puis, nous avons ajouté à la fin du cahier des charges toutes les questions que nous nous posions (avec la réponse de notre client dans l’annexe 2).
 
-Nous avons ensuite fait des recherches sur chaque fonctionnalitées (la récupération de l’adresse IP d’un client ou d’une personne qui se connecte sur une page web, comment afficher son adresse IP, comment à partir du PHP ou d’un autre langage web nous pouvons lancer un «nslookup», un « ping»).
+Nous avons ensuite fait des recherches sur chaque fonctionnalités (la récupération de l’adresse IP d’un client ou d’une personne qui se connecte sur une page web et comment, à partir du PHP ou d’un autre langage web nous pouvons lancer un «nslookup», un « ping»).
 
-Et nous devons présenter des maquettes de notre interface web pour avoir une idée de la forme finale du projet. Nous présenterons cette maquette au client afin d'obtenir son avis et ainsi changer les points souhaiter, pour que le client soit le plus satisfait possible.
+Et nous devons présenter des maquettes de notre interface web pour avoir une idée de la forme finale du projet. Nous présenterons cette maquette au client afin d'obtenir son avis et ainsi changer les points souhaités, pour que le client soit le plus satisfait possible.
 
-Avant de programmer nous devons apprendre des notions avec M.HOGUIN qui est professeur de Réseau, car à cause du covid19, nous  n'avons pas pu apprendre ces notions l'année dernière. En effet, nous devions apprendre le CIDR et le VLSM qui nous permettrait de partager un réseau en sous réseau. Ensuite nous devons apprendre le calcul d’un crc de type Ethernet, connaître un sniffer nmap, et enfin savoir trouver une adresse IP d’une machine extérieur.
+Avant de programmer nous devons apprendre des notions avec M.HOGUIN qui est notre enseignant du module Réseau, car à cause du covid19, nous n'avons pas pu apprendre ces notions l'année dernière. En effet, nous devions apprendre le CIDR et le VLSM qui nous permet de partager un réseau en sous réseau. Ensuite nous devons apprendre le calcul d’un CRC de type Ethernet, connaître un sniffer nmap, et enfin savoir trouver une adresse IP d’une machine extérieur.
 
 ## L'organisation du travail 
 Nous avons utilisé GitLab pour mieux collaborer entre nous mais aussi avec le client pour que nous puissions voir les évolutions.
