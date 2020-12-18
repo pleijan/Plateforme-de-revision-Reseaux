@@ -819,7 +819,7 @@ Cas d'utilisation 20:        |valider hex-dec                                   
 | Contexte d'utilisation :    | L’utilisateur peut valider pour traduire les chiffre qu’il veut en hex ou en decimal   |
 | Portée:                     | site web                                                                         |
 | Acteur principal :          | Utilisateur                                                                      |
-| Intervenants et Intérêts:   | Utilisateur qui clique sur le bouton valider, système qui s'active à l'appuie du bouton valider.                                                                                 |
+| Intervenants et Intérêts:   | Utilisateur qui clique sur le bouton valider, système qui exécute des instructions à l'appuie du bouton valider.                                                                                 |
 | Précondition:               | Être sur la page Traduction Hexadécimal < - > décimal , choisir si il veut traduire en hex ou en dec                                                                         |
 | Scénario nominal:           | L’utilisateur choisi si il veut traduire en hex ou en dec et ensuite il entre ses nombres et enfin sur valider|
 | Extensions:                 |                                                                                  |
@@ -838,10 +838,10 @@ Cas d'utilisation 21:        | Affiche l'adresse IP traduite hex-dec            
 | Précondition:               |  Être sur la page Traduction Hexadécimal < - > décimal , choisir si il veut traduire en hex ou en dec et cliquer sur valider                                                                                     |
 | Scénario nominal:           | Une fois que l’utilisateur a entrer les valeurs , sélectionné en quoi il voulait traduire et valider , le résultat apparaîtra |
 | Extensions:                 |                                                                                  |
-| Garantie minimale :         |                                      |
-| Garantie en cas de succès : |Si les normes sont respecter alors le résultats sera afficher |
-| Déclencheur :               | L’utilisateur doit sélectionner si il veut traduire en hex ou en décimal et ensuite valider |
-| informations connexes :     |  |
+| Garantie minimale :         | le système affichera un message                                     |
+| Garantie en cas de succès : |Si les normes sont respectées alors le résultat sera affiché |
+| Déclencheur :               | valider |
+| informations connexes :     | L'adresse IP traduite sera affiché sur la page web correspondant à la fonctionnalité. |
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
