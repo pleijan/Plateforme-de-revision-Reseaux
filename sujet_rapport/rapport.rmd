@@ -797,8 +797,55 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 | **Déclencheur :**               | clique sur le bouton valider |
 | **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Trouver l'adresse IP d'une machine extérieure     |
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
+Cas d'utilisation 19:|écrire dans les champs de textes l'adresse IP hex-dec                                          |
+| Nom:         | écrire dans les champs de textes l'adresse IP hex-dec                                          |                                       |
+| Contexte d'utilisation :    | L’utilisateur peut écrire des hexadécimal ou des décimal dans les champs afin de traduire les adresses IP           |
+| Portée:                     | site web                                                                         |
+| Acteur principal :          | Utilisateur                                                                      |
+| Intervenants et Intérêts:   | Utilisateur écrit dans ces champs, le système récupère                                                                                   |
+| Précondition:   |Être sur la page Traduction Hexadécimal < - > décimal   |
+| Scénario nominal:           | L’utilisateur peut entrer les valeurs qu’il veut |
+| Extensions:                 |                                                                                  |
+| Garantie minimale :         |?                                     |
+| Garantie en cas de succès : |l’utilisateur peut écrire des chiffres et des lettres  |
+| Déclencheur :               | L’utilisateur doit sélectionner la case pour écrire des chiffres ou des lettres       |
+| informations connexes :     |  |
+
+
+Cas d'utilisation 20:        |valider hex-dec                                         |
+| Nom:                        | valider hex-dec                                       |
+| Contexte d'utilisation :    | L’utilisateur peut valider pour traduire les chiffre qu’il veut en hex ou en decimal   |
+| Portée:                     | site web                                                                         |
+| Acteur principal :          | Utilisateur                                                                      |
+| Intervenants et Intérêts:   |                                                                                  |
+| Précondition:               | Être sur la page Traduction Hexadécimal < - > décimal , choisir si il veut traduire en hex ou en dec                                                                         |
+| Scénario nominal:           | L’utilisateur choisi si il veut traduire en hex ou en dec et ensuite il entre ses nombres et enfin sur valider|
+| Extensions:                 |                                                                                  |
+| Garantie minimale :         | Accéder a la page souhaité par l’utilisateur                                     |
+| Garantie en cas de succès : | L’utilisateur choisi si il veut traduire en hex ou en dec et ensuite il entre ses nombres et enfin sur valider pour avoir un resultat  |
+| Déclencheur :               | L’utilisateur doit sélectionner si il veut traduire en hex ou en decimal et ensuite valider   |
+| informations connexes :     | |
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+Cas d'utilisation 21:        | Affiche l'adresse IP traduite hex-dec                                       |
+| Nom:                        | Affiche l'adresse IP traduite hex-dec                                        |
+| Contexte d'utilisation :    | L’utilisateur pourra voir le résultat obtenu lors de la traduction  |
+| Portée:                     | site web                                                                         |
+| Acteur principal :          | Utilisateur                                                                      |
+| Intervenants et Intérêts:   |                                                                                  |
+| Précondition:               |  Être sur la page Traduction Hexadécimal < - > décimal , choisir si il veut traduire en hex ou en dec et cliquer sur valider                                                                                     |
+| Scénario nominal:           | Une fois que l’utilisateur a entrer les valeurs , sélectionné en quoi il voulait traduire et valider , le résultat apparaîtra |
+| Extensions:                 |                                                                                  |
+| Garantie minimale :         |                                      |
+| Garantie en cas de succès : |Si les normes sont respecter alors le résultats sera afficher |
+| Déclencheur :               | L’utilisateur doit sélectionner si il veut traduire en hex ou en décimal et ensuite valider |
+| informations connexes :     |  |
+
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
 ## Annexe 5 : Le recueil des besoins
 | Le recueil des besoins du projet tuteuré | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
