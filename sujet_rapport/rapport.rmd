@@ -295,9 +295,9 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 |                                                                                           |                    |   |   |   |
 
 
-|Degré |1          |2                   |3                    |4                  |5                                |
-|------|-----------|--------------------|---------------------|-------------------|---------------------------------|
-|def   |Improbable |Faiblement probable |Moyennement probable |Fortement probable |Déjà arrivé ou certain d’arriver |
+|Degré |1            |2                   |3                    |4                  |5                                |
+|------|-------------|--------------------|---------------------|-------------------|---------------------------------|
+|def   |Improbable   |Faiblement probable |Moyennement probable |Fortement probable |Déjà arrivé ou certain d’arriver |
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
@@ -310,7 +310,7 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 
 |Degré |1              |2            |3              |
 |------|---------------|-------------|---------------|
-|def   |Impact faible  |Impact moyen |Impact retard  |
+|def   |Impact faible  |Impact moyen |Impact grand   |
 
 
 
