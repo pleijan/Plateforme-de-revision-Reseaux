@@ -514,7 +514,7 @@ Cas d'utilisation 40 : Erreur apparaît si le nom de la machine extérieure est 
 | **Précondition:**               | Avoir choisi la fontionnalité Traduction Décimal < - > Hexadécimal dans le menu                                                                                                                                 |
 | **Scénario nominal:**           | 1.L’utilisateur choisi s'il veut traduire de décimal à hexadécimal  		     2.L’utilisateur entre ses valeurs 		     3. Le résultat s’affiche |
 | **Extensions:**             | le système detecte si l'adresse IP est bien écrite                                                                                                                                                                            |
-| **Garantie minimale :**         | Traduit dans les deux sens                                                                                                                                                       |
+| **Garantie minimale :**         | un message sera affiché                                                                                                                                                       |
 | **Garantie en cas de succès :** | Traduit dans les deux sens et affiche un message d’erreur si besoin                                                                                                              |
 | **Déclencheur :**               | Valider                                                                                                       |
 | **informations connexes :**   |Les adresses IP peuvent être traduite dans les deux sens.                                                                                                                                                                             |
@@ -530,10 +530,10 @@ Cas d'utilisation 40 : Erreur apparaît si le nom de la machine extérieure est 
 | **Précondition:**               | Avoir choisi la fontionnalité Traduction Décimal < - > Binaire dans le menu                                                                                                                                 |
 | **Scénario nominal:**           | 1.L’utilisateur choisit s'il veut traduire de décimal en Binaire 		     2.L’utilisateur entre ses valeurs 		     3. Le résultat s’affiche |
 | **Extensions:**                 | le système detecte si l'adresse IP est bien écrite                                                                                                                                                                        |
-| **Garantie minimale :**         | Traduit dans les deux sens                                                                                                                                                   |
+| **Garantie minimale :**         | un message sera affiché                                                                                                                                                   |
 | **Garantie en cas de succès :** | Traduit dans les deux sens et affiche un message d’erreur si besoin                                                                                                          |
 | **Déclencheur :**               |Valider                                                                                                   |
-| **informations connexes :**     | Les adresses IP peuvent être traduite dans les deux sens.                                                                                                                                                                        |
+| **informations connexes :**     | Les adresses IP peuvent être traduite dans les deux sens. Pour accéder à cette fonctionnalité il faut l'avoir choisi dans le menu                                                                                                                                                                       |
 
 |                                 |                                                                                                                                                                                                                          |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -545,11 +545,11 @@ Cas d'utilisation 40 : Erreur apparaît si le nom de la machine extérieure est 
 | **Intervenants et Intérêts:**   |Utilisateur qui entre les informations dans les différents champs, systeme qui divise le réseau en sous-réseaux                                                                                                                                                                                                                          |
 | **Précondition:**               | Entrer une adresse IP, le masque et le nombre de sous-réseaux souhaité                                                                                                                                                                                                    |
 | **Scénario nominal:**           | 1.L’utilisateur entre une adresse IP 		     2.L’utilisateur choisit le nombre de sous-réseaux  		     3. L’utilisateur choisit la notation entre CIDR et VLSM 		     4. Le résultat s’affiche ou un message d’erreur s’affiche |
-| **Extensions:**                 |                                                                                                                                                                                                                          |
-| **Garantie minimale :**         | affiche un message d’erreur                                                                                                                                                                                              |
+| **Extensions:**                 |le système detecte si les différents champs sont bien écrits                                                                                                                                                                                                                          |
+| **Garantie minimale :**         | un message sera affiché                                                                                                                                                                                              |
 | **Garantie en cas de succès :** | Affiche le résultat                                                                                                                                                                                                      |
 | **Déclencheur :**               | Valider                                                                                           |
-| **informations connexes :**     |                                                                                                               
+| **informations connexes :**     | Pour accéder à cette fonctionnalité il faut l'avoir choisi dans le menu                                                                                                              
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 |                                 |                                                                  |
@@ -559,14 +559,14 @@ Cas d'utilisation 40 : Erreur apparaît si le nom de la machine extérieure est 
 | **Contexte d'utilisation :**    | L'utilisateur souhaite pouvoir calculer les CRC                  |
 | **Portée:**                     | site web                                                         |
 | **Acteur principal :**          | utilisateur                                                      |
-| **Intervenants et Intérêts:**   |                                                                  |
+| **Intervenants et Intérêts:**   | utilisateur écrit dans les différents champs, le système calcul le CRC                                                                 |
 | **Précondition:**               | l'utilisateur doit avoir choisi la fonctionnalité dans le menu  |
 | **Scénario nominal:**           | 1.l'utilisateur choisit la fonctionnalité calcul CRC dans le menu |
-| **Extensions:**                 |                                                                  |
+| **Extensions:**                 | le système détecte si les champs sont bien remplit.                                                                 |
 | **Garantie minimale :**         | la page sera chargée                                     |
 | **Garantie en cas de succès :** | l'utilisateur arrive sur la page du calcul CRC souhaitée         |
 | **Déclencheur :**               | clique sur Calcul CRC dans le menu                               |
-| **informations connexes :**     | la page contient les éléments nécessaires au calcul de CRC        |
+| **informations connexes :**     | la page contient les éléments nécessaires au calcul de CRC. Pour accéder à cette fonctionnalité il faut l'avoir choisi dans le menu       |
 
 |                                 |                                                                    |
 |---------------------------------|--------------------------------------------------------------------|
@@ -575,14 +575,14 @@ Cas d'utilisation 40 : Erreur apparaît si le nom de la machine extérieure est 
 | **Contexte d'utilisation :**    |                                                                    |
 | **Portée:**                     |                                                                    |
 | **Acteur principal :**          |                                                                    |
-| **Intervenants et Intérêts:**   |                                                                    |
+| **Intervenants et Intérêts:**   | utilisateur et le système                                                                   |
 | **Précondition:**               | l'utilisateur doit avoir choisi la fonctionnalité dans le menu    |
 | **Scénario nominal:**           | 1.l'utilisateur choisit la fonctionnalité Sniffer Nmap dans le menu |
-| **Extensions:**                 |                                                                    |
+| **Extensions:**                 | le système détecte si les champs sont bien remplit.                                                                   |
 | **Garantie minimale :**         | Un message d’erreur apparaît                                       |
 | **Garantie en cas de succès :** | l'utilisateur arrive sur la page du Sniffer Nmap souhaitée          |
 | **Déclencheur :**               | clique sur Sniffer Nmap dans le menu                               |
-| **informations connexes :**     | la page contient les éléments nécessaires au calcul de Sniffer Nmap |
+| **informations connexes :**     | la page contient les éléments nécessaires au calcul de Sniffer Nmap.Pour accéder à cette fonctionnalité il faut l'avoir choisi dans le menu |
 
 Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces informations dans les plus bref délais.
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
