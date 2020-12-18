@@ -288,8 +288,13 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 | tableau de l'echelle de probabilitée du risque | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : tableau de l'echelle de probabilitée du risque                                                          | Date: <20/11/2020> |   |   |   |
-| Responsable de la Redaction: Raffaele                                                      |                    |   |   |   |
-|                                                                                           |                    |   |   |   |
+| Responsable de la Redaction: tom                                                      |                    |   |   |   |
+|        
+
+                                                                                   |                    |   |   |   |
+|Degré |1 |2 |3 |4 |5 |
+|def |Improbable |Faiblement probable |Moyennement probable |Fortement probable |Déjà arrivé ou certain d’arriver |
+
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Annexe 5 : tableau de l'echelle de l'impact d'un risque sur le projet
@@ -299,8 +304,8 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 | Responsable de la Redaction: Tom                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 
-|Degré |1 |2 |3 |4 |5 |
-|def |Improbable |Faiblement probable |Moyennement probable |Fortement probable |Déjà arrivé ou certain d’arriver |
+|Degré |1 |2 |3 |
+|def |Impact faible  |Impact moyen |Impact retard  |
 
 
 
@@ -311,18 +316,6 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 | Document : tableau des differents risque avec leur impact                                                           | Date: <18/12/2020> |   |   |   |
 | Responsable de la Redaction: Tom                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
-
-|Degré |1 |2 |3 |
-|def |Impact faible  |Impact moyen |Impact retard  |
-
-`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-## Annexe 7 : Les cas d'utilisations
-| Les cas d’utilisations du projet tuteuré | Version : 1        |   |   |   |
-|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
-| Document : cas d’utilisations                                                            | Date: <18/12/2020> |   |   |   |
-| Responsable de la Redaction: Tom                                                      |                    |   |   |   |
-|                                                                                           |                    |   |   |   |
-
 
 |Risque  |Probabilité du risque  |Impact  |
 |-|-|-|
@@ -344,6 +337,14 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 |Mauvaise entente avec le client |2 |3 | 
 |Client incertain  |2 |2|
 |Conflit au sein de l’équipe |2 |3|
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+## Annexe 7 : Les cas d'utilisations
+| Les cas d’utilisations du projet tuteuré | Version : 1        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : cas d’utilisations                                                            | Date: <18/12/2020> |   |   |   |
+| Responsable de la Redaction: Tom                                                      |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
 
 
 ### Les différents Niveaux
