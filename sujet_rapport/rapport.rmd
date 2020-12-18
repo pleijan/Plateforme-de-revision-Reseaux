@@ -289,11 +289,12 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : tableau de l'echelle de probabilitée du risque                                                          | Date: <20/11/2020> |   |   |   |
 | Responsable de la Redaction: tom                                                      |                    |   |   |   |
-|        
+|                                                                                           |                    |   |   |   |
 
-                                                                                   |                    |   |   |   |
-|Degré |1 |2 |3 |4 |5 |
-|def |Improbable |Faiblement probable |Moyennement probable |Fortement probable |Déjà arrivé ou certain d’arriver |
+
+|Degré |1          |2                   |3                    |4                  |5                                |
+|------|-----------|--------------------|---------------------|-------------------|---------------------------------|
+|def   |Improbable |Faiblement probable |Moyennement probable |Fortement probable |Déjà arrivé ou certain d’arriver |
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
@@ -304,8 +305,9 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 | Responsable de la Redaction: Tom                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 
-|Degré |1 |2 |3 |
-|def |Impact faible  |Impact moyen |Impact retard  |
+|Degré |1              |2            |3              |
+|------|---------------|-------------|---------------|
+|def   |Impact faible  |Impact moyen |Impact retard  |
 
 
 
@@ -317,26 +319,26 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 | Responsable de la Redaction: Tom                                                      |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 
-|Risque  |Probabilité du risque  |Impact  |
-|-|-|-|
-|Absence de membres pour raison quelconque  |4 |1 |
-|Abandon de certains membres de l’équipe  |2 |3 |
-|travail en simultanée pour l’université |5 |2 |
-|Manque de connaissances |3 |2 |
-|Matériel défectueux |2 |1 |
-|Mauvaise communication |2 |2| 
-|Mauvaise répartition des tâches |1 |2 |
-|Erreur de commit (pertes des données) |1 |2 |
-|Sous-estimer de la complexité d’une tache. |2 |2| 
-|Insatisfaction du client |2 |2 |
-| Pertes de motivation de l’équipe |3 |3 |
-|Mauvaise exécution des tests |3 |2| 
-|Mauvaise cohésion d’équipe |3 |2| 
-|Evolution du projet  |4 |2 |
-|client injoignable |3 |2|
-|Mauvaise entente avec le client |2 |3 | 
-|Client incertain  |2 |2|
-|Conflit au sein de l’équipe |2 |3|
+|Risque                                     |Probabilité du risque  |Impact   |
+|-------------------------------------------|-----------------------|---------|
+|Absence de membres pour raison quelconque  |4                      |1        |
+|Abandon de certains membres de l’équipe    |2                      |3        |
+|travail en simultanée pour l’université    |5                      |2        |
+|Manque de connaissances                    |3                      |2        |
+|Matériel défectueux                        |2                      |1        |
+|Mauvaise communication                     |2                      |2        | 
+|Mauvaise répartition des tâches            |1                      |2        |
+|Erreur de commit (pertes des données)      |1                      |2        |
+|Sous-estimer de la complexité d’une tache. |2                      |2        | 
+|Insatisfaction du client                   |2                      |2        |
+| Pertes de motivation de l’équipe          |3                      |3        |
+|Mauvaise exécution des tests               |3                      |2        | 
+|Mauvaise cohésion d’équipe                 |3                      |2        | 
+|Evolution du projet                        |4                      |2        |
+|client injoignable                         |3                      |2        |
+|Mauvaise entente avec le client            |2                      |3        | 
+|Client incertain                           |2                      |2        |
+|Conflit au sein de l’équipe                |2                      |3        |
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Annexe 7 : Les cas d'utilisations
