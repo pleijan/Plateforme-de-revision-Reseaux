@@ -281,34 +281,34 @@ Tout d'abord, la réflexion du sujet a duré une semaine. Ensuite nous avons ré
 | - Traduction d'une adresse IP Decimal <-> binaire						|
 | - Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM		|
 | - Fonction qui calcul un CRC											|
-| - Trouver l'adresse IP d'une machine exterieur						|
+| - Trouver l'adresse IP d'une machine exterieure						|
 
 
 
-| Niveau Sous Fonction                                                 |
-|----------------------------------------------------------------------|
-| - écrire dans les champs de textes l'adresse IP hex-dec              |
-| - écrire dans les champs de textes l'adresse IP bin-dec              |
-| - écrire dans les champs de texte l'adresse IP pour les Sous-réseaux |
-| - écrire le masque avec la notation CIDR ou VLSM                     |
-| - écrire le nombre de sous-réseaux                                   |
-| - écrire dans les champs pour le CRC								   |
-| - écrire dans les champs de textes l'adresse de la machine           |
-| - valider hex-dec                                                    |
-| - valider bin-dec                                                    |
-| - valider pour les Sous-réseaux                                      |
-| - valider pour le CRC												   |
-| - valider pour trouver l'adresse IP de la machine extérieur		   |
-| - Affiche l'adresse IP traduite hex-dec							   |
-| - Affiche l'adresse IP traduite bin-dec							   |
-| - Affiche les sous-réseaux										   |
-| - Affiche le CRC 													   |
-| - Affiche l'adresse IP de la machine extérieur					   |
-| - Erreur apparait si adresse IP hex-dec invalide                     |
-| - Erreur apparait si adresse IP bin-dec invalide                     |
-| - Erreur apparait si adresse IP pour les Sous-réseaux est invalide   |
-| - Erreur apparait si champ du CRC invalide						   |
-| - Erreur apparait si le nom de la machine extérieure est invalide	   |
+| Niveau Sous Fonction                                                 	|
+|-----------------------------------------------------------------------|
+| - écrire dans les champs de textes l'adresse IP hex-dec               |
+| - écrire dans les champs de textes l'adresse IP bin-dec               |
+| - écrire dans les champs de texte l'adresse IP pour les Sous-réseaux  |
+| - écrire le masque avec la notation CIDR ou VLSM                      |
+| - écrire le nombre de sous-réseaux                                    |
+| - écrire dans les champs pour le CRC								    |
+| - écrire dans les champs de textes l'adresse de la machine extérieure |
+| - valider hex-dec                                                     |
+| - valider bin-dec                                                     |
+| - valider pour les Sous-réseaux                                       |
+| - valider pour le CRC												    |
+| - valider pour trouver l'adresse IP de la machine extérieure		    |
+| - Affiche l'adresse IP traduite hex-dec							    |
+| - Affiche l'adresse IP traduite bin-dec							    |
+| - Affiche les sous-réseaux										    |
+| - Affiche le CRC 													    |
+| - Affiche l'adresse IP de la machine extérieure					    |
+| - Erreur apparaît si adresse IP hex-dec invalide                      |
+| - Erreur apparaît si adresse IP bin-dec invalide                      |
+| - Erreur apparaît si adresse IP pour les Sous-réseaux est invalide    |
+| - Erreur apparaît si champ du CRC invalide						    |
+| - Erreur apparaît si le nom de la machine extérieure est invalide	    |
 
 
 ![figure : cas d'utilisations](../img/casUtilisation.png)
@@ -367,7 +367,7 @@ Cas d'utilisation 12  : Consulter la page sniffer nmap
 
 - Niveau : Utilisateur     					 
 
-Cas d'utilisation 13 : Consulter la page pour Trouver l'adresse IP d'une machine exterieur
+Cas d'utilisation 13 : Consulter la page pour Trouver l'adresse IP d'une machine exterieure
 
 - Niveau : Utilisateur
  
@@ -389,7 +389,7 @@ Cas d'utilisation 17 : Calcul d'un CRC
 
 - Niveau : Utilisateur
  
-Cas d'utilisation 18 : Trouver l'adresse IP d'une machine exterieur
+Cas d'utilisation 18 : Trouver l'adresse IP d'une machine exterieure
 
 - Niveau : Utilisateur
 
@@ -406,7 +406,7 @@ Cas d'utilisation 21 : Affiche l'adresse IP traduite hex-dec
 
 - Niveau : Sous-fonction
  
-Cas d'utilisation 22 : Erreur apparait si adresse IP hex-dec invalide
+Cas d'utilisation 22 : Erreur apparaît si adresse IP hex-dec invalide
 
 - Niveau : Sous-fonction
 
@@ -422,7 +422,7 @@ Cas d'utilisation 25 : Affiche l'adresse IP traduite bin-dec
 
 - Niveau : Sous-fonction
  
-Cas d'utilisation 26 : Erreur apparait si adresse IP bin-dec invalide
+Cas d'utilisation 26 : Erreur apparaît si adresse IP bin-dec invalide
 
 - Niveau : Sous-fonction
 
@@ -438,7 +438,7 @@ Cas d'utilisation 29  : écrire le nombre de sous-réseaux
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 30 : valider pour les Sous-réseaux
+Cas d'utilisation 30 : valider pour les sous-réseaux
 
 - Niveau : Sous-fonction
  
@@ -446,7 +446,7 @@ Cas d'utilisation 31 : Affiche les sous-réseaux
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 32 : Erreur apparait si adresse IP pour les Sous-réseaux est invalide
+Cas d'utilisation 32 : Erreur apparaît si adresse IP pour les Sous-réseaux est invalide
 
 - Niveau : Sous-fonction
  
@@ -462,23 +462,23 @@ Cas d'utilisation 35  : Affiche le CRC
 
 - Niveau : Sous-fonction     					 
 
-Cas d'utilisation 36 : Erreur apparait si champ du CRC invalide
+Cas d'utilisation 36 : Erreur apparaît si champ du CRC invalide
 
 - Niveau : Sous-fonction
  
-Cas d'utilisation 37 : écrire dans le formulaire le nom de la machine extérieur
+Cas d'utilisation 37 : écrire dans le formulaire le nom de la machine extérieure
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 38 : valider pour trouver l'adresse IP de la machine extérieur
+Cas d'utilisation 38 : valider pour trouver l'adresse IP de la machine extérieure
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 39  : Affiche l'adresse IP de la machine extérieur
+Cas d'utilisation 39  : Affiche l'adresse IP de la machine extérieure
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est invalide
+Cas d'utilisation 40 : Erreur apparaît si le nom de la machine extérieure est invalide
 
 - Niveau : Sous-fonction
 
@@ -490,15 +490,15 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 |---------------------------------|----------------------------------------------------------------------------------|
 | **Cas d'utilisation 1:**        | Choisir une fonctionnalité dans le menu                                          |
 | **Nom:**                        | Choisir une fonctionnalité dans le menu                                          |
-| **Contexte d'utilisation :**    | L’utilisateur aura le choix de consulter les différente fonctionnalité           |
+| **Contexte d'utilisation :**    | L’utilisateur aura le choix de consulter les différentes fonctionnalités           |
 | **Portée:**                     | site web                                                                         |
 | **Acteur principal :**          | Utilisateur                                                                      |
 | **Intervenants et Intérêts:**   |                                                                                  |
 | **Précondition:**               |                                                                                  |
-| **Scénario nominal:**           | La page s’affiche et la fonction affiche un résultat donc répond a l’utilisateur |
+| **Scénario nominal:**           | La page s’affiche et la fonction affiche un résultat donc répond à l’utilisateur |
 | **Extensions:**                 |                                                                                  |
-| **Garantie minimale :**         | Accéder a la page souhaité par l’utilisateur                                     |
-| **Garantie en cas de succès :** | La page s’affiche et la fonction affiche un résultat donc répond a l’utilisateur |
+| **Garantie minimale :**         | Accéder à la page souhaité par l’utilisateur                                     |
+| **Garantie en cas de succès :** | La page s’affiche et la fonction affiche un résultat donc répond à l’utilisateur |
 | **Déclencheur :**               | L’utilisateur doit sélectionner de lui même la fonction qu’il veut voir          |
 | **informations connexes :**     | L’utilisateur ne peux pas modifier le site web comme il souhaite                 |
 
@@ -507,15 +507,15 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 2:**        | Traduction Décimal < - > Hexadécimal                                                                                                                                        |
 | **Nom:**                        | Traduction Décimal < - > Hexadécimal                                                                                                                                        |
-| **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des décimal en hexadécimal ou inverse                                                                                                       |
+| **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des adresses IP décimal en hexadécimal ou inverse                                                                                                       |
 | **Portée:**                     |système                                                                                                                                                                             |
 | **Acteur principal :**          | Utilisateur                                                                                                                                                                 |
 | **Intervenants et Intérêts:**   |                                                                                                                                                                             |
-| **Précondition:**               | Avoir des décimal ou Hexadécimal a traduire                                                                                                                                 |
-| **Scénario nominal:**           | 1.L’utilisateur choisis si il veut traduire de décimal a hexadécimal  		     2.L’utilisateur entre ses valeurs 		     3. Le résultat s’affiche ou un message d’erreur s’affiche |
+| **Précondition:**               | Avoir des adresses IP décimal ou Hexadécimal à traduire                                                                                                                                 |
+| **Scénario nominal:**           | 1.L’utilisateur choisi s'il veut traduire de décimal à hexadécimal  		     2.L’utilisateur entre ses valeurs 		     3. Le résultat s’affiche ou un message d’erreur s’affiche |
 | **Extensions:**                 |                                                                                                                                                                             |
-| **Garantie minimale :**         | Traduis des deux sens                                                                                                                                                       |
-| **Garantie en cas de succès :** | Traduis des deux sens et affiche un message d’erreur si besoin                                                                                                              |
+| **Garantie minimale :**         | Traduit dans les deux sens                                                                                                                                                       |
+| **Garantie en cas de succès :** | Traduit dans les deux sens et affiche un message d’erreur si besoin                                                                                                              |
 | **Déclencheur :**               | L’utilisateur doit entrer ses valeurs et ensuite appuyer  sur Valider                                                                                                       |
 | **informations connexes :**     |                                                                                                                                                                             |
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
@@ -527,11 +527,11 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 | **Portée:**                     |                                                                                                                                                                         |
 | **Acteur principal :**          | Utilisateur                                                                                                                                                             |
 | **Intervenants et Intérêts:**   |                                                                                                                                                                         |
-| **Précondition:**               | Avoir des décimal ou Binaire a traduire                                                                                                                                 |
-| **Scénario nominal:**           | 1.L’utilisateur choisis si il veut traduire de décimal en Binaire 		     2.L’utilisateur entre ses valeurs 		     3. Le résultat s’affiche ou un message d’erreur s’affiche |
+| **Précondition:**               | Avoir des décimal ou Binaire à traduire                                                                                                                                 |
+| **Scénario nominal:**           | 1.L’utilisateur choisit s'il veut traduire de décimal en Binaire 		     2.L’utilisateur entre ses valeurs 		     3. Le résultat s’affiche ou un message d’erreur s’affiche |
 | **Extensions:**                 |                                                                                                                                                                         |
-| **Garantie minimale :**         | Traduis des deux sens                                                                                                                                                   |
-| **Garantie en cas de succès :** | Traduis des deux sens et affiche un message d’erreur si besoin                                                                                                          |
+| **Garantie minimale :**         | Traduit dans les deux sens                                                                                                                                                   |
+| **Garantie en cas de succès :** | Traduit dans les deux sens et affiche un message d’erreur si besoin                                                                                                          |
 | **Déclencheur :**               | L’utilisateur doit entrer ses valeurs et ensuite appuyer  sur Valider                                                                                                   |
 | **informations connexes :**     |                                                                                                                                                                         |
 
@@ -539,16 +539,16 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 4:**        | Diviser les réseaux en Sous-réseaux avec les notations CIDR/VLSM                                                                                                                                                         |
 | **Nom:**                        | Diviser les réseaux en Sous-réseaux avec les notations CIDR/VLSM                                                                                                                                                         |
-| **Contexte d'utilisation :**    | L’utilisateur entre une adresse IP et il aura en résultat les sous réseaux , il choisis le nombre de sous  réseaux qu’il souhaite et il choisis aussi sous quelle notation il veut                                       |
+| **Contexte d'utilisation :**    | L’utilisateur entre une adresse IP et il aura les sous-réseaux , il choisit le nombre de sous  réseaux qu’il souhaite et il choisit aussi sous quelle notation il veut                                       |
 | **Portée:**                     |                                                                                                                                                                                                                          |
 | **Acteur principal :**          | Utilisateur                                                                                                                                                                                                              |
 | **Intervenants et Intérêts:**   |                                                                                                                                                                                                                          |
 | **Précondition:**               | Entrer une adresse IP                                                                                                                                                                                                    |
-| **Scénario nominal:**           | 1.L’utilisateur entre une adresse IP 		     2.L’utilisateur Choisis le nombre de sous réseaux  		     3. L’utilisateur choisis la notation entre CIDR et VLSM 		     4. Le résultat s’affiche ou un message d’erreur s’affiche |
+| **Scénario nominal:**           | 1.L’utilisateur entre une adresse IP 		     2.L’utilisateur choisit le nombre de sous-réseaux  		     3. L’utilisateur choisit la notation entre CIDR et VLSM 		     4. Le résultat s’affiche ou un message d’erreur s’affiche |
 | **Extensions:**                 |                                                                                                                                                                                                                          |
 | **Garantie minimale :**         | affiche un message d’erreur                                                                                                                                                                                              |
 | **Garantie en cas de succès :** | Affiche le résultat                                                                                                                                                                                                      |
-| **Déclencheur :**               | L’utilisateur doit entrer ses valeurs choisir le nombre de sous réseaux et choisir la notation et ensuite appuyer  sur Valider                                                                                           |
+| **Déclencheur :**               | L’utilisateur doit entrer ses valeurs, choisir le nombre de sous réseaux et choisir la notation et ensuite appuyer  sur Valider                                                                                           |
 | **informations connexes :**     |                                                                                                               
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
@@ -560,13 +560,13 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 | **Portée:**                     | site web                                                         |
 | **Acteur principal :**          | utilisateur                                                      |
 | **Intervenants et Intérêts:**   |                                                                  |
-| **Précondition:**               | l'utilisateur doit avoir choisie la fonctionnalité dans le menu  |
-| **Scénario nominal:**           | 1.l'utilisateur choisi la fonctionnalité calcul CRC dans le menu |
+| **Précondition:**               | l'utilisateur doit avoir choisi la fonctionnalité dans le menu  |
+| **Scénario nominal:**           | 1.l'utilisateur choisit la fonctionnalité calcul CRC dans le menu |
 | **Extensions:**                 |                                                                  |
-| **Garantie minimale :**         | Un message d’erreur apparait                                     |
-| **Garantie en cas de succès :** | l'utilisateur arrive sur la page du calcul CRC souhaité          |
+| **Garantie minimale :**         | Un message d’erreur apparaît                                     |
+| **Garantie en cas de succès :** | l'utilisateur arrive sur la page du calcul CRC souhaitée         |
 | **Déclencheur :**               | clique sur Calcul CRC dans le menu                               |
-| **informations connexes :**     | la page contient les éléments nécessaire au calcul de CRC        |
+| **informations connexes :**     | la page contient les éléments nécessaires au calcul de CRC        |
 
 |                                 |                                                                    |
 |---------------------------------|--------------------------------------------------------------------|
@@ -576,13 +576,13 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 | **Portée:**                     |                                                                    |
 | **Acteur principal :**          |                                                                    |
 | **Intervenants et Intérêts:**   |                                                                    |
-| **Précondition:**               | l'utilisateur doit avoir choisie la fonctionnalité dans le menu    |
-| **Scénario nominal:**           | 1.l'utilisateur choisi la fonctionnalité Sniffer Nmap dans le menu |
+| **Précondition:**               | l'utilisateur doit avoir choisi la fonctionnalité dans le menu    |
+| **Scénario nominal:**           | 1.l'utilisateur choisit la fonctionnalité Sniffer Nmap dans le menu |
 | **Extensions:**                 |                                                                    |
-| **Garantie minimale :**         | Un message d’erreur apparait                                       |
-| **Garantie en cas de succès :** | l'utilisateur arrive sur la page du Sniffer Nmap souhaité          |
+| **Garantie minimale :**         | Un message d’erreur apparaît                                       |
+| **Garantie en cas de succès :** | l'utilisateur arrive sur la page du Sniffer Nmap souhaitée          |
 | **Déclencheur :**               | clique sur Sniffer Nmap dans le menu                               |
-| **informations connexes :**     | la page contient les éléments nécessaire au calcul de Sniffer Nmap |
+| **informations connexes :**     | la page contient les éléments nécessaires au calcul de Sniffer Nmap |
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
@@ -590,32 +590,32 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 7:**        | Trouver adresse IP d’une machine extérieur                                                                            |
 | **Nom:**                        | Trouver adresse IP d’une machine extérieur                                                                            |
-| **Contexte d'utilisation :**    | L’utilisateur tape le nom d’un site et il aura en retour l’adresse IP du site voulu                                   |
+| **Contexte d'utilisation :**    | L’utilisateur tape le nom d’un site et il aura en retour l’adresse IP du site souhaité                                   |
 | **Portée:**                     |                                                                                                                       |
 | **Acteur principal :**          | utilisateur                                                                                                           |
 | **Intervenants et Intérêts:**   |                                                                                                                       |
 | **Précondition:**               | Avoir un site                                                                                                         |
-| **Scénario nominal:**           | 1.L’utilisateur entre le nom du site  2. L’utilisateur clique sur validé 3. L’adresse Ip du site voulu sera retourner |
+| **Scénario nominal:**           | 1.L’utilisateur entre le nom du site  2. L’utilisateur clique sur le bouton valider 3. L’adresse Ip du site souhaité sera retourner |
 | **Extensions:**                 |                                                                                                                       |
-| **Garantie minimale :**         | Un message d’erreur apparait                                                                                          |
+| **Garantie minimale :**         | Un message d’erreur apparaît                                                                                          |
 | **Garantie en cas de succès :** | La fonctionnalité lui retourne l’adresse ip                                                                           |
-| **Déclencheur :**               | L’utilisateur entre Le nom du site puis clique sur le bouton validé pour avoir un résultat ou un message d’erreur     |
+| **Déclencheur :**               | L’utilisateur entre Le nom du site puis clique sur le bouton valider pour avoir un résultat ou un message d’erreur     |
 | **informations connexes :**     |                                                                                                                       |
 
 |                                 |                                                                                                         |
 |---------------------------------|---------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 8:**        | Consulter la page Traduction Décimal <-> hexadécimal                                                    |
 | **Nom:**                        | Consulter la page Traduction Décimal <-> hexadécimal                                                    |
-| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaité |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
 | **Portée:**                     | site web                                                                                                |
 | **Acteur principal :**          | Utilisateur                                                                                             |
 | **Intervenants et Intérêts:**   |                                                                                                         |
-| **Précondition:**               | Être sur la page d’accueil et sélectionné la fonctionnalité Traduction Décimal <-> hexadécimal          |
+| **Précondition:**               | Être sur la page d’accueil et sélectionner la fonctionnalité Traduction Décimal <-> hexadécimal          |
 | **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité  2. Une page s’ouvre                                  |
 | **Extensions:**                 |                                                                                                         |
 | **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                             |
-| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les texte etc                                                           |
-| **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
+| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                           |
+| **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                               |
 | **informations connexes :**     |                                                                                                         |
 
 
@@ -625,32 +625,32 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 |---------------------------------|---------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 9:**        | Consulter la page Traduction Décimal <-> binaire                                                        |
 | **Nom:**                        | Consulter la page Traduction Décimal <-> binaire                                                        |
-| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaité |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
 | **Portée:**                     | site web                                                                                                |
 | **Acteur principal :**          | Utilisateur                                                                                             |
 | **Intervenants et Intérêts:**   |                                                                                                         |
-| **Précondition:**               | Être sur la page d’accueil et sélectionné la fonctionnalité Traduction Décimal <-> binaire              |
+| **Précondition:**               | Être sur la page d’accueil et sélectionner la fonctionnalité Traduction Décimal <-> binaire              |
 | **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité  2. Une page s’ouvre                                  |
 | **Extensions:**                 |                                                                                                         |
 | **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                             |
-| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les texte etc                                                           |
-| **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
+| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                           |
+| **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                               |
 | **informations connexes :**     |                                                                                                         |
 
 |                                 |                                                                                                         |
 |---------------------------------|---------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 10:**       | Consulter la page Sous-réseaux avec les notations CIDR/VLSM                                             |
 | **Nom:**                        | Consulter la page Sous-réseaux avec les notations CIDR/VLSM                                             |
-| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaité |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
 | **Portée:**                     | site web                                                                                                |
 | **Acteur principal :**          | Utilisateur                                                                                             |
 | **Intervenants et Intérêts:**   |                                                                                                         |
-| **Précondition:**               | Être sur la page d’accueil et sélectionné la fonctionnalité Sous-réseaux avec les notations CIDR/VLSM              |
+| **Précondition:**               | Être sur la page d’accueil et sélectionner la fonctionnalité Sous-réseaux avec les notations CIDR/VLSM              |
 | **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité  2. Une page s’ouvre                                  |
 | **Extensions:**                 |                                                                                                         |
 | **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                             |
-| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les texte etc                                                           |
-| **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
+| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                           |
+| **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                               |
 | **informations connexes :**     |                                                                                                         |
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
@@ -662,27 +662,27 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 | **Portée:**                     | site web                                                                                                |
 | **Acteur principal :**          | Utilisateur                                                                                             |
 | **Intervenants et Intérêts:**   |                                                                                                         |
-| **Précondition:**               | Être sur la page d’accueil et sélectionné la fonctionnalité Calcul CIDR                                 |
+| **Précondition:**               | Être sur la page d’accueil et sélectionner la fonctionnalité Calcul CIDR                                 |
 | **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité  2. Une page s’ouvre                                  |
 | **Extensions:**                 |                                                                                                         |
 | **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                             |
-| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les texte etc                                                           |
-| **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
+| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                           |
+| **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                               |
 | **informations connexes :**     |                                                                                                         |
 
 |                                 |                                                                                                         |
 |---------------------------------|---------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 12:**       | Consulter la page sniffer nmap                                                                          |
 | **Nom:**                        | Consulter la page sniffer nmap                                                                          |
-| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaité |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
 | **Portée:**                     | site web                                                                                                |
 | **Acteur principal :**          | Utilisateur                                                                                             |
 | **Intervenants et Intérêts:**   |                                                                                                         |
-| **Précondition:**               | Être sur la page d’accueil et sélectionné la fonctionnalité sniffer nmap                                |
+| **Précondition:**               | Être sur la page d’accueil et sélectionner la fonctionnalité sniffer nmap                                |
 | **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité  2. Une page s’ouvre                                  |
 | **Extensions:**                 |                                                                                                         |
 | **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                             |
-| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les texte etc                                                           |
+| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                           |
 | **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
 | **informations connexes :**     |                                                                                                         |
 
@@ -697,12 +697,12 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 | **Portée:**                     | site web                                                                                                 |
 | **Acteur principal :**          | Utilisateur                                                                                              |
 | **Intervenants et Intérêts:**   |                                                                                                          |
-| **Précondition:**               | Être sur la page d’accueil et sélectionné la fonctionnalité Trouver l'adresse IP d'une machine extérieur |
+| **Précondition:**               | Être sur la page d’accueil et sélectionner la fonctionnalité Trouver l'adresse IP d'une machine extérieur |
 | **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité  2. Une page s’ouvre                                   |
 | **Extensions:**                 |                                                                                                          |
 | **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                              |
-| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les texte etc                                                            |
-| **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                                |
+| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                            |
+| **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                                |
 | **informations connexes :**     |                                                                                                          |
 
 
@@ -710,16 +710,16 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 14:**       | Traduction d'une adresse IP Décimal <-> hexadécimal                                                                                        |
 | **Nom:**                        | Traduction d'une adresse IP Décimal <-> hexadécimal                                                                                        |
-| **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des décimal en hexadécimal ou inverse                                                                      |
+| **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des adresse IP décimal en hexadécimal ou inverse                                                                      |
 | **Portée:**                     | systeme                                                                                                                                    |
 | **Acteur principal :**          | Utilisateur                                                                                                                                |
 | **Intervenants et Intérêts:**   |                                                                                                                                            |
-| **Précondition:**               | Avoir des décimal ou Hexadécimal a traduire , entrer des valeurs dans les champs                                                           |
-| **Scénario nominal:**           | 1.L’utilisateur choisis si il veut traduire de décimal a hexadécimal  2.L’utilisateur entre ses valeurs 3.Valider 4. Le résultat s’affiche |
+| **Précondition:**               | Avoir des décimal ou Hexadécimal à traduire, entrer des valeurs dans les champs                                                           |
+| **Scénario nominal:**           | 1.L’utilisateur choisit si il veut traduire de décimal à hexadécimal  2.L’utilisateur entre ses valeurs 3.Valider 4. Le résultat s’affiche |
 | **Extensions:**                 | 4.a un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré l'adresse IP                                  |
 | **Garantie minimale :**         | affiche un message d’erreur si besoin                                                                                                      |
-| **Garantie en cas de succès :** | Traduis dans les deux sens                                                                                                                 |
-| **Déclencheur :**               | L’utilisateur doit entrer ses valeurs et ensuite appuyer  sur Valider                                                                      |
+| **Garantie en cas de succès :** | Traduit dans les deux sens                                                                                                                 |
+| **Déclencheur :**               | L’utilisateur doit entrer ses valeurs et ensuite appuyer sur Valider                                                                      |
 | **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page  Traduction d'une adresse IP Décimal <-> hexadécimal                  |
 
 
@@ -730,32 +730,32 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 15:**       | Traduction d'une adresse IP Décimal <-> binaire                                                                                        |
 | **Nom:**                        | Traduction d'une adresse IP Décimal <-> binaire                                                                                        |
-| **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des décimal en hexadécimal ou inverse                                                                  |
+| **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des adresses IP décimal en hexadécimal ou inverse                                                                  |
 | **Portée:**                     | systeme                                                                                                                                |
 | **Acteur principal :**          | Utilisateur                                                                                                                            |
 | **Intervenants et Intérêts:**   |                                                                                                                                        |
-| **Précondition:**               | Avoir des décimal ou Binaire a traduire, entrer des valeurs dans les champs                                                            |
-| **Scénario nominal:**           | 1.L’utilisateur choisis si il veut traduire de décimal en Binaire 2.L’utilisateur entre ses valeurs 3.Valider 4. Le résultat s’affiche |
+| **Précondition:**               | Avoir des adresses IP décimal ou Binaire à traduire, entrer des valeurs dans les champs                                                            |
+| **Scénario nominal:**           | 1.L’utilisateur choisit s'il veut traduire de décimal en Binaire 2.L’utilisateur entre ses valeurs 3.Valider 4. Le résultat s’affiche |
 | **Extensions:**                 | 4.a un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré l'adresse IP                              |
 | **Garantie minimale :**         | affiche un message d’erreur si besoin                                                                                                  |
-| **Garantie en cas de succès :** | Traduis dans les deux sens                                                                                                             |
-| **Déclencheur :**               | L’utilisateur doit entrer ses valeurs et ensuite appuyer  sur Valider                                                                  |
+| **Garantie en cas de succès :** | Traduit dans les deux sens                                                                                                             |
+| **Déclencheur :**               | L’utilisateur doit entrer ses valeurs et ensuite appuyer sur Valider                                                                  |
 | **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Traduction d'une adresse IP Décimal <-> binaire                   |
 
 |                                 |                                                                                                                                                                                                                                                                                                                                            |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 16:**       | Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM                                                                                                                                                                                                                                                                             |
 | **Nom:**                        | Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM                                                                                                                                                                                                                                                                             |
-| **Contexte d'utilisation :**    | L’utilisateur entre une adresse IP et il aura en résultat les sous réseaux , il choisis le nombre de sous  réseaux qu’il souhaite et il choisis aussi sous quelle notation il veut                                                                                                                                                         |
+| **Contexte d'utilisation :**    | L’utilisateur entre une adresse IP et il aura en résultat les sous-réseaux , il choisit le nombre de sous-réseaux qu’il souhaite et il choisit aussi sous quelle notation il veut                                                                                                                                                         |
 | **Portée:**                     | systeme                                                                                                                                                                                                                                                                                                                                    |
 | **Acteur principal :**          | Utilisateur                                                                                                                                                                                                                                                                                                                                |
 | **Intervenants et Intérêts:**   |                                                                                                                                                                                                                                                                                                                                            |
 | **Précondition:**               | Entrer une adresse IP                                                                                                                                                                                                                                                                                                                      |
-| **Scénario nominal:**           | 1.L’utilisateur entre une adresse IP 2.L’utilisateur Choisis le nombre de sous réseaux  3. L’utilisateur choisis la notation entre CIDR et VLSM 4.Valider 5. Le résultat s’affiche                                                                                                                                                         |
-| **Extensions:**                 | 4.a un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entrer l'adresse IP 4.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entrer le masque 4.c un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entrer le nombre de sous-réseaux |
+| **Scénario nominal:**           | 1.L’utilisateur entre une adresse IP 2.L’utilisateur choisit le nombre de sous-réseaux  3. L’utilisateur choisit la notation entre CIDR et VLSM 4.Valider 5. Le résultat s’affiche                                                                                                                                                         |
+| **Extensions:**                 | 4.a un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré l'adresse IP 4.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré le masque 4.c un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré le nombre de sous-réseaux |
 | **Garantie minimale :**         | affiche un message d’erreur si besoin                                                                                                                                                                                                                                                                                                      |
-| **Garantie en cas de succès :** | Traduis dans les deux sens                                                                                                                                                                                                                                                                                                                 |
-| **Déclencheur :**               | L’utilisateur doit entrer l'adresse IP, le masque  choisir le nombre de sous réseaux  et ensuite appuyer sur Valider                                                                                                                                                                                                                       |
+| **Garantie en cas de succès :** | Traduit dans les deux sens                                                                                                                                                                                                                                                                                                                 |
+| **Déclencheur :**               | L’utilisateur doit entrer l'adresse IP, le masque choisir le nombre de sous réseaux et ensuite appuyer sur Valider                                                                                                                                                                                                                       |
 | **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM                                                                                                                                                                                                        |
 
 
@@ -765,12 +765,12 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 17:**       | Fonction qui calcul un CRC                                                                                                                                                         |
 | **Nom:**                        | Fonction qui calcul un CRC                                                                                                                                                         |
-| **Contexte d'utilisation :**    | L’utilisateur entre une adresse IP et il aura en résultat les sous réseaux , il choisis le nombre de sous  réseaux qu’il souhaite et il choisis aussi sous quelle notation il veut |
+| **Contexte d'utilisation :**    | L’utilisateur entre une adresse IP et il aura en résultat les sous-réseaux , il choisit le nombre de sous-réseaux qu’il souhaite et il choisit aussi sous quelle notation il veut |
 | **Portée:**                     | systeme                                                                                                                                                                            |
 | **Acteur principal :**          | Utilisateur                                                                                                                                                                        |
 | **Intervenants et Intérêts:**   |                                                                                                                                                                                    |
 | **Précondition:**               | Entrer une adresse IP                                                                                                                                                              |
-| **Scénario nominal:**           | 1.L’utilisateur entre une adresse IP 2.L’utilisateur Choisis le nombre de sous réseaux  3. L’utilisateur choisis la notation entre CIDR et VLSM 4.Valider 5. Le résultat s’affiche |
+| **Scénario nominal:**           | 1.L’utilisateur entre une adresse IP 2.L’utilisateur choisit le nombre de sous-réseaux  3. L’utilisateur choisit la notation entre CIDR et VLSM 4.Valider 5. Le résultat s’affiche |
 | **Extensions:**                 |                                                                                                                                                                                    |
 | **Garantie minimale :**         | affiche un message d’erreur                                                                                                                                                        |
 | **Garantie en cas de succès :** | Affiche le résultat                                                                                                                                                                |
@@ -780,19 +780,19 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 
 |                                 |                                                                                                                       |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 18:**       | Trouver l'adresse IP d'une machine extérieur                                                                          |
-| **Nom:**                        | Trouver l'adresse IP d'une machine extérieur                                                                          |
-| **Contexte d'utilisation :**    | L’utilisateur tape le nom d’un site et il aura en retour l’adresse IP du site voulu                                   |
+| **Cas d'utilisation 18:**       | Trouver l'adresse IP d'une machine extérieure                                                                          |
+| **Nom:**                        | Trouver l'adresse IP d'une machine extérieure                                                                          |
+| **Contexte d'utilisation :**    | L’utilisateur tape le nom d’un site et il aura en retour l’adresse IP du site souhaité                                  |
 | **Portée:**                     | systeme                                                                                                               |
 | **Acteur principal :**          | Utilisateur                                                                                                           |
 | **Intervenants et Intérêts:**   |                                                                                                                       |
 | **Précondition:**               | Avoir remplit le champ                                                                                                |
-| **Scénario nominal:**           | 1.L’utilisateur entre le nom du site  2. L’utilisateur clique sur validé 3. L’adresse IP du site voulu sera retourner |
-| **Extensions:**                 | 3.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entrer l'adresse IP            |
+| **Scénario nominal:**           | 1.L’utilisateur entre le nom du site  2. L’utilisateur clique sur le bouton valider 3. L’adresse IP du site voulu sera retourner |
+| **Extensions:**                 | 3.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré l'adresse IP            |
 | **Garantie minimale :**         | affiche un message d’erreur                                                                                           |
 | **Garantie en cas de succès :** | La fonctionnalité lui retourne l’adresse IP                                                                           |
-| **Déclencheur :**               | L’utilisateur entre Le nom du site puis clique sur le bouton validé pour avoir un résultat ou un message d’erreur     |
-| **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Trouver l'adresse IP d'une machine extérieur     |
+| **Déclencheur :**               | L’utilisateur entre Le nom du site puis clique sur le bouton valider pour avoir un résultat ou un message d’erreur     |
+| **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Trouver l'adresse IP d'une machine extérieure     |
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
@@ -807,20 +807,20 @@ Cas d'utilisation 40 : Erreur apparait si le nom de la machine extérieure est i
 Chapitre 1 – Objectif et portée
 1. Quels sont la portée et les objectifs généraux ?
 
-La portée du projet est un site web, accompagné des demandes de notre client c’est a dire :
+La portée du projet est un site web, accompagné des demandes de notre client c’est-à-dire :
 
 -Traduire Décimal en Hexadécimal
 -Traduire Décimal en binaire
 -Afficher des sous réseaux
 - Le calcul du CIDR
 -Faire un sniffer nmap
--Trouver l’adresse IP d’une machine extérieur
+-Trouver l’adresse IP d’une machine extérieure
  
-	Les objectifs généraux sont de faire un site web qui a pour but pédagogique donc d’aider des étudiants pour le module réseau, répondre au attente de notre client.
+	Les objectifs généraux sont de faire un site web qui a pour but pédagogique donc d’aider des étudiants pour le module réseau, répondre aux attentes de notre client.
 
 2. Les intervenants. (Qui est concerné ?)
 
-Les intervenants sont les étudiants de Première année en IUT informatique , le client qui est aussi professeur dans cet matière
+Les intervenants sont les étudiants de Première année en IUT informatique , le client qui est aussi professeur dans cet matière.
 
 3. Qu'est-ce qui entre dans cette portée ? Qu'est-ce qui est en dehors ? (Les limites du système.)
 Les étudiants et le client pourront consulter le site web et interagir avec les fonctionnalité proposé par le site
