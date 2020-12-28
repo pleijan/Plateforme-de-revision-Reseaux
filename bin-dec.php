@@ -39,7 +39,7 @@ echo"
     <h1 align='center'>Application</h1>
 <HR width=1240>
 
-<form action='' method='post'>
+<form action='bin-dec.php' method='post'>
 <table cellpading='4' cellspacing='4' align='center'>
 
 <tr><td>adresse ip: </td><td><input name='part1' type='text'> .</td>
@@ -130,6 +130,9 @@ if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4'])){
                     if (!is_numeric($x)) {
                         header('Location:bin-dec.php?id=4');
                     }
+                }
+                if (strlen($val)>8){
+                    header('Location:bin-dec.php?id=3');
                 }
                
             }
