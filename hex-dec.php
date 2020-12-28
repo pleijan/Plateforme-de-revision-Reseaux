@@ -134,22 +134,23 @@ if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4'])){
         echo"</tr>";
     }
     
-
-    if (isset($_GET['id'])){
-        if($_GET['id']=='0'){
-            echo"<p style='color:red'>asresse ip entree invalide</p>";
+}
+    
+if (isset($_GET['id'])){
+    if($_GET['id']=='0'){
+        echo"<p style='color:red'>asresse ip entree invalide</p>";
+    }
+    if($_GET['id']=='1'){
+        echo"<p style='color:red'>adresse ip entree invalide</p>";
+    }
+    if($_GET['id']=='2'){
+        echo"<p style='color:red'>adresse ip entree invalide</p>";
         }
-        if($_GET['id']=='1'){
-            echo"<p style='color:red'>adresse ip entree invalide</p>";
-        }
-        if($_GET['id']=='2'){
-            echo"<p style='color:red'>adresse ip entree invalide</p>";
-            }
-        if($_GET['id']=='3'){
-            echo"<p style='color:red'>adresse ip entree invalide</p>";
-        }
+    if($_GET['id']=='3'){
+        echo"<p style='color:red'>adresse ip entree invalide</p>";
     }
 }
+
 
 
 
