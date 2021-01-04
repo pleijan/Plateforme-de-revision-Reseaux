@@ -28,7 +28,7 @@ function estUnePuissance2($n){
 }
 
 echo "
-<h2>Sur cette page vous pourrez apprendre a partionner votre réseau en different sous réseau.</p></h2>
+<h2>Sur cette page vous pourrez apprendre à partitionner votre réseau en different sous réseau.</p></h2>
 <HR width=1240>
     <h1 align='center'>Cours</h1>
 <HR width=1240>

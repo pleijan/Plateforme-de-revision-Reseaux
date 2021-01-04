@@ -28,7 +28,7 @@ function display($a){
 
 echo"
 
-<h2 align='center'><p>Sur cette page vous pourrez apprendre a traduire une adresse IPV4 de binaire a decimal et inversement.</p></h2>
+<h2 align='center'><p>Sur cette page vous pourrez apprendre à traduire une adresse IPV4 de binaire à decimal et inversement.</p></h2>
 <HR width=1240>
     <h1 align='center'>Cours</h1>
 <HR width=1240>
