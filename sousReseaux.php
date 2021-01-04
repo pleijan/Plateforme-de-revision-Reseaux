@@ -66,7 +66,7 @@ if(isset($_GET['part1'],$_GET['part2'],$_GET['part3'],$_GET['part4'], $_GET['par
             else if ($val>255)
                 header('Location:sousReseaux.php?id=1');
         }
-        echo"<table cellpadding='4' cellspacing='4'>";
+        echo"<table cellpadding='4' cellspacing='4' align='center'>";
     }
     echo "<tr><td>Adresse IP:</td>";
 
@@ -83,7 +83,7 @@ if(isset($_GET['part1'],$_GET['part2'],$_GET['part3'],$_GET['part4'], $_GET['par
     echo"</tr>
     </table>";
 
-    echo"<table cellpadding='4' cellspacing='4'>";
+    echo"<table cellpadding='4' cellspacing='4'align='center'>";
    
    
    /*************************************** MASQUE RESEAU*********************************************/
