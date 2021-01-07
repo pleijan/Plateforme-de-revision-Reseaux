@@ -44,12 +44,12 @@ echo"
 <form action='sousReseaux.php' method='get'>
 <table cellpading='4' cellspacing='4' align= center>
 
-<tr><td>Adresse ip:</td> <td><input name='part1' type='text'> .</td>
-<td><input name='part2' type='text'> .</td>
-<td><input name='part3' type='text'> .</td>
-<td><input name='part4' type='text'> </td>
-<td> / <input name='part5' type='text'> </td></tr></table>
-<tr>Nombre de sous-réseaux <td><input name='sousRes' type='number'> </td>
+<tr><td>Adresse ip:</td> <td><input class='champ' name='part1' type='number'> .</td>
+<td><input class='champ' name='part2' type='number'> .</td>
+<td><input class='champ' name='part3' type='number'> .</td>
+<td><input class='champ' name='part4' type='number'> </td>
+<td> / <input class='champ' name='part5' type='number'> </td></tr></table>
+<tr>Nombre de sous-réseaux <td><input class='champ' name='sousRes' type='number'> </td>
 <br>
 <input name='rst' type='reset' value='Annuler'> <input name='valider' type='submit' value='Valider'> 
 
@@ -66,24 +66,27 @@ if(isset($_GET['part1'],$_GET['part2'],$_GET['part3'],$_GET['part4'], $_GET['par
             else if ($val>255)
                 header('Location:sousReseaux.php?id=1');
         }
-        echo"<table cellpadding='4' cellspacing='4' align='center'>";
+        echo"<table cellpadding='4' cellspacing='4' align='center' >";
     }
     echo "<tr><td>Adresse IP:</td>";
 
+    $cpt=0;
     foreach($_GET as $k => $val)
     {
         if (!($val == "Valider"  or $val == "rst" or $k == 'sousRes'))
         {
             echo"<td>";
-            echo $val." .";
+            if($cpt==3)
+                echo $val." /";
+            else 
+                echo $val." .";
             echo"</td>";
         }
+        $cpt++;
     }
    
     echo"</tr>
     </table>";
-
-    echo"<table cellpadding='4' cellspacing='4'align='center'>";
    
    
    /*************************************** MASQUE RESEAU*********************************************/
@@ -174,17 +177,19 @@ if(isset($_GET['part1'],$_GET['part2'],$_GET['part3'],$_GET['part4'], $_GET['par
     $newDm4=bindec($newM4);
 
     /**************************************************************/
-    echo "Le masque de Sous réseau: ".$dm1.".".$dm2.".".$dm3.".".$dm4." ou /". $_GET['part5']."<br>";
-    echo "Le NOUVEAU masque de Sous réseau: ".$newDm1.".".$newDm2.".".$newDm3.".".$newDm4." ou /". $newSlash."<br>";
+    echo "Masque de Sous réseau: ".$dm1.".".$dm2.".".$dm3.".".$dm4." ou /". $_GET['part5']."<br>";
+    echo "NOUVEAU masque de Sous réseau: ".$newDm1.".".$newDm2.".".$newDm3.".".$newDm4." ou /". $newSlash."<br>";
 
     /*****************************************************************************************************/
 
 
 
     $nbrZero = 32- $_GET['part5'];
-    
-    $sousReseau[0]=0;
-    echo"</tr><tr><td>Sous réseaux :</td>";
+    $adrReseau[0]=0;
+    $sousReseauDB[0]=0;
+    $sousReseauFIN[0]=0;
+    $broadcast[0]=0;
+
 
     $nbrSousRes = $_GET['sousRes'];
 
@@ -221,7 +226,7 @@ if(isset($_GET['part1'],$_GET['part2'],$_GET['part3'],$_GET['part4'], $_GET['par
 
   	/*Si la 1ere partie du masque Réseau est different de 255 on le soustrait a 256
   	ce qui nous permet de savoir combien on incrémente pour chaque sous réseaux*/
-    if($dm1 !=255)
+    if($newDm1 !=255)
     {
     	$b1=$m1 & decbin($part1);
     	$part1=bindec($b1);
@@ -232,7 +237,7 @@ if(isset($_GET['part1'],$_GET['part2'],$_GET['part3'],$_GET['part4'], $_GET['par
     	}
     }
    /*De meme pour la 2eme partie du masque Réseau Voir plus haut*/
-    if($dm2 !=255)
+    if($newDm2 !=255)
     {
     	$b2=$m2 & decbin($part2);
     	$part2=bindec($b2);
@@ -244,7 +249,7 @@ if(isset($_GET['part1'],$_GET['part2'],$_GET['part3'],$_GET['part4'], $_GET['par
     }
    
    	/*De meme pour la 3eme partie du masque Réseau Voir plus haut*/
-    if($dm3 !=255)
+    if($newDm3 !=255)
     {
     	$b3=$m3 & decbin($part3);
     	$part3=bindec($b3);
@@ -256,7 +261,7 @@ if(isset($_GET['part1'],$_GET['part2'],$_GET['part3'],$_GET['part4'], $_GET['par
     } 
 
     /*De meme pour la 4eme partie du masque Réseau Voir plus haut*/
-    if($dm4 !=255)
+    if($newDm4 !=255)
     {
     	$b4=$m4 & decbin($part4);
     	$part4=bindec($b4);
@@ -278,98 +283,167 @@ if(isset($_GET['part1'],$_GET['part2'],$_GET['part3'],$_GET['part4'], $_GET['par
 	    }
 	   
  	}
- 	// ici on test si les parties l'adresse îp sont égale soit a 255 soit a 0 car il n'y a pas besoin de faire
+ 	// ici on test si les parties du masque sont égale soit a 255 soit a 0 car il n'y a pas besoin de faire
  	//ce qu'il y a en haut
 	if(($newDm1 ==255 || $newDm1 ==0)&&($newDm2 ==255 || $newDm2 ==0) && ($newDm3 ==255 || $newDm3 ==0) && ($newDm4 ==255 || $newDm4 ==0))
     {
+        $b1=$m1 & decbin($part1);
+        $part1=bindec($b1);
+        $b2=$m2 & decbin($part2);
+        $part2=bindec($b2);
+        $b3=$m3 & decbin($part3);
+        $part3=bindec($b3);
+        $b4=$m4 & decbin($part4);
+        $part4=bindec($b4);
 	   	$pas=$num;
 	   	echo "pas: ".$pas;
 	   	$multiplReseau=1;
 	}	
 	 
-    echo "<br> <br>Multiple: ".$multiplReseau;
+    //echo "<br> <br>Multiple: ".$multiplReseau;
     /*********************************************************************************************************************/
 
 
-
+    //echo"pas = $pas";
     //les parties des Fins des sous-réseaux
-    $Fpart1 = $part1;
-    $Fpart2 = $part2;
-    $Fpart3 = $part3;
-    $Fpart4 = $part4;
+    
 
     $compt2=0;
 
+    echo"<table cellpadding='4' cellspacing='4' align='center' border ='2'>
+    <thead>
+    <tr>
+        <th>Adresse Réseau</th>
+        <th>1ère adresse utilisable</th>
+        <th>Dernière adresse utilisable</th>
+        <th>BroadCast</th>
+    </tr>
+    </thead>
+
+    ";
     //Cette boucle parcours les différents sous-reseaux
     for($j=1;$j<=$_GET['sousRes'];$j++)
     {
+        $Fpart1 = $part1;
+        $Fpart2 = $part2;
+        $Fpart3 = $part3;
+        $Fpart4 = $part4;
+    	echo"<tr>";
 
-    	echo"</tr><tr><td>Sous réseau ".$j. ":</td>";
-        
-        echo"<td>";
+            
 
         /********************Permet de calculer la fin des sous-réseaux**********************/
 
         //ex: ip: 192.160.0.0/12 => 192.163.255.255
 
         /*cette partie permet de connaitre la limite du sous-réseau*/
-
-        if($pas==1)
-        	$Fpart1 = ($part1+$multiplReseau)-1;
-        if($pas==2)
-        	$Fpart2 = ($part2+$multiplReseau)-1;
-        if($pas==3)
-        	$Fpart3 = ($part3+$multiplReseau)-1;
-        if($pas==4)
-        	$Fpart4 = ($part4+$multiplReseau)-1;
+        // pas = partie qui est different de 255 dans le masque de sous reseau
+        if($pas==1){
+    	   if($Fpart1 >= 254){
+                $Fpart1 =0;
+            }
+            else{
+                $Fpart1 = ($part1+$multiplReseau)-1;
+                $Fpart2=255;
+                $Fpart3=255;
+                $Fpart4=255;  
+            }
+            
+        }   
+        if($pas==2){
+            if($Fpart2 >= 254){
+                $Fpart2 =0;
+            }
+            else{
+    	       $Fpart2 = ($part2+$multiplReseau)-1;
+               $Fpart3=255;
+               $Fpart4=255;  
+            }
+            
+        }
+        if($pas==3){
+            if($Fpart3 >= 254){
+    	       $Fpart3 =0;
+            }
+            else{
+                $Fpart3 = ($part3+$multiplReseau)-1;
+                $Fpart4=255; 
+            }
+            
+        }
+        if($pas==4){
+            if($Fpart4 >= 254){
+                $Fpart4=0;
+            }
+            else
+    	       $Fpart4 = ($part4+$multiplReseau)-1;
+        
+        }
 
         /***********************************************************/
 
 
-        /********cette partie met les 0 a 255 quand il le faut**********/
-
-        //ex: ip: 97.0.0.0 /16 => il faut mettre a 255 seulement 
-        //les 2 dernieres parties 
-       
-        if($Fpart1 == 0 && $pas!=1)
-        	$Fpart1=255;
-
-        if($Fpart2 == 0 && $pas!=2)
-        	$Fpart2=255;
-
-        if($Fpart3 == 0 && $pas!=3)
-        	$Fpart3=255;
-
-        if($Fpart4 == 0 && $pas!=4)
-       		$Fpart4=255;
-
-       	/***************************************************************/
 
        	/*************************************************************************************/
 
+        $adrReseau[$j]= $part1." . ".$part2." . ".$part3." . ".$part4;
+       	$sousReseauDB[$j]= $part1." . ".$part2." . ".$part3." . ".($part4+1); 
+        $sousReseauFIN[$j]= $Fpart1." . ".$Fpart2." . ".$Fpart3." . ".($Fpart4-1); 
+        $broadcast[$j]= $Fpart1." . ".$Fpart2." . ".$Fpart3." . ".$Fpart4;
 
-       	$sousReseau[$j]= $part1." . ".$part2." . ".$part3." . ".$part4. " à ". $Fpart1." . ".$Fpart2." . ".$Fpart3." . ".$Fpart4; 
+       	/**********permet de calculer le début du prochain sous réseau grace au multiple***********/
+        if($pas==1){
+            if($part1 <= 254)
+        	   $part1+=$multiplReseau;
+        }
+        if($pas==2){
+            if($part2 <= 254)
+        	   $part2+=$multiplReseau;
+            else{
+                $part1+=1;
+                $part2=0; 
+            }
+        }
+        if($pas==3){
+            if($part3 <= 254)
+        	   $part3+=$multiplReseau;
+            else{
+                $part2+=1;
+                $part3=0;       
+            }
+        }
+        if($pas==4){
+            if(($part4+$multiplReseau) <= 254)
+        	   $part4+=$multiplReseau;
+            else {
+                $part3+=1;
+                $part4=0;
+            }
+           
 
-
-       	/*permet de calculer le début du prochain sous réseau grace au multiple*/
-        if($pas==1)
-        	$part1+=$multiplReseau;
-        if($pas==2)
-        	$part2+=$multiplReseau;
-        if($pas==3)
-        	$part3+=$multiplReseau;       
-        if($pas==4)
-        	$part4+=$multiplReseau;
-        /***********************************************************************/
-
-
-        echo($sousReseau[$j]);
+        }
+        /**********************************************************************************************/
+        echo"<td>";
+        echo($adrReseau[$j]);
         echo"</td>";
+
+        echo"<td>";
+        echo($sousReseauDB[$j]);
+        echo"</td>";
+
+        echo"<td>";
+        echo($sousReseauFIN[$j]);
+        echo"</td>";
+
+        echo"<td>";
+        echo($broadcast[$j]);
+        echo"</td>";
+
 
         
     }
-    echo"</tr>";
-
+    echo"</tr>
+    </table>";
     
 
     if (isset($_GET['id']))
