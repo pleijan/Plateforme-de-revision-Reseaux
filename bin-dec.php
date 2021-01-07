@@ -15,6 +15,7 @@
 </div>
 </head>
 <body>
+
 <?php
 
 function display($a){
@@ -46,8 +47,10 @@ echo"
 <td><input name='part2' type='text'> .</td>
 <td><input name='part3' type='text'> .</td>
 <td><input name='part4' type='text'> </td></tr></table>
-binaire -> decimal <input type='radio' name='trad' value='bintodec' checked>| decimal -> binaire<input type='radio' name='trad' value='dectobin'><br>
-<input name='valider' type='submit' value='Valider'> <input name='rst' type='reset' value='Annuler'>
+
+<table cellpading='4' cellspacing='4' align='center' border='1'>
+<tr><td>binaire -> decimal <input type='radio' name='trad' value='bintodec' checked></td><td>decimal -> binaire<input type='radio' name='trad' value='dectobin'></td></tr>
+<tr><td><input name='valider' type='submit' value='Valider' style='width:100%;height:100%'></td><td><input name='rst' type='reset' value='Annuler' style='width:100%;height:100%'></td></tr></table>
 
 </form>";
 
@@ -71,7 +74,7 @@ if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4'])){
             }   
         }
         
-        echo"<table cellpading='20' cellspacing='20' align='center'>
+        echo"<table cellpading='4' cellspacing='4' align='center' border ='2'>
         <tr><td>adresse ip original:</td>";
         foreach($_POST as $val){
             if ($val == "Valider" or $val == "dectobin" or $val == "bintodec")
@@ -112,7 +115,7 @@ if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4'])){
 
 
     else {
-        echo"<table cellpading='4' cellspacing='4' align='center'>
+        echo"<table cellpading='4' cellspacing='4' align='center' border ='2'>
         <tr><td>adresse ip original:</td>";
         $i = 0;
         foreach($_POST as $val){

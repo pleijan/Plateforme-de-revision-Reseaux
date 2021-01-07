@@ -58,7 +58,7 @@ if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4'])){
                 }
             }
         }
-        echo"<table cellpading='4' cellspacing='4' align='center'>
+        echo"<table cellpading='4' cellspacing='4' align='center' border ='2'>
         <tr><td>adresse ip original:</td>";
         foreach($_POST as $val){
             if ($val == "Valider"  or $val == "dectohex")
@@ -104,7 +104,7 @@ if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4'])){
                 }
             }
         }
-        echo"<table cellpading='4' cellspacing='4' align='center'>
+        echo"<table cellpading='4' cellspacing='4' align='center' border ='2'>
         <tr><td>adresse ip original:</td>";
         foreach($_POST as $val){
             if ($val == "Valider" or $val == "hextodec")
