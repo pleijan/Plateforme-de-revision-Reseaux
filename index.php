@@ -35,6 +35,41 @@
   
 
   <div id="contenu">  
+  <h2> Pour tout ce qui concerne les traduction d'adresse ip :</h2>
+  
+  <table align='center'> 
+ 
+    <tr><td><a href="bin-dec.php">conversion adresse ip binaire -> decimal</a></td></tr>
+    <tr><td><a href="hex-dec.php">conversion adresse ip hexadecimal -> decimal</a></td></tr>
+
+  </table>
+
+  <h2> Pour tout ce qui concerne les sous réseaux d'adresse ip :</h2>
+  
+  <table align='center'> 
+ 
+    <tr><td><a href="sousReseaux.php">création de sous réseaux a partir d'une adresse ip</a></td></tr>
+
+  </table>
+
+  <h2> Pour tout ce qui concerne les CRC ou les sniffer de nmap :</h2>
+  
+  <table align='center'> 
+ 
+    <tr><td><a href="index.php">Calculer un CRC de type Ethernet</a></td></tr>
+    <tr><td><a href="index.php">Proposer un sniffer nmap</a></td></tr>
+
+  </table>
+
+  <h2> Pour trouver l'adresse ip d'une autre machine de votre réseaux local :</h2>
+  
+  <table align='center'> 
+ 
+    <tr><td><a href="index.php">Trouver l’adresse IP d’une machine extérieure</a></td></tr>
+
+  </table>
+
+
   </div>   
 </div> 
 </body>

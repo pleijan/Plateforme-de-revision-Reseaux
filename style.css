@@ -63,8 +63,8 @@ head{
   margin-top: 10px;
 }
 
-td a:hover:not(.active) {
-  background-color: #111;
+#blocmenu td a:hover:not(.active) {
+  background-color: rgb(65, 65, 65);
 }
 
 .active {
@@ -78,8 +78,8 @@ td a:hover:not(.active) {
 
 #contenu { padding: 10px; 
 background-color: none;
-color: white;
-margin-top: 150px;
+color: rgb(0, 0, 0);
+margin-top: 50px;
 }
 
 /*******************************/
