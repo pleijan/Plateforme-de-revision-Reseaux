@@ -5,7 +5,7 @@ body {
   color: rgb(0, 0, 0);
   font-family: Arial, sans-serif;  
   font-size: 13px;
-  margin-top: 100px;
+
   text-align: center;
 }
 
@@ -14,17 +14,13 @@ scroll-behavior: smooth;
 
 }
 
-.champ {
-    width:50px;
-}
-
 /************ Image Accueil *************/ 
 
 
 
 #global { 
-width: 900px; 
-margin: 0 auto; 
+width: 90%; 
+margin: auto; 
 }
 
 /************ Entete ***********/ 
@@ -33,31 +29,32 @@ margin: 0 auto;
 height: 80px; padding: 10px;
 background-color: none; 
 color: rgb(0, 0, 0);
-margin-left: -180px;
-margin-bottom: 50px;
+
 font-size: 14px;
 }
 /*******************************/ 
 
 /************ MENU *************/  
 
-#blocmenu ul {
+head{
+  background-color: #333;
+}
+
+#blocmenu tr {
   list-style-type: none;
   overflow: hidden;
   background-color: #333;
-  position: fixed;
   top: 0;
   width:100%;
   padding-bottom: 10px;
+  margin: auto;
 
 }
 
-#blocmenu li {
+#blocmenu td {
   float: left;
-  margin-left: 16.6666667%;
-  margin-right: -15%;
 }
-#blocmenu li a {
+#blocmenu td a {
   display: block;
   color: white;
   text-align: center;
@@ -66,16 +63,7 @@ font-size: 14px;
   margin-top: 10px;
 }
 
-#blocmenu li ul {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-li a:hover:not(.active) {
+td a:hover:not(.active) {
   background-color: #111;
 }
 
