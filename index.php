@@ -6,28 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="UTF-8">
   <title>Technologie</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css" type="text/css" />
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body> <!-- cette section "body" contientla barre de navigation en haut de la page ainsi que tout contenu de la page avec d'abord un entete et en suite le reel contenu -->
+<body> <!-- cette section "body" contient la barre de navigation en haut de la page ainsi que tout contenu de la page avec d'abord un entete et en suite le reel contenu -->
 
-<table id="blocmenu" align="center" > 
-  <tr id="menu"> 
-    <td><a class='active' href="index.php"><img src='img\logo.png' width='90px'/></a></td>
-    <td><a href="bin-dec.php">conversion adresse ip<br>binaire -> decimal</a></td>
-    <td><a href="hex-dec.php">conversion adresse ip<br>hexadecimal -> decimal</a></td>
-    <td><a href="sousReseaux.php">création de sous réseaux a<br>partir d'une adresse ip</a></td>
-    <td><a href="index.php">Calculer un CRC<br>de type Ethernet</a></td>
-    <td><a href="index.php">Proposer un sniffer<br>nmap</a></td>
-    <td><a href="index.php">Trouver l’adresse IP d’une<br>machine extérieure</a></td>
-  </tr>
-</table>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+   <a class="navbar-brand" href="index.php"><img src='img\logo.jpg' width='260px'/></a>
+
+  
+  <ul class="navbar-nav">
+   
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Conversions Adresses IP
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="bin-dec.php">Binaire -> Décimal</a>
+        <a class="dropdown-item" href="hex-dec.php">Hexadecimal -> Décimal</a>
+      </div>
+    </li>
+
+    <!-- Links -->
+     <li class="nav-item">
+      <a class="nav-link" href="sousReseaux.php">Division de réseaux</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.php">Calculer un CRC<br>de type Ethernet</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.php">Proposer un sniffer<br>nmap</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.php">Trouver l’adresse IP d’une<br>machine extérieure</a>
+    </li>
+
+  </ul>
+</nav>
 
 <div id="global"> 
-  <div id="entete">   
+  <div id="entete">
+
     <h1><p>titre du site</p></h1>
     <HR width=80%>
+
     <h3><p>ici vous pourrez réviser tout les modules de l'INM2013 : réseau</p></h3>
     <p>
     <HR width=80%>
@@ -74,6 +103,13 @@
 </div> 
 </body>
 <footer>
+  <HR width=1240>
+   </br>
+   </br>
+  <p id = "copyright"><span id="Copyright symbol">&copy Copyright 2021. IUT de Vélizy - PIERRE TOM - GIANNICO Raffaele - MANOHARAN Anushan - PARISOT Théo. Tous droits r&eacute;serv&eacute;s.</span></p>
+   </br>
+   </br>
+  <HR width=1240>
 </footer>
 </html>
 <?php
