@@ -2,39 +2,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="UTF-8">
   <title>Technologie</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body> <!-- cette section "body" contientla barre de navigation en haut de la page ainsi que tout contenu de la page avec d'abord un entete et en suite le reel contenu -->
+<body> <!-- cette section "body" contient la barre de navigation en haut de la page ainsi que tout contenu de la page avec d'abord un entete et en suite le reel contenu -->
 
-<table id="blocmenu" align="center" > 
-  <tr id="menu"> 
-    <td><a class='active' href="index.php"><img src='img\logo.png' width='90px'/></a></td>
-    <td><a href="bin-dec.php">conversion adresse ip<br>binaire -> decimal</a></td>
-    <td><a href="hex-dec.php">conversion adresse ip<br>hexadecimal -> decimal</a></td>
-    <td><a href="sousReseaux.php">création de sous réseaux a<br>partir d'une adresse ip</a></td>
-    <td><a href="index.php">Calculer un CRC<br>de type Ethernet</a></td>
-    <td><a href="index.php">Proposer un sniffer<br>nmap</a></td>
-    <td><a href="index.php">Trouver l’adresse IP d’une<br>machine extérieure</a></td>
-  </tr>
-</table>
 
-<h2>Sur cette page vous pourrez apprendre à partitionner votre réseau en different sous réseau.</p></h2>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+   <a class="navbar-brand" href="index.php"><img src='img\logo.jpg' width='260px'/></a>
+
+  
+  <ul class="navbar-nav">
+   
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Conversions Adresses IP
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="bin-dec.php">Binaire -> Décimal</a>
+        <a class="dropdown-item" href="hex-dec.php">Hexadecimal -> Décimal</a>
+      </div>
+    </li>
+
+    <!-- Links -->
+     <li class="nav-item">
+      <a class="nav-link active" href="sousReseaux.php">Division de réseaux</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.php">Calculer un CRC<br>de type Ethernet</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.php">Proposer un sniffer<br>nmap</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.php">Trouver l’adresse IP d’une<br>machine extérieure</a>
+    </li>
+
+  </ul>
+</nav>
+
+
+<h5>Sur cette page vous pourrez apprendre à partitionner votre réseau en different sous réseau.</p></h5>
 <HR width=1240>
-    <h1 align='center'>Cours</h1>
+    <h3 align='center'><b>Cours</b></h3>
 <HR width=1240>
 
 <p> <iframe src="CoursSousReseau.html" width="1000" height="500"></iframe> </p>
 
 <HR width=1240>
-    <h1 align='center'>Application</h1>
+    <h3 align='center'><b>Application</b></h3>
 <HR width=1240>
 <br>
 
 <form action='sousReseaux.php#IP' method='get'>
 <table cellpading='4' cellspacing='4' align= center>
 
-<tr><h2 id = 'IP'>Entrez une adresse machine pour trouver son adresse réseau.</h2></tr>
+<tr><h5 id = 'IP'>Entrez une adresse machine pour trouver son adresse réseau.</h5></tr>
 <tr>
     <td align='right'>Adresse IP :</td> 
     <td><input class='champ' name='part1IP' type='number' min='0' max='255' value= "<?php if (isset($_GET['part1IP'])){echo $_GET['part1IP'];} ?>" required> .</td>
@@ -44,7 +73,7 @@
     <td> / <input class='champ' name='part5IP' type='number' min='1' max='30' value="<?php if (isset($_GET['part5IP'])){echo $_GET['part5IP'];} ?>" required> </td>
 
 </tr>
-<tr><td align='center' colspan='7'><input name='validerIP' type='submit' value='Valider'></td></tr>
+<tr><td align='center' colspan='7'><input name='validerIP' type="submit" class="btn btn-success btn-sm" value='Valider'></td></tr>
 </table>
 </form>
 <?php
@@ -55,9 +84,9 @@
 	        if (!($val == "Valider" or $k == 'sousRes'))
 	        {
 	            if (!is_numeric($val))
-	                header('Location:sousReseaux.php?id=2');
+	                echo"<p style='color:red'>Adresse ip entrée invalide</p>";
 	            else if ($val>255 || $val<0)
-	                header('Location:sousReseaux.php?id=2');
+	                echo"<p style='color:red'>Adresse ip entrée invalide</p>";
 	        }
     	}
 
@@ -121,7 +150,7 @@
 <br>
 <form action='sousReseaux.php#Res' method='get'>
 <table cellpading='4' cellspacing='4' align= center>
-<tr><h2 id = 'Res'>Entrez une adresse réseau pour la diviser en sous-réseaux.</h2></tr>
+<tr><h5 id = 'Res'>Entrez une adresse réseau pour la diviser en sous-réseaux.</h5></tr>
 <tr>
     <td align='right'>Adresse réseau :</td> 
     <td><input class='champ' name='part1' type='number' min='0' max='255' value= "<?php if (isset($_GET['part1'])){echo $_GET['part1'];} ?>" required> .</td>
@@ -132,7 +161,7 @@
 </tr>
 </table>
 Nombre de sous-réseaux : <input class='champ' name='sousRes' type='number' min='1' value="<?php if (isset($_GET['sousRes'])){echo $_GET['sousRes'];} ?>" required><br>
-<input name='valider' type='submit' value='Valider'>
+<input name='valider' type="submit" class="btn btn-success btn-sm" value='Valider'>
 
 </form>
 
@@ -159,13 +188,13 @@ if(isset($_GET['part1'],$_GET['part2'],$_GET['part3'],$_GET['part4'], $_GET['par
         if (!($val == "Valider" or $k == 'sousRes'))
         {
             if (!is_numeric($val))
-                header('Location:sousReseaux.php?id=2');
+                echo"<p style='color:red'>Adresse ip entrée invalide</p>";
             else if ($val>255 || $val<0)
-                header('Location:sousReseaux.php?id=2');
+                echo"<p style='color:red'>Adresse ip entrée invalide</p>";
         }
         echo"<table cellpadding='4' cellspacing='4' align='center' >";
     }
-    echo "<tr><td>Adresse IP: <b>".$_GET['part1'].".".$_GET['part2'].".".$_GET['part3'].".".$_GET['part4']."/".$_GET['part5']."</b></td></tr>";
+    echo "<tr><td>Adresse réseau: <b>".$_GET['part1'].".".$_GET['part2'].".".$_GET['part3'].".".$_GET['part4']."/".$_GET['part5']."</b></td></tr>";
    
    
    
@@ -283,7 +312,7 @@ if(isset($_GET['part1'],$_GET['part2'],$_GET['part3'],$_GET['part4'], $_GET['par
 
 
     if($nbrSousRes < $_GET['sousRes']){
-     header("Location:sousReseaux.php?&part1=".$_GET['part1']."&part2=".$_GET['part2']."&part3=".$_GET['part3']."&part4=".$_GET['part4']."&part5=".$_GET['part5']."&id=3&tot=$nbrSousRes");
+     echo"<p style='color:red'>Le nombre de sous-réseaux demandé est supérieur au nombre maximum de sous-réseaux. (".$nbrSousRes." Max)</p>";
     }
     else{
 
@@ -508,8 +537,10 @@ if(isset($_GET['part1'],$_GET['part2'],$_GET['part3'],$_GET['part4'], $_GET['par
 	        </table>";
 
 	    }
-	    else
-        	header("Location:sousReseaux.php?&part1=".$_GET['part1']."&part2=".$_GET['part2']."&part3=".$_GET['part3']."&part4=".$_GET['part4']."&part5=".$_GET['part5']."&id=4&tot=$nbrSousRes");
+	    else{
+        	echo"<p style='color:red'>Vous avez entrer une adresse IP machine. </br> Veuillez entrer une adresse réseau svp.</p>";
+	    }
+
     }
 
 
@@ -533,3 +564,12 @@ if (isset($_GET['id'])){
 
 
 ?>
+<footer>
+  <HR width=1240>
+   </br>
+   </br>
+  <p id = "copyright"><span id="Copyright symbol">&copy Copyright 2021. IUT de Vélizy - PIERRE TOM - GIANNICO Raffaele - MANOHARAN Anushan - PARISOT Théo. Tous droits r&eacute;serv&eacute;s.</span></p>
+   </br>
+   </br>
+  <HR width=1240>
+</footer>
