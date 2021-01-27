@@ -15,8 +15,21 @@ scroll-behavior: smooth;
 }
 
 .champ{
-  width: 75px; 
+  width: 70px;
+  height: 20px; 
 }
+.champ2{
+  width: 80px;
+  height: 20px; 
+}
+.navbar-nav{
+  margin-left: 1.5%;
+}
+
+.active {
+  color: rgb(255, 255, 255);
+}
+
 
 /************ Image Accueil *************/ 
 
@@ -55,25 +68,7 @@ head{
 
 }
 
-#blocmenu td {
-  float: left;
-}
-#blocmenu td a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  margin-top: 10px;
-}
 
-#blocmenu td a:hover:not(.active) {
-  background-color: rgb(65, 65, 65);
-}
-
-.active {
-  background-color: rgb(255, 255, 255);
-}
 
 /*******************************/
 
