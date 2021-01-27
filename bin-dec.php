@@ -201,35 +201,27 @@ if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4'])){
         }
         echo"</tr>";
     }
-}
 
 
-if (isset($_GET['id'])){
-    if($_GET['id']=='1'){
-        echo"<p style='color:red'>adresse ip entree invalide</p>";
-    }
-    if($_GET['id']=='2'){
-        echo"<p style='color:red'>adresse ip entree invalide</p>";
-    }
-    if($_GET['id']=='3'){
-        echo"<p style='color:red'>adresse ip entree invalide</p>";
+
+    if (isset($_GET['id'])){
+        if($_GET['id']=='1'){
+            echo"<p style='color:red'>adresse ip entree invalide</p>";
         }
-    if($_GET['id']=='4'){
-        echo"<p style='color:red'>adresse ip entree invalide</p>";
-    }
-} 
+        if($_GET['id']=='2'){
+            echo"<p style='color:red'>adresse ip entree invalide</p>";
+        }
+        if($_GET['id']=='3'){
+            echo"<p style='color:red'>adresse ip entree invalide</p>";
+            }
+        if($_GET['id']=='4'){
+            echo"<p style='color:red'>adresse ip entree invalide</p>";
+        }
+    } 
+}
 
 
 
 ?>
 
 </body>
-<footer>
-  <HR width=1240>
-   </br>
-   </br>
-  <p id = "copyright"><span id="Copyright symbol">&copy Copyright 2021. IUT de Vélizy - PIERRE TOM - GIANNICO Raffaele - MANOHARAN Anushan - PARISOT Théo. Tous droits r&eacute;serv&eacute;s.</span></p>
-   </br>
-   </br>
-  <HR width=1240>
-</footer>
