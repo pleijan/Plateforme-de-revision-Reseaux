@@ -47,13 +47,13 @@
   </ul>
 </nav>
 
-
+<br/>
 <h5>Sur cette page vous pourrez apprendre à partitionner votre réseau en different sous réseau.</p></h5>
 <HR width=1240>
     <h3 align='center'><b>Cours</b></h3>
 <HR width=1240>
 
-<p> <iframe src="CoursSousReseau.html" width="1000" height="500"></iframe> </p>
+<p> <iframe src="cours/sous-res.html" width="1000" height="500"></iframe> </p>
 
 <HR width=1240>
     <h3 align='center'><b>Application</b></h3>
