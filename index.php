@@ -22,9 +22,10 @@ require("barreDeMenu.php");
   
 
   <div id="contenu">  
-  <h2 id = "adresseIP"> Traductions d'adresses IP </h2>
+  <table align='center'>
+   <tr><td<h2> Traductions d'adresses IP </h2></td></tr>
   
-  <table align='center'> 
+  
  
     <tr><td><a href="bin-dec.php"><img src="img/bin-dec.jpg" class="rounded imgGauche" alt="bin-dec"></a></td>
     <td><a href="hex-dec.php"><img src="img/hex-dec.jpg"  class="rounded imgDroite" alt="hex-dec"></a></td></tr>
