@@ -22,7 +22,7 @@
     <!-- Dropdown -->
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown">
-        Conversions Adresses IP
+        Conversions Adresses IP 
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="bin-dec.php">Binaire -> Décimal</a>
@@ -31,8 +31,14 @@
     </li>
 
     <!-- Links -->
-     <li class="nav-item">
-      <a class="nav-link" href="sousReseaux.php">Division de réseaux</a>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown">
+      Division de réseaux
+    </a>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="sousReseaux.php">Notation CIDR</a>
+        <a class="dropdown-item" href="index.php">Notation VLSM</a>
+    </div>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="index.php">Calculer un CRC<br>de type Ethernet</a>
