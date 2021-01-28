@@ -22,30 +22,24 @@ require("barreDeMenu.php");
   
 
   <div id="contenu">  
-  <table align='center'>
-   <tr><td<h2> Traductions d'adresses IP </h2></td></tr>
   
-  
+  <table align='center' cellpadding="2"> 
  
-    <tr><td><a href="bin-dec.php"><img src="img/bin-dec.jpg" class="rounded imgGauche" alt="bin-dec"></a></td>
-    <td><a href="hex-dec.php"><img src="img/hex-dec.jpg"  class="rounded imgDroite" alt="hex-dec"></a></td></tr>
-    <tr><td><br/></td></tr>
-    <tr><td><h2> Division de réseaux</h2></td></tr>
+    <tr><td><a href="bin-dec.php"><img src="img/bin-dec.png" class="rounded imgGauche" alt="bin-dec" title="Traduire les adresses IP de Binaire à Décimal ou inversement"></a></td>
+    <td><a href="hex-dec.php"><img src="img/hex-dec.png"  class="rounded imgDroite" alt="hex-dec" title="Traduire les adresses IP de Hexadécimal à Décimal ou inversement"></a></td></tr>
     
-    <tr><td><a href="sousReseaux.php"><img src="img/cidr.png"  class="rounded imgGauche" alt="cidr"></a></td>
-    <td><a href="hex-dec.php"><img src="img/vlsm.jpg"  class="rounded imgDroite" alt="vlsm"></a></td></tr>
+    
+    <tr><td><a href="sousReseaux.php"><img src="img/cidr.png"  class="rounded imgGauche" alt="cidr" title="Division de réseaux en sous-réseaux avec la notation CIDR"></a></td>
+    <td><a href="hex-dec.php"><img src="img/vlsm.png"  class="rounded imgDroite" alt="vlsm" title="Division de réseaux en sous-réseaux avec la notation VLSM"></a></td></tr>
 
-  <tr><td><h2> Sniffer Nmap, CRC</h2></td></tr>
  
-    <tr><td><a href="index.php"><img src="img/nmap.png"  class="rounded imgGauche" alt="nmap"></a></td>
-    <td><a href="index.php"><img src="img/crc.png"  class="rounded imgDroite" alt="crc"></a></td></tr>
+    <tr><td><a href="index.php"><img src="img/nmap.png"  class="rounded imgGauche" alt="nmap" title="Sniffer Nmap"></a></td>
+    <td><a href="index.php"><img src="img/crc.png"  class="rounded imgDroite" alt="crc" title="Calcul de CRC de type Ethernet"></a></td></tr>
 
-
-  <tr><td><h2> Trouver l'adresse IP </h2></td></tr>
   
 </table>
  
-  <a href="index.php"><img src="img/trouver-adresse.jpg"  class="rounded imglongue" alt="trouver-adresse"></a>
+  <a href="index.php"><img src="img/trouver-adresse.png"  class="rounded imglongue" alt="trouver-adresse" title="Trouver l'adresse IP d'une machine extérieure"></a>
 
   
 
