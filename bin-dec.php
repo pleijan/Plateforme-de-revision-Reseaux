@@ -158,19 +158,19 @@ if(isset($_POST['part1'],$_POST['part2'],$_POST['part3'],$_POST['part4'])){
 
 if (isset($_GET['id'])){
     if($_GET['id']=='1'){
-        echo"<p style='color:red'>adresse ip entree invalide (octet superieur a 255 ou inferieur a 0)</p>";
+        echo"<p style='color:red'>adresse ip entree invalide </p>";
     }
     if($_GET['id']=='2'){
-        echo"<p style='color:red'>adresse ip entree invalide (ce ne sont pas des chiffres)</p>";
+        echo"<p style='color:red'>adresse ip entree invalide </p>";
     }
     if($_GET['id']=='3'){
-        echo"<p style='color:red'>adresse ip entree invalide (ce n'est pas du binaire)</p>";
+        echo"<p style='color:red'>adresse ip entree invalide </p>";
         }
     if($_GET['id']=='4'){
-        echo"<p style='color:red'>adresse ip entree invalide (ce ne sont pas des chiffres)</p>";
+        echo"<p style='color:red'>adresse ip entree invalide </p>";
     }
     if($_GET['id']=='5'){
-        echo"<p style='color:red'>adresse ip entree invalide (octet superieur a 11111111 ou inferieur a 0)</p>";
+        echo"<p style='color:red'>adresse ip entree invalide </p>";
     }
 } 
 
