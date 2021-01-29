@@ -11,13 +11,13 @@ require("barreDeMenu.php");
 
 <div id="global"> 
   <div id="entete">
-    <h1><p>titre du site</p></h1>
+    
     <img src="img/banniere.jpg" class="rounded banniere" alt="banniere">
     <HR width=80%>
 
     <h3><p>ici vous pourrez réviser tout les modules de l'INM2013 : réseau</p></h3>
     <p>
-    <HR width=80%>
+    
   </div> 
   
 
@@ -35,7 +35,7 @@ require("barreDeMenu.php");
     
   <table align='center' cellpadding="2"> 
     <tr><td><a href="sousReseaux.php"><img src="img/cidr.png"  class="rounded imgGauche" alt="cidr" title="Division de réseaux en sous-réseaux avec la notation CIDR"></a></td>
-    <td><a href="hex-dec.php"><img src="img/vlsm.png"  class="rounded imgDroite" alt="vlsm" title="Division de réseaux en sous-réseaux avec la notation VLSM"></a></td></tr>
+    <td><a href="index.php"><img src="img/vlsm.png"  class="rounded imgDroite" alt="vlsm" title="Division de réseaux en sous-réseaux avec la notation VLSM"></a></td></tr>
   </table>
 
     <h2><HR width=50%> Sniffer Nmap, CRC<HR width=50%></h2>
