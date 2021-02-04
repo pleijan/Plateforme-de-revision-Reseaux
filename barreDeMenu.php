@@ -49,6 +49,8 @@
     <li class="nav-item">
       <a class="nav-link" href="index.php">Trouver l’adresse IP d’une<br>machine extérieure</a>
     </li>
-
+    <li class="nav-item">
+      <a class="nav-link" href="glossaire.php">Glossaire</a>
+    </li>
   </ul>
 </nav>
