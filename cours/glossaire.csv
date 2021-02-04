@@ -1,2 +1,6 @@
 Mots;Definition
 IP;Internet Protocol
+CIDR;Classless Inter Domain Routing (« routage sans classes entre domaines »)
+VLSM;Variable Length Subnet Mask (est un masque de sous-réseau à longueur variable)
+NMAP;Network Mapper (scanner de ports libre)
+CRC;Contrôle de redondance cyclique (sert a détecter des erreurs de transmission ou de transfert)
