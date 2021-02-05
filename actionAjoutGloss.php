@@ -13,7 +13,7 @@ session_start();
         file_put_contents('cours/glossaire.csv',$header.$file);
         
         
-
+        
         
     }header('Location: glossaire.php?err=1');
 ?>
