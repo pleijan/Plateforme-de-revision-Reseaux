@@ -1,8 +1,19 @@
 <?php
-    if(isset($_POST[admin],$_POST[mot],))
+session_start();
+    if(isset($_SESSION[id]) and isset($_POST['mot']) and isset($_POST['def']))
     {
+
+        foreach($_POST as $k => $v){
+        $$k=$v;
+        }
+
+    
         $file = file_get_contents('cours/glossaire.csv');
-        $header = "$_POST[mot];$_POST[def]\r\n";
+        $header = "$mot;$def\r\n";
         file_put_contents('cours/glossaire.csv',$header.$file);
-    }
+        
+        
+
+        
+    }header('Location: glossaire.php?err=1');
 ?>

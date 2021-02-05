@@ -1,6 +1,8 @@
 
 <?php
 require("barreDeMenu.php");
+session_start();
+if (isset($_SESSION['id'])){header ('Location: glossaire_admin.php');}
 ?>
 
 <br/>
@@ -21,9 +23,10 @@ if (($handle = fopen("cours/glossaire.csv", "r")) !== FALSE) {
         $row++;
         echo "<tr><td><p align='center'>$data[0]</p></td><td><p align='center'>$data[1]</p></td></tr>";
     }
-    echo"</table>
-    <h3><a href='connexion.php'> s'identifier </a></h3>";
+    echo"</table>";
     fclose($handle);
 }
+
+echo"<h2><a href='connexion.php'> modifier la table :</a></h2>";
 
 ?>
