@@ -62,7 +62,7 @@ if (isset($_POST['newdef']) and isset($_POST['confirmer']) and isset($_POST['mot
     fclose($fileRead);
     unlink($file);
     rename($file.'.tmp', $file);
-    header("Location: glossaire.php");
+
 }
 
 if (isset($_GET['suppr']))
@@ -175,8 +175,10 @@ if (isset($_GET['suppr']))
     $file="cours/glossaire.csv";
     unlink($file);
 
-    header('Location: glossaire.php?conf=1');
+   
         
 }
+
+header('Location: glossaire.php?conf=1');
 
 ?>
