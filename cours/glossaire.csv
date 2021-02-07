@@ -1,7 +1,5 @@
-IPv4;Internet Protocol version 4 (4 octets, notation pointée sur 32 bits)
+IPV4;Internet Protocol version 4 (4 octets, notation pointée sur 32 bits)
 IPv6;Internet Protocol version 6 (16 octets, notation pointée sur 128 bits)
-CIDR;Classless Inter Domain Routing (« routage sans classes entre domaines »)
 VLSM;Variable Length Subnet Mask (est un masque de sous-réseau à longueur variable)
-NMAP;Network Mapper (scanner de ports libre)
 CRC;Cyclical Redundancy Check (Contrôle de redondance cyclique)
-
+CIDR;Classless Inter Domain Routing (« routage sans classes entre domaines »)

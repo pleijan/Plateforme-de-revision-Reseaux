@@ -41,7 +41,7 @@
     </div>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="index.php">Calculer un CRC<br>de type Ethernet</a>
+      <a class="nav-link" href="crc.php">Calculer un CRC<br>de type Ethernet</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="index.php">Proposer un sniffer<br>nmap</a>
