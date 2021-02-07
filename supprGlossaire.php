@@ -25,8 +25,8 @@ require("barreDeMenu.php");
             echo "<tr>
             <td><p align='center'>$data[0]</p></td>
             <td><p align='center'>$data[1]</p></td>
-            <td align=center><a href='supprGlossaire.php?modifdef=$data[0]'><img src='img/crayon.png' style=width:'5%'; height='5%';></a></td>
-            <td align=center><a href='actionSupprGloss.php?suppr=$data[0]'><img src='img/red-cross.png' style=width:'3%'; height='3%';></a></td></tr>
+            <td align=center><a href='supprGlossaire.php?modifdef=$data[0]'><img src='img/crayon.png' id='imgGlossaire'></a></td>
+            <td align=center><a href='actionSupprGloss.php?suppr=$data[0]'><img src='img/red-cross.png' id='imgGlossaire' ></a></td></tr>
             </tr>";
         }
         echo"</table>";
@@ -37,9 +37,16 @@ require("barreDeMenu.php");
     {
         $getmodifdef = $_GET['modifdef'];
         echo"<hr><h2>Changer la def de $getmodifdef</h2><hr>
-        <form action='actionSupprGloss.php' method='post'><table align='center'><tr>
-        <input type='hidden' name='modifdef' value='$getmodifdef'>
-        <td>nouvelle def de $getmodifdef :</td><td> <input type='text' name='newdef'></td> <td> <input type='submit' name='confirmer' value='ok'></td></tr></table></form>
+        <form action='actionSupprGloss.php' method='post'>
+            <table align='center'>
+            <tr>
+                <input type='hidden' name='motAModif' value='$getmodifdef'>
+                <td>nouvelle def de $getmodifdef :</td>
+                <td> <input type='text' name='newdef'></td> 
+                <td> <input type='submit' name='confirmer' value='ok'></td>
+            </tr>
+            </table>
+        </form>
         ";
     }
 
