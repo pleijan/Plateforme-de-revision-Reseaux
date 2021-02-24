@@ -68,7 +68,7 @@ require('barreDeMenu.php');
         for($col = 0; $col<$TailleM; $col++){
             echo"<tr>";
             for($ligne = 0; $ligne<$TailleM; $ligne++){
-                echo"<td><input type='number' name=m[$col][$ligne] min='0' max='1' size = '1'></td>";
+                echo"<td><input type='number' name=m[$col][$ligne] min='0' max='1' size = '1' required></td>";
             }
             echo"</tr>";
         }
