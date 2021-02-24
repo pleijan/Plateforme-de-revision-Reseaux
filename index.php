@@ -50,9 +50,6 @@ require("barreDeMenu.php");
  
   <a href="index.php"><img src="img/trouver-adresse.png"  class="rounded imglongue" alt="trouver-adresse" title="Trouver l'adresse IP d'une machine extérieure"></a>
 
-  
-
-
   </div>   
 </div> 
 </body>
@@ -66,5 +63,3 @@ require("barreDeMenu.php");
   <HR width=1240>
 </footer>
 </html>
-<?php
-?>
