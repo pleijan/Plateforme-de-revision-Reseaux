@@ -45,7 +45,25 @@ require('barreDeMenu.php');
 
     if(isset($_GET['Message'])){
         $Message = $_GET['Message'];
+        $TailleM = strlen($Message);
+        echo"<h6><b>quelle taille de matrice voulez-vous :</b></h6>
+        
+        <form action='' method='get'>
+        <table cellpading='4' cellspacing='4' align='center'  > 
+        <tr><td><input type='number' name='nbCol' min=2 max=$TailleM value=$TailleM required/> sur $TailleM </td></tr>
+        <tr><td align='center'><input name='ConfirmationMessage' type='submit' class='btn btn-success btn-sm' value='Valider' ></td></tr>
+        </table>
 
+        <input type='hidden' value=$Message name='Message'/>
+        
+        </form>";
+
+    }
+
+
+    if(isset($_GET['Message']) and isset($_GET['nbCol'])){
+        $Message = $_GET['Message'];
+        $nbCol = $_GET['nbCol'];
         echo"<h6><b>Le message est : $Message</b></h6>";
 
 
@@ -59,15 +77,15 @@ require('barreDeMenu.php');
 
         $TailleM = strlen($Message);
         echo"
-        <h6>Saisie de La Matrice génératrice :</h6>
+        <h6><b>Saisie de La Matrice génératrice :</b></h6>
         <form action='' method='get'>
         <table cellpading='4' cellspacing='4' align='center'  > ";
 
         $m[][] = 0;
 
-        for($col = 0; $col<$TailleM; $col++){
+        for($ligne = 0; $ligne<$TailleM; $ligne++){
             echo"<tr>";
-            for($ligne = 0; $ligne<$TailleM; $ligne++){
+            for($col = 0; $col<$nbCol; $col++){
                 echo"<td><input type='number' name=m[$col][$ligne] min='0' max='1' size = '1' required></td>";
             }
             echo"</tr>";
@@ -75,6 +93,7 @@ require('barreDeMenu.php');
         
         echo"
         <input type='hidden' name='Message' value='$Message'/>
+        <input type='hidden' name='Message' value='$nbCol'/>
         </table><input name='ValidMatrice' type='submit' class='btn btn-success btn-sm' value='Valider'>
         </form>";
 
@@ -82,22 +101,25 @@ require('barreDeMenu.php');
 
     if(isset($_GET['Message']) and isset($_GET['ValidMatrice']))
     {
+        $nbCol = $_GET['nbCol'];
         $Message = $_GET['Message'];
         $m = $_GET['m'];
+
+        echo"<h6><b>Le Message est : </b></h6> <p>$Message</p>";
 
         echo"<h6><b>La Matrice est : </b></h6>
         <table border='1px' cellpading='4' cellspacing='4' align='center'  >";
 
-        for($col = 0; $col<$TailleM; $col++){
+        for($ligne = 0; $ligne<$TailleM; $ligne++){
             echo"<tr>";
-            for($ligne = 0; $ligne<$TailleM; $ligne++){
+            for($col = 0; $col<$nbCol; $col++){
                 echo"<td>{$m[$col][$ligne]}</td>";
             }
             echo"</tr>";
         }
 
         echo"
-        </table><br/>
+        </table></h6><br/>
         ";
 
 
@@ -108,8 +130,8 @@ require('barreDeMenu.php');
 
         
 
-        for($col = 0; $col<$TailleM; $col++){
-            for($ligne = 0; $ligne<$TailleM; $ligne++){
+        for($ligne = 0; $ligne<$TailleM; $ligne++){
+            for($col = 0; $col<$nbCol; $col++){
                 if ($CRC xor ($Message[$ligne] and $m[$col][$ligne]))
                 $CRC = 1;
                 else $CRC = 0;
