@@ -93,7 +93,7 @@ require('barreDeMenu.php');
         
         echo"
         <input type='hidden' name='Message' value='$Message'/>
-        <input type='hidden' name='Message' value='$nbCol'/>
+        <input type='hidden' name='nbCol' value='$nbCol'/>
         </table><input name='ValidMatrice' type='submit' class='btn btn-success btn-sm' value='Valider'>
         </form>";
 
@@ -130,7 +130,7 @@ require('barreDeMenu.php');
 
         
 
-        for($ligne = 0; $ligne<$TailleM; $ligne++){
+        for($ligne = 0; $ligne<$nbCol; $ligne++){
             for($col = 0; $col<$nbCol; $col++){
                 if ($CRC xor ($Message[$ligne] and $m[$col][$ligne]))
                 $CRC = 1;
