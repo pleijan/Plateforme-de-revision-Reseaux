@@ -37,7 +37,7 @@
     </a>
     <div class="dropdown-menu">
         <a class="dropdown-item" href="sousReseaux.php">Notation CIDR</a>
-        <a class="dropdown-item" href="index.php">Notation VLSM</a>
+        <a class="dropdown-item" href="sousReseauxVLSM.php">Notation VLSM</a>
     </div>
     </li>
     <li class="nav-item">

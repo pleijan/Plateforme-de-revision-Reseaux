@@ -35,7 +35,7 @@ require("barreDeMenu.php");
     
   <table align='center' cellpadding="2"> 
     <tr><td><a href="sousReseaux.php"><img src="img/cidr.png"  class="rounded imgGauche" alt="cidr" title="Division de réseaux en sous-réseaux avec la notation CIDR"></a></td>
-    <td><a href="index.php"><img src="img/vlsm.png"  class="rounded imgDroite" alt="vlsm" title="Division de réseaux en sous-réseaux avec la notation VLSM"></a></td></tr>
+    <td><a href="sousReseauxVLSM.php"><img src="img/vlsm.png"  class="rounded imgDroite" alt="vlsm" title="Division de réseaux en sous-réseaux avec la notation VLSM"></a></td></tr>
   </table>
 
     <h2><HR width=50%> Sniffer Nmap, CRC<HR width=50%></h2>
