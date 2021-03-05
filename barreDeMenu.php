@@ -43,11 +43,16 @@
     <li class="nav-item">
       <a class="nav-link" href="crc.php">Calculer un CRC<br>de type Ethernet</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="index.php">Proposer un sniffer<br>nmap</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="index.php">Trouver l’adresse IP d’une<br>machine extérieure</a>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown">
+      Execution Commande Réseaux
+    </a>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="sousReseaux.php">Nmap</a>
+        <a class="dropdown-item" href="sousReseauxVLSM.php">Nslookup</a>
+        <a class="dropdown-item" href="sousReseauxVLSM.php">tcpdump</a>
+        <a class="dropdown-item" href="sousReseauxVLSM.php">ping</a>
+    </div>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="glossaire.php">Glossaire</a>
