@@ -51,7 +51,7 @@
         <a class="dropdown-item" href="sousReseaux.php">Nmap</a>
         <a class="dropdown-item" href="sousReseauxVLSM.php">Nslookup</a>
         <a class="dropdown-item" href="sousReseauxVLSM.php">tcpdump</a>
-        <a class="dropdown-item" href="sousReseauxVLSM.php">ping</a>
+        <a class="dropdown-item" href="ping.php">ping</a>
     </div>
     </li>
     <li class="nav-item">
