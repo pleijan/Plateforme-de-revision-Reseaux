@@ -1,6 +1,75 @@
 <?php
 require("barreDeMenu.php");
 ?>
+<script>
+function adresseIPValide(choix, affiche)
+{
+		var adr = document.getElementById(choix).value; //le noeud parent
+
+    var partieIP = adr.split('.');
+	if(partieIP.length == 4){
+	    for(var val in partieIP) {
+			if (isNaN(partieIP[val]) == true || partieIP[val] < 0 || partieIP[val] > 255) {
+				document.getElementById(affiche).innerHTML="Veuillez entrez une adresse réseau valide";
+				//alert("FAUTE!");
+				return false;
+			}
+			else
+				document.getElementById(affiche).innerHTML="";
+		
+		}
+	}
+	else
+		document.getElementById(affiche).innerHTML="Veuillez entrez une adresse réseau valide";
+
+	return true;
+}
+
+function masqueValide(choix, affiche)
+{
+	var masque = document.getElementById(choix).value; //le noeud parent
+
+	var lenMasque = masque.length;
+    var partieMasque = masque.split('.');
+    var precedent = 255;
+
+	if(partieMasque.length == 4){
+		//alert(partieMasque.length);
+	    for(var val in partieMasque) {
+	    	//alert(partieMasque[val]);
+			if ((isNaN(partieMasque[val]) == true) || (partieMasque[val] < 0) || (partieMasque[val] > 255) || (precedent < partieMasque[val])) {
+				document.getElementById(affiche).innerHTML="Veuillez entrez un masque valide";
+				//alert("FAUTE!");
+				return false;
+			}
+			else
+				document.getElementById(affiche).innerHTML="";
+
+			precedent = partieMasque[val];
+		}
+	}
+	else if (lenMasque <=3 && lenMasque>=2) {
+		if(masque.startsWith('/')){
+			masque = masque.substr(1);
+		}
+		else
+			document.getElementById(affiche).innerHTML="Veuillez entrez un masque valide";
+
+		if(isNaN(masque) == true || (masque < 1) || (masque > 32)){
+			document.getElementById(affiche).innerHTML="Veuillez entrez un masque valide";
+			return false;
+		}
+		else
+			document.getElementById(affiche).innerHTML="";
+		
+	}
+	else
+		document.getElementById(affiche).innerHTML="";
+
+	return true;
+}
+
+</script>
 
 <br/>
 <h5>Sur cette page vous pourrez apprendre à partitionner votre réseau en different sous réseau.</p></h5>
@@ -8,7 +77,7 @@ require("barreDeMenu.php");
     <h3 align='center'><b>Cours</b></h3>
 <HR width=1240>
 
-<p> <iframe src="cours/sous-res.html" width="1000" height="500"></iframe> </p>
+<p> <iframe src="cours/Exemple-VLSM.html" width="1000" height="500"></iframe> </p>
 
 <HR width=1240>
     <h3 align='center'><b>Application</b></h3>
@@ -21,151 +90,128 @@ require("barreDeMenu.php");
 <tr><h5 id = 'IP'>Entrez une adresse machine pour trouver son adresse réseau.</h5></tr>
 <tr>
     <td align='right'>Adresse IP :</td> 
-    <td><input class='champ' name='part1IP' type='number' min='0' max='255' value= "<?php if (isset($_GET['part1IP'])){echo $_GET['part1IP'];} ?>" required> .</td>
-    <td><input class='champ' name='part2IP' type='number' min='0' max='255' value="<?php if (isset($_GET['part2IP'])){echo $_GET['part2IP'];} ?>" required> .</td>
-    <td><input class='champ' name='part3IP' type='number' min='0' max='255' value="<?php if (isset($_GET['part3IP'])){echo $_GET['part3IP'];} ?>" required> .</td>
-    <td><input class='champ' name='part4IP' type='number' min='0' max='255' value="<?php if (isset($_GET['part4IP'])){echo $_GET['part4IP'];} ?>" required> </td>
-    <td> / <input class='champ' name='part5IP' type='number' min='1' max='30' value="<?php if (isset($_GET['part5IP'])){echo $_GET['part5IP'];} ?>" required> </td>
+    <td><input class='champ' name='ipRes' id= "ipRes" type='text' placeholder="192.168.10.2" onfocusout="adresseIPValide('ipRes', 'errIP_Res')" value= "<?php if (isset($_GET['ipRes'])){echo $_GET['ipRes'];} ?>" required> 
+    <td><input class='champ' name='masqueRes' id= "masqueRes" type='text' min='1' max='30' placeholder="/24 ou 255.255.0.0" onfocusout="masqueValide('masqueRes','errMasque_Res')" value="<?php if (isset($_GET['masqueRes'])){echo $_GET['masqueRes'];} ?>" required> </td>
 
 </tr>
 <tr><td align='center' colspan='7'><input name='validerIP' type="submit" class="btn btn-success btn-sm" value='Valider'></td></tr>
 </table>
 </form>
+
+<p style='color:red' id='errIP_Res'></p>
+<p style='color:red' id='errMasque_Res'></p>
+
 <?php
-	if(isset($_GET['part1IP'],$_GET['part2IP'],$_GET['part3IP'],$_GET['part4IP'], $_GET['part5IP']))
+	if(isset($_GET['ipRes'],$_GET['masqueRes']))
 	{
-		foreach ($_GET as $k => $val)
-    	{
-	        if (!($val == "Valider" or $k == 'sousRes'))
-	        {
-	            if (!is_numeric($val))
-	                echo"<p style='color:red'>Adresse ip entrée invalide</p>";
-	            else if ($val>255 || $val<0)
-	                echo"<p style='color:red'>Adresse ip entrée invalide</p>";
-	        }
-    	}
+		/******** detecte si on entre /?? ou ???.???.???.??? **********/
+		$cidr = 0;
+		$adrIP = explode(".", $_GET['ipRes']);
+		$slash = 0;
+		$erreurRes = 0;
 
-    	$part1IP=$_GET['part1IP'];
-   	 	$part2IP=$_GET['part2IP'];
-   	 	$part3IP=$_GET['part3IP'];
-   	 	$part4IP=$_GET['part4IP'];
-
-        $tab[0]=0;
-	    $tab2[0]=0;
-	    $m1="";// 1ere partie du masque reseau
-	    $m2="";// 2eme
-	    $m3="";// 3eme
-	    $m4="";// 4eme
-	    $compt=0;
-         /********************masque Reseau entrée par l'utilisateur***********************/
-
-	    for($i=1;$i<=4;$i++)
-	    {
-	    	for($j=0;$j<8;$j++)
-	    	{
-	    		if($compt<$_GET['part5IP'])// on decide combien de 1 on met sur le masque du reseau
-	    			$tab[$j] = 1;
-	    		else
-	    			$tab[$j] = 0; // le reste ne sont que des 0
-	    		$compt++;
-	    	}
-	    		if($i==1)
-	    			$m1=implode('', $tab); // 1ere partie de la partie en Binaire 
-	    		if($i==2)
-	    			$m2=implode('', $tab); // 2eme
-	    		if($i==3)
-	    			$m3=implode('', $tab); // 3eme
-	    		if($i==4)
-	    			$m4=implode('', $tab); // 4eme
-	    	
-	    }
-	    $dm1=bindec($m1);// 1ere partie du masque reseau
-	    $dm2=bindec($m2);
-	    $dm3=bindec($m3);
-	    $dm4=bindec($m4);
-   	 	/**********************************************************************************/
-
-   	 	$part1IP=$dm1 & intval($part1IP);
-   	 	$part2IP=$dm2 & intval($part2IP);
-   	 	$part3IP=$dm3 & intval($part3IP);
-   	 	$part4IP=$dm4 & intval($part4IP);
-
-   	 	echo "<h3>Adresse Réseau: <b>".$part1IP.".".$part2IP.".".$part3IP.".".$part4IP."</b></h3>";
+		foreach ($adrIP as $k => $val) {// teste si l'adresse IP entrée est valide
+			if (!is_numeric($val) || $val < 0 || $val > 255) {
+				echo"<p style='color:red'> Adresse ip entrée invalide, Veuillez entrer seulement des chiffres</p>";
+				$erreurRes = 1;
+			}
+		}
 
 
+		if(strlen($_GET['masqueRes'])<=3){ // s'il y a la notation CIDR
+			if(strlen($_GET['masqueRes'])>=2){
+				if(!is_numeric(substr($_GET['masqueRes'],1)) || substr($_GET['masqueRes'],1) < 1 || substr($_GET['masqueRes'],1) > 32){
+					echo"<p style='color:red'>Masque réseau invalide</p>";
+					$erreurRes = 1;
+				}
+				else
+					$slash = substr($_GET['masqueRes'],1);
+			}
+			else{
+				echo"<p style='color:red'>Masque réseau invalide</p>";
+				$erreurRes = 1;
+			}
+		}
+		else{
+			$masque = explode(".", $_GET['masqueRes']);
+			$precedent = 255;
+			//print_r($masque);
+			foreach ($masque as $k => $val) {// teste si le masque entrée est valide
+				if (!is_numeric($val) || $val < 0 || $val > 255 || $precedent < $val) {
+					echo"<p style='color:red'> Masque réseau invalide</p>";
+					$erreurRes = 1;
+				}
+				$precedent = $val;
+			}
+
+			$cidr = 1;
+			echo '<form method="get">
+	   	 	<input  type="hidden" value="$masque" name="masqueEnEntier" />
+			</form >';
+
+			foreach ($masque as $val) {
+				$bin = decbin($val);
+				$slash+=substr_count($bin, '1');
+			}	
+
+		}
+		/**************************************************************/
+
+		/**********************************************************************/
+		
+		if (isset($_GET['masqueEnEntier'])) {
+			$masque = $_GET['masqueEnEntier'];
+			echo"masqueEnEntier";
+		}
+    
+
+		if($erreurRes ==0){
+	        $tab[0]=0;
+		    $tab2[0]=0;
+		    $m1="";// 1ere partie du masque reseau
+		    $m2="";// 2eme
+		    $m3="";// 3eme
+		    $m4="";// 4eme
+		    $compt=0;
+	         /********************masque Reseau entrée par l'utilisateur***********************/
+
+		    for($i=1;$i<=4;$i++)
+		    {
+		    	for($j=0;$j<8;$j++)
+		    	{
+		    		if($compt<$slash)// on decide combien de 1 on met sur le masque du reseau
+		    			$tab[$j] = 1;
+		    		else
+		    			$tab[$j] = 0; // le reste ne sont que des 0
+		    		$compt++;
+		    	}
+		    		if($i==1)
+		    			$m1=implode('', $tab); // 1ere partie de la partie en Binaire 
+		    		if($i==2)
+		    			$m2=implode('', $tab); // 2eme
+		    		if($i==3)
+		    			$m3=implode('', $tab); // 3eme
+		    		if($i==4)
+		    			$m4=implode('', $tab); // 4eme
+		    	
+		    }
+		    $dm1=bindec($m1);// 1ere partie du masque reseau
+		    $dm2=bindec($m2);
+		    $dm3=bindec($m3);
+		    $dm4=bindec($m4);
+	   	 	/**********************************************************************************/
+	   	 	$adrIP[0] = $dm1 & intval($adrIP[0]);
+	   	 	$adrIP[1] = $dm2 & intval($adrIP[1]);
+	   	 	$adrIP[2] = $dm3 & intval($adrIP[2]);
+	   	 	$adrIP[3] = $dm4 & intval($adrIP[3]);
+
+	   	 	echo "<h3>Adresse Réseau: <b>".$adrIP[0].".".$adrIP[1].".".$adrIP[2].".".$adrIP[3]."</b></h3>";
+	   	}
     }
 
 ?>
 
-<script>
-function adresseIPValide()
-{
-	var adr = document.getElementById("ip").value; //le noeud parent
-    var partieIP = adr.split('.');
-	if(partieIP.length == 4){
-	    for(var val in partieIP) {
-			if (isNaN(partieIP[val]) == true || partieIP[val] < 0 || partieIP[val] > 255) {
-				document.getElementById('errIP').innerHTML="Veuillez entrez une adresse réseau valide";
-				//alert("FAUTE!");
-				return false;
-			}
-			else
-				document.getElementById('errIP').innerHTML="";
-		
-		}
-	}
-	else
-		document.getElementById('errIP').innerHTML="Veuillez entrez une adresse réseau valide";
 
-	return true;
-}
-
-function masqueValide()
-{
-	var masque = document.getElementById("masque").value; //le noeud parent
-	var lenMasque = masque.length;
-
-    var partieMasque = masque.split('.');
-
-    var precedent = 255;
-
-	if(partieMasque.length == 4){
-		//alert(partieMasque.length);
-	    for(var val in partieMasque) {
-	    	//alert(partieMasque[val]);
-			if ((isNaN(partieMasque[val]) == true) || (partieMasque[val] < 0) || (partieMasque[val] > 255) || (precedent < partieMasque[val])) {
-				document.getElementById('errMasque').innerHTML="Veuillez entrez un masque valide";
-				//alert("FAUTE!");
-				return false;
-			}
-			else
-				document.getElementById('errMasque').innerHTML="";
-
-			precedent = partieMasque[val];
-		}
-	}
-	else if (lenMasque <=3 && lenMasque>=2) {
-		if(masque.startsWith('/')){
-			masque = masque.substr(1);
-		}
-		else
-			document.getElementById('errMasque').innerHTML="Veuillez entrez un masque valide";
-
-		if(isNaN(masque) == true || (masque < 1) || (masque > 32)){
-			document.getElementById('errMasque').innerHTML="Veuillez entrez un masque valide";
-			return false;
-		}
-		else
-			document.getElementById('errMasque').innerHTML="";
-		
-	}
-	else
-		document.getElementById('errMasque').innerHTML="";
-
-	return true;
-}
-
-</script>
 <br>
 <br>
 <br>
@@ -178,20 +224,22 @@ function masqueValide()
 <tr><h5 id = 'Res'>Entrez une adresse réseau pour la diviser en sous-réseaux.</h5></tr>
 <tr>
     <td align='right'>Adresse réseau :</td> 
-    <td><input class='champ' name='ip' id= "ip" type='text' placeholder="192.168.0.0" onfocusout="adresseIPValide()" value= "<?php if (isset($_GET['ip'])){echo $_GET['ip'];} ?>" required> 
-    <td><input class='champ' name='masque' id= "masque" type='text' min='1' max='30' placeholder="/24 ou 255.255.0.0" onfocusout="masqueValide()" value="<?php if (isset($_GET['masque'])){echo $_GET['masque'];} ?>" required> </td>
+    <td><input class='champ' name='ip' id= "ip" type='text' placeholder="192.168.0.0" onfocusout="adresseIPValide('ip', 'errIP')" value= "<?php if (isset($_GET['ip'])){echo $_GET['ip'];} ?>" required> 
+    <td><input class='champ' name='masque' id= "masque" type='text' min='1' max='30' placeholder="/24 ou 255.255.0.0" onfocusout="masqueValide('masque', 'errMasque')" value="<?php if (isset($_GET['masque'])){echo $_GET['masque'];} ?>" required> </td>
 </tr>
 </table>
-<p style='color:red' id="errIP"></p>
-<p style='color:red' id="errMasque"></p>
+</form>
 
-
+<p style='color:red' id='errIP'></p>
+<p style='color:red' id='errMasque'></p>
 
 
 
 <?php
 // Recupere les valeurs inscrit dans les champs ajoutés pour les garder apres l'actualisation
 // de la page
+
+	$valHotesPas_trie=0;
 	$valHotes=0;
 	if (isset($_GET['cmp'], $_GET['hote'])){
 		$valHotes=$_GET['hote'];
@@ -199,65 +247,7 @@ function masqueValide()
 
 	
 ?>
-<!--<script>
-    var i=0;
-    function addinput()
-    {
-        /*
-        document.getElementById("frm" ).innerHTML += "<br /><input name='txt"+i+"' type='text' value='' />";*/
-        
-        var frm = document.getElementById("frm"); //le noeud parent
-         
-        var valeurHotes = <?php echo json_encode($valHotes); ?>;
-        //alert( valeurHotes[i]);
 
-        // creation d'un champ
-        var inpt = document.createElement('input');
-        inpt.setAttribute('name','hote'+i);
-        inpt.setAttribute('type','text');
-        inpt.setAttribute('id','hote'+i);
-
-        if(typeof valeurHotes[i] === "undefined")
-        	inpt.setAttribute('value',"");
-        else
-        	inpt.setAttribute('value',valeurHotes[i]);
-        //if (i==0) {
-        	inpt.setAttribute('required',"");
-        //}
-        frm.appendChild(inpt);
-         
-
-        /*var input_img = document.createElement('input');
-        input_img.setAttribute('type','image');
-        input_img.setAttribute('src','img/red-cross.png');
-        input_img.setAttribute('name','suppr'+i);
-        input_img.setAttribute('onclick','deleteInput()');*/
-		var input_img = document.createElement('img');
-		input_img.setAttribute('src','img/red-cross.png');
-		input_img.setAttribute('id',""+i);
-		input_img.addEventListener("click", "deleteInput(this)");
-        frm.appendChild(input_img);
-
-        // retour a la ligne apres l'ajout
-        var br = document.createElement('br');
-        frm.appendChild(br);
-         
-        //Incrementation du compteur i (nombre de champ)
-        i++;
-        document.getElementById("cmp").value=i;
-        
-    }
-
-    function deleteInput(selectedField)
-    {
-    	var frm = document.getElementByTagName('hote'+i);
-		frm.parentNode.removeChild(frm);
-		alert("SUPPRIME");
-		
-    	i--;
-    }    
-</script>
--->
 <script type="text/javascript">
 
 $(document).ready(function(){
@@ -323,6 +313,9 @@ $(document).ready(function(){
  
 </form >
 
+
+
+
 <?php
 
 function display($a){
@@ -344,10 +337,13 @@ if(isset($_GET['ip'],$_GET['masque']))
 	$cidr = 0;
 	$adrIP = explode(".", $_GET['ip']);
 	$slash = 0;
+	$erreur = 0;
+
 	foreach ($adrIP as $k => $val) {// teste si l'adresse IP entrée est valide
 		if (!is_numeric($val) || $val < 0 || $val > 255) {
 			echo"<p style='color:red'> Adresse ip entrée invalide, Veuillez entrer seulement des chiffres</p>";
-			header('Location: sousReseauxVLSM.php?id=2');
+			$erreur = 1;
+			break;
 		}
 	}
 
@@ -355,7 +351,7 @@ if(isset($_GET['ip'],$_GET['masque']))
 	if(strlen($_GET['masque'])<=3){ // s'il y a la notation CIDR
 		if(!is_numeric(substr($_GET['masque'],1)) || substr($_GET['masque'],1) < 1 || substr($_GET['masque'],1) > 32){
 			echo"<p style='color:red'>Masque réseau invalide</p>";
-			header('Location: sousReseauxVLSM.php?id=5');
+			$erreur = 1;
 		}
 		else
 			$slash = substr($_GET['masque'],1);
@@ -366,7 +362,7 @@ if(isset($_GET['ip'],$_GET['masque']))
 		foreach ($masque as $k => $val) {// teste si le masque entrée est valide
 			if (!is_numeric($val) || $val < 0 || $val > 255 || $precedent < $val) {
 				echo"<p style='color:red'> Masque réseau invalide</p>";
-				header('Location: sousReseauxVLSM.php?id=5');
+				$erreur = 1;
 			}
 			$precedent = $val;
 		}
@@ -391,6 +387,8 @@ if(isset($_GET['ip'],$_GET['masque']))
 		echo"masqueEnEntier";
 	}
     
+	
+
     echo"<table cellpadding='4' cellspacing='4' align='center' >";
     
     
@@ -446,7 +444,7 @@ if(isset($_GET['ip'],$_GET['masque']))
 
     if(isset($_GET['hote'])){
     	$nbrHote = $_GET['hote'];
-
+    	rsort($nbrHote);
     }
     for ($k=0; $k < $_GET['cmp']; $k++) { 
     	if(isset($_GET['hote'])){
@@ -618,7 +616,10 @@ if(isset($_GET['ip'],$_GET['masque']))
     }
     elseif ($nbrHotesMax < $puiss) {//teste si le nombre d'hotes demandé est inferieur au nombre d'hotes max
      	echo"<p style='color:red'>Le nombre d'hôtes demandé (".$puiss.") est supérieur au nombre maximum d'hôtes (".$nbrHotesMax.")</p>";
-    } 
+    }
+    elseif ($erreur != 0) {//teste si le nombre d'hotes demandé est inferieur au nombre d'hotes max
+     	echo"<p style='color:red'>ERREUR</p>";
+    }  
     else{
     	$multiplReseau[0] = 256;
     	for ($i=0; $i < $_GET['cmp']; $i++) { 
@@ -855,7 +856,6 @@ if(isset($_GET['ip'],$_GET['masque']))
 	    }
 
     }
-
 
 
 }
