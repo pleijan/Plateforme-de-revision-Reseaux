@@ -228,7 +228,7 @@ function masqueValide(choix, affiche)
     <td><input class='champ' name='masque' id= "masque" type='text' min='1' max='30' placeholder="/24 ou 255.255.0.0" onfocusout="masqueValide('masque', 'errMasque')" value="<?php if (isset($_GET['masque'])){echo $_GET['masque'];} ?>" required> </td>
 </tr>
 </table>
-</form>
+
 
 <p style='color:red' id='errIP'></p>
 <p style='color:red' id='errMasque'></p>
