@@ -47,7 +47,10 @@ require("barreDeMenu.php");
     <h2><HR width=50%>Exécution commande réseaux<HR width=50%></h2>
 </table>
  
-  <a href="index.php"><img src="img/trouver-adresse.png"  class="rounded imglongue" alt="trouver-adresse" title="Exécution commande réseaux"></a>
+  <a href="nmap.php"><img src="img/nmap.png"  class="rounded imgcourte" alt="trouver-adresse" title="Exécution commande réseaux"></a>
+  <a href="nslookup.php"><img src="img/nslookup.png"  class="rounded imgcourte" alt="trouver-adresse" title="Exécution commande réseaux"></a>
+  <a href="tcpdump.php"><img src="img/tcpdump.png"  class="rounded imgcourte" alt="trouver-adresse" title="Exécution commande réseaux"></a>
+  <a href="ping.php"><img src="img/ping.png"  class="rounded imgcourte" alt="trouver-adresse" title="Exécution commande réseaux"></a>
 
   </div>   
 </div> 
