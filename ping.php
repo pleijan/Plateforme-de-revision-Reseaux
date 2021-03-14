@@ -29,13 +29,13 @@ require("barreDeMenu.php");
 <?php
 
 
-function display($a){
-    echo "<table align='center' id='cmd'>
-    <tr><td>";
+function display($a,$cmd){
+    echo "<table align='center' id='cmd' width=80%>
+    <tr><td>etude@192.168.2.3: $cmd </br>";
     for($i=0;$i<count($a);$i++) echo "$a[$i]</br>";
-    echo "</br></td></tr>
+    echo "</td></tr>
     </table>";
-}    
+}     
 
 if(isset($_POST["ping"])and isset($_POST["nbping"])){
 echo"
@@ -52,7 +52,7 @@ $cmd.=" ";
 $cmd.=$ping;
 
 exec($cmd,$out,$status);
-display($out);
+display($out,$cmd);
 
 }
 
