@@ -76,7 +76,7 @@ function masqueValide(choix, affiche)
     <h3 align='center'><b>Cours</b></h3>
 <HR width=1240>
 
-<p> <iframe src="cours/sous-res.html" width="1000" height="500"></iframe> </p>
+<h5 align='center'><p> <a href="cours/sous-res.html" target='_BLANK'>Cours CIDR</a> </p></h5>
 
 <HR width=1240>
     <h3 align='center'><b>Application</b></h3>
