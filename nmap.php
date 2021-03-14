@@ -13,7 +13,7 @@ require("barreDeMenu.php");
 <table cellpading='4' cellspacing='4' align='center'>
 
 <tr>
-<td>Adresse a ping</td><td><input type='nMap' name='ping' required></td>
+<td>Adresse a ping</td><td><input type='text' name='nMap' required></td>
 </tr>
 
 <tr>
@@ -27,10 +27,12 @@ require("barreDeMenu.php");
 
 
 function display($a){
-    echo "<pre>";
-    print_r($a);
-    echo "</pre>";
-}    
+    echo "<table align='center' id='cmd'>
+    <tr><td>";
+    for($i=0;$i<count($a);$i++) echo $a[$i];
+    echo "</td></tr>
+    </table>";
+}     
 
 if(isset($_POST["nMap"])){
 echo"

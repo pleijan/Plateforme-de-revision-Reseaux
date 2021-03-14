@@ -26,10 +26,12 @@ require("barreDeMenu.php");
 
 
 function display($a){
-    echo "<pre>";
-    print_r($a);
-    echo "</pre>";
-}    
+    echo "<table align='center' id='cmd'>
+    <tr><td>";
+    for($i=0;$i<count($a);$i++) echo $a[$i];
+    echo "</td></tr>
+    </table>";
+}     
 
 if(isset($_POST["nbTcp"])){
 echo"
