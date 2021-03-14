@@ -10,6 +10,8 @@ require("barreDeMenu.php");
     <h3 align='center'><b>Formulaire</b></h3>
 <HR width=1240>
 
+<h5>il vous suffit de rentrer l'adresse ip ou url que vous voulez ping ainsi que le nombre de requette.</h5>
+
 <form action='' method='POST'>
 <table cellpading='4' cellspacing='4' align='center'>
 

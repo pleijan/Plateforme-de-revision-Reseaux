@@ -9,11 +9,13 @@ require("barreDeMenu.php");
     <h3 align='center'><b>Formulaire</b></h3>
 <HR width=1240>
 
+<h5>il vous suffit de rentrer l'adresse ip ou url que vous voulez identifiez.</h5>
+
 <form action='' method='POST'>
 <table cellpading='4' cellspacing='4' align='center'>
 
 <tr>
-<td>Adresse a ping</td><td><input type='text' name='nMap' required></td>
+<td>Adresse</td><td><input type='text' name='nMap' required></td>
 </tr>
 
 <tr><td></td>

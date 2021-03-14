@@ -9,6 +9,8 @@ require("barreDeMenu.php");
     <h3 align='center'><b>Formulaire</b></h3>
 <HR width=1240>
 
+<h5>il vous suffit de rentrer le nombre de package que vous voulez intercepter. </h5>
+
 <form action='' method='POST'>
 <table cellpading='4' cellspacing='4' align='center'>
 
