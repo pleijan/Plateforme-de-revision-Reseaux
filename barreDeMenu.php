@@ -40,7 +40,7 @@
         <a class="dropdown-item" href="sousReseauxVLSM.php">Notation VLSM</a>
     </div>
     </li>
-    <li class="nav-item">
+    <li class="nav-item active">
       <a class="nav-link" href="crc.php">Calculer un CRC<br>de type Ethernet</a>
     </li>
     <li class="nav-item dropdown">
@@ -54,7 +54,7 @@
         <a class="dropdown-item" href="ping.php">ping</a>
     </div>
     </li>
-    <li class="nav-item">
+    <li class="nav-item active">
       <a class="nav-link" href="glossaire.php">Glossaire</a>
     </li>
   </ul>
