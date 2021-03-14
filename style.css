@@ -48,6 +48,10 @@ scroll-behavior: smooth;
   width: 780px;
   height: 250px; 
 }
+.imgcourte{
+  width: 193px;
+  height: 193px; 
+}
 
 .imgGauche:hover{
   background:#2F3031;
@@ -60,6 +64,11 @@ scroll-behavior: smooth;
   transition: .5s ease;
 }
 .imglongue:hover{
+  background:#2F3031;
+  opacity:0.7;
+  transition: .5s ease;
+}
+.imgcourte:hover{
   background:#2F3031;
   opacity:0.7;
   transition: .5s ease;
