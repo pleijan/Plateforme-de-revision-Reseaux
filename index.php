@@ -41,14 +41,13 @@ require("barreDeMenu.php");
     <h2><HR width=50%>CRC<HR width=50%></h2>
 
   <table align='center' cellpadding="2"> 
-    <tr><td><a href="index.php"><img src="img/nmap.png"  class="rounded imgGauche" alt="nmap" title="Sniffer Nmap"></a></td>
-    <td><a href="crc.php"><img src="img/crc.png"  class="rounded imgDroite" alt="crc" title="Calcul de CRC de type Ethernet"></a></td></tr>
+    <tr><td><a href="crc.php"><img src="img/crc.png"  class="rounded imglongue" alt="crc" title="Calcul de CRC de type Ethernet"></a></td></tr>
   </table>
 
-    <h2><HR width=50%>éxécution commande réseaux<HR width=50%></h2>
+    <h2><HR width=50%>Exécution commande réseaux<HR width=50%></h2>
 </table>
  
-  <a href="index.php"><img src="img/trouver-adresse.png"  class="rounded imglongue" alt="trouver-adresse" title="Trouver l'adresse IP d'une machine extérieure"></a>
+  <a href="index.php"><img src="img/trouver-adresse.png"  class="rounded imglongue" alt="trouver-adresse" title="Exécution commande réseaux"></a>
 
   </div>   
 </div> 
