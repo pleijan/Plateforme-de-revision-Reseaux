@@ -4,7 +4,7 @@ require("barreDeMenu.php");
 
 <br/>
 
-<h5 align='center'><p>Sur cette page vous pourrez effectuer un ping sur l'adresse que vous souhaiter.</p></h5>
+<h5 align='center'><p>Sur cette page vous pourrez effectuer un nslookup sur l'adresse que vous souhaiter.</p></h5>
 <HR width=1240>
     <h3 align='center'><b>Formulaire</b></h3>
 <HR width=1240>
