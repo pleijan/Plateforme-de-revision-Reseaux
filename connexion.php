@@ -11,14 +11,18 @@ require("barreDeMenu.php");
 
 <?php
 
-echo"
-<form action='actionConnexion.php' method='post'>
-<table cellpading='10' cellspacing='10' align='center' border ='2'>
-<tr><td align='center'>Identifiant</td><td align='center'>Mot de passe</td></tr>
-<tr><td><input name='id' type='text'/></td><td><input name='mdp' type='password'/></td></tr>
-<tr><td align='center'><input name='Valider' type='submit'/></td><td align='center'><input type='reset'/></td></tr>
-</table>
-</form>";
+echo'
+<form action="actionConnexion.php" method="post">
+<div class="container">
+	<label for="id"><b>Identifiant</b></label>
+      <input name="id" type="text" class="champConnexion" placeholder="Entrez l\'Identifiant" required>
+      <br>
+      <label for="mdp"><b>Mot de passe</b></label>
+      <input name="mdp" type="password" class="champConnexion" placeholder="Entrez le mot de passe" required>
+        
+      <button type="submit" class = "btn btn-success btn-sm">Connexion</button>
+</div>
+</form>';
 
 
 if (isset($_GET['err'])){
@@ -26,10 +30,10 @@ if (isset($_GET['err'])){
 	switch ($err) {
 	
 	case 0:
-		echo "erreur, veuillez vous connecter";
+		echo "<p style='color:red'>Erreur: Veuillez vous connecter</p>";
 		break;
     case 1:
-        echo "erreur, veuillez mavais mdp";
+        echo "<p style='color:red'>Erreur: Identifiant / Mot de passe entrer invalide</p>";
         break;
 
 	}
