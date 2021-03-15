@@ -24,6 +24,18 @@ scroll-behavior: smooth;
   height: 20px; 
 }
 
+.champConnexion{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.container{
+  width: 30%;
+}
+
 /************ MENU *************/
 .navbar-nav{
   margin-left: 1.5%;
