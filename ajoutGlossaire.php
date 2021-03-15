@@ -15,12 +15,18 @@ if (isset($_SESSION['id'])){
     <HR width=1240>
 
     <form action='actionAjoutGloss.php' method='post'>
-    <table cellpading='10' cellspacing='10' align='center' border ='2'>
-    <tr><td>Mot a ajouter</td><td>Definition liée</td></tr>
-    <tr><td><input name='mot' type='text'/></td><td><input name='def' type='text'/></td></tr>
-    <tr><td><input name='Valider' type='submit'/></td><td><input type='reset'/></td></tr>
+    <div class='container'>
+    <label for='mot'><b>Mot à ajouter</b></label>
+      <input name='mot' type='text' class='champAjout' placeholder='Entrez le mot' required>
+
+      <label for='def'><b>Définition liée</b></label>
+        <div class='input-group'>
+            <textarea name='def' class='form-control' placeholder='Entrez sa définition' required></textarea>
+        </div>
+        
+      <button type='submit' class = 'btn btn-success btn-sm'>Valider</button>
+    </div>
     <input type='hidden' value='id'/>
-    </table>
     </form>";
     
 }else header('Location: connexion.php?err=1');
