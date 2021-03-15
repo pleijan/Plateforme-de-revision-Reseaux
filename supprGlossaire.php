@@ -40,7 +40,7 @@ require("barreDeMenu.php");
         <form action='actionSupprGloss.php' method='post'>
             <div class='container'>
                 <input type='hidden' name='motAModif' value='$getmodifdef'>
-                Nouvelle définition de <b>$getmodifdef</b> :
+                <h6>Nouvelle définition de <b>$getmodifdef</b> :</h6>
                 <div class='input-group'>
                     <textarea name='newdef' class='form-control' placeholder='Entrez la nouvelle définition' required></textarea>
                 </div>
