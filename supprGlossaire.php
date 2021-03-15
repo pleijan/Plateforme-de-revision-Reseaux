@@ -38,14 +38,14 @@ require("barreDeMenu.php");
         $getmodifdef = $_GET['modifdef'];
         echo"<hr><h2>Changer la def de $getmodifdef</h2><hr>
         <form action='actionSupprGloss.php' method='post'>
-            <table align='center'>
-            <tr>
+            <div class='container'>
                 <input type='hidden' name='motAModif' value='$getmodifdef'>
-                <td>nouvelle def de $getmodifdef :</td>
-                <td> <input type='text' name='newdef'></td> 
-                <td> <input type='submit' name='confirmer' value='ok'></td>
-            </tr>
-            </table>
+                Nouvelle définition de <b>$getmodifdef</b> :
+                <div class='input-group'>
+                    <textarea name='newdef' class='form-control' placeholder='Entrez la nouvelle définition' required></textarea>
+                </div>
+                <button name='confirmer' type='submit' class = 'btn btn-success btn-sm' value='ok'>Valider</button>
+            </div>
         </form>
         ";
     }
