@@ -38,11 +38,11 @@ if(isset($_GET['Message2']) and isset($_GET['polynome']) ){
     <h3 align='center'><b>Cours</b></h3>
 <HR width=1240>
 
-<h3><a href='cours/crc/crc01.mp4' target='_BLANK'>vidéo 1</a> |
-<a href='cours/crc/CoursCRC-part02.html' target='_BLANK'> cours partie 2</a> |
-<a href='cours/crc/CoursCRC-part03.html' target='_BLANK'> cours partie 3</a> |
-<a href='cours/crc/division.mp4' target='_BLANK'>division </a> |
-<a href='cours/crc/matrice.mp4' target='_BLANK'>matrice </a> </h3>
+<h3><a href='cours/crc/crc01.mp4' onclick="open('cours/crc/crc01.mp4','Popup','scrollbars=1,resizabl=1,height=500,width=400');return false;">vidéo 1</a> |
+<a href='cours/crc/CoursCRC-part02.html' onclick="open('cours/crc/CoursCRC-part02.html','Popup','scrollbars=1,resizabl=1,height=500,width=400');return false;"> cours partie 2</a> |
+<a href='cours/crc/CoursCRC-part03.html' onclick="open('cours/crc/CoursCRC-part03.html','Popup','scrollbars=1,resizabl=1,height=500,width=400');return false;"> cours partie 3</a> |
+<a href='cours/crc/division.mp4' onclick="open('cours/crc/division.mp4','Popup','scrollbars=1,resizabl=1,height=500,width=400');return false;">division </a> |
+<a href='cours/crc/matrice.mp4' onclick="open('cours/crc/matrice.mp4','Popup','scrollbars=1,resizabl=1,height=500,width=400');return false;">matrice </a> </h3>
 
 <HR width=1240>
     <h3 align='center'><b>Application</b></h3>

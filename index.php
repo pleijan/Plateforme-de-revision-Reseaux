@@ -16,10 +16,11 @@ require("barreDeMenu.php");
     <HR width=80%>
 
     <h3><p>ici vous pourrez réviser tout les modules de l'INM2013 : réseau</p></h3>
-    <p>
+    <h4>Votre adresse ip est <?php echo $_SERVER['REMOTE_ADDR'];?>.</h4>
     
   </div> 
   
+</br>
 
   <div id="contenu">  
     <h2 id = "adresseIP"><HR width=50%> Traductions d'adresses IP <HR width=50%> </h2>
@@ -51,6 +52,7 @@ require("barreDeMenu.php");
   <a href="nslookup.php"><img src="img/nslookup.png"  class="rounded imgcourte" alt="trouver-adresse" title="Exécution commande réseaux"></a>
   <a href="tcpdump.php"><img src="img/tcpdump.png"  class="rounded imgcourte" alt="trouver-adresse" title="Exécution commande réseaux"></a>
   <a href="ping.php"><img src="img/ping.png"  class="rounded imgcourte" alt="trouver-adresse" title="Exécution commande réseaux"></a>
+  <a href="man.php"><img src="img/man.png"  class="rounded imgcourte" alt="trouver-adresse" title="Exécution commande réseaux"></a>
 
   </div>   
 </div> 

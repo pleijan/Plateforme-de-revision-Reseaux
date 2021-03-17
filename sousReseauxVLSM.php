@@ -77,7 +77,7 @@ function masqueValide(choix, affiche)
     <h3 align='center'><b>Cours</b></h3>
 <HR width=1240>
 
-<h5 align='center'><p> <a href="cours/Exemple-VLSM.html" target='_BLANK'>Cours VLSM</a> </p></h5>
+<h5 align='center'><p> <a href="cours/Exemple-VLSM.html" onclick="open('cours/Exemple-VLSM.html','Popup','scrollbars=1,resizabl=1,height=500,width=400');return false;">Cours VLSM</a> </p></h5>
 
 <HR width=1240>
     <h3 align='center'><b>Application</b></h3>
