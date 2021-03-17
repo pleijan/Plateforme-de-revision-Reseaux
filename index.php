@@ -16,7 +16,12 @@ require("barreDeMenu.php");
     <HR width=80%>
 
     <h3><p>ici vous pourrez réviser tout les modules de l'INM2013 : réseau</p></h3>
+<<<<<<< HEAD
     <h4>Votre adresse ip est <?php echo $_SERVER['REMOTE_ADDR'];?>.</h4>
+=======
+    
+    <p>
+>>>>>>> ab6d846485d98b314a3469a63ee86a809124b5df
     
   </div> 
   
