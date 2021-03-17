@@ -238,7 +238,7 @@ if(isset($_GET['Message2']) and isset($_GET['polynome']) ){
 
         $tailleM2 = strlen($message2);
         
-        while($tailleM2>$taillePol){
+        while($tailleM2=>$taillePol){
 
             echo "<h6>$message2 => ";
 
