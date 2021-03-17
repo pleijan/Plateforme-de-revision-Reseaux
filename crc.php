@@ -1,9 +1,10 @@
 <?php
 require('barreDeMenu.php');
 
-if(isset($_GET['Message2']) and isset($_GET['polynome']) ){
+if(isset($_GET['Message2']) and isset($_GET['polynome']) and isset($_GET['nbZero']) ){
     $message2 = $_GET['Message2'];
     $polynome = $_GET['polynome'];
+    $nbZero = $_GET['nbZero'];
     $tailleM2 = strlen($message2);
     $taillePol = strlen($polynome);
 
@@ -27,6 +28,8 @@ if(isset($_GET['Message2']) and isset($_GET['polynome']) ){
     }
 
     if($taillePol>$tailleM2) header('Location:crc.php?id=4');
+
+    if($taillePol-1!=$nbZero) header('Location:crc.php?id=5?taillePol=$taillePol');
 }
 
 ?>
@@ -217,6 +220,10 @@ if(isset($_GET['Message2']) and isset($_GET['polynome']) ){
         if($_GET['id']=='4'){
             echo"<p style='color:red'>message trop grand (10 bit max !)</p>";
         }
+        if($_GET['id']=='5'){
+            $taille = $_GET['taillePol'];
+            echo"<p style='color:red'>taille du polynome attendu incorrect ($taille attendu comme taille de polynome)</p>";
+        }
     }
 
     if(isset($_GET['Message2']) and isset($_GET['polynome']) and isset($_GET['nbZero'])){
@@ -238,21 +245,21 @@ if(isset($_GET['Message2']) and isset($_GET['polynome']) ){
 
         $tailleM2 = strlen($message2);
         
-        while($tailleM2=>$taillePol){
+        while($tailleM2>=$taillePol){
 
-            echo "<h6>$message2 => ";
+            //echo "<h6>$message2 => ";
 
             $debutmessage=substr($message2,0,$taillePol);
             $finmessage=substr($message2,$taillePol);
 
-            echo "$debutmessage $finmessage => ";
+            //echo "$debutmessage $finmessage => ";
 
             for($i =0;$i<$taillePol;$i++){
                 if(boolval($debutmessage[$i]) xor boolval($polArray[$i])) $debutmessage[$i]="1";
                 else $debutmessage[$i]="0";
             }
 
-            echo "$debutmessage $finmessage => ";
+           // echo "$debutmessage $finmessage => ";
 
             $message2=$debutmessage;
             $message2.=$finmessage;
@@ -264,10 +271,15 @@ if(isset($_GET['Message2']) and isset($_GET['polynome']) ){
             
             $tailleM2= strlen($message2);
 
-            echo "$message2</h6>";
+            //echo "$message2</h6>";
         }
 
-        
+        while($tailleM2<$nbZero){
+            $message2 = strrev($message2);
+            $message2.="0";
+            $message2 = strrev($message2);
+            $tailleM2= strlen($message2);
+        }
 
         echo"<h6><b>Le CRC générateur est : $message2</b></h6>";
         
