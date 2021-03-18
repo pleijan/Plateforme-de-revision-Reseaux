@@ -48,8 +48,8 @@
       Execution Commande Réseaux
     </a>
     <div class="dropdown-menu">
-        <a class="dropdown-item" href="nmap.php">Nmap</a>
-        <a class="dropdown-item" href="nslookup.php">Nslookup</a>
+        <a class="dropdown-item" href="nmap.php">nmap</a>
+        <a class="dropdown-item" href="nslookup.php">nslookup</a>
         <a class="dropdown-item" href="tcpdump.php">tcpdump</a>
         <a class="dropdown-item" href="ping.php">ping</a>
         <a class="dropdown-item" href="man.php">man</a>
