@@ -19,10 +19,15 @@ scroll-behavior: smooth;
   width: 150px;
   height: 30px; 
 }
+.champBin{
+  width: 320px;
+  height: 30px; 
+}
 .champ2{
   width: 80px;
   height: 20px; 
 }
+
 
 .champConnexion{
   width: 100%;
@@ -41,7 +46,7 @@ scroll-behavior: smooth;
   box-sizing: border-box;
 }
 .container{
-  width: 70%;
+  width: 30%;
 }
 .containMot{
  float:right
@@ -64,7 +69,10 @@ scroll-behavior: smooth;
   color: rgb(255, 255, 255);
 }
 
-
+.tabMot{
+   float:left;
+   margin-left: 20%;
+}
 /************ Image Accueil *************/ 
 .imgGauche{
   width: 330px;
