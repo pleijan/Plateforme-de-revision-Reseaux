@@ -35,7 +35,7 @@ if (isset($_SESSION['id'])){
 }else header('Location: connexion.php?err=0');
 
 ?>
-
+</h3>
 <footer>
   <HR width=1240>
    </br>
