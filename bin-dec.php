@@ -1,4 +1,3 @@
-
 <?php
 require("barreDeMenu.php");
 ?>
@@ -20,7 +19,7 @@ require("barreDeMenu.php");
 <table cellpading='4' cellspacing='4' align='center'>
 
 <tr><td align='right'>Adresse IP :</td> 
-    <td><input class='champ' name='ip' id= "ip" type='text' onfocusin="javascript:nospaces(this)" onfocusout="javascript:nospaces(this)" placeholder="192.168.10.2" value= "<?php if (isset($_POST['ip'])){echo $_POST['ip'];} ?>" required> </td></tr>
+    <td><input class='champBin' name='ip' id= "ip" type='text' onfocusin="javascript:nospaces(this)" onfocusout="javascript:nospaces(this)" placeholder="192.168.10.2" value= "<?php if (isset($_POST['ip'])){echo $_POST['ip'];} ?>" required> </td></tr>
 </table>
 
 <table cellpading='4' cellspacing='4' align='center' >
