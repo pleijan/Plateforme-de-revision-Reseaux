@@ -10,7 +10,7 @@ require("barreDeMenu.php");
     <h3 align='center'><b>Cours</b></h3>
 <HR width=1240>
 
-<p> explication de comment ça marche </p>
+<h5 align='center'><a href='cours/crc/crc01.mp4' onclick="open('cours/crc/crc01.mp4','Popup','scrollbars=1,resizabl=1,height=500,width=400');return false;">Traduction de binaire a décimale</a></h5>
 
 <HR width=1240>
     <h3 align='center'><b>Application</b></h3>
@@ -152,3 +152,13 @@ if (isset($_GET['id'])){
 ?>
 
 </body>
+<footer>
+  <HR width=1240>
+   </br>
+   </br>
+  <p id = "copyright"><span id="Copyright symbol">&copy Copyright 2021. IUT de Vélizy - PIERRE TOM - GIANNICO Raffaele - MANOHARAN Anushan - PARISOT Théo. Tous droits r&eacute;serv&eacute;s.</span></p>
+   </br>
+   </br>
+  <HR width=1240>
+</footer>
+

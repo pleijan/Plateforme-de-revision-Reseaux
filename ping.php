@@ -58,3 +58,13 @@ display($out,$cmd);
 
 }
 
+?>
+<footer>
+  <HR width=1240>
+   </br>
+   </br>
+  <p id = "copyright"><span id="Copyright symbol">&copy Copyright 2021. IUT de Vélizy - PIERRE TOM - GIANNICO Raffaele - MANOHARAN Anushan - PARISOT Théo. Tous droits r&eacute;serv&eacute;s.</span></p>
+   </br>
+   </br>
+  <HR width=1240>
+</footer>
