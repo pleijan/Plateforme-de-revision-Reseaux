@@ -58,5 +58,8 @@
     <li class="nav-item active">
       <a class="nav-link" href="glossaire.php">Glossaire</a>
     </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="./Manuel_utilisateur/manuel_utilisateur.html">Manuel</a>
+    </li>
   </ul>
 </nav>
