@@ -3,13 +3,13 @@ title: 'Manuel Utilisateur : Outil pédagogique pour le module de réseau'
 author: ''
 date: "20/03/2021"
 output:
-  pdf_document:
-    number_sections: yes
-  word_document:
-    toc: yes
   html_document:
     toc: yes
     df_print: paged
+  word_document:
+    toc: yes
+  pdf_document:
+    number_sections: yes
 ---
 <br><br><br><br> Ce projet a été réaliser dans le cadre d'un projet tutoré pour l'Iut de Vélizy. Il a été tutoré par M.Hoguin.
 C'est un outil qui vous aidera à mieux comprendre par des applications et des cours le module réseau de première année.
@@ -18,13 +18,13 @@ Chaque pages est composé d'une partie cours, et d'une partie application qui pe
 En accédant au site, vous trouverez sur la page d'accueil un menu en haut, qui permettra d'acceder aux différentes fonctionnalités énoncé précedemment.
 \vspace{10mm} <br><br>
 
-![Le menu](menu.png)
+![Le menu](./image_utilisé/menu.png)
 
 \vspace{100mm} <br><br><br>
 
 De même pour toute les petites images qui se situent plus bas dans cette page.
 
-![Images permettant d'accéder aux fonctionnalités](imgMenu.png)
+![Images permettant d'accéder aux fonctionnalités](./image_utilisé/imgMenu.png)
 
 \newpage
 
@@ -42,7 +42,7 @@ Ensuite, la première étape est d'écrire dans le champ, l'adresse IP séparer 
 Puis, choisissez votre mode de conversion grâce aux radios boutons.\newline 
 Et enfin appuyer sur le bouton "**Valider**".
 
-![](bin-dec.png)
+![](./image_utilisé/bin-dec.png)
 
 \vspace{10mm}
 
@@ -50,7 +50,7 @@ Et enfin appuyer sur le bouton "**Valider**".
 
 Le résultat apparaît:
 
-![Resultat de la traduction Décimal à binaire de l'adresse : 192.168.3.10](Resultat_bin-dec.png)
+![Resultat de la traduction Décimal à binaire de l'adresse : 192.168.3.10](./image_utilisé/Resultat_bin-dec.png)
 
 \vspace{10mm}
 
@@ -58,7 +58,7 @@ Le résultat apparaît:
 
 Procédez de la même façon pour la traduction de binaire à décimal.
 
-![Exemple pour une traduction binaire](bin-dec_Ex.png)
+![Exemple pour une traduction binaire](./image_utilisé/bin-dec_Ex.png)
 
 \newpage
 
@@ -76,7 +76,7 @@ Tout d'abord, la première étape est d'écrire dans le champ, l'adresse IP sép
 Puis, choisissez votre mode de conversion grâce aux radios boutons.
 Et enfin appuyer sur le bouton "**Valider**".
 
-![](hex-dec.png)
+![](./image_utilisé/hex-dec.png)
 
 \vspace{30mm}
 
@@ -84,7 +84,7 @@ Et enfin appuyer sur le bouton "**Valider**".
 
 Le résultat apparaît:
 
-![Resultat de la traduction Décimal à binaire de l'adresse : 192.168.3.10](Resultat_hex-dec.png)
+![Resultat de la traduction Décimal à binaire de l'adresse : 192.168.3.10](./image_utilisé/Resultat_hex-dec.png)
 
 \vspace{20mm}
 
@@ -92,7 +92,7 @@ Le résultat apparaît:
 
 Procédez de la même façon pour la traduction héxadécimal à décimal.
 
-![Exemple pour une traduction héxadécimal](hex-dec_Ex.png)
+![Exemple pour une traduction héxadécimal](./image_utilisé/hex-dec_Ex.png)
 
 \newpage
 
@@ -109,7 +109,7 @@ Vous pouvez accéder au cours via le lien pointé par la flèche bleu (voir imag
 Pour diviser le réseau en sous-réseaux, il vous faut l'adresse réseau de ce réseau. Pour cela, entrez une adresse IP dans le premier champ (Voir ci-dessous).
 N'inscrivez pas de lettre, et écrivez une adresse IP correcte sinon une erreur apparaîtra.
 
-![Comment obtenir l'adresse réseau](cidr.png)
+![Comment obtenir l'adresse réseau](./image_utilisé/cidr.png)
 
 \vspace{20mm}
 
@@ -117,7 +117,7 @@ N'inscrivez pas de lettre, et écrivez une adresse IP correcte sinon une erreur 
 
 Vous obtiendrez l'adresse réseau.
 
-![Résultat obtenu après avoir cliquer sur valider](Resultat_cidr.png)
+![Résultat obtenu après avoir cliquer sur valider](./image_utilisé/Resultat_cidr.png)
 
 \vspace{20mm}
 
@@ -133,7 +133,7 @@ Enfin, appuyer sur le bouton "**Valider**". \newline
 **Attention ! Si vous demandez un nombre de sous-réseaux qui dépasse le nombre de sous-réseaux maximum que peut accueillir ce réseau, une erreur apparaîtra .**
 
 
-![Diviser le réseau en sous-réseau](cidr2.png)
+![Diviser le réseau en sous-réseau](./image_utilisé/cidr2.png)
 
 \vspace{20mm}
 
@@ -142,7 +142,7 @@ Enfin, appuyer sur le bouton "**Valider**". \newline
 Différentes informations sur les sous-réseaux apparaissent, comme le nombre d'hotes disponible au total, leurs adresse de réseau, de broadcast, ainsi leurs plages d'adresses disponible.
 
 
-![Resultat après avoir cliquer sur valider](Resultat_cidr2.png)
+![Resultat après avoir cliquer sur valider](./image_utilisé/Resultat_cidr2.png)
 
 
 \newpage
@@ -160,7 +160,7 @@ Vous pouvez accéder au cours via le lien pointé par la flèche bleu (voir imag
 Pour diviser le réseau en sous-réseaux, il vous faut l'adresse réseau de ce réseau. Pour cela, entrez une adresse IP dans le premier champ (Voir ci-dessous).
 N'inscrivez pas de lettre, et écrivez une adresse IP correcte sinon une erreur apparaîtra.
 
-![Comment obtenir l'adresse réseau](vlsmRes.png)
+![Comment obtenir l'adresse réseau](./image_utilisé/vlsmRes.png)
 
 \vspace{20mm}
 
@@ -168,7 +168,7 @@ N'inscrivez pas de lettre, et écrivez une adresse IP correcte sinon une erreur 
 
 Vous obtiendrez l'adresse réseau.
 
-![Résultat obtenu après avoir cliquer sur valider](Resultat_vlsmRes.png)
+![Résultat obtenu après avoir cliquer sur valider](./image_utilisé/Resultat_vlsmRes.png)
 
 \vspace{25mm}
 
@@ -183,7 +183,7 @@ Puis, grâce au bouton add marquer avec le signe plus (' + '), vous pouvez ajout
 Enfin, appuyer sur le bouton **Valider**. \newline
 **Attention ! Si vous demandez un nombre d'hôtes qui dépasse le nombre d'hôtes maximum que peut accueillir ce réseau, une erreur apparaîtra .**
 
-![Diviser le réseau en sous-réseau](vlsm.png)
+![Diviser le réseau en sous-réseau](./image_utilisé/vlsm.png)
 
 \vspace{25mm}
 
@@ -192,7 +192,7 @@ Enfin, appuyer sur le bouton **Valider**. \newline
 Différentes informations sur les sous-réseaux apparaissent, comme le nombre d'hotes disponible au total, leurs adresse de réseau, de broadcast, ainsi leurs plages d'adresses disponible.
 
 
-![Resultat après avoir cliquer sur valider](Resultat_vlsm.png)
+![Resultat après avoir cliquer sur valider](./image_utilisé/Resultat_vlsm.png)
 
 \newpage
 
@@ -214,13 +214,13 @@ Vous pouvez accéder au cours ainsi qu'aux vidéos via le lien pointé par les f
 **Attention ! Pour chaque champ, il ne faut que saisir des nombres binaires.** \newline
 Il faut d'abord entrer le message dans le champ correspondant.
 
-![](crc1.png)
+![](./image_utilisé/crc1.png)
 
 \vspace{15mm}
 
 Puis choisir la taille de la matrice.
 
-![](crc2.png)
+![](./image_utilisé/crc2.png)
 
 \newpage
 
@@ -228,7 +228,7 @@ Puis choisir la taille de la matrice.
 
 Saisir la matrice génératrice.
 
-![](crc3.png)
+![](./image_utilisé/crc3.png)
 
 \vspace{15mm}
 
@@ -237,7 +237,7 @@ Saisir la matrice génératrice.
 Et enfin cliquer sur le bouton "**Valider**".
 Et le résultat apparaît.
 
-![](Resultat_crc.png)
+![](./image_utilisé/Resultat_crc.png)
 
 \newpage
 
@@ -248,7 +248,7 @@ Et le résultat apparaît.
 De même, vous devez remplir les champs en y inscrivant dans un premier temps le message, puis le nombre de zéros que l'on souhaite rajouter au message.\newline De plus, il faut renseigner le polynôme. \newline
 **Attention ! Pour chaque champ, il ne faut que saisir des nombres binaires.**
 
-![](crc4.png)
+![](./image_utilisé/crc4.png)
 
 \vspace{15mm}
 
@@ -257,7 +257,7 @@ De même, vous devez remplir les champs en y inscrivant dans un premier temps le
 Et enfin cliquer sur le bouton "**Valider**".
 Et le résultat apparaît.
 
-![](Resultat_crc2.png)
+![](./image_utilisé/Resultat_crc2.png)
 
 
 \newpage
@@ -272,7 +272,7 @@ Avec nmap vous pouvez scanner un réseau, pour obtenir diverses informations sur
 Il vous suffit simplement d'écrire une adresse IP ou bien une URL dans le champ, et appuyer sur le bouton "*Valider*".
 \newline En faisant cela vous exécutez la commande suivante : **nmap www.google.com**
 
-![](nmap.png)
+![](./image_utilisé/nmap.png)
 
 \vspace{15mm}
 
@@ -280,7 +280,7 @@ Il vous suffit simplement d'écrire une adresse IP ou bien une URL dans le champ
 
 Et le résultat de la commande apparaît.
 
-![](Resultat_nmap.png)
+![](./image_utilisé/Resultat_nmap.png)
 
 \newpage
 
@@ -294,7 +294,7 @@ Ou bien cliquez sur l'image correspondante à partir de l'accueil.
 nslookup permet d'interroger les serveurs DNS pour obtenir les informations définies pour un domaine déterminé.
 Il vous suffit simplement d'écrire une adresse IP ou bien une URL dans le champ, et appuyer sur le bouton "**Valider**".\newline En faisant cela vous exécutez la commande suivante : **nslookup www.google.com**
 
-![](nslookup.png)
+![](./image_utilisé/nslookup.png)
 
 \vspace{15mm}
 
@@ -302,7 +302,7 @@ Il vous suffit simplement d'écrire une adresse IP ou bien une URL dans le champ
 
 Et le résultat de la commande apparaît.
 
-![](Resultat_nslookup.png)
+![](./image_utilisé/Resultat_nslookup.png)
 
 <br><br><br>
 
@@ -322,7 +322,7 @@ Ou bien cliquez sur l'image correspondante à partir de l'accueil.
 ping vous permet de tester l'accessibilité d'une autre machine à travers un réseau IP.\newline Pour pouvoir exécuter la commande sur le site, il est nécessaire de préciser le nombre de ping que l'on veut envoyé.\newline Pour cela, il faut tout d'abord inscrire une adresse IP ou une URL, c'est l'adresse que l'on veut ping. \newline Ensuite, précisez le nombre de ping. \newline Enfin appuyer sur le bouton "**Valider**". \newline
 En faisant cela vous exécutez la commande suivante : **ping -c 5 www.uvsq.fr**
 
-![](ping.png)
+![](./image_utilisé/ping.png)
 
 \vspace{15mm}
 
@@ -330,7 +330,7 @@ En faisant cela vous exécutez la commande suivante : **ping -c 5 www.uvsq.fr**
 
 Et le résultat de la commande apparaît.
 
-![](Resultat_ping.png)
+![](./image_utilisé/Resultat_ping.png)
 
 \newpage
 
@@ -345,7 +345,7 @@ La commande man vous permet de visionner le manuel/mode d'emploi une commande. I
 \newline
 En faisant cela vous exécutez la commande suivante : **man ls**
 
-![](man.png)
+![](./image_utilisé/man.png)
 
 \vspace{15mm}
 
@@ -353,7 +353,7 @@ En faisant cela vous exécutez la commande suivante : **man ls**
 
 Et le résultat de la commande apparaît.
 
-![](Resultat_man.png)
+![](./image_utilisé/Resultat_man.png)
 
 Rappelez-vous de toujours RTFM ;) !
 
@@ -367,19 +367,19 @@ Pour accéder à cette fonctionnalité, cliquez sur "**glossaire**". Elle réper
 
 Si vous êtes **admin**, vous pouvez modifier ajouter des mots supplémentaires au glossaire ainsi que modifier les définitions des mots ou même supprimer ces mots.\newline Pour cela cliquez sur **modifier la table**.
 
-![](modif_glossaire.png)
+![](./image_utilisé/modif_glossaire.png)
 
 <br><br>
 
 Un formulaire de connexion apparaîtra, inscrivez-y le login et le mot-de-passe.
 
-![](connexionGlossaire.png)
+![](./image_utilisé/connexionGlossaire.png)
 
 <br><br>
 
 Pour ajouter des mots au glossaire, cliquez sur **ajouter des mots**, et pour modifier ou supprimer des mots cliquez sur **modifier ou supprimer des mots**
 
-![](glossaire-admin.png)
+![](./image_utilisé/glossaire-admin.png)
 
 
 \newpage
@@ -390,7 +390,7 @@ Pour ajouter des mots au glossaire, cliquez sur **ajouter des mots**, et pour mo
 
 Pour ajouter un mot, il faut renseigner le mot dans le premier champ, ainsi que sa définition dans le deuxième. Et enfin, appuyer sur le bouton **"Valider"**
 
-![](glossaire.png)
+![](./image_utilisé/glossaire.png)
 
 \vspace{15mm}
 
@@ -398,7 +398,7 @@ Pour ajouter un mot, il faut renseigner le mot dans le premier champ, ainsi que 
 
 Et le mot apparaît dans la table.
 
-![](glossaire2.png)
+![](./image_utilisé/glossaire2.png)
 
 \vspace{15mm}
 
@@ -410,7 +410,7 @@ Pour modifier la définition d'un mot, il faut cliquer sur **l'icone crayon**.
 Ainsi un champ apparait, vous pouvez désormais renseigner la nouvelle définition du mot.
 Pour supprimer un mot, il faut cliquer sur la **croix rouge**.
 
-![](glossaire3.png)
+![](./image_utilisé/glossaire3.png)
 
 \vspace{15mm}
 
@@ -418,7 +418,7 @@ Pour supprimer un mot, il faut cliquer sur la **croix rouge**.
 
 La modification de la définition du mot a bien été pris en compte.
 
-![](glossaire4.png)
+![](./image_utilisé/glossaire4.png)
 
 
 Lorsque vous avez terminez vous pouvez vous deconnectez.
