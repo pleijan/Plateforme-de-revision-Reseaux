@@ -13,7 +13,7 @@ output: pdf_document
 \large \hspace{10pt} PIERRE Tom - GIANNICO Raffaele - PARISOT Theo - MANOHARAN Anushan
 \raggedright
 \clearpage
-\tableofcontents
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -45,7 +45,13 @@ Un grand merci à nos familles, pour leurs conseils ainsi que leurs soutiens mor
 
 ### Résumé
 
+Notre projet etait de develloper une application web a destination des étudiants de première années en informatique, visant a les aider dans le module réseaux.Pour ça nous devions prendre les cours de Monsieur Hoguin, et faire des applications mettant en pratique ces cours, permettant aux étudiant de mieux comprendre et de pouvoir verifier aussi leurs résultats.
+Cette application web sera heberger sur un serveur de l'iut ce qui permettera aux étudiants d'y acceder facilement en tapant dans leur navigateur 192.168.2.3.
+
 ### Sommaire
+
+\tableofcontents
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 ## Introduction
 
