@@ -6,7 +6,7 @@ require("barreDeMenu.php");
 
 <h5 align='center'><p>Sur cette page vous pourrez effectuer un nslookup sur l'adresse que vous souhaiter.</p></h5>
 <HR width=1240>
-    <h3 align='center'><b>Formulaire</b></h3>
+    <h3 align='center'><b>Formulaire nslookup</b></h3>
 <HR width=1240>
 
 <h5>il vous suffit de rentrer l'adresse ip ou url que vous voulez identifiez.</h5>

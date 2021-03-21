@@ -20,36 +20,32 @@ if (isset($_SESSION['id'])){
     	$listeMot = explode( ',', $strlisteMot);
     }
     echo"
-    <table align='center' width=80%>
-    <tr>
-      <td>
-        <table align='center'><tr><td align='center'><b>Mots déjà entrés :</b></td></tr>
-        ";
-        foreach ($listeMot as $key => $val) {
-          echo"<tr><td align='center'>$val</td></tr>";
-        }
-      echo"
-      </table>
-      </td>
-      <td>
-      <form action='actionAjoutGloss.php' method='post'>
-      <div class='container'>
-      <label for='mot'><b>Mot à ajouter</b></label>
-        <input name='mot' type='text' class='champAjout' placeholder='Entrez le mot' required>
+    <table>
+    <div  class='tabMot'>
+    	<option value=''><b>Mots déjà entrés :</b></option>
+    	";
+    	foreach ($listeMot as $key => $val) {
+    		echo"<option value='$val'>$val</option>";
+    	}
+    echo"
+    </table
+	</div>
 
-        <label for='def'><b>Définition liée</b></label>
-          <div class='input-group'>
-              <textarea name='def' class='form-control' placeholder='Entrez sa définition' required></textarea>
-          </div>
-        <div class='buttons'>
-          <button type='submit' class = 'btn btn-success btn-sm'>Valider</button>
+    <form action='actionAjoutGloss.php' method='post'>
+    <div class='container'>
+    <label for='mot'><b>Mot à ajouter</b></label>
+      <input name='mot' type='text' class='champAjout' placeholder='Entrez le mot' required>
+
+      <label for='def'><b>Définition liée</b></label>
+        <div class='input-group'>
+            <textarea name='def' class='form-control' placeholder='Entrez sa définition' required></textarea>
+           
         </div>
-      </div>
-      <input type='hidden' value='id'/>
-      </form>
-      
-      </td>
-    </tr></table>";
+         <button type='submit' class = 'btn btn-success btn-sm'>Valider</button>
+    </div>
+    <input type='hidden' value='id'/>
+    </form>";
+    
 }else header('Location: connexion.php?err=1');
 
 ?>
