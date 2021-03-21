@@ -55,30 +55,40 @@ Cette application web sera heberger sur un serveur de l'iut ce qui permettera au
 
 ## Introduction
 
+
 ## Partie 1 : Solution proposée - Demarche utilisée
-
 ### Qualité Logicielle
-
 #### La capacité fonctionnelle 
 
 #### La fiabilité
 
 #### la facilité d'utilisation
 
+Pour nous c'etait impensable que cette application ne soit pas facile a utiliser, premierement car elle sera utilisée principalement par des étudiants, de plus elle servira de support de cours pour ces étudiants, Il a fallut travailler d'arache pied pour rendre cette plateforme simple d'utilisation. On a commencer par l'index en mettant des grandes images avec marquée le nom de chaque fonctionnalitée en gros comme vous pouvez voir Annexe ?, de plus via le menu en haut de chaque page il est tres facile de voyager entre chaque fonctionnalitée, d'ailleurs parlons des fonctionnalitées, chaque fonctionnalitée est composée d'un cours expliquant comment le faire soi même, ainsi qu'une application pour mettre en pratique ce cours, et pour rendre ces applications les plus pratique, on vous indique a chaque fois qu'elle type d'information est attendu, et si il y a un probleme de nombreux messages d'erreurs vous expliqueron qu'est ce qu'il ne va pas cf Annexe ?.  
+
 #### La performance
 
 #### la maintenabilité
 
-### Organisation de l'équipe
 
+### Organisation de l'équipe
 #### Organigrame
+
+
+Pour ce projet nous étions 4, il y avais PARISOT Theo, MANOHARAN Anushan, GIANNICO Raffaele et PIERRE Tom. Aujourd'hui Nous ne somme plus que deux, il reste GIANNICO Rafaele et PIERRE Tom. et nous avons repatie les taches entre nous, Raffaele s'est occupée de l'index de tout ce qui s'approche de l'aspect graphique de l'application, d'une fonctionnalitée qui est le decoupage de sous réseaux, ainsi que le stockage csv du glossaire. tandis que Tom c'est occupée du reste des fonctionnalitées (traduction adresse ip, CRC, commande Réseau...) et de leur interface associée.
 
 #### Raison
 
+
+Nous avons répartie les taches comme ceci car Raffaele avais une meilleur connaissance sur les fichiers Csv et sur les styles en web, tandis que Tom a plus de connaissances pour établir un algorythme (qu'est ce qu'il nous faut pour tel fonctionnalitée, comment traiter les données etc..) et coder l'interface qui lui permet de fonctionner.
+
 #### Avantages
 
-### Méthode incrémentale
 
+En établissant qui fait quoi comme nous venons de voir ça nous permet d'avancer le plus vite car la personne qui code tel ou tel chose est la plus qualifiée pour le faire et mettra donc moins de temps.
+
+
+### Méthode incrémentale
 #### Explications
 
 #### Raison 
@@ -86,25 +96,32 @@ Cette application web sera heberger sur un serveur de l'iut ce qui permettera au
 #### Avantages
 
 ### Nos outils de suivi
-
 #### La gestion de version - GIT
+
+Nous avons utilisé GitLab pour mieux collaborer entre nous mais aussi avec le client afin de voir les évolutions.Voici le lien du gitLab, https://gitlab.com/pleijan/projet-tutoree-aide-reseau-premiere-annee
 
 #### un agenda hybride
 
 #### Communication générale
 
-### Planification détaillée du projet
+Notre manière de communiquer était sur un groupe privé du logiciel Discord. Et de manière récurrente, nous nous échangions nos évolutions, ou alors nos idées.
+Aussi nous avons utilisé la plateforme Zoom pour communiquer avec notre client, faire une réunion avec lui pour faire un point sur la situation, lui poser des questions, savoir ce qu’il pense de notre avancé du projet.
 
+### Planification détaillée du projet
 #### Ordonnancement
 
 #### Diagramme de gantt
+
+nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe ?. Nos travaux
+étaient répartis sur plusieurs semaines, nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine, ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines, ensuite nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu qui a ensuite nous avons continuer a developper et écrire ce rapport.
 
 #### La gestion des compétences
 
 #### La gestion des risques
 
-## Partie 2 : analyse de la réalisation
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+## Partie 2 : analyse de la réalisation
 ### Exigences Critiques
 
 ### Exigences majeures
@@ -113,20 +130,36 @@ Cette application web sera heberger sur un serveur de l'iut ce qui permettera au
 
 ### Exigences supplémentaires
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 3 : Conclusions et bilan du projet
-
 ### Bilan de réalisation
+A l'heure d'aujourd'hui, le projet est quasiment fini, toute les fonctionnalitées demander dans le cahier des charges ont été développer, confirmer et disponible pour n'importe quel étudiant, cependant nous savions que ce projet était évolutifs car dans ce type de projet n'importe quel idée peux devenir une réelle demande du client, si nous devions faire le point sur tout ce qui etait demander nous avions :
+
+- la traduction d'adresse IP entre hexadecimal et decimal ou entre binaire et decimal.
+- l'adressage de sous réseaux en notation CIDR et VLSM.
+- le calcul matriciel et polynomial d'un CRC.
+- 5 commande réseaux sous linux (ping, nmap, nslookup, man et tcpdump).
+- un glossaire qui repertorie l'ensemble des mots important.
+- et un manuel d'utilisation.
+
+et donc parmis toute ces taches a accomplire seulement la commande reseau tcpdump na pas été accomplie.
 
 ### Des evolutions possibles ?
 
-### Des acquis divers et variés
+Ce projet est-il évolutif ? La réponse est oui, tout d'abord car les cours qui y sont présent sont ceux de premiere années on pourras rajouter les cours de s3 et ensuite la spécialisation réseaux du s4, on peux aussi l'étendre a n'importe quel module ce qui offre une possibilitée d'extensions tout a fait énorme.
 
+### Des acquis divers et variés
 #### Savoir-être
+
+Ce projet nous a permis d'apprendre a travailler en équipe, de faire face a des réduction d'effectifs, des crises sanitaires, tout en respectant les délais pour produire notre projet. et grace a cet experiences c'est évident que nos capacités en sont sotie grandie.
 
 #### Savoir-Faire
 
-### Une Experience fondamentale
+Nous avons aussi acquis de l'experience niveau technique, car en effet comme vu précedemment, de nombreux obstacle on fait surface qui nous ont forcer a nous documenter, a essayer maintes et maintes fois pour résoudre ce probleme, nous nous sommes donc servis a la fois de tout nos cours de programmation web, de mathematique, mais aussi de certains site comme la documentations de php (php.net) ou encore W3Scool qui repertorie nombreux sujet pour aider tout les developpeurs 
 
+### Une Experience fondamentale
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 4 : Bibliographie
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 5 : Annexes
