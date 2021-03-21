@@ -166,22 +166,27 @@ if(isset($_GET['Message2']) and isset($_GET['polynome']) and isset($_GET['nbZero
         echo"<h6><b>Le CRC est : </b></h6>
         <table border='1px' cellpading='4' cellspacing='4' align='center'  >
         <tr>";
+
         $CRC =0;
 
-        
+        for($col = 0; $col<$nbCol; $col++){
+            if($Message[0] and $m[$col][0]) $CRC = 1;
+            else $CRC = 0;
 
-        for($ligne = 0; $ligne<$nbCol; $ligne++){
-            for($col = 0; $col<$nbCol; $col++){
-                if ($CRC xor ($Message[$ligne] and $m[$col][$ligne]))
-                $CRC = 1;
-                else $CRC = 0;
-                
+            for($ligne = 1; $ligne<strlen($Message); $ligne++){
+
+                if($Message[$ligne]==1 and $m[$col][$ligne]==1) $calcul = 1;
+                else $calcul = 0;
+
+                if ($CRC == $calcul ) $nouvCRC = 0;
+                else $nouvCRC = 1;
+
+                $CRC = $nouvCRC;
             }
-            echo "<td><p color='red'> $CRC</p></td>";
+            echo "<td>$CRC</td>";
         }
         echo"</tr></table>";
     }
-
 ?>
 
 <HR width=750>
