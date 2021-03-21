@@ -6,7 +6,7 @@ require("barreDeMenu.php");
 
 <h5 align='center'><p>Sur cette page vous pourrez afficher la page Man d'une commande.</p></h5>
 <HR width=1240>
-    <h3 align='center'><b>Formulaire</b></h3>
+    <h3 align='center'><b>Formulaire man</b></h3>
 <HR width=1240>
 
 <h5>il vous suffit de rentrer la fonction pour afficher sa page de Man.</h5>
