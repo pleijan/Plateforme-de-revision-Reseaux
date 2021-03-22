@@ -76,7 +76,7 @@ function masqueValide(choix, affiche)
     <h3 align='center'><b>Cours</b></h3>
 <HR width=1240>
 
-<h5 align='center'><p> <a href="cours/sous-res.html" onclick="open('cours/sous-res.html','Popup','scrollbars=1,resizabl=1,height=500,width=400');return false;">Cours CIDR</a> </p></h5>
+<h5 align='center'><p> <a href="cours/sous-res.html" target='_BLANK'>Cours CIDR</a> </p></h5>
 
 <HR width=1240>
     <h3 align='center'><b>Application</b></h3>
@@ -105,6 +105,7 @@ function masqueValide(choix, affiche)
         /******** detecte si on entre /?? ou ???.???.???.??? **********/
         $cidr = 0;
         $adrIP = explode(".", $_GET['ipRes']);
+        $masqueVerif = explode(".", $_GET['masqueRes']);
         $slash = 0;
         $erreurRes = 0;
 
@@ -130,12 +131,12 @@ function masqueValide(choix, affiche)
                 $erreurRes = 1;
             }
         }
-        else{
+        else if(count($masqueVerif)==4) { //1.1.1.1 et 192.168.298.398
             $masque = explode(".", $_GET['masqueRes']);
             $precedent = 255;
             //print_r($masque);
             foreach ($masque as $k => $val) {// teste si le masque entrée est valide
-                if (!is_numeric($val) || $val < 0 || $val > 255 || $precedent < $val) {
+                if (!is_numeric($val) || $val < 0 || $val > 255 || $precedent < $val || ($precedent == 255 && ($val < 128 && $val != 0)) || ($precedent == 128 && $val != 0)) {
                     echo"<p style='color:red'> Masque réseau invalide</p>";
                     $erreurRes = 1;
                 }
@@ -251,6 +252,7 @@ if(isset($_GET['ip'],$_GET['masque'])){
    /******** detecte si on entre /?? ou ???.???.???.??? **********/
     $cidr = 0;
     $adrIP = explode(".", $_GET['ip']);
+    $masqueVerif = explode(".", $_GET['masque']);
     $slash = 0;
     $erreur = 0;
 
@@ -271,11 +273,11 @@ if(isset($_GET['ip'],$_GET['masque'])){
         else
             $slash = substr($_GET['masque'],1);
     }
-    else{
+    else if(count($masqueVerif)==4) { //1.1.1.1 et 192.168.298.398
         $masque = explode(".", $_GET['masque']);
         $precedent = 255;
         foreach ($masque as $k => $val) {// teste si le masque entrée est valide
-            if (!is_numeric($val) || $val < 0 || $val > 255 || $precedent < $val) {
+            if (!is_numeric($val) || $val < 0 || $val > 255 || $precedent < $val || ($precedent == 255 && ($val < 128 && $val != 0)) || ($precedent == 128 && $val != 0)) {
                 echo"<p style='color:red'> Masque réseau invalide</p>";
                 $erreur = 1;
             }
@@ -304,7 +306,7 @@ if(isset($_GET['ip'],$_GET['masque'])){
     
     echo"<table cellpadding='4' cellspacing='4' align='center' >";
 
-    echo "<tr><td>Adresse Réseau: <b>".$adrIP[0].".".$adrIP[1].".".$adrIP[2].".".$adrIP[3]."</b></td></tr>";
+   
    
    
    /*************************************** MASQUE RESEAU*********************************************/
@@ -398,7 +400,7 @@ if(isset($_GET['ip'],$_GET['masque'])){
 
 
     /**************************************************************/
-    echo "<tr><td>Masque de Sous réseau: <b>".$dm1.".".$dm2.".".$dm3.".".$dm4." ou /". $slash."</b></td></tr>";
+    
     //echo "NOUVEAU masque de Sous réseau: ".$newDm1.".".$newDm2.".".$newDm3.".".$newDm4." ou /". $newSlash."<br>";
 
     /*****************************************************************************************************/
@@ -415,7 +417,7 @@ if(isset($_GET['ip'],$_GET['masque'])){
     /************Permet de connaitre le nombre de sous-réseaux possibles*********/
     $nbrSousRes = pow(2,$nbrZero-2);
 
-    echo "<tr><td>Nombre de sous-réseaux disponible : <b>". $nbrSousRes."</b></td></tr>";
+ 
 
     /*****************************************************************************/
 
@@ -423,7 +425,13 @@ if(isset($_GET['ip'],$_GET['masque'])){
     if($nbrSousRes < $_GET['sousRes']){
      echo"<p style='color:red'>Le nombre de sous-réseaux demandé est supérieur au nombre maximum de sous-réseaux. (".$nbrSousRes." Max)</p>";
     }
+    else if($erreur != 0) {//teste si le nombre d'hotes demandé est inferieur au nombre d'hotes max
+        echo"<p style='color:red'>ERREUR</p>";
+    }
     else{
+         echo "<tr><td>Adresse Réseau: <b>".$adrIP[0].".".$adrIP[1].".".$adrIP[2].".".$adrIP[3]."</b></td></tr>";
+         echo "<tr><td>Masque de Sous réseau: <b>".$dm1.".".$dm2.".".$dm3.".".$dm4." ou /". $slash."</b></td></tr>";
+         echo "<tr><td>Nombre de sous-réseaux disponible : <b>". $nbrSousRes."</b></td></tr>";
 
       	/******************************************************************************************/
         $nbr0 = 32 - $newSlash;
