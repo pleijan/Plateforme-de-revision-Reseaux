@@ -49,11 +49,14 @@ function masqueValide(choix, affiche)
 		}
 	}
 	else if (lenMasque <=3 && lenMasque>=2) {
+
 		if(masque.startsWith('/')){
 			masque = masque.substr(1);
+			document.getElementById(affiche).innerHTML="";
 		}
 		else
 			document.getElementById(affiche).innerHTML="Veuillez entrez un masque valide";
+		
 
 		if(isNaN(masque) == true || (masque < 1) || (masque > 32)){
 			document.getElementById(affiche).innerHTML="Veuillez entrez un masque valide";
@@ -77,7 +80,7 @@ function masqueValide(choix, affiche)
     <h3 align='center'><b>Cours</b></h3>
 <HR width=1240>
 
-<h5 align='center'><p> <a href="cours/Exemple-VLSM.html" onclick="open('cours/Exemple-VLSM.html','Popup','scrollbars=1,resizabl=1,height=500,width=400');return false;">Cours VLSM</a> </p></h5>
+<h5 align='center'><p> <a href="cours/Exemple-VLSM.html" target='_BLANK'>Cours VLSM</a> </p></h5>
 
 <HR width=1240>
     <h3 align='center'><b>Application</b></h3>
@@ -107,6 +110,7 @@ function masqueValide(choix, affiche)
 		/******** detecte si on entre /?? ou ???.???.???.??? **********/
 		$cidr = 0;
 		$adrIP = explode(".", $_GET['ipRes']);
+		$masqueVerif = explode(".", $_GET['masqueRes']);
 		$slash = 0;
 		$erreurRes = 0;
 
@@ -132,12 +136,12 @@ function masqueValide(choix, affiche)
 				$erreurRes = 1;
 			}
 		}
-		else{
+		else if(count($masqueVerif)==4) { //1.1.1.1 et 192.168.298.398
 			$masque = explode(".", $_GET['masqueRes']);
 			$precedent = 255;
 			//print_r($masque);
 			foreach ($masque as $k => $val) {// teste si le masque entrée est valide
-				if (!is_numeric($val) || $val < 0 || $val > 255 || $precedent < $val) {
+				if (!is_numeric($val) || ($val < 0) || ($val > 255) || ($precedent < $val) || ($precedent == 255 && ($val < 128 && $val != 0)) || ($precedent == 128 && $val != 0)) {
 					echo"<p style='color:red'> Masque réseau invalide</p>";
 					$erreurRes = 1;
 				}
@@ -269,7 +273,7 @@ $(document).ready(function(){
     	//
     	for (var i=0;i<valeurHotes.length-1;i++) {
     		x++; //Increment field counter
-            $(wrapper).append('<div><input style="margin-left:20px" type="number" name="hote[]" value="'+valeurHotes[x-1]+'" min="1" required/><a href="javascript:void(0);" class="remove_button"><img src="img/red-cross.png"/></a></div>'); //Add field html
+            $(wrapper).append('<div>sous-réseau '+x+':<input style="margin-left:20px" type="number" name="hote[]" value="'+valeurHotes[x-1]+'" min="1" required/><a href="javascript:void(0);" class="remove_button"><img src="img/red-cross.png"/></a></div>'); //Add field html
             document.getElementById("cmp").value=x;
     	}
 
@@ -281,7 +285,7 @@ $(document).ready(function(){
         e.preventDefault();
         if(x < maxField){ 
             x++; //Increment field counter
-            $(wrapper).append('<div><input style="margin-left:20px" type="number" name="hote[]" value="" min="1" required/><a href="javascript:void(0);" class="remove_button"><img src="img/red-cross.png"/></a></div>'); //Add field html
+            $(wrapper).append('<div> sous-réseau '+x+':<input style="margin-left:20px" type="number" name="hote[]" value="" min="1" required/><a href="javascript:void(0);" class="remove_button"><img src="img/red-cross.png"/></a></div>'); //Add field html
             document.getElementById("cmp").value=x;
             document.getElementById('compteurNbrRes').innerHTML = ""+x;
         }
@@ -301,10 +305,10 @@ $(document).ready(function(){
 
 
 
-	 Nombre de sous-réseaux : <span id="compteurNbrRes"><?php if (isset($_GET['cmp'])){echo $_GET['cmp'];} ?> </span>
+	 Il y a <span id="compteurNbrRes"><?php if (isset($_GET['cmp'])){echo $_GET['cmp'];}else echo "1"; ?> </span> sous-réseaux.
     <a href="javascript:void(0);" class="add_button" title="Add field"><input type='button' class='btn btn-success btn-sm' id='ajIn' value=' + ' /></a>
 
-    <br><div><input type="number" name="hote[]" id ="premierChamp" value="" min="1" required/></div>
+    <br><div> <span style="margin-left: -20px">sous-réseau 1:</span><input style="margin-left: 20px" type="number" name="hote[]" id ="premierChamp" value="" min="1" required/></div>
     <input  type="hidden" value="javascript:x;" name="cmp" id="cmp" />
     <input  type="hidden" value="$valHotes" name="valhotes" id="hotes" />
     <div id="frm" class="field_wrapper"></div>
@@ -336,6 +340,7 @@ if(isset($_GET['ip'],$_GET['masque']))
 	/******** detecte si on entre /?? ou ???.???.???.??? **********/
 	$cidr = 0;
 	$adrIP = explode(".", $_GET['ip']);
+	$masqueVerif = explode(".", $_GET['masque']);
 	$slash = 0;
 	$erreur = 0;
 
@@ -353,14 +358,16 @@ if(isset($_GET['ip'],$_GET['masque']))
 			echo"<p style='color:red'>Masque réseau invalide</p>";
 			$erreur = 1;
 		}
-		else
+		else{
 			$slash = substr($_GET['masque'],1);
+		}
 	}
-	else{
+	else if(count($masqueVerif)==4) { //1.1.1.1 et 192.168.298.398
 		$masque = explode(".", $_GET['masque']);
-		$precedent = 255;
+		$precedent = 256;
+
 		foreach ($masque as $k => $val) {// teste si le masque entrée est valide
-			if (!is_numeric($val) || $val < 0 || $val > 255 || $precedent < $val) {
+			if (!is_numeric($val) || ($val < 0) || ($val > 255) || ($precedent < $val) || ($precedent == 255 && ($val < 128 && $val != 0)) || ($precedent == 128 && $val != 0)) {
 				echo"<p style='color:red'> Masque réseau invalide</p>";
 				$erreur = 1;
 			}
@@ -378,6 +385,12 @@ if(isset($_GET['ip'],$_GET['masque']))
 		}	
 
 	}
+	else
+	{
+		echo"<p style='color:red'> Masque réseau invalide</p>";
+		$erreur = 1;
+	}
+
 	/**************************************************************/
 
 	/**********************************************************************/
@@ -418,6 +431,8 @@ if(isset($_GET['ip'],$_GET['masque']))
 	    }
 
 		$newSlash = 32 - $p;
+		if($newSlash >=30)
+			$newSlash=30;
 	    //echo "voici les puissances : $puiss <br/> et /$newSlash";
 	    return $newSlash;
     }
@@ -593,8 +608,7 @@ if(isset($_GET['ip'],$_GET['masque']))
     $nbr0 = 32 - $slash;
   	//echo "vs avez entrer /".$slash;
     $nbrHotesMax = pow(2,$nbr0)-2; // le nombre d'hotes max
-    echo "<tr><td>Nombre d'Hotes Disponible maximum: <b>". $nbrHotesMax."</b></td></tr>
-    </table>";
+   
 
     $addHoteUser = 0;
     foreach ($nbrHote as $val) {
@@ -621,6 +635,10 @@ if(isset($_GET['ip'],$_GET['masque']))
      	echo"<p style='color:red'>ERREUR</p>";
     }  
     else{
+
+    	 echo "<tr><td>Nombre d'Hotes Disponible maximum: <b>". $nbrHotesMax."</b></td></tr>
+    </table>";
+
     	$multiplReseau[0] = 256;
     	for ($i=0; $i < $_GET['cmp']; $i++) { 
     		$multiplReseau[$i] = 256;
