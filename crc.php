@@ -29,7 +29,7 @@ if(isset($_GET['Message2']) and isset($_GET['polynome']) and isset($_GET['nbZero
 
     if($taillePol>$tailleM2) header('Location:crc.php?id=4');
 
-    if($taillePol-1!=$nbZero) header('Location:crc.php?id=5?taillePol=$taillePol');
+    if($taillePol-1!=$nbZero) header('Location:crc.php?id=5');
 }
 
 ?>
@@ -226,8 +226,7 @@ if(isset($_GET['Message2']) and isset($_GET['polynome']) and isset($_GET['nbZero
             echo"<p style='color:red'>message trop grand (10 bit max !)</p>";
         }
         if($_GET['id']=='5'){
-            $taille = $_GET['taillePol'];
-            echo"<p style='color:red'>taille du polynome attendu incorrect ($taille attendu comme taille de polynome)</p>";
+            echo"<p style='color:red'>taille du polynome attendu incorrect (polynome doit etre plus grand que le nombre de zero ajouté de 1bit )</p>";
         }
     }
 
@@ -252,19 +251,19 @@ if(isset($_GET['Message2']) and isset($_GET['polynome']) and isset($_GET['nbZero
         
         while($tailleM2>=$taillePol){
 
-            //echo "<h6>$message2 => ";
+            echo "<h6>$message2 => ";
 
             $debutmessage=substr($message2,0,$taillePol);
             $finmessage=substr($message2,$taillePol);
 
-            //echo "$debutmessage $finmessage => ";
+            echo "$debutmessage $finmessage => ";
 
             for($i =0;$i<$taillePol;$i++){
                 if(boolval($debutmessage[$i]) xor boolval($polArray[$i])) $debutmessage[$i]="1";
                 else $debutmessage[$i]="0";
             }
 
-           // echo "$debutmessage $finmessage => ";
+           echo "$debutmessage $finmessage => ";
 
             $message2=$debutmessage;
             $message2.=$finmessage;
@@ -276,7 +275,7 @@ if(isset($_GET['Message2']) and isset($_GET['polynome']) and isset($_GET['nbZero
             
             $tailleM2= strlen($message2);
 
-            //echo "$message2</h6>";
+            echo "$message2</h6>";
         }
 
         while($tailleM2<$nbZero){
