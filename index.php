@@ -18,8 +18,8 @@ require("barreDeMenu.php");
     <h3><p>ici vous pourrez réviser tous les modules de l'INM2013 : réseau</p></h3>
     <h4>Votre adresse ip est <?php echo $_SERVER['REMOTE_ADDR'];?>.</h4>
     <?php
-      $browser = get_browser(null, true);
-      echo"<h4>Votre navigateur est $browser[browser] en version $browser[version]</h4>";
+      $browser = $_SERVER['HTTP_USER_AGENT'];
+      echo"<h6>Votre navigateur est $browser </h6>";
     ?>
     
   </div> 
