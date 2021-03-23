@@ -80,7 +80,7 @@ Pour nous c'etait impensable que cette application ne soit pas facile à utilise
 
 #### La performance
 
-Aussi étant héberger en ligne il n'est pas nécessaire d'avoir une machine surpuissant pour utiliser cette platforme. Et les résultat apparaissent rapidement, car ce ne sont pas des algorithmes très complexes. Et donc, cette platforme est accessible, depuis toute les machines de l'iut, et même depuis chez-soi.
+Aussi étant héberger en ligne, il n'est pas nécessaire d'avoir une machine surpuissant pour utiliser cette platforme. Et les résultats apparaissent rapidement, car ce ne sont pas des algorithmes très complexes. Et donc, cette platforme est accessible, depuis toutes les machines de l'iut, et même depuis chez-soi en utilisant le logiciel Putty.
 
 
 #### la maintenabilité
@@ -91,17 +91,17 @@ Il est possible à l'avenir de rajouter des applications sans tout changer, il e
 #### Organigramme
 
 
-Pour ce projet nous étions 4, il y avais PARISOT Theo, MANOHARAN Anushan, GIANNICO Raffaele et PIERRE Tom. Aujourd'hui Nous ne somme plus que deux, il reste GIANNICO Rafaele et PIERRE Tom. et nous avons repatie les taches entre nous, Raffaele s'est occupée de l'index de tout ce qui s'approche de l'aspect graphique de l'application, d'une fonctionnalitée qui est le decoupage de sous réseaux, ainsi que le stockage csv du glossaire. tandis que Tom c'est occupée du reste des fonctionnalitées (traduction adresse ip, CRC, commande Réseau...) et de leur interface associée.
+Pour ce projet nous étions 4, il y avais PARISOT Theo, MANOHARAN Anushan, GIANNICO Raffaele et PIERRE Tom. Aujourd'hui Nous ne somme plus que deux, il reste GIANNICO Raffaele et PIERRE Tom. et nous avons repatie les taches entre nous, Raffaele s'est occupée de l'index de tout ce qui s'approche de l'aspect graphique de l'application, des fonctionnalités de découpage de sous réseaux, ainsi que le stockage csv du glossaire. tandis que Tom c'est occupée du reste des fonctionnalitées (traduction adresse ip, CRC, commande Réseau...) et de leur interface associée.
 
 #### Raison
 
 
-Nous avons répartie les taches comme ceci car Raffaele avais une meilleur connaissance sur les fichiers Csv et sur les styles en web, tandis que Tom a plus de connaissances pour établir un algorythme (qu'est ce qu'il nous faut pour tel fonctionnalitée, comment traiter les données etc..) et coder l'interface qui lui permet de fonctionner.
+Nous avons répartie les tâches comme ceci car Raffaele avais une meilleur connaissance sur les fichiers Csv et sur les styles en web. Tandis que Tom a plus de connaissances pour établir un algorythme (qu'est ce qu'il nous faut pour tel fonctionnalitée, comment traiter les données etc..) et coder l'interface qui lui permet de fonctionner.
 
 #### Avantages
 
 
-En établissant qui fait quoi comme nous venons de voir ça nous permet d'avancer le plus vite car la personne qui code tel ou tel chose est la plus qualifiée pour le faire et mettra donc moins de temps.
+En répartissant ainsi le travail, cela nous permet d'avancer plus vite car la personne qui est plus à l'aise sur une fonctionnalité sera la plus qualifiée pour le faire et mettra donc moins de temps.
 
 
 ### Méthode incrémentale
@@ -114,7 +114,7 @@ En établissant qui fait quoi comme nous venons de voir ça nous permet d'avance
 ### Nos outils de suivi
 #### La gestion de version - GIT
 
-Nous avons utilisé GitLab pour mieux collaborer entre nous mais aussi avec le client afin de voir les évolutions.Voici le lien du gitLab, https://gitlab.com/pleijan/projet-tutoree-aide-reseau-premiere-annee, sur ce gitlab il y a 
+Nous avons utilisé GitLab pour mieux collaborer entre nous mais aussi avec le client afin de voir les évolutions. Voici le lien du gitLab, https://gitlab.com/pleijan/projet-tutoree-aide-reseau-premiere-annee, sur ce gitlab il y a :
 - le code source (toute les pages web)
 - les photos utilisée sur l'application
 - le rapport ainsi que les presentation orale du projet.
@@ -129,12 +129,11 @@ Aussi nous avons utilisé la plateforme Zoom pour communiquer avec notre client,
 ### Planification détaillée du projet
 #### Ordonnancement
 
-Pour ce projet nous avons essayer d'appliquer une une methode de travail simple, nous voulions au debut commencer par le recueil des besoins ainsi que la conception, commencer a coder et ecrire en meme temps le rapport. au final nous avons changer de methode de travail, nous avons pratiquer une sorte de methode scrum, car nous essayons de faire une fonctionnalitée en 
+Pour ce projet nous avons essayer d'appliquer une une méthode de travail simple, nous voulions au debut commencer par le recueil des besoins ainsi que la conception, commencer à coder et écrire en même temps le rapport. Au final nous avons changer de méthode de travail, nous avons pratiquer une sorte de méthode scrum, car nous essayons de faire une fonctionnalitée en 
 
 #### Diagramme de gantt
 
-nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe ?. Nos travaux
-étaient répartis sur plusieurs semaines, nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine, ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines, ensuite nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu qui a ensuite nous avons continuer a developper et écrire ce rapport.
+Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe ?. Nos travaux étaient répartis sur plusieurs semaines, nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine, ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines, ensuite nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu qui a ensuite nous avons continuer a developper et écrire ce rapport.
 
 #### La gestion des compétences
 
@@ -154,7 +153,7 @@ nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâch
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 3 : Conclusions et bilan du projet
 ### Bilan de réalisation
-A l'heure d'aujourd'hui, le projet est quasiment fini, toute les fonctionnalitées demander dans le cahier des charges ont été développer, confirmer et disponible pour n'importe quel étudiant, cependant nous savions que ce projet était évolutifs car dans ce type de projet n'importe quel idée peux devenir une réelle demande du client, si nous devions faire le point sur tout ce qui etait demander nous avions :
+A l'heure d'aujourd'hui, le projet est quasiment fini, toutes les fonctionnalités demander dans le cahier des charges ont été développer, confirmer et disponible pour n'importe quel étudiant. Cependant, nous savions que ce projet était évolutif car dans ce type de projet n'importe quel idée peux devenir une réelle demande du client, si nous devions faire le point sur tout ce qui était demander nous avions :
 
 - la traduction d'adresse IP entre hexadecimal et decimal ou entre binaire et decimal.
 - l'adressage de sous réseaux en notation CIDR et VLSM.
@@ -163,20 +162,20 @@ A l'heure d'aujourd'hui, le projet est quasiment fini, toute les fonctionnalité
 - un glossaire qui repertorie l'ensemble des mots important.
 - et un manuel d'utilisation.
 
-et donc parmis toute ces taches a accomplire seulement la commande reseau tcpdump na pas été accomplie.
+Et donc parmis toutes ces tâches à accomplir seulement la commande reseau tcpdump na pas été accomplie.
 
 ### Des evolutions possibles ?
 
-Ce projet est-il évolutif ? La réponse est oui, tout d'abord car les cours qui y sont présent sont ceux de premiere années on pourras rajouter les cours de s3 et ensuite la spécialisation réseaux du s4, on peux aussi l'étendre a n'importe quel module ce qui offre une possibilitée d'extensions tout a fait énorme.
+Ce projet est-il évolutif ? La réponse est oui, tout d'abord car les cours qui y sont présent sont ceux de premiere années on pourras rajouter les cours du semestre 3 et ensuite la spécialisation réseaux du semestre 4. On peux aussi l'étendre à n'importe quel module, ce qui offre une possibilitée d'extensions tout à fait énorme.
 
 ### Des acquis divers et variés
 #### Savoir-être
 
-Ce projet nous a permis d'apprendre a travailler en équipe, de faire face a des réduction d'effectifs, des crises sanitaires, tout en respectant les délais pour produire notre projet. et grace a cet experiences c'est évident que nos capacités en sont sotie grandie.
+Ce projet nous a permis d'apprendre à travailler en équipe, de faire face à des réduction d'effectifs, des crises sanitaires, tout en respectant les délais pour produire notre projet. Et, grâce à cet experience c'est évident que nos capacités en sont sortie grandie.
 
 #### Savoir-Faire
 
-Nous avons aussi acquis de l'experience niveau technique, car en effet comme vu précedemment, de nombreux obstacle on fait surface qui nous ont forcer a nous documenter, a essayer maintes et maintes fois pour résoudre ce probleme, nous nous sommes donc servis a la fois de tout nos cours de programmation web, de mathematique, mais aussi de certains site comme la documentations de php (php.net) ou encore W3Scool qui repertorie nombreux sujet pour aider tout les developpeurs 
+Nous avons aussi acquis de l'expérience niveau technique, car en effet comme vu précedemment, de nombreux obstacles on fait surface qui nous ont forcer à nous documenter, à essayer maintes et maintes fois. Ainsi, pour résoudre ces problemes, nous nous sommes donc servis à la fois de tout nos cours de programmation web, de mathematiques, mais aussi de certains site comme la documentations de php (php.net) ou encore W3School qui repertorie de nombreux sujet pour aider tout les developpeurs. 
 
 ### Une Experience fondamentale
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
