@@ -98,7 +98,10 @@ En établissant qui fait quoi comme nous venons de voir ça nous permet d'avance
 ### Nos outils de suivi
 #### La gestion de version - GIT
 
-Nous avons utilisé GitLab pour mieux collaborer entre nous mais aussi avec le client afin de voir les évolutions.Voici le lien du gitLab, https://gitlab.com/pleijan/projet-tutoree-aide-reseau-premiere-annee
+Nous avons utilisé GitLab pour mieux collaborer entre nous mais aussi avec le client afin de voir les évolutions.Voici le lien du gitLab, https://gitlab.com/pleijan/projet-tutoree-aide-reseau-premiere-annee, sur ce gitlab il y a 
+- le code source (toute les pages web)
+- les photos utilisée sur l'application
+- le rapport ainsi que les presentation orale du projet.
 
 #### un agenda hybride
 
@@ -109,6 +112,8 @@ Aussi nous avons utilisé la plateforme Zoom pour communiquer avec notre client,
 
 ### Planification détaillée du projet
 #### Ordonnancement
+
+Pour ce projet nous avons essayer d'appliquer une une methode de travail simple, nous voulions au debut commencer par le recueil des besoins ainsi que la conception, commencer a coder et ecrire en meme temps le rapport. au final nous avons changer de methode de travail, nous avons pratiquer une sorte de methode scrum, car nous essayons de faire une fonctionnalitée en 
 
 #### Diagramme de gantt
 
