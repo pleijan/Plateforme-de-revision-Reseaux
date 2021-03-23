@@ -45,7 +45,7 @@ Un grand merci à nos familles, pour leurs conseils ainsi que leurs soutiens mor
 
 ### Résumé
 
-Notre projet etait de develloper une application web a destination des étudiants de première années en informatique, visant a les aider dans le module réseaux.Pour ça nous devions prendre les cours de Monsieur Hoguin, et faire des applications mettant en pratique ces cours, permettant aux étudiant de mieux comprendre et de pouvoir verifier aussi leurs résultats.
+Notre projet etait de developer une application web à destination des étudiants de première années en informatique, visant a les aider dans le module réseaux.Pour ça nous devions prendre les cours de Monsieur Hoguin, et faire des applications mettant en pratique ces cours, permettant aux étudiants de mieux comprendre et de pouvoir verifier aussi leurs résultats.
 Cette application web sera heberger sur un serveur de l'iut ce qui permettera aux étudiants d'y acceder facilement en tapant dans leur navigateur 192.168.2.3.
 
 ### Sommaire
@@ -60,19 +60,34 @@ Cette application web sera heberger sur un serveur de l'iut ce qui permettera au
 ### Qualité Logicielle
 #### La capacité fonctionnelle 
 
+Les applications proposent d'afficher des résultats de diverses notions de réseaux en quelques instants qui sont appris au semestre 2 du DUT informatique. Ils ont pour but d'aider les étudiants à vérifier leurs résultats et à mieux comprendre le cours. Toutes les fonctionnalités demandés ont été implémenter à savoir :
+Traduire une adresse IP de binaire à décimal et inversement,
+Traduire une adresse IP d'héxadécimal à décimal et inversement,
+Diviser un réseau en sous-réseau avec la notation CIDR,
+Diviser un réseau en sous-réseau avec la notation VLSM,
+Calculer un CRC matriciel et polynomial,
+Exécuter des commandes réseaux.
+
 #### La fiabilité
+
+Les applications proposés ont des fins pédagogiques, les étudiants auront confiance en ces applications. C'est pourquoi, ils ne doivent en aucun cas produire de faux résultats. Pour palier à cela nous avons fait, pour chaque applications une phase de recherche des erreurs. Nous en avons conclus que les applications étaient fiables. Nous avons donc comparés nos résultat trouver sur papier avec l'application pour trouver les même résultat. Notre tuteur, M. Hoguin a contribué à la vérification des résultats. Et enfin, grâce à des outils en ligne, qui proposait des services similaires, nous avons pu comparé nos résulats. Et, les applications ont passer ces tests avec succès.
+
 
 #### la facilité d'utilisation
 
-Pour nous c'etait impensable que cette application ne soit pas facile a utiliser, premierement car elle sera utilisée principalement par des étudiants, de plus elle servira de support de cours pour ces étudiants, Il a fallut travailler d'arache pied pour rendre cette plateforme simple d'utilisation. On a commencer par l'index en mettant des grandes images avec marquée le nom de chaque fonctionnalitée en gros comme vous pouvez voir Annexe ?, de plus via le menu en haut de chaque page il est tres facile de voyager entre chaque fonctionnalitée, d'ailleurs parlons des fonctionnalitées, chaque fonctionnalitée est composée d'un cours expliquant comment le faire soi même, ainsi qu'une application pour mettre en pratique ce cours, et pour rendre ces applications les plus pratique, on vous indique a chaque fois qu'elle type d'information est attendu, et si il y a un probleme de nombreux messages d'erreurs vous expliqueron qu'est ce qu'il ne va pas cf Annexe ?.  
+Pour nous c'etait impensable que cette application ne soit pas facile à utiliser. Premierement, car elle sera utilisée principalement par des étudiants. Aussi, parce qu'elle servira de support de cours pour ces étudiants. Il a fallut travailler d'arache pied pour rendre cette plateforme simple d'utilisation. Et, il doit être beau à voir pour qu'ils aient envie de l'utiliser. On a commencer par la page d'accueil en mettant des grandes images avec le nom de chaque fonctionnalité, comme vous pouvez voir Annexe ?. De plus, via le menu en haut de chaque page, il est très facile de voyager entre chaque fonctionnalité. Celles-ci sont composées de cours expliquant la méthode à utiliser si l'on veut le faire soi-même, et une application pour mettre en pratique ce cours. Pour rendre ces applications plus simple, une indication est présente à chaque fois qu'une information est attendu. Et, en cas de problème des messages d'erreurs apparaîtront et vous expliqueront ce qu'il ne va pas cf Annexe ?.  
 
 #### La performance
 
+Aussi étant héberger en ligne il n'est pas nécessaire d'avoir une machine surpuissant pour utiliser cette platforme. Et les résultat apparaissent rapidement, car ce ne sont pas des algorithmes très complexes. Et donc, cette platforme est accessible, depuis toute les machines de l'iut, et même depuis chez-soi.
+
+
 #### la maintenabilité
 
+Il est possible à l'avenir de rajouter des applications sans tout changer, il est seulement nécessaire de rajouter une page dans laquelle on y ajoute la nouvelle fonctionnalité. Et d'y ajouter l'accès sur la page d'accueil. Ce site est donc extensible. En outre, si un probleme est détecté, il peut être corriger en ciblant seulement la partie problématique sans avoir à tout changer. 
 
 ### Organisation de l'équipe
-#### Organigrame
+#### Organigramme
 
 
 Pour ce projet nous étions 4, il y avais PARISOT Theo, MANOHARAN Anushan, GIANNICO Raffaele et PIERRE Tom. Aujourd'hui Nous ne somme plus que deux, il reste GIANNICO Rafaele et PIERRE Tom. et nous avons repatie les taches entre nous, Raffaele s'est occupée de l'index de tout ce qui s'approche de l'aspect graphique de l'application, d'une fonctionnalitée qui est le decoupage de sous réseaux, ainsi que le stockage csv du glossaire. tandis que Tom c'est occupée du reste des fonctionnalitées (traduction adresse ip, CRC, commande Réseau...) et de leur interface associée.
