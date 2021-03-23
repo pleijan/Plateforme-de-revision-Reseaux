@@ -70,7 +70,7 @@ Exécuter des commandes réseaux.
 
 #### La fiabilité
 
-Les applications proposés ont des fins pédagogiques, les étudiants auront confiance en ces applications. C'est pourquoi, ils ne doivent en aucun cas produire de faux résultats. Pour palier à cela nous avons fait, pour chaque applications une phase de recherche des erreurs. Nous en avons conclus que les applications étaient fiables. Nous avons donc comparés nos résultat trouver sur papier avec l'application pour trouver les même résultat. Notre tuteur, M. Hoguin a contribué à la vérification des résultats. Et enfin, grâce à des outils en ligne, qui proposait des services similaires, nous avons pu comparé nos résulats. Et, les applications ont passer ces tests avec succès.
+Les applications proposés ont des fins pédagogiques, les étudiants auront confiance en ces applications. C'est pourquoi, ils ne doivent en aucun cas produire de faux résultats. Pour palier à cela nous avons fait, pour chaque applications une phase de recherche des erreurs. Nous en avons conclus que les applications étaient fiables. Nous avons donc comparés nos résultats (trouvé sur papier) avec les résultats proposés par l'application, on trouve bien les même résultat. Notre tuteur, M. Hoguin a contribué à la vérification des résultats. Et enfin, grâce à des outils en ligne, qui proposait des services similaires, nous avons pu comparé nos résulats. Et, les applications ont passer ces tests avec succès.
 
 
 #### la facilité d'utilisation
