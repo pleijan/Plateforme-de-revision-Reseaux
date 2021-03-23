@@ -61,12 +61,13 @@ Cette application web sera heberger sur un serveur de l'iut ce qui permettera au
 #### La capacité fonctionnelle 
 
 Les applications proposent d'afficher des résultats de diverses notions de réseaux en quelques instants qui sont appris au semestre 2 du DUT informatique. Ils ont pour but d'aider les étudiants à vérifier leurs résultats et à mieux comprendre le cours. Toutes les fonctionnalités demandés ont été implémenter à savoir :
-Traduire une adresse IP de binaire à décimal et inversement,
-Traduire une adresse IP d'héxadécimal à décimal et inversement,
-Diviser un réseau en sous-réseau avec la notation CIDR,
-Diviser un réseau en sous-réseau avec la notation VLSM,
-Calculer un CRC matriciel et polynomial,
-Exécuter des commandes réseaux.
+
+- Traduire une adresse IP de binaire à décimal et inversement,
+- Traduire une adresse IP d'héxadécimal à décimal et inversement,
+- Diviser un réseau en sous-réseau avec la notation CIDR,
+- Diviser un réseau en sous-réseau avec la notation VLSM,
+- Calculer un CRC matriciel et polynomial,
+- Exécuter des commandes réseaux.
 
 #### La fiabilité
 
