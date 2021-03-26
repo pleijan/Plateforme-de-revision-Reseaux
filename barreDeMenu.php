@@ -22,18 +22,18 @@
     <!-- Dropdown -->
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown">
-        Conversions Adresses IP 
+        Conversions<br>Adresses IP 
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="bin-dec.php">Binaire -> Décimal</a>
-        <a class="dropdown-item" href="hex-dec.php">Hexadecimal -> Décimal</a>
+        <a class="dropdown-item" href="bin-dec.php">Binaire vers Décimal</a>
+        <a class="dropdown-item" href="hex-dec.php">Hexadecimal vers Décimal</a>
       </div>
     </li>
 
     <!-- Links -->
     <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown">
-      Division de réseaux
+      Division<br>de réseaux
     </a>
     <div class="dropdown-menu">
         <a class="dropdown-item" href="sousReseaux.php">Notation CIDR</a>
@@ -45,7 +45,7 @@
     </li>
     <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown">
-      Execution Commande Réseaux
+      Execution<br>Commande<br>Réseaux
     </a>
     <div class="dropdown-menu">
         <a class="dropdown-item" href="nmap.php">nmap</a>
@@ -59,7 +59,7 @@
       <a class="nav-link" href="glossaire.php">Glossaire</a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="manuel_utilisateur.html">Manuel</a>
+    <a class="nav-link" href='sujet_rapport/Manuel_Utilisateur/manuel_utilisateur.html' onclick="open('sujet_rapport/Manuel_Utilisateur/manuel_utilisateur.html','Popup','scrollbars=1,resizabl=1,height=750,width=750');return false;"> cours CIDR </a>
     </li>
   </ul>
 </nav>
