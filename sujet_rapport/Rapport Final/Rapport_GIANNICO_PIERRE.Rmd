@@ -91,12 +91,12 @@ Il est possible à l'avenir de rajouter des applications sans tout changer, il e
 #### Organigramme
 
 
-Pour ce projet nous étions 4, il y avais PARISOT Theo, MANOHARAN Anushan, GIANNICO Raffaele et PIERRE Tom. Aujourd'hui Nous ne somme plus que deux, il reste GIANNICO Raffaele et PIERRE Tom. et nous avons repatie les taches entre nous, Raffaele s'est occupée de l'index de tout ce qui s'approche de l'aspect graphique de l'application, des fonctionnalités de découpage de sous réseaux, ainsi que le stockage csv du glossaire. tandis que Tom c'est occupée du reste des fonctionnalitées (traduction adresse ip, CRC, commande Réseau...) et de leur interface associée.
+Pour ce projet nous étions 4, il y avais PARISOT Theo, MANOHARAN Anushan, GIANNICO Raffaele et PIERRE Tom. Aujourd'hui Nous ne somme plus que deux, il reste GIANNICO Raffaele et PIERRE Tom. et nous avons repatie les taches entre nous, Raffaele s'est occupée de l'index, de tout ce qui s'approche de l'aspect graphique de l'application, des fonctionnalités de découpage de sous réseaux, ainsi que le stockage csv du glossaire. tandis que Tom s'est occupé du reste des fonctionnalités (traduction d'adresses IP, CRC, commande Réseau...) et de leurs interfaces associée. 
 
 #### Raison
 
 
-Nous avons répartie les tâches comme ceci car Raffaele avais une meilleur connaissance sur les fichiers Csv et sur les styles en web. Tandis que Tom a plus de connaissances pour établir un algorythme (qu'est ce qu'il nous faut pour tel fonctionnalitée, comment traiter les données etc..) et coder l'interface qui lui permet de fonctionner.
+Nous avons répartie les tâches comme ceci car Raffaele avait une meilleur connaissance sur les fichiers Csv et sur les styles en web. Tandis que Tom avait plus de connaissances pour établir un algorythme (qu'est ce qu'il nous faut pour tel fonctionnalité, comment traiter les données etc..) et coder l'interface qui lui permet de fonctionner.
 
 #### Avantages
 
@@ -104,12 +104,22 @@ Nous avons répartie les tâches comme ceci car Raffaele avais une meilleur conn
 En répartissant ainsi le travail, cela nous permet d'avancer plus vite car la personne qui est plus à l'aise sur une fonctionnalité sera la plus qualifiée pour le faire et mettra donc moins de temps.
 
 
-### Méthode incrémentale
+### Méthode Scrum
 #### Explications
+
+La méthode SCRUM est une méthode agile, où le logiciel est développé ou évolue sous formes de sprints qui sont des phases de développement qui sont concentré sur des fonctionnalités. L'équipe est donc autoorganisée et peut choisir la meilleure façon d’accomplir sa tâche. De plus, cette méthode inclut la participation et l’implication active du client durant l’intégralité du projet.
+
 
 #### Raison 
 
+Avec l'université, nous ne pouvions travailler à temps plein. C'est pourquoi, lorsque nous finissions plus tôt, ou le week end, nous nous concentrions chacun sur une des fonctionnalités. C'est la méthode qui nous semblait le plus logique, et la plus adapté à notre situation. Aussi, nous voulions que le client soit le plus actif possible dans ce projet pour être sûr que la fonctionnalité programmé correspond bien aux attentes du client au niveau de l'esthétique ou bien du fonctionnement en lui-même.
+
 #### Avantages
+
+Cette méthode a pour principal avantage de produire rapidement un livrable grâce aux sprints. En produisant des livrables rapidement est régulièrement, cela permet notamment d'intégrer le client au projet. Ainsi, il est au courant de tout ce qui se passe, et il est possible d'agir très vite et d’intégrer les modifications plus rapidement. De même, un projet peut etre amené à évoluer. Donc cela favorise la réactivité et l'adaptabilité.
+
+Scrum favorise donc la productivité, les tâches sont découpées en sous-tâches, et chacun à sa tâche à faire.
+
 
 ### Nos outils de suivi
 #### La gestion de version - GIT
@@ -133,7 +143,7 @@ Pour ce projet nous avons essayer d'appliquer une une méthode de travail simple
 
 #### Diagramme de gantt
 
-Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe ?. Nos travaux étaient répartis sur plusieurs semaines, nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine, ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines, ensuite nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu qui a ensuite nous avons continuer a developper et écrire ce rapport.
+Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe ?. Nos travaux étaient répartis sur plusieurs semaines. Nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine. Ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines. Puis, nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu. Enfin, nous avons continuer a developpé et écrire ce rapport jusqu'à la date finale de rendu le 07/04/2021.
 
 #### La gestion des compétences
 
@@ -144,11 +154,19 @@ Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâch
 ## Partie 2 : analyse de la réalisation
 ### Exigences Critiques
 
+Toutes les exigences sont importantes, mais le but premier est d'être le plus pédagogique possible.
+
 ### Exigences majeures
+
+Les exigences majeures seraient toutes les fonctionnalités présent sur le site.
 
 ### Exigences Mineures
 
+Les exigences mineures seraient l'esthétique du site.
+
 ### Exigences supplémentaires
+
+Ajouter une fonctionnalité qui retourne l'adresse réseau d'une adresse IP. L'ajout d'un glossaire sont des exigences supplémentaires.
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 3 : Conclusions et bilan du projet
@@ -183,3 +201,44 @@ Nous avons aussi acquis de l'expérience niveau technique, car en effet comme vu
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 5 : Annexes
+
+### Le cahier des charges réécrit
+
+## Annexe 2 : Cahier des charges modifié
+| Développement d'une Application Web,  qui va aider les premieres années à l'iut de velizy | Version : 3        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : Cahier des charges                                                             | Date: <27/11/2020> |   |   |   |
+| Responsable de la Redaction: Raffaele                                                     |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
+
+### Introduction
+Ce projet tutoré qui nous a été confié par M.Hoguin enseignant à l'iut de Vélizy est de créer une application web pédagogique afin d'aider les premières années dans le module réseau du département informatique.
+
+### Enoncé
+L’application web devra permettre aux étudiants débutants d’aborder les notions de réseau vues au semestre 1 sous un angle pédagogique et ludique au travers de possibles animations. L'application WEB classique sera hébergée en intranet et devra contenir divers fonctionnalités accessible depuis un menu. Le menu devra contenir le logo de l'UVSQ et devra contenir toute les fonctionnalités présent sur le site comme :
+
+- Traduire une adresse IP de binaire à décimal et inversement,
+- Traduire une adresse IP d'héxadécimal à décimal et inversement,
+- Diviser un réseau en sous-réseau avec la notation CIDR,
+- Diviser un réseau en sous-réseau avec la notation VLSM,
+- Calculer un CRC matriciel et polynomial,
+- Exécuter des commandes réseaux.
+
+Sur la page d'accueil, il pourra y avoir quelques informations sur l'utilisateur du site comme l'adresse IP et le navigateur qu'il utilise. Sur chaque pages il y aura une partie cours et une partie dédié à l'application. L'utilisateur entre l'adresse IP dans des champs de texte, et le programme traduit ces Adresses IP décimal en hexadécimal ou binaire et inversement. Si l'utilisateur entre un nombre supérieur à 255 en décimal une erreur apparaîtra. De même pour la partie traduction en binaire, si pour un champ, l'utilisateur entre plus de 8 bits ou un chiffre non binaire, une erreur apparaîtra. Et enfin, pour la partie traduction en hexadécimal si l'utilisateur entre un caractère non hexadécimal ou plus de 2 caractères par champs une erreur apparaîtra.  
+
+L'utilisateur entre l'adresse IP dans des champs de texte, entre le masque avec la notation CIDR, et le nombre de sous-réseaux souhaité, le programme se chargera de diviser ce réseau en sous-réseaux avec la notation CIDR. Pour la fonctionnalité VLSM, cela fonctionne de même concernant l'adresse IP et le masque. Seulement, l'utilisateur ajoute des sous-réseaux grâce à un bouton "plus". Des champs apparaissent pour noté le nombre d'hôtes souhaité. De même, si l'adresse IP ou le masque n'est pas correctement entrée une erreur apparaîtra. Nous avons choisi de laisser le choix à l'utilisateur quant à la saisie du masque réseau. En effet, il peut écrire le masque avec la notation CIDR (/24) ou bien de façon "normal" (255.255.255.0). Sur ces deux pages énoncé précédemment, le client souhaite un ajout supplémentaire, c'est-à-dire une fonctionnalité capable de retourner l'adresse réseau d'une adresse machine. Et le principe fonctionne de la même maniere que les autres champs d'adresses IP.
+
+La fonctionnalité CRC propose deux versions. Le CRC matriciel, ainsi que polynomial. Des champs sont présents pour y inscrire le message souhaité ainsi que la matrice, pour le CRC matriciel. Ou bien le nombre de zéros a ajouté ainsi que le polynôme pour le CRC polynomial.
+
+Il y aura aussi une rubrique commande réseaux ou grâce à des champs, on pourra inscrire une commande réseau comme nmap, ping, man, tcpdump, nslookup. Et le résultat apparait à l'écran.
+
+
+### Prérequis
+Avoir envie de travailler sur une application web et sur les connexions avec les outils réseaux
+
+### Priorités
+Les fonctionnalités passent avant l'esthétique.
+
+
+
+
