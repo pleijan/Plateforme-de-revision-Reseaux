@@ -110,7 +110,7 @@ Nous avons répartie les tâches comme ceci car Raffaele avait une meilleur conn
 En répartissant ainsi le travail, cela nous permet d'avancer plus vite car la personne qui est plus à l'aise sur une fonctionnalité sera la plus qualifiée pour le faire et mettra donc moins de temps.
 
 
-### Méthode Scrum
+### Méthode utilisé
 #### Explications
 
 La méthode SCRUM est une méthode agile, où le logiciel est développé ou évolue sous formes de sprints qui sont des phases de développement qui sont concentré sur des fonctionnalités. L'équipe est donc autoorganisée et peut choisir la meilleure façon d’accomplir sa tâche. De plus, cette méthode inclut la participation et l’implication active du client durant l’intégralité du projet.
