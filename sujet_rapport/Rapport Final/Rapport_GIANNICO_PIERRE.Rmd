@@ -82,11 +82,11 @@ Les applications proposés ont des fins pédagogiques, les étudiants auront con
 
 #### la facilité d'utilisation
 
-Pour nous c'etait impensable que cette application ne soit pas facile à utiliser. Premierement, car elle sera utilisée principalement par des étudiants. Aussi, parce qu'elle servira de support de cours pour ces étudiants. Il a fallut travailler d'arache pied pour rendre cette plateforme simple d'utilisation. Et, il doit être beau à voir pour qu'ils aient envie de l'utiliser. On a commencer par la page d'accueil en mettant des grandes images avec le nom de chaque fonctionnalité, comme vous pouvez voir Annexe ?. De plus, via le menu en haut de chaque page, il est très facile de voyager entre chaque fonctionnalité. Celles-ci sont composées de cours expliquant la méthode à utiliser si l'on veut le faire soi-même, et une application pour mettre en pratique ce cours. Pour rendre ces applications plus simple, une indication est présente à chaque fois qu'une information est attendu. Et, en cas de problème des messages d'erreurs apparaîtront et vous expliqueront ce qu'il ne va pas cf Annexe ?.  
+Pour nous c'etait impensable que cette application ne soit pas facile à utiliser. Premierement, car elle sera utilisée principalement par des étudiants. Aussi, parce qu'elle servira de support de cours pour ces étudiants. Il a fallut travailler d'arache pied pour rendre cette plateforme simple d'utilisation. Et, il doit être beau à voir pour qu'ils aient envie de l'utiliser. On a commencer par la page d'accueil en mettant des grandes images avec le nom de chaque fonctionnalité, comme vous pouvez voir Annexe 2. De plus, via le menu en haut de chaque page, il est très facile de voyager entre chaque fonctionnalité. Celles-ci sont composées de cours expliquant la méthode à utiliser si l'on veut le faire soi-même, et une application pour mettre en pratique ce cours. Pour rendre ces applications plus simple, une indication est présente à chaque fois qu'une information est attendu. Et, en cas de problème des messages d'erreurs apparaîtront et vous expliqueront ce qu'il ne va pas cf Annexe 3.  
 
 #### La performance
 
-Aussi étant héberger en ligne, il n'est pas nécessaire d'avoir une machine surpuissant pour utiliser cette platforme. Et les résultats apparaissent rapidement, car ce ne sont pas des algorithmes très complexes. Et donc, cette platforme est accessible, depuis toutes les machines de l'iut, et même depuis chez-soi en utilisant le logiciel Putty.
+Aussi étant héberger en ligne, il n'est pas nécessaire d'avoir une machine surpuissante pour utiliser cette platforme. Et les résultats apparaissent rapidement, car ce ne sont pas des algorithmes très complexes. Et donc, cette platforme est accessible, depuis toutes les machines de l'iut, et même depuis chez-soi en utilisant le logiciel Putty.
 
 
 #### la maintenabilité
@@ -97,7 +97,7 @@ Il est possible à l'avenir de rajouter des applications sans tout changer, il e
 #### Organigramme
 
 
-Pour ce projet nous étions 4, il y avais PARISOT Theo, MANOHARAN Anushan, GIANNICO Raffaele et PIERRE Tom. Aujourd'hui Nous ne somme plus que deux, il reste GIANNICO Raffaele et PIERRE Tom. et nous avons repatie les taches entre nous, Raffaele s'est occupée de l'index, de tout ce qui s'approche de l'aspect graphique de l'application, des fonctionnalités de découpage de sous réseaux, ainsi que le stockage csv du glossaire. tandis que Tom s'est occupé du reste des fonctionnalités (traduction d'adresses IP, CRC, commande Réseau...) et de leurs interfaces associée. 
+Pour ce projet nous étions 4, il y avais PARISOT Theo, MANOHARAN Anushan, GIANNICO Raffaele et PIERRE Tom. Aujourd'hui Nous ne somme plus que deux, il reste GIANNICO Raffaele et PIERRE Tom. et nous avons repatie les taches entre nous, Raffaele s'est occupée de l'index, de tout ce qui s'approche de l'aspect graphique de l'application, des fonctionnalités de découpage de sous réseaux, ainsi que le stockage csv du glossaire. tandis que Tom s'est occupé du reste des fonctionnalités (traduction d'adresses IP, CRC, commande Réseau...) et de leurs interfaces associée tout en aidant raffaele dans ces fonctionnailitées.
 
 #### Raison
 
@@ -245,6 +245,9 @@ Avoir envie de travailler sur une application web et sur les connexions avec les
 ### Priorités
 Les fonctionnalités passent avant l'esthétique.
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+## Annexe 2 : capture d'écran de l'accueil du site 
+![](../Manuel_Utilisateur/Image_utilisée/index.png)
 
-
-
+## Annexe 3 : capture d'écran de message d'erreur aidant les étudiants
+![](../Manuel_Utilisateur/Image_utilisée/erreurCRC.png)
