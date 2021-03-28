@@ -46,7 +46,7 @@ Un grand merci à nos familles, pour leurs conseils ainsi que leurs soutiens mor
 ### Résumé
 
 Notre projet etait de developer une application web à destination des étudiants de première années en informatique, visant a les aider dans le module réseaux.Pour ça nous devions prendre les cours de Monsieur Hoguin, et faire des applications mettant en pratique ces cours, permettant aux étudiants de mieux comprendre et de pouvoir verifier aussi leurs résultats.
-Cette application web sera heberger sur un serveur de l'iut ce qui permettera aux étudiants d'y acceder facilement en tapant dans leur navigateur 192.168.2.3.
+Cette application web sera heberger sur un serveur de l'iut ce qui permettera aux étudiants d'y acceder facilement en tapant dans leur navigateur 192.168.2.3.ou http://projetrsx
 
 ### Sommaire
 
@@ -55,7 +55,13 @@ Cette application web sera heberger sur un serveur de l'iut ce qui permettera au
 
 ## Introduction
 
+La réalisation d'un projet tuteuré a de multiples objectifs: apprendre à travailler en groupe, se familiariser
+avec des outils et des langages, apprendre à définir, analyser, réaliser et tester un système informatique
+complexe. C'est pourquoi, le département Informatique de l'IUT nous a confié ce projet. 
 
+Le projet final que nous devrons présenter sera une application pédagogique pour apprendre aux étudiants de première année de l'iut de Vélizy, les fondamentaux du réseau au travers d’une interface web. Cette interface web sera constituée de plusieurs pages internet contenant chacun une fonctionnalité de l'application (les fonctionnalités sont décrite dans le cahier des charges qui sera transmis en Annexe 1). Ainsi nous apporterons une explication pour faire comprendre de manière simple le réseau aux étudiants. Il faudra alors réfléchir à notre interface web que nous allons mettre en place. C'est pourquoi nous devons non seulement se mettre à la place d’un développeur, mais aussi à la place de l'utilisateur, et devons trouver comment attirer les étudiants, comment leur donner envie d'apprendre le réseau.
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 1 : Solution proposée - Demarche utilisée
 ### Qualité Logicielle
 #### La capacité fonctionnelle 
@@ -202,9 +208,7 @@ Nous avons aussi acquis de l'expérience niveau technique, car en effet comme vu
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 5 : Annexes
 
-### Le cahier des charges réécrit
-
-## Annexe 2 : Cahier des charges modifié
+## Annexe 1 : Cahier des charges point de vu dévelopeur 
 | Développement d'une Application Web,  qui va aider les premieres années à l'iut de velizy | Version : 3        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : Cahier des charges                                                             | Date: <27/11/2020> |   |   |   |
@@ -223,6 +227,8 @@ L’application web devra permettre aux étudiants débutants d’aborder les no
 - Diviser un réseau en sous-réseau avec la notation VLSM,
 - Calculer un CRC matriciel et polynomial,
 - Exécuter des commandes réseaux.
+- avoir un glossaire qui pour les etudiant recenserons les mots clé du module réseau et pour l'administrateur pourra gérer ces mots clée pour en ajouter ou supprimer.
+- avoir un manuel utilisateur qui explique comment utiliser chaque recoins du site.
 
 Sur la page d'accueil, il pourra y avoir quelques informations sur l'utilisateur du site comme l'adresse IP et le navigateur qu'il utilise. Sur chaque pages il y aura une partie cours et une partie dédié à l'application. L'utilisateur entre l'adresse IP dans des champs de texte, et le programme traduit ces Adresses IP décimal en hexadécimal ou binaire et inversement. Si l'utilisateur entre un nombre supérieur à 255 en décimal une erreur apparaîtra. De même pour la partie traduction en binaire, si pour un champ, l'utilisateur entre plus de 8 bits ou un chiffre non binaire, une erreur apparaîtra. Et enfin, pour la partie traduction en hexadécimal si l'utilisateur entre un caractère non hexadécimal ou plus de 2 caractères par champs une erreur apparaîtra.  
 
