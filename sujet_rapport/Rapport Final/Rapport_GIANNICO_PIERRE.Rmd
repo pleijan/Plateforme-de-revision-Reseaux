@@ -160,16 +160,15 @@ Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâch
 ## Partie 2 : analyse de la réalisation
 ### Exigences Critiques
 
-Toutes les exigences sont importantes, mais le but premier est d'être le plus pédagogique possible.
+Le but premier est d'être le plus pédagogique possible. De plus, il faut, avoir une page d'accueil avec un menu qui permet de naviguer entre les différentes fonctionnalités. En effet, sans un menu ou un lien pour naviguer entre les différentes fonctionnalités, il n'est pas possible d'utiliser le site correctement. Bien sûr, sans un minimum de fonctionnalité, l'étudiant ne peut rien apprendre. De plus, les résultats produits par les différentes fonctionnalités doivent être sûr de donner les bons résultats, pour ne pas porter confusion les étudiants.
 
 ### Exigences majeures
 
-Les exigences majeures seraient toutes les fonctionnalités présent sur le site.
+Toutes les fonctionnalités sont indépendantes les uns les autres. C'est pourquoi, si une fonctionnalité ne fonctionne pas correctement, on peut s'en passer au début, cela n'empêche pas le systeme de fonctionner. Bien sûr, il faut la réparer par la suite.  Et qu'ils soient associés chacun à un cours.
 
 ### Exigences Mineures
 
-Les exigences mineures seraient l'esthétique du site.
-
+L'exigence mineure serait l'esthétique du site. En effet, le but est d'apprendre quelque chose aux étudiants, et l'esthétique ne va pas empêcher cela. Par conséquent ce n'est pas urgent. Néanmoins, il serait souhaitable d'implémenter cette exigence car une personne à plus envie d'aller sur un site esthétique qu'un site basique. Cela peut aussi donner plus d'envie d'apprendre.
 ### Exigences supplémentaires
 
 Ajouter une fonctionnalité qui retourne l'adresse réseau d'une adresse IP. L'ajout d'un glossaire sont des exigences supplémentaires.
