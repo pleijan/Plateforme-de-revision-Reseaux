@@ -149,12 +149,43 @@ Pour ce projet nous avons essayer d'appliquer une une méthode de travail simple
 
 #### Diagramme de gantt
 
-Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe ?. Nos travaux étaient répartis sur plusieurs semaines. Nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine. Ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines. Puis, nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu. Enfin, nous avons continuer a developpé et écrire ce rapport jusqu'à la date finale de rendu le 07/04/2021.
+Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe 4. Nos travaux étaient répartis sur plusieurs semaines. Nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine. Ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines. Puis, nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu. Enfin, nous avons continuer a developpé et écrire ce rapport jusqu'à la date finale de rendu le 07/04/2021.
 
 #### La gestion des compétences
 
 #### La gestion des risques
 
+Avec l'université, il était difficile de continuer a programmé et écrire le rapport. En effet, nous avions une multitude de DS un réviser et des travaux à rendre. Par conséquent, nous avons du travailler deux fois plus pour finir les travaux. Cela a fonctionné.
+
+Tout d'abord voici la liste des risques qui pourrais arriver pendant notre projet :
+
+- Absences pour de certains membres pour des raisons quelconques 
+- Abandon de certains membres de l’équipe.  
+- Travail en simultanée pour l’université  
+- Manque de connaissances 
+- Matériels défectueux  
+- Mauvaise communication 
+- Mauvaise répartition des tâches 
+- Erreur de commit (pertes des données) 
+- Sous-estimer de la complexité d’une tâche. (Compétences) 
+- Insatisfaction du client 
+- Pertes de motivation de l’équipe 
+- Mauvaise exécution des tests 
+- Mauvaise cohésion d’équipe. 
+- Évolution du projet 
+- Mauvaise méthode de travail 
+- Client injoignable  
+- Mauvaise entente avec le client 
+- Client incertain 
+- Conflit au sein de l’équipe 
+
+Pour determiner la probabilitée des risques et leur impact on va créer des echelles définie ci-dessous :
+
+On va créer une échelle pour la probabilité de réalisation d’un risque qui va de 1 à 5, défini dans le tableau disponible en annexe 5
+
+On va créer une deuxième échelle pour l’impact sur le projet allant de 1 à 3, défini dans le tableau disponible en annexe 6
+
+Et donc grace au differentes echelle on peux determiner un tableau avec les risque et leur probabilitée d'existences et leur impact qui est affichée dans l'annexe 7.
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 2 : analyse de la réalisation
@@ -266,6 +297,76 @@ Les fonctionnalités passent avant l'esthétique.
 |                                                                                           |                    |   |   |   |
 ![](../Manuel_Utilisateur/Image_utilisée/erreurCRC.png)
 
+## Annexe 4: diagramme de gantt represantant l'avancement du projet
+
+
+| diagramme de gantt represantant l'avancement du projet | Version : 3        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : Capture d'écran                                                              | Date: <28/03/2021> |   |   |   |
+| Responsable de la Redaction: Tom                                                     |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
+![](../projet_tuto.png)
+
+## Annexe 5 : tableau de l'echelle de probabilitée du risque 
+| tableau de l'echelle de probabilitée du risque | Version : 1        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : tableau de l'echelle de probabilitée du risque                                                          | Date: <20/11/2020> |   |   |   |
+| Responsable de la Redaction: tom                                                      |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
+
+
+|Degré |1            |2                   |3                    |4                  |5                                |
+|------|-------------|--------------------|---------------------|-------------------|---------------------------------|
+|def   |Improbable   |Faiblement probable |Moyennement probable |Fortement probable |Déjà arrivé ou certain d’arriver |
+
+Tableau de l'echelle de probabilitée du risque.
+1 Improbable, 5 Déjà arrivé ou certain d’arriver
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+## Annexe 6 : tableau de l'echelle de l'impact d'un risque sur le projet
+| tableau de l'echelle de l'impact d'un risque sur le projet | Version : 1        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : tableau de l'echelle de l'impact d'un risque sur le projet                     | Date: <18/12/2020> |   |   |   |
+| Responsable de la Redaction: Tom                                                      |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
+
+|Degré |1              |2            |3              |
+|------|---------------|-------------|---------------|
+|def   |Impact faible  |Impact moyen |Impact grand   |
+
+Tableau de l'echelle de l'impact d'un risque sur le projet.
+1 Impact faible, 3 Impact retard
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+## Annexe 7 : tableau des differents risque avec leur impact
+| tableau des differents risque avec leur impact | Version : 1        |   |   |   |
+|-------------------------------------------------------------------------------------------|--------------------|---|---|---|
+| Document : tableau des differents risque avec leur impact                                                           | Date: <18/12/2020> |   |   |   |
+| Responsable de la Redaction: Tom                                                      |                    |   |   |   |
+|                                                                                           |                    |   |   |   |
+
+|Risque                                     |Probabilité du risque  |Impact   |
+|-------------------------------------------|-----------------------|---------|
+|Absence de membres pour raison quelconque  |4                      |1        |
+|Abandon de certains membres de l’équipe    |2                      |3        |
+|travail en simultanée pour l’université    |5                      |2        |
+|Manque de connaissances                    |3                      |2        |
+|Matériel défectueux                        |2                      |1        |
+|Mauvaise communication                     |2                      |2        | 
+|Mauvaise répartition des tâches            |1                      |2        |
+|Erreur de commit (pertes des données)      |1                      |2        |
+|Sous-estimer de la complexité d’une tache. |2                      |2        | 
+|Insatisfaction du client                   |2                      |2        |
+| Pertes de motivation de l’équipe          |3                      |3        |
+|Mauvaise exécution des tests               |3                      |2        | 
+|Mauvaise cohésion d’équipe                 |3                      |2        | 
+|Evolution du projet                        |4                      |2        |
+|client injoignable                         |3                      |2        |
+|Mauvaise entente avec le client            |2                      |3        | 
+|Client incertain                           |2                      |2        |
+|Conflit au sein de l’équipe                |2                      |3        |
+
+
 ## Annexe 4: les cas d'utilisations
 
 | Les cas d’utilisations du projet tuteuré | Version : 2        |   |   |   |
@@ -339,9 +440,9 @@ Les fonctionnalités passent avant l'esthétique.
 | - Erreur apparaît si champ du CRC invalide						    |
 | - Erreur apparaît si la commande entrée est invalide	    |
 
-![figure : cas d'utilisations](../img/casUtilisation.png)
+<!--//![figure : cas d'utilisations](../img/casUtilisation.png)regular html comment -->
 
-`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}` 
 
 ### Les différents Cas d'utilisations
 
