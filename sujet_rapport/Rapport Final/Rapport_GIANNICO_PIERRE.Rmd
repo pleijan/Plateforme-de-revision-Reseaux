@@ -47,6 +47,7 @@ Un grand merci à nos familles, pour leurs conseils ainsi que leurs soutiens mor
 
 Notre projet etait de developer une application web à destination des étudiants de première années en informatique, visant a les aider dans le module réseaux.Pour ça nous devions prendre les cours de Monsieur Hoguin, et faire des applications mettant en pratique ces cours, permettant aux étudiants de mieux comprendre et de pouvoir verifier aussi leurs résultats.
 Cette application web sera heberger sur un serveur de l'iut ce qui permettera aux étudiants d'y acceder facilement en tapant dans leur navigateur 192.168.2.3.ou http://projetrsx
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 ### Sommaire
 
@@ -64,7 +65,7 @@ Le projet final que nous devrons présenter sera une application pédagogique po
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 1 : Solution proposée - Demarche utilisée
 ### Qualité Logicielle
-#### La capacité fonctionnelle 
+#### La capacité fonctionnelle  :
 
 Les applications proposent d'afficher des résultats de diverses notions de réseaux en quelques instants qui sont appris au semestre 2 du DUT informatique. Ils ont pour but d'aider les étudiants à vérifier leurs résultats et à mieux comprendre le cours. Toutes les fonctionnalités demandés ont été implémenter à savoir :
 
@@ -75,52 +76,52 @@ Les applications proposent d'afficher des résultats de diverses notions de rés
 - Calculer un CRC matriciel et polynomial,
 - Exécuter des commandes réseaux.
 
-#### La fiabilité
+#### La fiabilité :
 
 Les applications proposés ont des fins pédagogiques, les étudiants auront confiance en ces applications. C'est pourquoi, ils ne doivent en aucun cas produire de faux résultats. Pour palier à cela nous avons fait, pour chaque applications une phase de recherche des erreurs. Nous en avons conclus que les applications étaient fiables. Nous avons donc comparés nos résultats (trouvé sur papier) avec les résultats proposés par l'application, on trouve bien les même résultat. Notre tuteur, M. Hoguin a contribué à la vérification des résultats. Et enfin, grâce à des outils en ligne, qui proposait des services similaires, nous avons pu comparé nos résulats. Et, les applications ont passer ces tests avec succès.
 
 
-#### la facilité d'utilisation
+#### la facilité d'utilisation :
 
 Pour nous c'etait impensable que cette application ne soit pas facile à utiliser. Premierement, car elle sera utilisée principalement par des étudiants. Aussi, parce qu'elle servira de support de cours pour ces étudiants. Il a fallut travailler d'arache pied pour rendre cette plateforme simple d'utilisation. Et, il doit être beau à voir pour qu'ils aient envie de l'utiliser. On a commencer par la page d'accueil en mettant des grandes images avec le nom de chaque fonctionnalité, comme vous pouvez voir Annexe 2. De plus, via le menu en haut de chaque page, il est très facile de voyager entre chaque fonctionnalité. Celles-ci sont composées de cours expliquant la méthode à utiliser si l'on veut le faire soi-même, et une application pour mettre en pratique ce cours. Pour rendre ces applications plus simple, une indication est présente à chaque fois qu'une information est attendu. Et, en cas de problème des messages d'erreurs apparaîtront et vous expliqueront ce qu'il ne va pas cf Annexe 3.  
 
-#### La performance
+#### La performance :
 
 Aussi étant héberger en ligne, il n'est pas nécessaire d'avoir une machine surpuissante pour utiliser cette platforme. Et les résultats apparaissent rapidement, car ce ne sont pas des algorithmes très complexes. Et donc, cette platforme est accessible, depuis toutes les machines de l'iut, et même depuis chez-soi en utilisant le logiciel Putty.
 
 
-#### la maintenabilité
+#### la maintenabilité :
 
 Il est possible à l'avenir de rajouter des applications sans tout changer, il est seulement nécessaire de rajouter une page dans laquelle on y ajoute la nouvelle fonctionnalité. Et d'y ajouter l'accès sur la page d'accueil. Ce site est donc extensible. En outre, si un probleme est détecté, il peut être corriger en ciblant seulement la partie problématique sans avoir à tout changer. 
 
 ### Organisation de l'équipe
-#### Organigramme
+#### Organigramme :
 
 
 Pour ce projet nous étions 4, il y avais PARISOT Theo, MANOHARAN Anushan, GIANNICO Raffaele et PIERRE Tom. Aujourd'hui Nous ne somme plus que deux, il reste GIANNICO Raffaele et PIERRE Tom. et nous avons repatie les taches entre nous, Raffaele s'est occupée de l'index, de tout ce qui s'approche de l'aspect graphique de l'application, des fonctionnalités de découpage de sous réseaux, ainsi que le stockage csv du glossaire. tandis que Tom s'est occupé du reste des fonctionnalités (traduction d'adresses IP, CRC, commande Réseau...) et de leurs interfaces associée tout en aidant raffaele dans ces fonctionnailitées.
 
-#### Raison
+#### Raison :
 
 
 Nous avons répartie les tâches comme ceci car Raffaele avait une meilleur connaissance sur les fichiers Csv et sur les styles en web. Tandis que Tom avait plus de connaissances pour établir un algorythme (qu'est ce qu'il nous faut pour tel fonctionnalité, comment traiter les données etc..) et coder l'interface qui lui permet de fonctionner.
 
-#### Avantages
+#### Avantages :
 
 
 En répartissant ainsi le travail, cela nous permet d'avancer plus vite car la personne qui est plus à l'aise sur une fonctionnalité sera la plus qualifiée pour le faire et mettra donc moins de temps.
 
 
 ### Méthode utilisé
-#### Explications
+#### Explications :
 
 La méthode SCRUM est une méthode agile, où le logiciel est développé ou évolue sous formes de sprints qui sont des phases de développement qui sont concentré sur des fonctionnalités. L'équipe est donc autoorganisée et peut choisir la meilleure façon d’accomplir sa tâche. De plus, cette méthode inclut la participation et l’implication active du client durant l’intégralité du projet.
 
 
-#### Raison 
+#### Raison :
 
 Avec l'université, nous ne pouvions travailler à temps plein. C'est pourquoi, lorsque nous finissions plus tôt, ou le week end, nous nous concentrions chacun sur une des fonctionnalités. C'est la méthode qui nous semblait le plus logique, et la plus adapté à notre situation. Aussi, nous voulions que le client soit le plus actif possible dans ce projet pour être sûr que la fonctionnalité programmé correspond bien aux attentes du client au niveau de l'esthétique ou bien du fonctionnement en lui-même.
 
-#### Avantages
+#### Avantages :
 
 Cette méthode a pour principal avantage de produire rapidement un livrable grâce aux sprints. En produisant des livrables rapidement est régulièrement, cela permet notamment d'intégrer le client au projet. Ainsi, il est au courant de tout ce qui se passe, et il est possible d'agir très vite et d’intégrer les modifications plus rapidement. De même, un projet peut etre amené à évoluer. Donc cela favorise la réactivité et l'adaptabilité.
 
@@ -128,32 +129,32 @@ Scrum favorise donc la productivité, les tâches sont découpées en sous-tâch
 
 
 ### Nos outils de suivi
-#### La gestion de version - GIT
+#### La gestion de version - GIT :
 
 Nous avons utilisé GitLab pour mieux collaborer entre nous mais aussi avec le client afin de voir les évolutions. Voici le lien du gitLab, https://gitlab.com/pleijan/projet-tutoree-aide-reseau-premiere-annee, sur ce gitlab il y a :
 - le code source (toute les pages web)
 - les photos utilisée sur l'application
 - le rapport ainsi que les presentation orale du projet.
 
-#### un agenda hybride
+#### un agenda hybride :
 
-#### Communication générale
+#### Communication générale :
 
 Notre manière de communiquer était sur un groupe privé du logiciel Discord. Et de manière récurrente, nous nous échangions nos évolutions, ou alors nos idées.
 Aussi nous avons utilisé la plateforme Zoom pour communiquer avec notre client, faire une réunion avec lui pour faire un point sur la situation, lui poser des questions, savoir ce qu’il pense de notre avancé du projet.
 
 ### Planification détaillée du projet
-#### Ordonnancement
+#### Ordonnancement :
 
 Pour ce projet nous avons essayer d'appliquer une une méthode de travail simple, nous voulions au debut commencer par le recueil des besoins ainsi que la conception, commencer à coder et écrire en même temps le rapport. Au final nous avons changer de méthode de travail, nous avons pratiquer une sorte de méthode scrum, car nous essayons de faire une fonctionnalitée en 
 
-#### Diagramme de gantt
+#### Diagramme de gantt :
 
 Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe 4. Nos travaux étaient répartis sur plusieurs semaines. Nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine. Ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines. Puis, nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu. Enfin, nous avons continuer a developpé et écrire ce rapport jusqu'à la date finale de rendu le 07/04/2021.
 
-#### La gestion des compétences
+#### La gestion des compétences :
 
-#### La gestion des risques
+#### La gestion des risques :
 
 Avec l'université, il était difficile de continuer a programmé et écrire le rapport. En effet, nous avions une multitude de DS un réviser et des travaux à rendre. Par conséquent, nous avons du travailler deux fois plus pour finir les travaux. Cela a fonctionné.
 
@@ -186,6 +187,58 @@ On va créer une échelle pour la probabilité de réalisation d’un risque qui
 On va créer une deuxième échelle pour l’impact sur le projet allant de 1 à 3, défini dans le tableau disponible en annexe 6
 
 Et donc grace au differentes echelle on peux determiner un tableau avec les risque et leur probabilitée d'existences et leur impact qui est affichée dans l'annexe 7.
+
+#### Les cas d'utilisations :
+
+Les acteurs de ce projet sont les étudiants de première année du département Informatique de l'iut de Vélizy.
+Les objets sont :  menu, Adresses IP, masque, traduction, binaire, héxadécimal, décimal, valider, CIDR, VLSM, Calcul CRC, sniffer nmap, trouver, champs de textes.
+
+Les actions sont donc :
+
+
+- choisir une fonctionnalité dans le menu      					 
+- Traduction des adresses IP Decimal <-> héxadécimal          	 
+- Traduction des adresses IP Decimal <-> binaire              	 
+- Diviser les réseaux en Sous-réseaux avec les notations CIDR/VLSM 
+- Fonction qui calcul des CRC                                  	 
+- sniffer nmap                                 					 
+- Trouver l'adresse IP des machines extérieures 					 
+- Consulter la page Traduction Decimal <-> héxadécimal			    
+- Consulter la page Traduction Decimal <-> binaire				    
+- Consulter la page Sous-réseaux avec les notations CIDR/VLSM		    
+- Consulter la page Calcul CIDR										
+- Consulter la page sniffer nmap										
+- Consulter la page pour Trouver l'adresse IP d'une machine exterieur 
+- Traduction d'une adresse IP Decimal <-> héxadécimal					
+- Traduction d'une adresse IP Decimal <-> binaire						
+- Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM		
+- Fonction qui calcul un CRC											
+- Trouver l'adresse IP d'une machine exterieur						
+- écrire dans les champs de textes l'adresse IP hex-dec              
+- écrire dans les champs de textes l'adresse IP bin-dec              
+- écrire dans les champs de textes l'adresse IP pour les Sous-réseaux 
+- écrire le masque avec la notation CIDR ou VLSM                     
+- écrire le nombre de sous-réseaux                                   
+- écrire dans les champs pour le CRC								   
+- écrire dans les champs de textes l'adresse de la machine           
+- valider hex-dec                                                    
+- valider bin-dec                                                    
+- valider pour les Sous-réseaux                                      
+- valider pour le CRC												   
+- valider pour trouver l'adresse IP de la machine extérieur		   
+- Affiche l'adresse IP traduite hex-dec							   
+- Affiche l'adresse IP traduite bin-dec							  
+- Affiche les sous-réseaux										   
+- Affiche le CRC 													   
+- Affiche l'adresse IP de la machine extérieur					   
+- Erreur apparaît si adresse IP hex-dec invalide                     
+- Erreur apparaît si adresse IP bin-dec invalide                     
+- Erreur apparaît si adresse IP pour les Sous-réseaux est invalide   
+- Erreur apparaît si champ du CRC invalide						   
+- Erreur apparaît si le nom de la machine extérieure est invalide	   
+
+
+Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en Annexe 8.
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 2 : analyse de la réalisation
@@ -338,7 +391,7 @@ Tableau de l'echelle de l'impact d'un risque sur le projet.
 1 Impact faible, 3 Impact retard
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-## Annexe 7 : tableau des differents risque avec leur impact
+## Annexe 7: tableau des differents risque avec leur impact
 | tableau des differents risque avec leur impact | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : tableau des differents risque avec leur impact                                                           | Date: <18/12/2020> |   |   |   |
@@ -367,7 +420,7 @@ Tableau de l'echelle de l'impact d'un risque sur le projet.
 |Conflit au sein de l’équipe                |2                      |3        |
 
 
-## Annexe 4: les cas d'utilisations
+## Annexe 8: les cas d'utilisations
 
 | Les cas d’utilisations du projet tuteuré | Version : 2        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
