@@ -74,7 +74,9 @@ Les applications proposent d'afficher des résultats de diverses notions de rés
 - Diviser un réseau en sous-réseau avec la notation CIDR,
 - Diviser un réseau en sous-réseau avec la notation VLSM,
 - Calculer un CRC matriciel et polynomial,
-- Exécuter des commandes réseaux.
+- Exécuter des commandes réseau,
+- avoir un glossaire constitué des mots clé utilisée dans les fonctionnalitées,
+- un Manuel d'utilisation.
 
 #### La fiabilité :
 
@@ -137,6 +139,7 @@ Nous avons utilisé GitLab pour mieux collaborer entre nous mais aussi avec le c
 - le rapport ainsi que les presentation orale du projet.
 
 #### un agenda hybride :
+Pour produire ce projet nous nous sommes répartie les taches sur le temps mais globalement sur une semaine type, le soir en semaine nous travaillons sur nos fonctionnalitée et le week-end nous verifions si tout ce qui a été codé est bien fonctionnel.
 
 #### Communication générale :
 
@@ -153,6 +156,8 @@ Pour ce projet nous avons essayer d'appliquer une une méthode de travail simple
 Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe 4. Nos travaux étaient répartis sur plusieurs semaines. Nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine. Ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines. Puis, nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu. Enfin, nous avons continuer a developpé et écrire ce rapport jusqu'à la date finale de rendu le 07/04/2021.
 
 #### La gestion des compétences :
+
+raffaele avais plus de connaissance et d'experience sur le cotée graphique d'un site internet et sur la division de réseau tandis que tom avasi plus de faciliter pour construire des algorythme notamment pour le crc ou les traduction d'adresse ip.
 
 #### La gestion des risques :
 
