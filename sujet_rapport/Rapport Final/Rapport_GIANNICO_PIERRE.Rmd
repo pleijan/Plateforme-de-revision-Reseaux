@@ -399,7 +399,7 @@ Les fonctionnalités passent avant l'esthétique.
 | Document : Capture d'écran                                                              | Date: <28/03/2021> |   |   |   |
 | Responsable de la Redaction: Raffaele                                                     |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
-![](../img/exemple_resultat.png)
+![](../../img/exemple_resultat.png)
 
 ## Annexe 3: Analyse des besoins
 
