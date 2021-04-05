@@ -149,7 +149,7 @@ Aussi nous avons utilisé la plateforme Zoom pour communiquer avec notre client,
 ### Planification détaillée du projet
 #### Ordonnancement :
 
-Pour ce projet nous avons essayer d'appliquer une une méthode de travail simple, nous voulions au debut commencer par le recueil des besoins ainsi que la conception, commencer à coder et écrire en même temps le rapport. Au final nous avons changer de méthode de travail, nous avons pratiquer une sorte de méthode scrum, car nous essayons de faire une fonctionnalité en 
+Pour ce projet nous avons essayer d'appliquer une une méthode de travail simple, nous voulions au debut commencer par le recueil des besoins ainsi que la conception, commencer à coder et écrire en même temps le rapport. Au final nous avons changer de méthode de travail, nous avons pratiquer une sorte de méthode scrum, car nous essayons de travailler le plus possible sur le projet tout en travaillant en parallèle pour l'université. 
 
 #### Diagramme de gantt :
 
