@@ -272,11 +272,11 @@ Le but premier est d'être le plus pédagogique possible. De plus, il faut, avoi
 
 ### Exigences majeures
 
-Toutes les fonctionnalités sont indépendantes les une les autres. C'est pourquoi, si une fonctionnalité ne fonctionne pas correctement, on peut s'en passer au début, cela n'empêche pas le systeme de fonctionner pour le moment. Aussi, les cours de chacunes des pages de même n'empêche pas les cours de fonctionner mais ils doivent être implémenter dés que possible Et qu'ils soient associés chacun à un cours. Les fonctionnalités qui peuvent être considérer comme majeure sont principalement les traductions d'adresses IP, et les divisions de sous-réseaux, les deux types de CRC et l'exécution des commandes réseaux.
+Toutes les fonctionnalités sont indépendantes les une les autres. C'est pourquoi, si une fonctionnalité ne fonctionne pas correctement, on peut s'en passer au début, cela n'empêche pas le systeme de fonctionner pour le moment. Aussi, les cours de chacunes des pages de même n'empêche pas les applications de fonctionner mais ils doivent être implémenter dés que possible, et devront être associés chacun à un cours. Les fonctionnalités qui peuvent être considérer comme majeure sont principalement les traductions d'adresses IP, et les divisions de sous-réseaux, les deux types de CRC et l'exécution des commandes réseaux.
 
 ### Exigences Mineures
 
-L'exigence mineure serait l'esthétique du site. En effet, le but est d'apprendre quelque chose aux étudiants, et l'esthétique ne va pas empêcher cela. Par conséquent ce n'est pas urgent. Néanmoins, il serait souhaitable d'implémenter cette exigence car une personne à plus envie d'aller sur un site esthétique qu'un site basique. Cela peut aussi donner plus d'envie d'apprendre.
+L'exigence mineure serait l'esthétique du site. En effet, le but est d'apprendre quelque chose aux étudiants, et l'esthétique ne va pas empêcher cela. Par conséquent ce n'est pas urgent. Néanmoins, il serait souhaitable d'implémenter cette exigence car une personne à plus envie d'aller sur un site esthétique qu'un site basique. Cela peut aussi donner plus d'envie d'apprendre. Les fonctionnalités d'exécution de commandes réseaux ainsi que le glossaire peuvent être considérer comme des exigences mineurs car ce ne sont pas les principales notions du module de réseau.
 
 ### Exigences supplémentaires
 
@@ -290,7 +290,7 @@ A l'heure d'aujourd'hui, le projet est quasiment fini, toutes les fonctionnalit�
 - la traduction d'adresse IP entre hexadecimal et decimal ou entre binaire et decimal.
 - l'adressage de sous réseaux en notation CIDR et VLSM.
 - le calcul matriciel et polynomial d'un CRC.
-- 5 commande réseaux sous linux (ping, nmap, nslookup, man et tcpdump).
+- 5 commandes réseaux sous linux (ping, nmap, nslookup, man et tcpdump).
 - un glossaire qui repertorie l'ensemble des mots important.
 - et un manuel d'utilisation.
 
@@ -303,11 +303,11 @@ Ce projet est-il évolutif ? La réponse est oui, tout d'abord car les cours qui
 ### Des acquis divers et variés
 #### Savoir-être
 
-Ce projet nous a permis d'apprendre à travailler en équipe, de faire face à des réduction d'effectifs, des crises sanitaires, tout en respectant les délais pour produire notre projet. Et, grâce à cet experience c'est évident que nos capacités en sont sortie grandie.
+Ce projet nous a permis d'apprendre à travailler en équipe, de faire face à des réduction d'effectifs, des crises sanitaires, tout en respectant les délais pour produire notre projet. Nous nous sommes entraidés, motivé, et avons essayer de tenir bons ensemble pour dépasser les difficiles moment de la situation sanitaire. Et, grâce à cet experience c'est évident que nos capacités en sont sortie grandie.
 
 #### Savoir-Faire
 
-Nous avons aussi acquis de l'expérience niveau technique, car en effet comme vu précedemment, de nombreux obstacles on fait surface qui nous ont forcer à nous documenter, à essayer maintes et maintes fois. Ainsi, pour résoudre ces problemes, nous nous sommes donc servis à la fois de tout nos cours de programmation web, de mathematiques, mais aussi de certains site comme la documentations de php (php.net) ou encore W3School qui repertorie de nombreux sujet pour aider tout les developpeurs. 
+Nous avons aussi acquis de l'expérience niveau technique, car en effet comme vu précedemment, de nombreux obstacles on fait surface qui nous ont forcer à nous documenter, à essayer maintes et maintes fois. Ainsi, pour résoudre ces problemes, nous nous sommes donc servis à la fois de tout nos cours de programmation web, de mathematiques, mais aussi de certains site comme la documentations de php (php.net) ou encore W3School qui repertorie de nombreux sujet pour aider tout les developpeurs. Aussi nous avons dû approfondir nos connaissances en Javascript pour la fonctionnalité de division de réseau avec la notation VLSM. Nous avions dû apprendre à utiliser la librairie Bootstrap pour embellir les pages.
 
 ### Une Experience fondamentale
 ## Problemes rencontrés
