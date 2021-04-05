@@ -1200,3 +1200,40 @@ Cas d'utilisation 55 : erreur apparait si mauvais login ou mdp
 | **informations connexes :**     | Pour pouvoir exécuter cette commande réseau il faut y accéder depuis le menu Exécution commande réseau puis nslookup ou bien depuis l'accueil   |
 
 
+|                                 |                                                                                                                       |
+|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 32:**        | modifier le glossaire                                                                     |
+| **Nom:**                        | modifier le glossaire nslookup                                                                          |
+| **Contexte d'utilisation :**    | L’utilisateur souhaite modifier le glossaire, en changeant le mot ou bien en supprimant ce mot                      |
+| **Portée:**                     | système                                                                                                               |
+| **Acteur principal :**          | système                                                                                                           |
+| **Intervenants et Intérêts:**   |l'utilisateur saisie les différents champs  système modifiera le glossaire.                                                                                                                      |
+| **Précondition:**               | Remplir les différents champs, choisir l'action a effectué correctement                                                                                               |
+| **Scénario nominal:**           | 1. L’utilisateur choisit s'il veut supprimer un mot ou le modifier \newline 2. L’utilisateur clique sur le bouton valider \newline 3. le glossaire est modifié |
+| **Extensions:**                 |             |
+| **Garantie minimale :**         | affiche un message                                              |
+| **Garantie en cas de succès :** | la commande s'exécute et le résultat s'affiche                                                                           |
+| **Déclencheur :**               | clique sur le bouton valider |
+| **informations connexes :**     | Pour pouvoir exécuter cette fonctionnalité, il faut y accéder depuis le menu glossaire|
+
+
+
+
+|                                 |                                                                                                                       |
+|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 33:**        | se connecter en admin au glossaire                                                                     |
+| **Nom:**                        | se connecter en admin au glossaire nslookup                                                                          |
+| **Contexte d'utilisation :**    | L’utilisateur souhaite modifier le glossaire, en changeant le mot ou bien en supprimant ce mot, il doit d'abord s'authentifier en admin pour pouvoir le faire                      |
+| **Portée:**                     | système                                                                                                               |
+| **Acteur principal :**          | système                                                                                                           |
+| **Intervenants et Intérêts:**   |l'utilisateur saisie les différents champs  si vous êtes admin le systeme vous fera accéder aux fonctionnalités admin. admin.                                                                                                                      |
+| **Précondition:**               | Remplir les différents champs correctement                                                                                               |
+| **Scénario nominal:**           | 1. L’utilisateur saisie le login et le mot de passe \newline 2. L’utilisateur clique sur le bouton valider \newline 3. l'admin peut désormais modifier le glossaire |
+| **Extensions:**                 | 2.a si le login ou le mot de passe que l'utilisateur a entré est incorrect, le système affichera un message d'erreur            |
+| **Garantie minimale :**         | affiche un message                                              |
+| **Garantie en cas de succès :** | accéder aux fonctionnalités admin                                                                           |
+| **Déclencheur :**               | clique sur le bouton valider |
+| **informations connexes :**     | Pour pouvoir exécuter cette fonctionnalité, il faut y accéder depuis le menu glossaire puis modifier ou supprimer un mot dans la table|
+
+
+
