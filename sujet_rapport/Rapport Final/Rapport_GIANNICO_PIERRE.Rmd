@@ -85,11 +85,11 @@ Les applications proposés ont des fins pédagogiques, les étudiants auront con
 
 #### la facilité d'utilisation :
 
-Pour nous c'etait impensable que cette application ne soit pas facile à utiliser. Premierement, car elle sera utilisée principalement par des étudiants. Aussi, parce qu'elle servira de support de cours pour ces étudiants. Il a fallut travailler d'arache pied pour rendre cette plateforme simple d'utilisation. Et, il doit être beau à voir pour qu'ils aient envie de l'utiliser. On a commencer par la page d'accueil en mettant des grandes images avec le nom de chaque fonctionnalité, comme vous pouvez voir Annexe 2. De plus, via le menu en haut de chaque page, il est très facile de voyager entre chaque fonctionnalité. Celles-ci sont composées de cours expliquant la méthode à utiliser si l'on veut le faire soi-même, et une application pour mettre en pratique ce cours. Pour rendre ces applications plus simple, une indication est présente à chaque fois qu'une information est attendu. Et, en cas de problème des messages d'erreurs apparaîtront et vous expliqueront ce qu'il ne va pas cf Annexe 3.  
+Pour nous c'etait impensable que cette application ne soit pas facile à utiliser. Premierement, car elle sera utilisée principalement par des étudiants. Aussi, parce qu'elle servira de support de cours pour ces étudiants. Il a fallut se mettre à la place des étudiant pour rendre cette plateforme simple d'utilisation. Et, il doit être beau à voir pour qu'ils aient envie de l'utiliser. On a commencé par la page d'accueil en mettant des grandes images avec le nom de chaque fonctionnalité, comme vous pouvez voir Annexe 2. De plus, via le menu en haut de chaque page, il est très facile de voyager entre chaque fonctionnalité. Celles-ci sont composées de cours expliquant la méthode à utiliser si l'on veut le faire soi-même, et une application pour mettre en pratique ce cours. Pour rendre ces applications plus simple, une indication est présente à chaque fois qu'une information est attendu. Et, en cas de problème des messages d'erreurs apparaîtront et vous expliqueront ce qu'il ne va pas cf Annexe 3.  
 
 #### La performance :
 
-Aussi étant héberger en ligne, il n'est pas nécessaire d'avoir une machine surpuissante pour utiliser cette platforme. Et les résultats apparaissent rapidement, car ce ne sont pas des algorithmes très complexes. Et donc, cette platforme est accessible, depuis toutes les machines de l'iut, et même depuis chez-soi en utilisant le logiciel Putty.
+Aussi étant héberger en ligne, il n'est pas nécessaire d'avoir une machine surpuissante pour utiliser cette platforme. Et les résultats apparaissent rapidement, car ce ne sont pas des algorithmes très complexes. En programmant, nous avons tout de même optimiser le code, pour qu'il puisse afficher au mieux les résultats. Et donc, cette platforme est accessible, depuis toutes les machines de l'iut, et même depuis chez-soi en utilisant le logiciel Putty.
 
 
 #### la maintenabilité :
@@ -116,7 +116,7 @@ En répartissant ainsi le travail, cela nous permet d'avancer plus vite car la p
 ### Méthode utilisé
 #### Explications :
 
-La méthode SCRUM est une méthode agile, où le logiciel est développé ou évolue sous formes de sprints qui sont des phases de développement qui sont concentré sur des fonctionnalités. L'équipe est donc autoorganisée et peut choisir la meilleure façon d’accomplir sa tâche. De plus, cette méthode inclut la participation et l’implication active du client durant l’intégralité du projet.
+La méthode SCRUM est une méthode agile, où le logiciel est développé en évoluant sous formes de sprints. Ce sont des phases de développement qui sont concentrés sur des fonctionnalités. L'équipe est donc autoorganisée et peut choisir la meilleure façon d’accomplir sa tâche. De plus, cette méthode inclut la participation et l’implication active du client durant l’intégralité du projet.
 
 
 #### Raison :
@@ -139,17 +139,17 @@ Nous avons utilisé GitLab pour mieux collaborer entre nous mais aussi avec le c
 - le rapport ainsi que les presentation orale du projet.
 
 #### un agenda hybride :
-Pour produire ce projet nous nous sommes répartie les taches sur le temps mais globalement sur une semaine type, le soir en semaine nous travaillons sur nos fonctionnalitée et le week-end nous verifions si tout ce qui a été codé est bien fonctionnel.
+Pour produire ce projet nous nous sommes répartie les taches sur le temps mais globalement sur une semaine type, le soir en semaine nous travaillons sur nos fonctionnalités et le week-end nous verifions si tout ce qui a été codé est bien fonctionnel.
 
 #### Communication générale :
 
 Notre manière de communiquer était sur un groupe privé du logiciel Discord. Et de manière récurrente, nous nous échangions nos évolutions, ou alors nos idées.
-Aussi nous avons utilisé la plateforme Zoom pour communiquer avec notre client, faire une réunion avec lui pour faire un point sur la situation, lui poser des questions, savoir ce qu’il pense de notre avancé du projet.
+Aussi nous avons utilisé la plateforme Zoom pour communiquer avec notre client, faire une réunion avec lui pour faire un point sur la situation, lui poser des questions, savoir ce qu’il pense de notre avancé du projet. Aussi, lors de nos TP de programmations Web en présence les mercredis, nous faisions un points sur le projet toutes les semaines avec M.Hoguin et les membres de l'équipe.
 
 ### Planification détaillée du projet
 #### Ordonnancement :
 
-Pour ce projet nous avons essayer d'appliquer une une méthode de travail simple, nous voulions au debut commencer par le recueil des besoins ainsi que la conception, commencer à coder et écrire en même temps le rapport. Au final nous avons changer de méthode de travail, nous avons pratiquer une sorte de méthode scrum, car nous essayons de faire une fonctionnalitée en 
+Pour ce projet nous avons essayer d'appliquer une une méthode de travail simple, nous voulions au debut commencer par le recueil des besoins ainsi que la conception, commencer à coder et écrire en même temps le rapport. Au final nous avons changer de méthode de travail, nous avons pratiquer une sorte de méthode scrum, car nous essayons de faire une fonctionnalité en 
 
 #### Diagramme de gantt :
 
@@ -310,7 +310,7 @@ Nous avons aussi acquis de l'expérience niveau technique, car en effet comme vu
 ### Une Experience fondamentale
 ## Problemes rencontrés
 
-Tout au long du projet, nous nous sommes confronter à certains problèmes. La plus part des fonctionnalités qui sont programmés, nécessitaient des cours de M.Hoguin. C'est pourquoi nous devions bien comprendre les notions avant de les programmés. Nous nous sommes donc entrainés sur papier avant de le programmer. Par exemple, pour les divisions de réseaux en sous-réseaux avec les notations CIDR et VLSM. Mais aussi pour les calculs de CRC polynomial. Nous prenions des rendez-vous chaque semaine pendant les TP des mardi, pour poser nos questions à notre client M.Hoguin, qui nous expliquait les notions non comprises. Il nous conseillait aussi sur l'aspect graphique du site. Celui-ci a changé de nombreuse fois. Nous avons appris a utilisé Bootstrap une librairie qui permet d'embellir les pages internet.
+Tout au long du projet, nous nous sommes confronter à certains problèmes. La plus part des fonctionnalités qui sont programmés, nécessitaient des cours de M.Hoguin. C'est pourquoi nous devions bien comprendre les notions avant de les programmés. Nous nous sommes donc entrainés sur papier avant de le programmer. Par exemple, pour les divisions de réseaux en sous-réseaux avec les notations CIDR et VLSM. Mais aussi pour les calculs de CRC polynomial. Nous prenions des rendez-vous chaque semaine pendant les TP des mercredis, pour poser nos questions à notre client M.Hoguin, qui nous expliquait les notions non comprises. Il nous conseillait aussi sur l'aspect graphique du site. Celui-ci a changé de nombreuse fois. Nous avons appris a utilisé Bootstrap une librairie qui permet d'embellir les pages internet.
 
 Pour les fonctionnalités concernant les adresses IP nous avions prévus de mettre un champ pour chaque partie de l'adresse IP. Nous trouvions cela plus clair pour les étudiants, pour différentier les différentes partie de l'adresse IP. Cependant, il s'est avérer qu'en faisant plusieurs tests pour vérifier les résultats, que le fait de cliquer sur chaque champs pouvait ennuyer l'utilisateur. Ex : pour une adresse IP de type : 192.168.2.3 il y avait quatres champs, un pour 198, un pour 168 etc...
 C'est pourquoi nous avons supprimer tout ces champs et avons laissé un seul champ pour l'adresse IP. C'était plus rapide, et c'était quand même clair. 
