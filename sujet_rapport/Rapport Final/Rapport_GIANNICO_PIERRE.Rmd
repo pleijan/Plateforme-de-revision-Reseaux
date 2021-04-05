@@ -250,7 +250,7 @@ Les actions sont donc :
 - Affiche le résultat de la commande réseau entrée					    
 - Erreur apparaît si adresse IP hex-dec invalide                      
 - Erreur apparaît si adresse IP bin-dec invalide                      
-- Erreur apparaît si adresse IP pour les Sous-réseaux est invalide    
+- Erreur apparait si un champ est mal rempli pour les Sous-réseaux     
 - Erreur apparaît si champ du CRC invalide						    
 - Erreur apparaît si la commande entrée est invalide	    		
 - écrire dans les champs pour ajouter un mot et sa définition au glossaire	    
@@ -524,7 +524,7 @@ trois niveaux :
 | - Affiche le résultat de la commande réseau entrée					    |
 | - Erreur apparaît si adresse IP hex-dec invalide                      |
 | - Erreur apparaît si adresse IP bin-dec invalide                      |
-| - Erreur apparaît si adresse IP pour les Sous-réseaux est invalide    |
+| - Erreur apparait si un champ est mal rempli pour les Sous-réseaux     |
 | - Erreur apparaît si champ du CRC invalide						    |
 | - Erreur apparaît si la commande entrée est invalide	    |
 | - écrire dans les champs pour ajouter un mot et sa définition au glossaire	    |
@@ -731,7 +731,7 @@ Cas d'utilisation 46 : Affiche les sous-réseaux
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 47 : Erreur apparaît si adresse IP pour les Sous-réseaux est invalide
+Cas d'utilisation 47 : Erreur apparait si un champ est mal rempli pour les Sous-réseaux 
 
 - Niveau : Sous-fonction
  
