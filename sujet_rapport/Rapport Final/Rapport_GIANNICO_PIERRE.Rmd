@@ -323,8 +323,9 @@ Pour la fonctionnalité de division de sous-réseaux avec la notation VLSM, il f
 
 Concernant la fonctionnalité d'exécution de commandes réseaux. Nous devions pensé à un moyen de récupérer les informations qui apparaissent sur la console. C'est pourquoi après plusieurs recherche avec M.Hoguin, nous avons utilisé la commande de redirection de sortie ">" pour créer un fichier qui contient ces informations. Il suffisait ensuite de lire ce fichier avec PHP. Ces commandes fonctionnent seulement lorsque le site est d'héberger sur un serveur de l'iut. Certaines commandes ne fonctionnaient pas car fallait utiliser la commande superutilisateur sudo. Nous l'avons donc installer et cela à fonctionner.
 
+En outre, nous avons rencontrer des problèmes avec la situation sanitaires. Il est difficile de se voir, nous avons du réaliser ce projet à distances. Puis, certains membre de notre équipe ont abandonnés, nous avons du réorganiser les tâches et faire face à ce problème.
 
-Conclusion: Au cours de ce projet, nous avons pu apprendre/réviser les notions de s2 du modules de réseaux. Cela à permis aussi de consolider nos connaissances en PHP. De découvrir un peu plus le Javascript et le Bootstrap. Aussi, cela nous a permis de renforcer la méthodologie de travail, c'est-à-dire d'abord penser le projet puis le programmer.
+Conclusion: Au cours de ce projet, nous avons pu apprendre/réviser les notions de s2 du modules de réseaux. Cela à permis aussi de consolider nos connaissances en PHP. De découvrir un peu plus le Javascript et le Bootstrap. Aussi, cela nous a permis de renforcer la méthodologie de travail, c'est-à-dire d'abord penser le projet puis le programmer. Et enfin, la situation sanitaire nous a fait acquérir de l'expérience. Nous avons appris à quand même mener à bien un projet même s'il y a des abandons et que le travail devient plus lourd pour les autres membres de l'équipe.
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
