@@ -231,6 +231,8 @@ Les actions sont donc :
 - exécuter commande man					
 - exécuter commande tcpdump					
 - exécuter commande nslookup
+- modifier/supprimer un mot dans le glossaire					
+- se connecter en admin au glossaire					
 - écrire dans le champ de texte l'adresse IP hex-dec               
 - écrire dans le champ de texte l'adresse IP bin-dec               
 - écrire dans les champ de texte pour les Sous-réseaux  
@@ -251,7 +253,11 @@ Les actions sont donc :
 - Erreur apparaît si adresse IP pour les Sous-réseaux est invalide    
 - Erreur apparaît si champ du CRC invalide						    
 - Erreur apparaît si la commande entrée est invalide	    		
-
+- écrire dans les champs pour ajouter un mot et sa définition au glossaire	    
+- écrire dans les champs pour se connecter en admin au glossaire	    
+- valider la connexion admin au glossaire                                                     
+- valider la saisie d'un mot pour le glossaire                                                     
+- erreur apparait si mauvais login ou mdp                                                     
 
 Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en Annexe 8.
 
@@ -494,6 +500,8 @@ trois niveaux :
 | - exécuter commande man					|
 | - exécuter commande tcpdump					|
 | - exécuter commande nslookup					|
+| - modifier/supprimer un mot dans le glossaire					|
+| - se connecter en admin au glossaire					|
 
 
 
@@ -519,6 +527,11 @@ trois niveaux :
 | - Erreur apparaît si adresse IP pour les Sous-réseaux est invalide    |
 | - Erreur apparaît si champ du CRC invalide						    |
 | - Erreur apparaît si la commande entrée est invalide	    |
+| - écrire dans les champs pour ajouter un mot et sa définition au glossaire	    |
+| - écrire dans les champs pour se connecter en admin au glossaire	    |
+| - valider la connexion admin au glossaire                                                     |
+| - valider la saisie d'un mot pour le glossaire                                                     |
+| - erreur apparait si mauvais login ou mdp                                                     |
 
 <!--//![figure : cas d'utilisations](../img/casUtilisation.png)regular html comment -->
 
@@ -643,90 +656,119 @@ Cas d'utilisation 28 : exécuter commande nslookup
 
 - Niveau : Utilisateur
 
+Cas d'utilisation 29 : modifier le glossaire
+
+- Niveau : Utilisateur
+
+Cas d'utilisation 30 : se connecter en admin au glossaire
+
+- Niveau : Utilisateur
+ 
 
 
-Cas d'utilisation 29 : écrire dans les champs de textes l'adresse IP hex-dec
+Cas d'utilisation 31 : écrire dans les champs de textes l'adresse IP hex-dec
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 30  : valider hex-dec
+Cas d'utilisation 32  : valider hex-dec
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 31 : Affiche l'adresse IP traduite hex-dec
+Cas d'utilisation 33 : Affiche l'adresse IP traduite hex-dec
 
 - Niveau : Sous-fonction
  
-Cas d'utilisation 32 : Erreur apparaît si adresse IP hex-dec invalide
+Cas d'utilisation 34 : Erreur apparaît si adresse IP hex-dec invalide
 
 - Niveau : Sous-fonction
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
-Cas d'utilisation 33 : écrire dans les champs de textes l'adresse IP bin-dec
+Cas d'utilisation 35 : écrire dans les champs de textes l'adresse IP bin-dec
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 34  : valider bin-dec
+Cas d'utilisation 36  : valider bin-dec
 
 - Niveau : Sous-fonction     					 
 
-Cas d'utilisation 35 : Affiche l'adresse IP traduite bin-dec
+Cas d'utilisation 37 : Affiche l'adresse IP traduite bin-dec
 
 - Niveau : Sous-fonction
  
-Cas d'utilisation 36 : Erreur apparaît si adresse IP bin-dec invalide
+Cas d'utilisation 38 : Erreur apparaît si adresse IP bin-dec invalide
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 37 : écrire dans les champs de texte pour les Sous-réseaux
+Cas d'utilisation 39 : écrire dans les champs de texte pour les Sous-réseaux
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 38 : valider pour les sous-réseaux
-
-- Niveau : Sous-fonction
- 
-Cas d'utilisation 39 : Affiche les sous-réseaux
-
-- Niveau : Sous-fonction
-
-Cas d'utilisation 40 : Erreur apparaît si adresse IP pour les Sous-réseaux est invalide
+Cas d'utilisation 40 : valider pour les sous-réseaux
 
 - Niveau : Sous-fonction
  
-Cas d'utilisation 41 : écrire dans les champs pour le CRC
+Cas d'utilisation 41 : Affiche les sous-réseaux
+
+- Niveau : Sous-fonction
+
+Cas d'utilisation 42 : Erreur apparaît si adresse IP pour les Sous-réseaux est invalide
+
+- Niveau : Sous-fonction
+ 
+Cas d'utilisation 43 : écrire dans les champs pour le CRC
 
 - Niveau : Sous-fonction
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-Cas d'utilisation 42 : valider pour le CRC
+Cas d'utilisation 44 : valider pour le CRC
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 43  : Affiche le CRC 
+Cas d'utilisation 45  : Affiche le CRC 
 
 - Niveau : Sous-fonction     					 
 
-Cas d'utilisation 44 : Erreur apparaît si champ du CRC invalide
+Cas d'utilisation 46 : Erreur apparaît si champ du CRC invalide
 
 - Niveau : Sous-fonction
  
-Cas d'utilisation 45 : écrire dans les champs de textes pour exécuter une commande réseau
+Cas d'utilisation 47 : écrire dans les champs de textes pour exécuter une commande réseau
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 46 :  valider commande réseau
+Cas d'utilisation 48 :  valider commande réseau
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 47  : Affiche le résultat de la commande réseau entrée
+Cas d'utilisation 49  : Affiche le résultat de la commande réseau entrée
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 48 : Erreur apparaît si la commande entrée est invalide	
+Cas d'utilisation 50 : Erreur apparaît si la commande entrée est invalide	
 
 - Niveau : Sous-fonction
+
+Cas d'utilisation 51 : écrire dans les champs pour ajouter un mot et sa définition au glossaire
+
+- Niveau : Sous-fonction
+
+Cas d'utilisation 52 : écrire dans les champs pour se connecter en admin au glossaire
+
+- Niveau : Sous-fonction
+
+Cas d'utilisation 53 : valider la connexion admin au glossaire
+
+- Niveau : Sous-fonction
+
+Cas d'utilisation 54 : valider la saisie d'un mot pour le glossaire
+
+- Niveau : Sous-fonction
+
+Cas d'utilisation 55 : erreur apparait si mauvais login ou mdp
+
+- Niveau : Sous-fonction
+
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
