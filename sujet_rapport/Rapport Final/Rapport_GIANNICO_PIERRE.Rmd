@@ -100,7 +100,7 @@ Il est possible à l'avenir de rajouter des applications sans tout changer, il e
 #### Organigramme :
 
 
-Pour ce projet nous étions 4, il y avais PARISOT Theo, MANOHARAN Anushan, GIANNICO Raffaele et PIERRE Tom. Aujourd'hui Nous ne somme plus que deux, il reste GIANNICO Raffaele et PIERRE Tom. et nous avons repatie les taches entre nous, Raffaele s'est occupée de l'index, de tout ce qui s'approche de l'aspect graphique de l'application, des fonctionnalités de découpage de sous réseaux, ainsi que le stockage csv du glossaire. tandis que Tom s'est occupé du reste des fonctionnalités (traduction d'adresses IP, CRC, commande Réseau...) et de leurs interfaces associée tout en aidant raffaele dans ces fonctionnailitées.
+Pour ce projet nous étions 4, il y avais PARISOT Theo, MANOHARAN Anushan, GIANNICO Raffaele et PIERRE Tom. Aujourd'hui Nous ne somme plus que deux, il reste GIANNICO Raffaele et PIERRE Tom. et nous avons repartie les taches entre nous, Raffaele s'est occupée de l'index, de tout ce qui s'approche de l'aspect graphique de l'application, des fonctionnalités de découpage de sous réseaux, ainsi que le stockage csv du glossaire. tandis que Tom s'est occupé du reste des fonctionnalités (traduction d'adresses IP, CRC, commande Réseau...) et de leurs interfaces associée tout en aidant Raffaele dans ces fonctionnalités.
 
 #### Raison :
 
@@ -310,6 +310,23 @@ Ce projet nous a permis d'apprendre à travailler en équipe, de faire face à d
 Nous avons aussi acquis de l'expérience niveau technique, car en effet comme vu précedemment, de nombreux obstacles on fait surface qui nous ont forcer à nous documenter, à essayer maintes et maintes fois. Ainsi, pour résoudre ces problemes, nous nous sommes donc servis à la fois de tout nos cours de programmation web, de mathematiques, mais aussi de certains site comme la documentations de php (php.net) ou encore W3School qui repertorie de nombreux sujet pour aider tout les developpeurs. 
 
 ### Une Experience fondamentale
+## Problemes rencontrés
+
+Tout au long du projet, nous nous sommes confronter à certains problèmes. La plus part des fonctionnalités qui sont programmés, nécessitaient des cours de M.Hoguin. C'est pourquoi nous devions bien comprendre les notions avant de les programmés. Nous nous sommes donc entrainés sur papier avant de le programmer. Par exemple, pour les divisions de réseaux en sous-réseaux avec les notations CIDR et VLSM. Mais aussi pour les calculs de CRC polynomial. Nous prenions des rendez-vous chaque semaine pendant les TP des mardi, pour poser nos questions à notre client M.Hoguin, qui nous expliquait les notions non comprises. Il nous conseillait aussi sur l'aspect graphique du site. Celui-ci a changé de nombreuse fois. Nous avons appris a utilisé Bootstrap une librairie qui permet d'embellir les pages internet.
+
+Pour les fonctionnalités concernant les adresses IP nous avions prévus de mettre un champ pour chaque partie de l'adresse IP. Nous trouvions cela plus clair pour les étudiants, pour différentier les différentes partie de l'adresse IP. Cependant, il s'est avérer qu'en faisant plusieurs tests pour vérifier les résultats, que le fait de cliquer sur chaque champs pouvait ennuyer l'utilisateur. Ex : pour une adresse IP de type : 192.168.2.3 il y avait quatres champs, un pour 198, un pour 168 etc...
+C'est pourquoi nous avons supprimer tout ces champs et avons laissé un seul champ pour l'adresse IP. C'était plus rapide, et c'était quand même clair. 
+
+Après avoir programmé la fonctionnalité de division de réseaux en sous réseaux avec la notation CIDR ainsi que les deux type de CRC, il n'y avait plus d'erreurs. Mais en faisant tester ces applications à M.Hoguin, nous nous sommes rendus compte que quelques incohérences apparaissaient pour certains sous-réseaux et pour les résultats des CRC. Et à chaque fois, que l'on corrigeait un bug un autre apparaissait. Au final, avec de la persevérence nous avons résolus tout ces problèmes. Ils ont été tester de nombreuse fois et ont passé les tests avec succès.
+
+Pour la fonctionnalité de division de sous-réseaux avec la notation VLSM, il fallait indiquer le nombre d'hôtes que l'on voulait pour chaque sous-réseaux. C'est pourquoi, nous avions pensé à un bouton ajout qui ajoutait un champ pour inscrire le nombre d'hôtes. Un petit problème qui peut sembler sans importance mais qui est très ennuyeux lorsque l'on utilise le logiciel de façon prolongé est qu'à chaque appui du bouton ajout la page se rechargeait. Pour pallier à ce problème, nous avons donc dû appronfondir nos connaissances en Javascript qui permettait ainsi d'ajouter des champs sans actualiser la page. Au début, du semestre 3, nous avions appris le langage PHP. Donc, il nous semblait logique d'utiliser celui-ci dès le début. Mais effectivement celui effectue une actualisation de la page lors de l'appuie d'un bouton.
+
+Concernant la fonctionnalité d'exécution de commandes réseaux. Nous devions pensé à un moyen de récupérer les informations qui apparaissent sur la console. C'est pourquoi après plusieurs recherche avec M.Hoguin, nous avons utilisé la commande de redirection de sortie ">" pour créer un fichier qui contient ces informations. Il suffisait ensuite de lire ce fichier avec PHP. Ces commandes fonctionnent seulement lorsque le site est d'héberger sur un serveur de l'iut. Certaines commandes ne fonctionnaient pas car fallait utiliser la commande superutilisateur sudo. Nous l'avons donc installer et cela à fonctionner.
+
+
+Conclusion: Au cours de ce projet, nous avons pu apprendre/réviser les notions de s2 du modules de réseaux. Cela à permis aussi de consolider nos connaissances en PHP. De découvrir un peu plus le Javascript et le Bootstrap. Aussi, cela nous a permis de renforcer la méthodologie de travail, c'est-à-dire d'abord penser le projet puis le programmer.
+
+
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 4 : Bibliographie
 
