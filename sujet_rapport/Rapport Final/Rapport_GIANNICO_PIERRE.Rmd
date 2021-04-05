@@ -157,11 +157,10 @@ Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâch
 
 #### La gestion des compétences :
 
-raffaele avais plus de connaissance et d'experience sur le cotée graphique d'un site internet et sur la division de réseau tandis que tom avasi plus de faciliter pour construire des algorythme notamment pour le crc ou les traduction d'adresse ip.
+Raffaele avais plus de connaissance et d'experience sur le cotée graphique d'un site internet et sur les divisions de réseaux tandis que Tom avait plus de faciliter pour construire des algorythmes notamment pour le CRC ou les traduction d'adresse IP.
 
 #### La gestion des risques :
 
-Avec l'université, il était difficile de continuer a programmé et écrire le rapport. En effet, nous avions une multitude de DS un réviser et des travaux à rendre. Par conséquent, nous avons du travailler deux fois plus pour finir les travaux. Cela a fonctionné.
 
 Tout d'abord voici la liste des risques qui pourrais arriver pendant notre projet :
 
@@ -201,46 +200,57 @@ Les objets sont :  menu, Adresses IP, masque, traduction, binaire, héxadécimal
 Les actions sont donc :
 
 
-- choisir une fonctionnalité dans le menu      					 
+- choisir une fonctionnalité dans le menu ou depuis l'index     					 
 - Traduction des adresses IP Decimal <-> héxadécimal          	 
 - Traduction des adresses IP Decimal <-> binaire              	 
 - Diviser les réseaux en Sous-réseaux avec les notations CIDR/VLSM 
-- Fonction qui calcul des CRC                                  	 
-- sniffer nmap                                 					 
-- Trouver l'adresse IP des machines extérieures 					 
+- Calculer des CRC matriciel/polynomial                                 	 
+- Exécutions de commandes réseaux                                					 
+- Consulter des pages de cours associés aux fonctionnalités 
+- accéder au glossaire
 - Consulter la page Traduction Decimal <-> héxadécimal			    
 - Consulter la page Traduction Decimal <-> binaire				    
-- Consulter la page Sous-réseaux avec les notations CIDR/VLSM		    
-- Consulter la page Calcul CIDR										
-- Consulter la page sniffer nmap										
-- Consulter la page pour Trouver l'adresse IP d'une machine exterieur 
+- Consulter la page Sous-réseaux avec la notation CIDR		    
+- Consulter la page Sous-réseaux avec la notation VLSM		    
+- Consulter la page Calcul CRC										
+- Consulter la page commande nmap										
+- Consulter la page commande ping 
+- Consulter la page commande man 
+- Consulter la page commande tcpdump 
+- Consulter la page commande nslookup 
+- Consulter la page du glossaire 
+- Consulter une page de cours associé à une fonctionnalité 
 - Traduction d'une adresse IP Decimal <-> héxadécimal					
 - Traduction d'une adresse IP Decimal <-> binaire						
-- Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM		
-- Fonction qui calcul un CRC											
-- Trouver l'adresse IP d'une machine exterieur						
-- écrire dans les champs de textes l'adresse IP hex-dec              
-- écrire dans les champs de textes l'adresse IP bin-dec              
-- écrire dans les champs de textes l'adresse IP pour les Sous-réseaux 
-- écrire le masque avec la notation CIDR ou VLSM                     
-- écrire le nombre de sous-réseaux                                   
-- écrire dans les champs pour le CRC								   
-- écrire dans les champs de textes l'adresse de la machine           
-- valider hex-dec                                                    
-- valider bin-dec                                                    
-- valider pour les Sous-réseaux                                      
-- valider pour le CRC												   
-- valider pour trouver l'adresse IP de la machine extérieur		   
-- Affiche l'adresse IP traduite hex-dec							   
-- Affiche l'adresse IP traduite bin-dec							  
-- Affiche les sous-réseaux										   
-- Affiche le CRC 													   
-- Affiche l'adresse IP de la machine extérieur					   
-- Erreur apparaît si adresse IP hex-dec invalide                     
-- Erreur apparaît si adresse IP bin-dec invalide                     
-- Erreur apparaît si adresse IP pour les Sous-réseaux est invalide   
-- Erreur apparaît si champ du CRC invalide						   
-- Erreur apparaît si le nom de la machine extérieure est invalide	   
+- Diviser un réseau en Sous-réseaux avec la notation CIDR		
+- Diviser un réseau en Sous-réseaux avec la notation VLSM		
+- Fonction qui calcul un CRC matriciel											
+- Fonction qui calcul un CRC polynomial											
+- exécuter commande nmap					
+- exécuter commande ping					
+- exécuter commande man					
+- exécuter commande tcpdump					
+- exécuter commande nslookup
+- écrire dans le champ de texte l'adresse IP hex-dec               
+- écrire dans le champ de texte l'adresse IP bin-dec               
+- écrire dans les champ de texte pour les Sous-réseaux  
+- écrire dans les champs pour le CRC								    
+- écrire dans les champs de textes pour exécuter une commande réseau 
+- valider hex-dec                                                     
+- valider bin-dec                                                     
+- valider pour les Sous-réseaux                                       
+- valider pour le CRC												    
+- valider commande réseau		    
+- Affiche l'adresse IP traduite hex-dec							    
+- Affiche l'adresse IP traduite bin-dec							    
+- Affiche les sous-réseaux										    
+- Affiche le CRC 													    
+- Affiche le résultat de la commande réseau entrée					    
+- Erreur apparaît si adresse IP hex-dec invalide                      
+- Erreur apparaît si adresse IP bin-dec invalide                      
+- Erreur apparaît si adresse IP pour les Sous-réseaux est invalide    
+- Erreur apparaît si champ du CRC invalide						    
+- Erreur apparaît si la commande entrée est invalide	    		
 
 
 Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en Annexe 8.
@@ -434,8 +444,20 @@ Tableau de l'echelle de l'impact d'un risque sur le projet.
 |                                                                                           |                    |   |   |   |
 
 
-### Les différents Niveaux
 
+### Les différents Niveaux
+Les cas d'utilisation possèdent un niveau de description relatif à l'objectif visé. On peut distinguer
+trois niveaux : 
+
+- **le niveau stratégique** décrit plusieurs objectifs que les utilisateurs possèdent. Ce type de cas d'utilisation à trois fonctions :
+
+  - montrer le contexte dans lequel intervient l'utilisateur
+  - montrer le séquencement du cycle de vie des objectifs liés
+  - fournir une table des matières pour les cas d'utilisation de niveau inférieur
+ 
+- **le niveau utilisateur** concerne les processus métier élémentaires.
+- **le niveau sous-fonction** permettent la réalisation des objectifs de l'utilisateur.
+ 
 | Niveau Stratégique                             					 |
 |--------------------------------------------------------------------|
 | - choisir une fonctionnalité dans le menu ou depuis l'index     					 |
@@ -491,7 +513,7 @@ Tableau de l'echelle de l'impact d'un risque sur le projet.
 | - Affiche l'adresse IP traduite bin-dec							    |
 | - Affiche les sous-réseaux										    |
 | - Affiche le CRC 													    |
-| - Affiche la commande réseau entréz					    |
+| - Affiche le résultat de la commande réseau entrée					    |
 | - Erreur apparaît si adresse IP hex-dec invalide                      |
 | - Erreur apparaît si adresse IP bin-dec invalide                      |
 | - Erreur apparaît si adresse IP pour les Sous-réseaux est invalide    |
@@ -504,6 +526,8 @@ Tableau de l'echelle de l'impact d'un risque sur le projet.
 
 ### Les différents Cas d'utilisations
 
+Les différents cas d'utilisations présentés représentent tout ce qu'il est possible de faire sur le site web. Pour résumé, chaque page contient une partie cours et une partie qui contient une application qui applique le cours. Ce sont ces applications que nous devons programmer. Ces applications sont souvent des champs où il est possible de renseigner des informations pour avoir un résultat souhaité. Il y a aussi un bouton valider qui permet de valider la saisie. Le système vérifie si ces informations, sont conforme. Si oui, les résultats s'affichent sinon un message d'erreur apparait.  
+
 Cas d'utilisation 1 : choisir une fonctionnalité dans le menu 
 
 - Niveau : Stratégique
@@ -515,8 +539,6 @@ Cas d'utilisation 2 : Traduction Decimal <-> héxadécimal
 Cas d'utilisation 3 : Traduction Decimal <-> binaire
 
 - Niveau : Stratégique
-
-
 
 Cas d'utilisation 4  : Diviser les réseaux en Sous-réseaux avec les notations CIDR/VLSM
 
@@ -537,6 +559,7 @@ Cas d'utilisation 7 : Consulter des pages de cours associés aux fonctionnalité
 Cas d'utilisation 8 : accéder au glossaire
 
 - Niveau : Stratégique
+
 
 
 Cas d'utilisation 9  : Consulter la page Traduction Decimal <-> héxadécimal
@@ -621,6 +644,7 @@ Cas d'utilisation 28 : exécuter commande nslookup
 - Niveau : Utilisateur
 
 
+
 Cas d'utilisation 29 : écrire dans les champs de textes l'adresse IP hex-dec
 
 - Niveau : Sous-fonction
@@ -692,11 +716,11 @@ Cas d'utilisation 45 : écrire dans les champs de textes pour exécuter une comm
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 46 : valider pour trouver l'adresse IP de la machine extérieure
+Cas d'utilisation 46 :  valider commande réseau
 
 - Niveau : Sous-fonction
 
-Cas d'utilisation 47  : la commande réseau entrée
+Cas d'utilisation 47  : Affiche le résultat de la commande réseau entrée
 
 - Niveau : Sous-fonction
 
@@ -709,237 +733,236 @@ Cas d'utilisation 48 : Erreur apparaît si la commande entrée est invalide
 ### Les différents cas d'utilisation selon le style étoffé
 
 
-|                                 |                                                                                  |
-|---------------------------------|----------------------------------------------------------------------------------|
-| **Cas d'utilisation 1:**        | Choisir une fonctionnalité dans le menu                                          |
-| **Nom:**                        | Choisir une fonctionnalité dans le menu                                          |
-| **Contexte d'utilisation :**    | L’utilisateur aura le choix de consulter les différentes fonctionnalités           |
-| **Portée:**                     | site web                                                                         |
-| **Acteur principal :**          | Utilisateur                                                                      |
-| **Intervenants et Intérêts:**   |Utilisateur qui choisit, systeme qui charge la page                                                                                  |
-| **Précondition:**               | être sur le site web                                                                                 |
-| **Scénario nominal:**           | Sur l'application, l'utilisateur peut choisir sa fonctionnalité dans le menu |
-| **Extensions:**                 |                                                                                  |
-| **Garantie minimale :**         | La page sera chargée                                     |
-| **Garantie en cas de succès :** | La page demandée s’affiche |
-| **Déclencheur :**               | L’utilisateur doit sélectionner de lui même la fonction qu’il veut voir          |
-| **informations connexes :**     | L’utilisateur ne peux pas modifier le site web comme il souhaite. La page peut changer selon les différentes fonctionnalités              |
-
-
-|                                 |                                                                                                                                                                             |
-|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 2:**        | Traduction Décimal < - > Hexadécimal|
-| **Nom:**                        | Traduction Décimal < - > Hexadécimal                                                                                                                                        |
-| **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des adresses IP décimal en hexadécimal ou inverse                                                                                                       |
-| **Portée:**                     |système                                                                                                                                                                             |
-| **Acteur principal :**          | Utilisateur                                                                                                                                                                 |
-| **Intervenants et Intérêts:**   |Utilisateur qui entre les adresses IP, systeme qui traduit les adresses IP                                                                                                                                                                             |
-| **Précondition:**               | Avoir choisi la fontionnalité Traduction Décimal < - > Hexadécimal dans le menu                                                                                                                                 |
-| **Scénario nominal:**           | 1.L’utilisateur choisi s'il veut traduire de décimal à hexadécimal\newline  		     2.L’utilisateur entre ses valeurs\newline 		     3. Le résultat s’affiche |
-| **Extensions:**             | le système detecte si l'adresse IP est bien écrite                                                                                                                                                                            |
-| **Garantie minimale :**         | un message sera affiché                                                                                                                                                       |
-| **Garantie en cas de succès :** | Traduit dans les deux sens et affiche un message d’erreur si besoin                                                                                                              |
-| **Déclencheur :**               | Valider                                                                                                       |
-| **informations connexes :**   |Les adresses IP peuvent être traduite dans les deux sens.                                                                                                                                                                             |
-
-|                                 |                                                                                                                                                                         |
-|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 3:**        | Traduction Décimal < - > Binaire                                                                                                                                        |
-| **Nom:**                        | Traduction Décimal < - > Binaire                                                                                                                                        |
-| **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des adresses IP décimal en hexadécimal ou inverse                                                                                                   |
-| **Portée:**                     |                                                                                                                                                                         |
-| **Acteur principal :**          | Utilisateur                                                                                                                                                             |
-| **Intervenants et Intérêts:**   |Utilisateur qui entre l'adresse IP, systeme qui les traduit                                                                                                                                                                         |
-| **Précondition:**               | Avoir choisi la fontionnalité Traduction Décimal < - > Binaire dans le menu                                                                                                                                 |
-| **Scénario nominal:**           | 1.L’utilisateur choisit s'il veut traduire de décimal en Binaire\newline 		     2.L’utilisateur entre ses valeurs\newline 		     3. Le résultat s’affiche |
-| **Extensions:**                 | le système detecte si l'adresse IP est bien écrite                                                                                                                                                                        |
-| **Garantie minimale :**         | un message sera affiché                                                                                                                                                   |
-| **Garantie en cas de succès :** | Traduit dans les deux sens et affiche un message d’erreur si besoin                                                                                                          |
-| **Déclencheur :**               |Valider                                                                                                   |
-| **informations connexes :**     | Les adresses IP peuvent être traduite dans les deux sens. Pour accéder à cette fonctionnalité il faut l'avoir choisi dans le menu                                                                                                                                                                       |
-`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-
-|                                 |                                                                                                                                                                                                                          |
-|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 4:**        | Diviser les réseaux en Sous-réseaux\newline avec les notations CIDR/VLSM                                                                                                                                                         |
-| **Nom:**                        | Diviser les réseaux en Sous-réseaux avec les notations CIDR/VLSM                                                                                                                                                         |
-| **Contexte d'utilisation :**    | L’utilisateur entre une adresse IP et il aura les sous-réseaux, il choisit le nombre de sous-réseaux qu’il souhaite.                                       |
-| **Portée:**                     |                                                                                                                                                                                                                          |
-| **Acteur principal :**          | Utilisateur                                                                                                                                                                                                              |
-| **Intervenants et Intérêts:**   |Utilisateur qui entre les informations dans les différents champs, systeme qui divise le réseau en sous-réseaux                                                                                                                                                                                                                          |
-| **Précondition:**               | Entrer une adresse IP, le masque et le nombre de sous-réseaux souhaité                                                                                                                                                                                                    |
-| **Scénario nominal:**           | 1.L’utilisateur entre une adresse IP\newline 		     2.L’utilisateur choisit le nombre de sous-réseaux\newline  		     3. L’utilisateur choisit la notation entre CIDR et VLSM\newline 		     4. Le résultat s’affiche ou un message d’erreur s’affiche |
-| **Extensions:**                 |le système detecte si les différents champs sont bien écrits                                                                                                                                                                                                                          |
-| **Garantie minimale :**         | un message sera affiché                                                                                                                                                                                              |
-| **Garantie en cas de succès :** | Affiche le résultat                                                                                                                                                                                                      |
-| **Déclencheur :**               | Valider                                                                                           |
-| **informations connexes :**     | Pour accéder à cette fonctionnalité il faut l'avoir choisi dans le menu                                                                                                              
-`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-
-|                                 |                                                                  |
-|---------------------------------|------------------------------------------------------------------|
-| **Cas d'utilisation 5:**        | Fonction qui calcul des CRC                                      |
-| **Nom:**                        | Calcul CRC                                                       |
-| **Contexte d'utilisation :**    | L'utilisateur souhaite pouvoir calculer les CRC                  |
-| **Portée:**                     | site web                                                         |
-| **Acteur principal :**          | utilisateur                                                      |
-| **Intervenants et Intérêts:**   | utilisateur écrit dans les différents champs, le système calcul le CRC                                                                 |
-| **Précondition:**               | l'utilisateur doit avoir choisi la fonctionnalité dans le menu  |
-| **Scénario nominal:**           | 1.l'utilisateur choisit la fonctionnalité calcul CRC dans le menu |
-| **Extensions:**                 | le système détecte si les champs sont bien remplit.                                                                 |
-| **Garantie minimale :**         | la page sera chargée                                     |
-| **Garantie en cas de succès :** | l'utilisateur arrive sur la page du calcul CRC souhaitée         |
-| **Déclencheur :**               | clique sur Calcul CRC dans le menu                               |
-| **informations connexes :**     | la page contient les éléments nécessaires au calcul de CRC. Pour accéder à cette fonctionnalité il faut l'avoir choisi dans le menu       |
-
-|                                 |                                                                    |
-|---------------------------------|--------------------------------------------------------------------|
-| **Cas d'utilisation 6:**        | Sniffer Nmap                                                       |
-| **Nom:**                        | Sniffer Nmap                                                       |
-| **Contexte d'utilisation :**    |                                                                    |
-| **Portée:**                     |                                                                    |
-| **Acteur principal :**          |                                                                    |
-| **Intervenants et Intérêts:**   | utilisateur et le système                                                                   |
-| **Précondition:**               | l'utilisateur doit avoir choisi la fonctionnalité dans le menu    |
-| **Scénario nominal:**           | 1.l'utilisateur choisit la fonctionnalité Sniffer Nmap dans le menu |
-| **Extensions:**                 | le système détecte si les champs sont bien remplit.                                                                   |
-| **Garantie minimale :**         | Un message d’erreur apparaît                                       |
-| **Garantie en cas de succès :** | l'utilisateur arrive sur la page du Sniffer Nmap souhaitée          |
-| **Déclencheur :**               | clique sur Sniffer Nmap dans le menu                               |
-| **informations connexes :**     | la page contient les éléments nécessaires au calcul de Sniffer Nmap.Pour accéder à cette fonctionnalité il faut l'avoir choisi dans le menu |
-
-Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces informations dans les plus bref délais.
-`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-
-|                                 |                                                                                                                       |
-|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 7:**        | Trouver adresse IP des machines extérieures                                                                            |
-| **Nom:**                        | Trouver adresse IP des machines extérieures                                                                            |
-| **Contexte d'utilisation :**    | L’utilisateur souhaite trouver l’adresse IP des machines extérieures.                                   |
-| **Portée:**                     |système                                                                                                                       |
-| **Acteur principal :**          | utilisateur                                                                                                           |
-| **Intervenants et Intérêts:**   |Utilisateur qui rentre le nom de la machine, Système qui trouve l'adresse IP                                                                                                                      |
-| **Précondition:**               | Avoir remplit les champs                                                                         |
-| **Scénario nominal:**           | 1.L’utilisateur entre le nom du site\newline  2. L’utilisateur clique sur le bouton valider\newline 3. L’adresse Ip du site souhaité sera retourner |
-| **Extensions:**                 |le système se charge de vérifier si la machine existe                                                                                                                      |
-| **Garantie minimale :**         | Un message apparaît                                                                                          |
-| **Garantie en cas de succès :** | La fonctionnalité lui retourne l’adresse ip                                                                           |
-| **Déclencheur :**               | clique sur le bouton valider     |
-| **informations connexes :**    |L'utilisateur peut entrer par exemple le nom d'un site : www.uvsq.fr                                                                                                                      |
-
 |                                 |                                                                                                         |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 8:**        | Consulter la page Traduction Décimal <-> hexadécimal                                                    |
+| **Cas d'utilisation 9:**        | Consulter la page Traduction Décimal <-> hexadécimal                                                    |
 | **Nom:**                        | Consulter la page Traduction Décimal <-> hexadécimal                                                    |
-| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée. |
 | **Portée:**                     | site web                                                                                                |
+| **Niveau:**                     | Utilisateur                                                                                                |
 | **Acteur principal :**          | Utilisateur                                                                                             |
-| **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu, système qui charge la page.                                                                                                          |
-| **Précondition:**               | Être sur la page d’accueil et sélectionner la fonctionnalité Traduction Décimal <-> hexadécimal          |
+| **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu ou la page d'accueil, système qui charge la page.                                                                                                          |
+| **Précondition:**               | Être sur la page d’accueil ou depuis le menu, sélectionner la fonctionnalité Traduction Décimal <-> hexadécimal          |
 | **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité\newline  2. Une page s’ouvre                                  |
 | **Extensions:**                 | le système cherche la page.                                                                                                        |
 | **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                             |
-| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                           |
-| **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                               |
-| **informations connexes :**     | l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                        |
+| **Garantie en cas de succès :** | Une page s’ouvre avec la fonctionnalité                                                           |
+| **Déclencheur :**               | L’utilisateur doit sélectionner cette page depuis le menu ou la page d'accueil                                                              |
+| **informations connexes :**     | l'utilisateur peut maintenant lire le cours ainsi que tester l'application.                                                                                                        |
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 |                                 |                                                                                                         |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 9:**        | Consulter la page Traduction Décimal <-> binaire                                                        |
+| **Cas d'utilisation 10:**        | Consulter la page Traduction Décimal <-> binaire                                                        |
 | **Nom:**                        | Consulter la page Traduction Décimal <-> binaire                                                        |
 | **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
 | **Portée:**                     | site web                                                                                                |
 | **Acteur principal :**          | Utilisateur                                                                                             |
 | **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu, système qui charge la page.                                                                                                         |
-| **Précondition:**               | Être sur la page d’accueil et sélectionner la fonctionnalité Traduction Décimal <-> binaire              |
+| **Précondition:**               | Être sur la page d’accueil ou depuis le menu, sélectionner la fonctionnalité Traduction Décimal <-> binaire              |
 | **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité\newline  2. Une page s’ouvre                                  |
 | **Extensions:**                 | le système cherche la page.                                                                                                        |
 | **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                             |
 | **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                           |
-| **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                               |
-| **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                         |
+| **Déclencheur :**               | L’utilisateur doit sélectionner cette page depuis le menu ou la page d'accueil                                                                |
+| **informations connexes :**     |l'utilisateur peut maintenant lire le cours ainsi que tester l'application.                                                                                                |
 
 |                                 |                                                                                                         |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 10:**       | Consulter la page Sous-réseaux avec les notations CIDR/VLSM                                             |
-| **Nom:**                        | Consulter la page Sous-réseaux avec les notations CIDR/VLSM                                             |
+| **Cas d'utilisation 11:**       | Consulter la page Sous-réseaux avec la notation CIDR                                             |
+| **Nom:**                        | Consulter la page Sous-réseaux avec la notation CIDR                                            |
 | **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
 | **Portée:**                     | site web                                                                                                |
 | **Acteur principal :**          | Utilisateur                                                                                             |
 | **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu, système qui charge la page.                                                                                                         |
-| **Précondition:**               | Être sur la page d’accueil et sélectionner la fonctionnalité Sous-réseaux avec les notations CIDR/VLSM              |
+| **Précondition:**               | Être sur la page d’accueil ou depuis le menu, et sélectionner la fonctionnalité Sous-réseaux avec la notation CIDR              |
 | **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité\newline  2. Une page s’ouvre                                  |
 | **Extensions:**                 | le système cherche la page.                                                                                                        |
-| **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                             |
-| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                           |
+| **Garantie minimale :**         | Une page blanche s’ouvre           |
+| **Garantie en cas de succès :** | Une page s’ouvre avec la fonctionnalité                                  |
 | **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                               |
-| **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                         |
+| **informations connexes :**     |l'utilisateur peut maintenant lire le cours ainsi que tester l'application.                                                                                                 |
 
-`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
+
+                                                                 |
+
 |                                 |                                                                                                         |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 11:**       | Consulter la page Calcul CIDR                                                                           |
-| **Nom:**                        | Consulter la page Calcul CIDR                                                                           |
+| **Cas d'utilisation 12:**       | Consulter la page Sous-réseaux avec la notation VLSM                                             |
+| **Nom:**                        | Consulter la page Sous-réseaux avec la notation VLSM                                            |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
+| **Portée:**                     | site web                                                                                                |
+| **Acteur principal :**          | Utilisateur                                                                                             |
+| **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu, système qui charge la page.                                                                                                         |
+| **Précondition:**               | Être sur la page d’accueil ou depuis le menu, et sélectionner la fonctionnalité Sous-réseaux avec la notation VLSM              |
+| **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité\newline  2. Une page s’ouvre                                  |
+| **Extensions:**                 | le système cherche la page.                                                                                                        |
+| **Garantie minimale :**         | Une page blanche s’ouvre           |
+| **Garantie en cas de succès :** | Une page s’ouvre avec la fonctionnalité                                  |
+| **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                               |
+| **informations connexes :**     |l'utilisateur peut maintenant lire le cours ainsi que tester l'application.                                                                                                 |
+
+
+|                                 |                                                                                                         |
+|-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 13:**       | Consulter la page Calcul CRC                                                                           |
+| **Nom:**                        | Consulter la page Calcul CRC                                                                           |
 | **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaité |
 | **Portée:**                     | site web                                                                                                |
 | **Acteur principal :**          | Utilisateur                                                                                             |
 | **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu, système qui charge la page.                                                                                                         |
-| **Précondition:**               | Être sur la page d’accueil et sélectionner la fonctionnalité Calcul CIDR                                 |
+| **Précondition:**               | Être sur la page d’accueil ou depuis le menu, et sélectionner la fonctionnalité Calcul CRC                                 |
 | **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité\newline  2. Une page s’ouvre                                  |
 | **Extensions:**                 | le système cherche la page.                                                                                                        |
-| **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                             |
-| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                           |
+| **Garantie minimale :**         | Une page blanche                     |
+| **Garantie en cas de succès :** | Une page s’ouvre avec la fonctionnalité                                                          |
 | **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                               |
-| **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                         |
+| **informations connexes :**     |l'utilisateur peut maintenant lire le cours ainsi que tester l'application.                                                                                                 |
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 |                                 |                                                                                                         |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 12:**       | Consulter la page sniffer nmap                                                                          |
-| **Nom:**                        | Consulter la page sniffer nmap                                                                          |
+| **Cas d'utilisation 14:**       | Consulter la page commande nmap                                                                          |
+| **Nom:**                        | Consulter la page commande nmap                                                                          |
 | **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
 | **Portée:**                     | site web                                                                                                |
 | **Acteur principal :**          | Utilisateur                                                                                             |
 | **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu, système qui charge la page.                                                                                                         |
-| **Précondition:**               | Être sur la page d’accueil et sélectionner la fonctionnalité sniffer nmap                                |
+| **Précondition:**               | Être sur la page d’accueil ou depuis le menu, et sélectionner la fonctionnalité exécution commande réseau puis nmap                                                                  |
 | **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité\newline  2. Une page s’ouvre                                  |
 | **Extensions:**                 | le système cherche la page.                                                                                                        |
-| **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                             |
-| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                           |
+| **Garantie minimale :**         | Une page blanche s’ouvre           |
+| **Garantie en cas de succès :** | Une page s’ouvre avec la fonctionnalité en question                                                       |
+| **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
+| **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                         |
+
+
+
+|                                 |                                                                                                         |
+|-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 15:**       | Consulter la page commande ping                                                                          |
+| **Nom:**                        | Consulter la page commande ping                                                                          |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
+| **Portée:**                     | site web                                                                                                |
+| **Acteur principal :**          | Utilisateur                                                                                             |
+| **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu, système qui charge la page.                                                                                                         |
+| **Précondition:**               | Être sur la page d’accueil ou depuis le menu, et sélectionner la fonctionnalité exécution commande réseau puis ping                                                            |
+| **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité\newline  2. Une page s’ouvre                                  |
+| **Extensions:**                 | le système cherche la page.                                                                                                        |
+| **Garantie minimale :**         | Une page blanche s’ouvre           |
+| **Garantie en cas de succès :** | Une page s’ouvre avec la fonctionnalité en question                                                       |
+| **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
+| **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                         |
+
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+|                                 |                                                                                                         |
+|-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 16:**       | Consulter la page commande man                                                                           |
+| **Nom:**                        | Consulter la page commande man                                                                           |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
+| **Portée:**                     | site web                                                                                                |
+| **Acteur principal :**          | Utilisateur                                                                                             |
+| **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu, système qui charge la page.                                                                                                         |
+| **Précondition:**               | Être sur la page d’accueil ou depuis le menu, et sélectionner la fonctionnalité exécution commande réseau puis man                                 |
+| **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité\newline  2. Une page s’ouvre                                  |
+| **Extensions:**                 | le système cherche la page.                                                                                                        |
+| **Garantie minimale :**         | Une page blanche s’ouvre           |
+| **Garantie en cas de succès :** | Une page s’ouvre avec la fonctionnalité en question                                                       |
+| **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
+| **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                         |
+
+
+
+
+|                                 |                                                                                                         |
+|-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 17:**       | Consulter la page commande tcpdump                                                                           |
+| **Nom:**                        | Consulter la page commande tcpdump                                                                           |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
+| **Portée:**                     | site web                                                                                                |
+| **Acteur principal :**          | Utilisateur                                                                                             |
+| **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu, système qui charge la page.                                                                                                         |
+| **Précondition:**               | Être sur la page d’accueil ou depuis le menu, et sélectionner la fonctionnalité exécution commande réseau puis tcpdump                                                                   |
+| **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité\newline  2. Une page s’ouvre                                  |
+| **Extensions:**                 | le système cherche la page.                                                                                                        |
+| **Garantie minimale :**         | Une page blanche s’ouvre           |
+| **Garantie en cas de succès :** | Une page s’ouvre avec la fonctionnalité en question                                                       |
 | **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
 | **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                         |
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
+|                                 |                                                                                                         |
+|-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 18:**       | Consulter la page commande nslookup                                                                           |
+| **Nom:**                        | Consulter la page commande nslookup                                                                           |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
+| **Portée:**                     | site web                                                                                                |
+| **Acteur principal :**          | Utilisateur                                                                                             |
+| **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu, système qui charge la page.                                                                                                         |
+| **Précondition:**               | Être sur la page d’accueil ou depuis le menu, et sélectionner la fonctionnalité exécution commande réseau puis man                                                                  |
+| **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité\newline  2. Une page s’ouvre                                  |
+| **Extensions:**                 | le système cherche la page.                                                                                                        |
+| **Garantie minimale :**         | Une page blanche s’ouvre           |
+| **Garantie en cas de succès :** | Une page s’ouvre avec la fonctionnalité en question                                                       |
+| **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
+| **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                         |
 
-|                                 |                                                                                                          |
-|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 13:**       | Consulter la page pour Trouver l'adresse IP d'une machine extérieur                                      |
-| **Nom:**                        | Consulter la page pour Trouver l'adresse IP d'une machine extérieur                                      |
-| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaité  |
-| **Portée:**                     | site web                                                                                                 |
-| **Acteur principal :**          | Utilisateur                                                                                              |
-| **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu, système qui charge la page.                                                                                                          |
-| **Précondition:**               | Être sur la page d’accueil et sélectionner la fonctionnalité Trouver l'adresse IP d'une machine extérieur |
-| **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité\newline  2. Une page s’ouvre                                   |
-| **Extensions:**                 |le système cherche la page.                                                                                                          |
-| **Garantie minimale :**         | Une page blanche s’ouvre avec la fonctionnalité en question                                              |
-| **Garantie en cas de succès :** | Une page s’ouvre avec le fond , les textes etc                                                            |
-| **Déclencheur :**               | L’utilisateur doit sélectionner cette page                                                                |
-| **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                          |
+
+|                                 |                                                                                                         |
+|-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 19:**       | Consulter la page du glossaire                                                                           |
+| **Nom:**                        | Consulter la page du glossaire                                                                           |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne cette fonction et donc une page s’ouvre concernant la fonctionnalité souhaitée |
+| **Portée:**                     | site web                                                                                                |
+| **Acteur principal :**          | Utilisateur                                                                                             |
+| **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu, système qui charge la page.                                                                                                         |
+| **Précondition:**               | Être sur la page d’accueil ou depuis le menu, et sélectionner la fonctionnalité glossaire                               |
+| **Scénario nominal:**           | 1. L’utilisateur sélectionne cette fonctionnalité\newline  2. Une page s’ouvre                                  |
+| **Extensions:**                 | le système cherche la page.                                                                                                        |
+| **Garantie minimale :**         | Une page blanche s’ouvre           |
+| **Garantie en cas de succès :** | Une page s’ouvre avec la fonctionnalité en question                                                       |
+| **Déclencheur :**               | L’utilisateur doit sélectionné cette page                                                               |
+| **informations connexes :**     |l'utilisateur a choisi cette fonctionnalité dans le menu                                                                                                         |
+
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
+|                                 |                                                                                                         |
+|-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 20:**       | Consulter une page de cours associé à une fonctionnalité                                                                            |
+| **Nom:**                        | Consulter une page de cours associé à une fonctionnalité                                                                            |
+| **Contexte d'utilisation :**    | L’utilisateur sélectionne une fonctionnalité et donc une page s’ouvre concernant la fonctionnalité souhaitée. Un lien est présent qui affiche le cour |
+| **Portée:**                     | site web                                                                                                |
+| **Acteur principal :**          | Utilisateur                                                                                             |
+| **Intervenants et Intérêts:**   |utilisateur qui a cliqué sur cette fonctionnalité dans le menu puis sur le lien du cours, système qui charge la page et affiche le cours.                                                                                                         |
+| **Précondition:**               | Être sur la page d’accueil ou depuis le menu, et sélectionner une fonctionnalité                               |
+| **Scénario nominal:**           | 1. L’utilisateur sélectionne une fonctionnalité\newline  2. Une page s’ouvre\newline  3. clique sur le liens du cours\newline  4. Une pop-up s’ouvre                                   |
+| **Extensions:**                 | le système cherche la page.                                                                                                        |
+| **Garantie minimale :**         | Une page blanche s’ouvre           |
+| **Garantie en cas de succès :** | Une page s’ouvre avec la fonctionnalité en question et lors du clique sur le cours, un pop-up s'affiche                                                      |
+| **Déclencheur :**               | L’utilisateur doit sélectionné une fonctionnalité puis cliquer sur le liens du cours.                                                               |
+| **informations connexes :**     |chaque fonctionnalité contient une partie cours.                                                                                                      |
+
+
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
 
 
 |                                 |                                                                                                                                            |
 |-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 14:**       | Traduction d'une adresse IP Décimal <-> hexadécimal                                                                                        |
+| **Cas d'utilisation 21:**       | Traduction d'une adresse IP Décimal <-> hexadécimal                                                                                        |
 | **Nom:**                        | Traduction d'une adresse IP Décimal <-> hexadécimal                                                                                        |
-| **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des adresse IP décimal en hexadécimal ou inverse                                                                      |
+| **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des adresse IP décimal en hexadécimal ou l'inverse                                                                      |
 | **Portée:**                     | systeme                                                                                                                                    |
 | **Acteur principal :**          | système                                                                                                                                |
 | **Intervenants et Intérêts:**   | Utilisateur qui entre l'adresse IP, systeme qui les traduit                                                                                                                                           |
-| **Précondition:**               | Avoir des décimal ou Hexadécimal à traduire, entrer des valeurs dans les champs                                                           |
-| **Scénario nominal:**           | 1.L’utilisateur choisit si il veut traduire de décimal à hexadécimal\newline  2.L’utilisateur entre ses valeurs\newline 3.Valider\newline 4. Le résultat s’affiche |
+| **Précondition:**               | Avoir remplis les champs et avoir entré des informations correct.                                                           |
+| **Scénario nominal:**           | 1.L’utilisateur choisit le mode de conversion\newline  2.L’utilisateur entre les valeurs dans les champs\newline 3.Valider\newline 4. Le résultat s’affiche |
 | **Extensions:**                 |4.a le système vérifie si les champs sont bien remplit.\newline 4.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré l'adresse IP 
                                   |
 | **Garantie minimale :**         | un message sera affiché                                                                                                      |
@@ -949,17 +972,18 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 
 
 
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 |                                 |                                                                                                                                        |
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 15:**       | Traduction d'une adresse IP Décimal <-> binaire                                                                                        |
+| **Cas d'utilisation 22:**       | Traduction d'une adresse IP Décimal <-> binaire                                                                                        |
 | **Nom:**                        | Traduction d'une adresse IP Décimal <-> binaire                                                                                        |
-| **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des adresses IP décimal en hexadécimal ou inverse                                                                  |
+| **Contexte d'utilisation :**    | L’utilisateur souhaite traduire des adresses IP décimal en hexadécimal ou l'inverse                                                                  |
 | **Portée:**                     | systeme                                                                                                                                |
 | **Acteur principal :**          | système                                                                                                                            |
 | **Intervenants et Intérêts:**   |Utilisateur qui entre l'adresse IP, systeme qui les traduit                                                                                                                                       |
-| **Précondition:**               | Avoir des adresses IP décimal ou Binaire à traduire, entrer des valeurs dans les champs                                                            |
-| **Scénario nominal:**           | 1.L’utilisateur choisit s'il veut traduire de décimal en Binaire\newline 2.L’utilisateur entre ses valeurs\newline 3.Valider\newline 4. Le résultat s’affiche |
+| **Précondition:**               | Avoir remplis les champs et avoir entré des informations correct.                                                            |
+| **Scénario nominal:**           | 1.L’utilisateur choisit le mode de conversion  \newline 2.L’utilisateur entre les valeurs dans les champs\newline 3.Valider\newline 4. Le résultat s’affiche |
 | **Extensions:**                 | 4.a le système vérifie si les champs sont bien remplit. \newline4.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré l'adresse IP
                               |
 | **Garantie minimale :**         | un message sera affiché                                                                                                  |
@@ -971,120 +995,166 @@ Cette fonctionnalité ne nous a pas été enseigner, nous aurons ces information
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 |                                 |                                                                                                                                                                                                                                                                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 16:**       | Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM                                                                                                                                                                                                                                                                             |
-| **Nom:**                        | Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM                                                                                                                                                                                                                                                                             |
-| **Contexte d'utilisation :**    | L’utilisateur entre une adresse IP et il aura en résultat les sous-réseaux , il choisit le nombre de sous-réseaux qu’il souhaite et il choisit aussi sous quelle notation il veut                                                                                                                                                         |
+| **Cas d'utilisation 23:**       | Diviser un réseau en Sous-réseaux avec la notation CIDR                                                                                                                                                                                                                                                                            |
+| **Nom:**                        | Diviser un réseau en Sous-réseaux avec la notation CIDR                                                                                                                                                                                                                                                                             |
+| **Contexte d'utilisation :**    | L’utilisateur entre une adresse IP ainsi que d'autre informations et les sous-réseaux s'afficheront, et le nombre de sous-réseaux qu’il souhaite.                                                                                                                                    |
 | **Portée:**                     | systeme                                                                                                                                                                                                                                                                                                                                    |
 | **Acteur principal :**          | système                                                                                                                                                                                                                                                                                                                                |
 | **Intervenants et Intérêts:**   |utilisateur écrit dans les différents champs, système divise le réseau en sous-réseaux                                                                                                                                                                                                                                                                                                                                            |
-| **Précondition:**               | Entrer une adresse IP                                                                                                                                                                                                                                                                                                                      |
-| **Scénario nominal:**           | 1.L’utilisateur entre une adresse IP \newline 2.L’utilisateur choisit le nombre de sous-réseaux\newline  3. L’utilisateur choisit la notation entre CIDR et VLSM\newline 4.Valider \newline5. Le résultat s’affiche                                                                                                                                                         |
-| **Extensions:**                 | 4.a un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré l'adresse IP\newline 4.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré le masque \newline 4.c un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré le nombre de sous-réseaux |
+| **Précondition:**               | Remplir les différents champs correctement                                                                                                                                                                                                                                                                                                                     |
+| **Scénario nominal:**           | 1.L’utilisateur entre une adresse IP\newline 2.L’utilisateur entre le masque\newline3. L’utilisateur choisit le nombre de sous-réseaux\newline 4. Le résultat s’affiche ou un message d’erreur s’affiche                                                                                                                                                         |
+| **Extensions:**                 | 4.a un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré l'adresse IP\newline 4.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré le masque \newline 4.c un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré le nombre de sous-réseaux\newline 4.d un message d’erreur s’affiche car le système a détecté que le nombre de sous-réseau demandé était supérieur au nombre de sous-réseau possible pour cette adresse IP\newline 4.e un message d’erreur s’affiche car le système a détecté que l'adresse IP entré est une adresse machine|
 | **Garantie minimale :**         | affiche un message                                                                                                                                                                                                                                                                                                       |
 | **Garantie en cas de succès :** | Divise le réseau en sous-réseaux                                                                                                                                                                                                                                                                                                                 |
 | **Déclencheur :**               | Valider                                                                                                                                                                                                                       |
-| **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Diviser un réseau en Sous-réseaux avec les notations CIDR/VLSM                                                                                                                                                                                                        |
+| **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Diviser un réseau en Sous-réseaux avec les notations CIDR                                                                                                                                                                                                        |
+
+`r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
+
+|                                                                                   |
+|-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 24:**       | Diviser un réseau en Sous-réseaux avec la notation VLSM                                                                                                                                                                                                                                                                            |
+| **Nom:**                        | Diviser un réseau en Sous-réseaux avec la notation VLSM                                                                                                                                                                                                                                                                             |
+| **Contexte d'utilisation :**    | L’utilisateur entre une adresse IP et les sous-réseaux s'afficheront, et le nombre de sous-réseaux qu’il souhaite.                                                                                                                                    |
+| **Portée:**                     | systeme                                                                                                                                                                                                                                                                                                                                    |
+| **Acteur principal :**          | système                                                                                                                                                                                                                                                                                                                                |
+| **Intervenants et Intérêts:**   |utilisateur écrit dans les différents champs, système divise le réseau en sous-réseaux                                                                                                                                                                                                                                                                                                                                            |
+| **Précondition:**               | Remplir les différents champs correctement                                                                                                                                                                                                                                                                                                                     |
+| **Scénario nominal:**           | 1.L’utilisateur entre une adresse IP\newline 2.L’utilisateur entre le masque\newline 3. L’utilisateur choisit le nombre de sous-réseaux\newline 4. il choisit le nombre d'hôtes pour chaque sous-réseaux\newline 5. Le résultat s’affiche ou un message d’erreur s’affiche.                                                                                                                                                        |
+| **Extensions:**                 | 4.a un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré l'adresse IP\newline 4.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré le masque \newline 4.c un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré le nombre de sous-réseaux\newline 4.d un message d’erreur s’affiche car le système a détecté que le nombre de sous-réseau demandé était supérieur au nombre de sous-réseau possible pour cette adresse IP\newline 4.e un message d’erreur s’affiche car le système a détecté que l'adresse IP entré est une adresse machine|
+| **Garantie minimale :**         | affiche un message                                                                                                                                                                                                                                                                                                       |
+| **Garantie en cas de succès :** | Divise le réseau en sous-réseaux                                                                                                                                                                                                                                                                                                                 |
+| **Déclencheur :**               | Valider                                                                                                                                                                                                                       |
+| **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Diviser un réseau en Sous-réseaux avec les notations VLSM                                                                                                                                                                                                        |
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 |                                 |                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 17:**       | Fonction qui calcul un CRC                                                                                                                                                         |
-| **Nom:**                        | Fonction qui calcul un CRC                                                                                                                                                         |
-| **Contexte d'utilisation :**    | L’utilisateur entre une adresse IP et il aura en résultat les sous-réseaux , il choisit le nombre de sous-réseaux qu’il souhaite et il choisit aussi sous quelle notation il veut |
+| **Cas d'utilisation 25:**       | Fonction qui calcul un CRC matriciel                                                                                                                                                        |
+| **Nom:**                        | Fonction qui calcul un CRC matriciel                                                                                                                                                        |
+| **Contexte d'utilisation :**    | L’utilisateur entre le message, sa matrice ainsi que d'autres informations pour calculer un crc de type matriciel |
 | **Portée:**                     | système                                                                                                                                                                            |
 | **Acteur principal :**          | système                                                                                                                                                                        |
 | **Intervenants et Intérêts:**   | utilisateur écrit dans les champs, système calcul le CRC                                                                                                                                                                                    |
-| **Précondition:**               | Entrer une adresse IP                                                                                                                                                              |
-| **Scénario nominal:**           | 1.L’utilisateur entre une adresse IP\newline 2.L’utilisateur choisit le nombre de sous-réseaux \newline 3. L’utilisateur choisit la notation entre CIDR et VLSM \newline 4.Valider \newline 5. Le résultat s’affiche |
-| **Extensions:**                 |                                                                                                                                                                                    |
-| **Garantie minimale :**         | affiche un message d’erreur                                                                                                                                                        |
-| **Garantie en cas de succès :** | Affiche le résultat                                                                                                                                                                |
-| **Déclencheur :**               | valider                                                                                                                                                                                   |
-| **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page calcul un CRC                                                                                                 |
+| **Précondition:**               | Remplir les différents champs correctement                                                                                                                                                              |
+| **Scénario nominal:**           | 1.L’utilisateur entre un message \newline 2.L’utilisateur entre la matrice \newline 3.Valider \newline 4. Le résultat s’affiche |
+| **Extensions:**                 | 4.a un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré le message\newline 4.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré la matrice|
+| **Garantie minimale :**         | affiche un message                                                                                                                                                                                                                                                                                                       |
+| **Garantie en cas de succès :** | Affiche le résultat                                                                                                                                                                                                                                                                                                                 |
+| **Déclencheur :**               | Valider                                                                                                                                                                                                                       |
+| **informations connexes :**     | Pour pouvoir executer cette fonctionnalité il faut se rendre sur la page calcul d'un CRC.                                                                                                                                                                                                        |
+                                                                
+
+
+|                                 |                                                                                                                                                                                    |
+|-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 26:**       | Fonction qui calcul un CRC polynomial                                                                                                                                                        |
+| **Nom:**                        | Fonction qui calcul un CRC polynomial                                                                                                                                                        |
+| **Contexte d'utilisation :**    | L’utilisateur entre le message, le polynome ainsi que d'autres informations pour calculer un crc de type polynomial  |
+| **Portée:**                     | système                                                                                                                                                                            |
+| **Acteur principal :**          | système                                                                                                                                                                        |
+| **Intervenants et Intérêts:**   | utilisateur écrit dans les champs, système calcul le CRC                                                                                                                                                                                    |
+| **Précondition:**               | Remplir les différents champs correctement                                                                                                                                                              |
+| **Scénario nominal:**           | 1.L’utilisateur entre un message \newline 2.L’utilisateur entre la matrice \newline 3.Valider \newline 4. Le résultat s’affiche |
+| **Extensions:**                 | 4.a un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré le message\newline 4.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré le nombre de zéros à mettre\newline 4.c un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré le polynôme|
+| **Garantie minimale :**         | affiche un message                                                                                                                                                                                                                                                                                                       |
+| **Garantie en cas de succès :** | Affiche le résultat                                                                                                                                                                                                                                                                                                                 |
+| **Déclencheur :**               | Valider                                                                                                                                                                                                                       |
+| **informations connexes :**     | Pour pouvoir executer cette fonctionnalité il faut se rendre sur la page calcul d'un CRC.                                                                                                                                                                                                        |
 
 
 |                                 |                                                                                                                       |
 |-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| **Cas d'utilisation 18:**        | Trouver l'adresse IP d'une machine extérieure                                                                          |
-| **Nom:**                        | Trouver l'adresse IP d'une machine extérieure                                                                          |
-| **Contexte d'utilisation :**    | L’utilisateur tape le nom d’un site et il aura en retour l’adresse IP du site souhaité                                  |
+| **Cas d'utilisation 27:**        | exécuter commande nmap                                                                          |
+| **Nom:**                        | exécuter commande nmap                                                                          |
+| **Contexte d'utilisation :**    | L’utilisateur souhaite exécuter la commande réseau nmap. Par conséquent, il entre les informations pour exécuter la commande et le résultat s'affiche                          |
 | **Portée:**                     | système                                                                                                               |
 | **Acteur principal :**          | système                                                                                                           |
-| **Intervenants et Intérêts:**   |l'utilisateur entre le nom de la machine, système trouve l'adresse IP de la machine extérieure.                                                                                                                      |
-| **Précondition:**               | Avoir remplit le champ                                                                                                |
-| **Scénario nominal:**           | 1. L’utilisateur entre le nom du site \newline 2. L’utilisateur clique sur le bouton valider \newline 3. L’adresse IP du site voulu sera retourner |
-| **Extensions:**                 | 3.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré l'adresse IP            |
+| **Intervenants et Intérêts:**   |l'utilisateur saisie les différents champs  système exécute la commande.                                                                                                                      |
+| **Précondition:**               | Remplir les différents champs correctement                                                                                               |
+| **Scénario nominal:**           | 1. L’utilisateur remplit les différents champs correctement \newline 2. L’utilisateur clique sur le bouton valider \newline 3. la commande s'exécute et le résultat s'affiche |
+| **Extensions:**                 |             |
 | **Garantie minimale :**         | affiche un message                                              |
-| **Garantie en cas de succès :** | La fonctionnalité lui retourne l’adresse IP                                                                           |
+| **Garantie en cas de succès :** | la commande s'exécute et le résultat s'affiche                                                                           |
 | **Déclencheur :**               | clique sur le bouton valider |
-| **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Trouver l'adresse IP d'une machine extérieure     |
+| **informations connexes :**     | Pour pouvoir exécuter cette commande réseau il faut y accéder depuis le menu Exécution commande réseau puis nmap ou bien depuis l'accueil   |
 
 
-|                                 |                                                                                                                       |
-|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-**Cas d'utilisation 19:**|écrire dans les champs de textes l'adresse IP hex-dec                                          |
-| **Nom:**         | écrire dans les champs de textes l'adresse IP hex-dec                                          |                                       |
-| **Contexte d'utilisation :**    | L’utilisateur peut écrire des hexadécimal ou des décimal dans les champs afin de traduire les adresses IP           |
-| **Portée**:                     | site web                                                                         |
-| **Acteur principal** :          | Utilisateur                                                                      |
-| **Intervenants et Intérêts:**   | Utilisateur écrit dans ces champs, le système récupère les données des champs                                                                                   |
-| **Précondition:**   |Être sur la page Traduction Hexadécimal < - > décimal   |
-| **Scénario nominal:**           | L’utilisateur peut entrer les valeurs qu’il veut |
-| **Extensions:**                 |le systeme récupère ces données                                                                                  |
-| **Garantie minimale :**         |les données écrites dans les champs seront traités.                                     |
-| **Garantie en cas de succès :** |l’utilisateur peut écrire des chiffres et des lettres  |
-| **Déclencheur :**               | L’utilisateur doit sélectionner la case pour écrire des chiffres ou des lettres       |
-| **informations connexes :**     | L'utilisateur peut écrire ce qu'il veut mais attention car un message d'erreur peut s'afficher lors de l'execution d'une fonctionnalité. Ces champs se trouvent dans la page liée à la fontionnalité.  |
-
-|                                 |                                                                                                                       |
-|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-**Cas d'utilisation 20:**        |valider hex-dec                                         |
-| **Nom:**                        | valider hex-dec                                       |
-| **Contexte d'utilisation :**    | L’utilisateur peut valider pour traduire les chiffre qu’il veut en hex ou en decimal   |
-| **Portée:**                     | site web                                                                         |
-| **Acteur principal :**          | Utilisateur                                                                      |
-| **Intervenants et Intérêts:**   | Utilisateur qui clique sur le bouton valider, système qui exécute des instructions à l'appuie du bouton valider.                                                                                 |
-| **Précondition:**               | Être sur la page Traduction Hexadécimal < - > décimal , choisir si il veut traduire en hex ou en dec                                                                         |
-| **Scénario nominal:**           | L’utilisateur choisi si il veut traduire en hex ou en dec et ensuite il entre ses nombres et enfin sur valider|
-| **Extensions:**                 |le système va exécuter une tâche.                                                                                  |
-| **Garantie minimale :**         | un message s'affiche.                                     |
-| **Garantie en cas de succès :** | L'adresse IP sera traduite et affichée ensuite. |
-| **Déclencheur :**               | L’utilisateur qui clique   |
-| **informations connexes :**     | Valider est le bouton qui permet l'exécution du programme|
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-|                                 |                                                                                                                       |
-|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-**Cas d'utilisation 21:**        | Affiche l'adresse IP traduite hex-dec                                       |
-| **Nom:**                        | Affiche l'adresse IP traduite hex-dec                                        |
-| **Contexte d'utilisation :**    | L’utilisateur pourra voir le résultat obtenu lors de la traduction  |
-| **Portée:**                     | site web                                                                         |
-| **Acteur principal :**          | Système                                                                      |
-| **Intervenants et Intérêts:**   | Système qui affiche la traduction.                                                                                 |
-| **Précondition:**               |  Être sur la page Traduction Hexadécimal < - > décimal , choisir si il veut traduire en hex ou en dec et cliquer sur valider                                                                                     |
-| **Scénario nominal:**           | Une fois que l’utilisateur a entrer les valeurs , sélectionné en quoi il voulait traduire et valider , le résultat apparaîtra |
-| **Extensions: **                |                                                                                  |
-| **Garantie minimale :**         | le système affichera un message                                     |
-| **Garantie en cas de succès :** |Si les normes sont respectées alors le résultat sera affiché |
-| **Déclencheur :**               | valider |
-| **informations connexes :**     | L'adresse IP traduite sera affiché sur la page web correspondant à la fonctionnalité. |
-
 
 |                                 |                                                                                                                       |
 |-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-**Cas d'utilisation 22:**        |Erreur apparaît si adresse IP hex-dec invalide                                           |
-| **Nom:**                        | Erreur apparaît si adresse IP hex-dec invalide                                          |
-| **Contexte d'utilisation :**    |Si l’utilisateur ne respecte pas la norme d’une adresse IP ou qu’il n’entre pas de valeur ou alors qu’il écrit de l’hexadécimal alors qu’il a sélectionné décimal une erreur apparaîtra |
-| **Portée:**                     | site web                                                                         |
-| **Acteur principal :**          | Système                                                                      |
-| **Intervenants et Intérêts:**   |le système a trouvé une erreur dans les données des champs que l'utilisateur à écrit.                                                                                  |
-| **Précondition:**               |Être sur la page Traduction Hexadécimal < - > décimal , choisir s'il veut traduire en hexadécimal ou en décimal et cliquer sur valider                                                                                   |
-| **Scénario nominal:**           | Une fois que l’utilisateur a entré les valeurs, sélectionné en quoi il voulait traduire et valider, le résultat apparaîtra ou alors un message d’erreur |
-| **Extensions:**                 |le système n'a pas pu traduire                                                                                 |
-| **Garantie minimale :**         |Si une erreur est présente,le site va se rafraîchir sans indiquer un message d’erreur pour que l’utilisateur recommence                                   |
-| **Garantie en cas de succès :** |un message d’erreur apparaît si les normes ne sont pas respectées ou s’il n’entre pas de valeur ou bien s'il écrit de l’hexadécimal alors qu’il a sélectionné du décimal.  |
-| **Déclencheur :**               | L’utilisateur doit sélectionner si il veut traduire en hex ou en décimal ,entrer des valeurs erronées et clique ensuite sur valider|
-| **informations connexes :**     | Un message d'erreur apparaît. |
+| **Cas d'utilisation 28:**        | exécuter commande ping                                                                          |
+| **Nom:**                        | exécuter commande ping                                                                          |
+| **Contexte d'utilisation :**    | L’utilisateur souhaite exécuter la commande réseau ping Par conséquent, il entre les informations pour exécuter la commande et le résultat s'affiche                          |
+| **Portée:**                     | système                                                                                                               |
+| **Acteur principal :**          | système                                                                                                           |
+| **Intervenants et Intérêts:**   |l'utilisateur saisie les différents champs  système exécute la commande.                                                                                                                      |
+| **Précondition:**               | Remplir les différents champs correctement                                                                                               |
+| **Scénario nominal:**           | 1. L’utilisateur remplit les différents champs correctement \newline 2. L’utilisateur clique sur le bouton valider \newline 3. la commande s'exécute et le résultat s'affiche |
+| **Extensions:**                 |             |
+| **Garantie minimale :**         | affiche un message                                              |
+| **Garantie en cas de succès :** | la commande s'exécute et le résultat s'affiche                                                                           |
+| **Déclencheur :**               | clique sur le bouton valider |
+| **informations connexes :**     | Pour pouvoir exécuter cette commande réseau il faut y accéder depuis le menu Exécution commande réseau puis ping ou bien depuis l'accueil   |
+
+
+
+
+
+|                                 |                                                                                                                       |
+|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 29:**        | exécuter commande man                                                                          |
+| **Nom:**                        | exécuter commande man                                                                          |
+| **Contexte d'utilisation :**    | L’utilisateur souhaite exécuter la commande réseau man Par conséquent, il entre les informations pour exécuter la commande et le résultat s'affiche                          |
+| **Portée:**                     | système                                                                                                               |
+| **Acteur principal :**          | système                                                                                                           |
+| **Intervenants et Intérêts:**   |l'utilisateur saisie les différents champs  système exécute la commande.                                                                                                                      |
+| **Précondition:**               | Remplir les différents champs correctement                                                                                               |
+| **Scénario nominal:**           | 1. L’utilisateur remplit les différents champs correctement \newline 2. L’utilisateur clique sur le bouton valider \newline 3. la commande s'exécute et le résultat s'affiche |
+| **Extensions:**                 |             |
+| **Garantie minimale :**         | affiche un message                                              |
+| **Garantie en cas de succès :** | la commande s'exécute et le résultat s'affiche                                                                           |
+| **Déclencheur :**               | clique sur le bouton valider |
+| **informations connexes :**     | Pour pouvoir exécuter cette commande réseau il faut y accéder depuis le menu Exécution commande réseau puis man ou bien depuis l'accueil   |
+
+
+
+|                                 |                                                                                                                       |
+|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 30:**        | exécuter commande tcpdump                                                                          |
+| **Nom:**                        | exécuter commande tcpdump                                                                          |
+| **Contexte d'utilisation :**    | L’utilisateur souhaite exécuter la commande réseau tcpdump Par conséquent, il entre les informations pour exécuter la commande et le résultat s'affiche                          |
+| **Portée:**                     | système                                                                                                               |
+| **Acteur principal :**          | système                                                                                                           |
+| **Intervenants et Intérêts:**   |l'utilisateur saisie les différents champs  système exécute la commande.                                                                                                                      |
+| **Précondition:**               | Remplir les différents champs correctement                                                                                               |
+| **Scénario nominal:**           | 1. L’utilisateur remplit les différents champs correctement \newline 2. L’utilisateur clique sur le bouton valider \newline 3. la commande s'exécute et le résultat s'affiche |
+| **Extensions:**                 |             |
+| **Garantie minimale :**         | affiche un message                                              |
+| **Garantie en cas de succès :** | la commande s'exécute et le résultat s'affiche                                                                           |
+| **Déclencheur :**               | clique sur le bouton valider |
+| **informations connexes :**     | Pour pouvoir exécuter cette commande réseau il faut y accéder depuis le menu Exécution commande réseau puis tcpdump ou bien depuis l'accueil   |
+
+
+
+|                                 |                                                                                                                       |
+|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **Cas d'utilisation 31:**        | exécuter commande nslookup                                                                          |
+| **Nom:**                        | exécuter commande nslookup                                                                          |
+| **Contexte d'utilisation :**    | L’utilisateur souhaite exécuter la commande réseau nslookup Par conséquent, il entre les informations pour exécuter la commande et le résultat s'affiche                          |
+| **Portée:**                     | système                                                                                                               |
+| **Acteur principal :**          | système                                                                                                           |
+| **Intervenants et Intérêts:**   |l'utilisateur saisie les différents champs  système exécute la commande.                                                                                                                      |
+| **Précondition:**               | Remplir les différents champs correctement                                                                                               |
+| **Scénario nominal:**           | 1. L’utilisateur remplit les différents champs correctement \newline 2. L’utilisateur clique sur le bouton valider \newline 3. la commande s'exécute et le résultat s'affiche |
+| **Extensions:**                 |             |
+| **Garantie minimale :**         | affiche un message                                              |
+| **Garantie en cas de succès :** | la commande s'exécute et le résultat s'affiche                                                                           |
+| **Déclencheur :**               | clique sur le bouton valider |
+| **informations connexes :**     | Pour pouvoir exécuter cette commande réseau il faut y accéder depuis le menu Exécution commande réseau puis nslookup ou bien depuis l'accueil   |
+
 
