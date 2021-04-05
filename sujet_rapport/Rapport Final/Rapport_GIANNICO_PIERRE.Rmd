@@ -533,7 +533,7 @@ trois niveaux :
 | - valider la saisie d'un mot pour le glossaire                                                     |
 | - erreur apparait si mauvais login ou mdp                                                     |
 
-<!--//![figure : cas d'utilisations](../img/casUtilisation.png)regular html comment -->
+![figure : cas d'utilisations](../img/casUtilisationFin.jpg)
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}` 
 
@@ -792,7 +792,7 @@ Cas d'utilisation 60 : erreur apparait si mauvais login ou mdp
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
 ### Les différents cas d'utilisation selon le style étoffé
-
+Nous allons maintenant détailler les cas d'utilisations au **niveau utilisateur**
 
 |                                 |                                                                                                         |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
