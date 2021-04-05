@@ -280,8 +280,6 @@ L'exigence mineure serait l'esthétique du site. En effet, le but est d'apprendr
 
 Au fur et à mesure de l'avancement du projet, le client à eu quelques idées supplémentaires comme par exemple, ajouter une fonctionnalité qui retourne l'adresse réseau d'une adresse IP, ou bien, l'ajout d'un glossaire avec la possibilité pour l'admin de rajouter des mots et même de les modifier. Aussi, une fonction capable d'afficher les données de l'utilisateur. Ces exigences ne sont pas nécessaire, et sont à implémenter seulement si l'on a du temps.
 
-#### Questions réponses avec le client
-
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 3 : Conclusions et bilan du projet
 ### Bilan de réalisation
@@ -294,7 +292,7 @@ A l'heure d'aujourd'hui, le projet est quasiment fini, toutes les fonctionnalit�
 - un glossaire qui repertorie l'ensemble des mots important.
 - et un manuel d'utilisation.
 
-Et donc parmis toutes ces tâches à accomplir seulement la commande reseau tcpdump na pas été accomplie.
+Et donc parmis toutes ces tâches à accomplir seulement la commande reseau tcpdump n'a pas été accomplie.
 
 ### Des evolutions possibles ?
 
