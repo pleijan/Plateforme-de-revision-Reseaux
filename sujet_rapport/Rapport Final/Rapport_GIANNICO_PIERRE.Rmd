@@ -1035,6 +1035,7 @@ Cas d'utilisation 60 : erreur apparait si mauvais login ou mdp
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 
+
 |                                 |                                                                                                                                        |
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 22:**       | Traduction d'une adresse IP Décimal <-> binaire                                                                                        |
@@ -1045,12 +1046,11 @@ Cas d'utilisation 60 : erreur apparait si mauvais login ou mdp
 | **Intervenants et Intérêts:**   |Utilisateur qui entre l'adresse IP, systeme qui les traduit                                                                                                                                       |
 | **Précondition:**               | Avoir remplis les champs et avoir entré des informations correct.                                                            |
 | **Scénario nominal:**           | 1.L’utilisateur choisit le mode de conversion  \newline 2.L’utilisateur entre les valeurs dans les champs\newline 3.Valider\newline 4. Le résultat s’affiche |
-| **Extensions:**                 | 4.a le système vérifie si les champs sont bien remplit. \newline4.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré l'adresse IP
-                              |
+| **Extensions:**                 | 4.a le système vérifie si les champs sont bien remplit. \newline4.b un message d’erreur s’affiche car le système a détecté que l'utilisateur avait mal entré l'adresse IP|
 | **Garantie minimale :**         | un message sera affiché                                                                                                  |
 | **Garantie en cas de succès :** | Traduit dans les deux sens                                                                                                             |
 | **Déclencheur :**               | Valider                                                                  |
-| **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Traduction d'une adresse IP Décimal <-> binaire                   ||
+| **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Traduction d'une adresse IP Décimal <-> binaire                   |
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
