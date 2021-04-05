@@ -381,7 +381,7 @@ Les fonctionnalités passent avant l'esthétique.
 | Responsable de la Redaction: Tom                                                     |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 
-![](../Manuel_Utilisateur/Image_utilisée/index.png)
+![La page d'accueil du site](../Manuel_Utilisateur/Image_utilisée/index.png)
 
 ## Annexe 2.2 : capture d'écran de message d'erreur aidant les étudiants
 
@@ -390,7 +390,7 @@ Les fonctionnalités passent avant l'esthétique.
 | Document : Capture d'écran                                                              | Date: <28/03/2021> |   |   |   |
 | Responsable de la Redaction: Tom                                                     |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
-![](../Manuel_Utilisateur/Image_utilisée/erreurCRC.png)
+![Exemple d'une erreur qui guidera les étudiants](../Manuel_Utilisateur/Image_utilisée/erreurCRC.png)
 
 ## Annexe 2.2 : capture d'écran d'affichage d'un résultat
 
@@ -399,7 +399,7 @@ Les fonctionnalités passent avant l'esthétique.
 | Document : Capture d'écran                                                              | Date: <28/03/2021> |   |   |   |
 | Responsable de la Redaction: Raffaele                                                     |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
-![](../../img/exemple_resultat.png)
+![Exemple d'affichage d'un résultat](../../img/exemple_resultat.png)
 
 ## Annexe 3: Analyse des besoins
 
