@@ -153,7 +153,7 @@ Pour ce projet nous avons essayer d'appliquer une une méthode de travail simple
 
 #### Diagramme de gantt :
 
-Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe 4.1. Nos travaux étaient répartis sur plusieurs semaines. Nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine. Ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines. Puis, nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu. A cette date, les fonctionnalités de Traductions d'adresses IP, et de division de sous-réseaux avec la notation VLSM ont été programmer.Aussi une premiere page d'accueil et style du site à été créer. Enfin, nous avons continuer a developpé le reste des fonctionnalités, tout en améliorant l'aspect du site en général. De plus, on a continué d'écrire ce rapport jusqu'à la date finale de rendu le 07/04/2021.
+Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe 4.1. Nos travaux étaient répartis sur plusieurs semaines. Nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine. Ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines. Puis, nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu. A cette date, les fonctionnalités de Traductions d'adresses IP, et de division de sous-réseaux avec la notation VLSM ont été programmer. Aussi une premiere page d'accueil et style du site à été créer. Enfin, nous avons continuer a developpé le reste des fonctionnalités, tout en améliorant l'aspect du site en général. De plus, on a continué d'écrire ce rapport jusqu'à la date finale de rendu le 07/04/2021.
 
 #### La gestion des compétences :
 
@@ -184,13 +184,15 @@ Tout d'abord voici la liste des risques qui pourraient arriver pendant notre pro
 - Client incertain 
 - Conflit au sein de l’équipe 
 
-Pour determiner la probabilitée des risques et leur impact on va créer des echelles définie ci-dessous :
+Pour determiner la probabilité des risques et leurs impacts on va créer des echelles définie ci-dessous :
 
 On va créer une échelle pour la probabilité de réalisation d’un risque qui va de 1 à 5, défini dans le tableau disponible en annexe 4.2
 
 On va créer une deuxième échelle pour l’impact sur le projet allant de 1 à 3, défini dans le tableau disponible en annexe 4.3
 
-Et donc grace au differentes echelle on peux determiner un tableau avec les risque et leur probabilitée d'existences et leur impact qui est affichée dans l'annexe 4.4.
+Et donc grâce aux differentes échelles on peux déterminer un tableau avec les risques et leurs probabilités d'existences ainsi que leurs impacts qui est affiché dans l'annexe 4.4.
+
+En étudiants les risques qui pourraient arriver, nous pouvons mieux nous préparer à l'avance. C'est pourquoi, il est important de le faire.
 
 #### Les cas d'utilisations :
 
@@ -266,7 +268,7 @@ Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le s
 
 ### Exigences Critiques
 
-Le but premier est d'être le plus pédagogique possible. De plus, il faut, avoir une page d'accueil avec un menu qui permet de naviguer entre les différentes fonctionnalités. En effet, sans un menu ou un lien pour naviguer entre les différentes fonctionnalités, il n'est pas possible d'utiliser le site correctement. Bien sûr, sans un minimum de fonctionnalité, l'étudiant ne peut rien apprendre. De plus, les résultats produits par les différentes fonctionnalités doivent être sûr de donner les bons résultats, pour ne pas porter de confusion aux étudiants. Aussi, les fonctionnalités comme le CRC polynomial et le CIDR sont des fonctionnalités légèrement complexes ce qui coûte un peu plus au niveau du temps.
+Le but premier est d'être le plus pédagogique possible. De plus, il faut, avoir une page d'accueil avec un menu qui permet de naviguer entre les différentes fonctionnalités. En effet, sans un menu ou un lien pour naviguer entre les différentes fonctionnalités, il n'est pas possible d'utiliser le site correctement. Bien sûr, sans un minimum de fonctionnalité, l'étudiant ne peut rien apprendre. De plus, les résultats produits par les différentes fonctionnalités doivent être sûr de donner les bons résultats, pour ne pas porter de confusion aux étudiants. Aussi, les fonctionnalités comme le CRC polynomial et le CIDR sont des fonctionnalités légèrement complexes ce qui coûte un peu plus au niveau du temps. Il faut un minimum de fonctionnalités quelles qu'elles soient.
 
 ### Exigences majeures
 
