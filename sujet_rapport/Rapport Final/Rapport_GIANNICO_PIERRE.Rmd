@@ -382,7 +382,7 @@ Les fonctionnalités passent avant l'esthétique.
 |                                                                                           |                    |   |   |   |
 
 ![La page d'accueil du site](../Manuel_Utilisateur/Image_utilisée/index.png)
-
+figure : La page d'accueil du site
 ## Annexe 2.2 : capture d'écran de message d'erreur aidant les étudiants
 
 | Exemple d'une erreur qui guidera les étudiants | Version : 1        |   |   |   |
@@ -391,16 +391,16 @@ Les fonctionnalités passent avant l'esthétique.
 | Responsable de la Redaction: Tom                                                     |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 ![Exemple d'une erreur qui guidera les étudiants](../Manuel_Utilisateur/Image_utilisée/erreurCRC.png)
-
+figure : Exemple d'une erreur qui guidera les étudiants
 ## Annexe 2.2 : capture d'écran d'affichage d'un résultat
 
-| Exemple d'affichage d'un résultat | Version : 1        |   |   |   |
+| Exemple d'affichage d'un résultat (division sous-réseaux VLSM) | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : Capture d'écran                                                              | Date: <28/03/2021> |   |   |   |
 | Responsable de la Redaction: Raffaele                                                     |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 ![Exemple d'affichage d'un résultat](../../img/exemple_resultat.PNG)
-
+figure : Exemple d'affichage d'un résultat pour la division sous-réseaux VLSM
 ## Annexe 3: Analyse des besoins
 
 ## Annexe 3.1: diagramme de gantt represantant l'avancement du projet
@@ -412,7 +412,7 @@ Les fonctionnalités passent avant l'esthétique.
 | Responsable de la Redaction: Tom                                                     |                    |   |   |   |
 |                                                                                           |                    |   |   |   |
 ![](../projet_tuto.png)
-
+figure : diagramme de gantt represantant l'avancement du projet
 ## Annexe 3.2 : tableau de l'echelle de probabilitée du risque 
 | tableau de l'echelle de probabilitée du risque | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
@@ -441,10 +441,10 @@ Tableau de l'echelle de probabilitée du risque.
 |def   |Impact faible  |Impact moyen |Impact grand   |
 
 Tableau de l'echelle de l'impact d'un risque sur le projet.
-1 Impact faible, 3 Impact retard
+1 Impact faible, 3 Impact grand
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-## Annexe 3.4: tableau des differents risque avec leur impact
+## Annexe 3.4: tableau des differents risques avec leurs impacts
 | tableau des differents risque avec leur impact | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : tableau des differents risque avec leur impact                                                           | Date: <18/12/2020> |   |   |   |
@@ -472,6 +472,7 @@ Tableau de l'echelle de l'impact d'un risque sur le projet.
 |Client incertain                           |2                      |2        |
 |Conflit au sein de l’équipe                |2                      |3        |
 
+Tableau des differents risques avec leurs impacts
 
 ## Annexe 3.5: les cas d'utilisations
 
