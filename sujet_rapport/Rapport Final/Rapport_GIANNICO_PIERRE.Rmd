@@ -153,7 +153,7 @@ Pour ce projet nous avons essayer d'appliquer une une méthode de travail simple
 
 #### Diagramme de gantt :
 
-Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe 4. Nos travaux étaient répartis sur plusieurs semaines. Nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine. Ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines. Puis, nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu. Enfin, nous avons continuer a developpé et écrire ce rapport jusqu'à la date finale de rendu le 07/04/2021.
+Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe 4. Nos travaux étaient répartis sur plusieurs semaines. Nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine. Ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines. Puis, nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu. A cette date, les fonctionnalités de Traductions d'adresses IP, et de division de sous-réseaux avec la notation VLSM ont été programmer.Aussi une premiere page d'accueil et style du site à été créer. Enfin, nous avons continuer a developpé le reste des fonctionnalités, tout en améliorant l'aspect du site en général. De plus, on a continué d'écrire ce rapport jusqu'à la date finale de rendu le 07/04/2021.
 
 #### La gestion des compétences :
 
@@ -279,6 +279,8 @@ L'exigence mineure serait l'esthétique du site. En effet, le but est d'apprendr
 ### Exigences supplémentaires
 
 Au fur et à mesure de l'avancement du projet, le client à eu quelques idées supplémentaires comme par exemple, ajouter une fonctionnalité qui retourne l'adresse réseau d'une adresse IP, ou bien, l'ajout d'un glossaire avec la possibilité pour l'admin de rajouter des mots et même de les modifier. Aussi, une fonction capable d'afficher les données de l'utilisateur. Ces exigences ne sont pas nécessaire, et sont à implémenter seulement si l'on a du temps.
+
+#### Questions réponses avec le client
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 3 : Conclusions et bilan du projet
