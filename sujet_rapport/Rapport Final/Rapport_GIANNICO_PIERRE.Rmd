@@ -1034,9 +1034,7 @@ Cas d'utilisation 60 : erreur apparait si mauvais login ou mdp
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-
-
-|                                 |                                                                                                                                        |
+                                |                                                                                                                                        |
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 22:**       | Traduction d'une adresse IP Décimal <-> binaire                                                                                        |
 | **Nom:**                        | Traduction d'une adresse IP Décimal <-> binaire                                                                                        |
