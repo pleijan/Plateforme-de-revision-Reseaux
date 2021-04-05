@@ -157,12 +157,12 @@ Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâch
 
 #### La gestion des compétences :
 
-Raffaele avais plus de connaissance et d'experience sur le cotée graphique d'un site internet et sur les divisions de réseaux tandis que Tom avait plus de faciliter pour construire des algorythmes notamment pour le CRC ou les traduction d'adresse IP.
+Raffaele avais plus de connaissances et d'experiences sur le coté graphique d'un site internet et sur les divisions de réseaux tandis que Tom avait plus de faciliter pour construire des algorythmes notamment pour le CRC ou les traductions d'adresses IP.
 
 #### La gestion des risques :
 
 
-Tout d'abord voici la liste des risques qui pourrais arriver pendant notre projet :
+Tout d'abord voici la liste des risques qui pourraient arriver pendant notre projet :
 
 - Absences pour de certains membres pour des raisons quelconques 
 - Abandon de certains membres de l’équipe.  
