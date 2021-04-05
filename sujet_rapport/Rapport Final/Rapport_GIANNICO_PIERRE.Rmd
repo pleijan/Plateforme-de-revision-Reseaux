@@ -153,7 +153,7 @@ Pour ce projet nous avons essayer d'appliquer une une méthode de travail simple
 
 #### Diagramme de gantt :
 
-Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe 4. Nos travaux étaient répartis sur plusieurs semaines. Nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine. Ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines. Puis, nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu. A cette date, les fonctionnalités de Traductions d'adresses IP, et de division de sous-réseaux avec la notation VLSM ont été programmer.Aussi une premiere page d'accueil et style du site à été créer. Enfin, nous avons continuer a developpé le reste des fonctionnalités, tout en améliorant l'aspect du site en général. De plus, on a continué d'écrire ce rapport jusqu'à la date finale de rendu le 07/04/2021.
+Nous avons fait un diagramme de Gantt pour pouvoir situer les différentes tâches du projet dans le temps, comme on peut le voir sur le diagramme mis en Annexe 4.1. Nos travaux étaient répartis sur plusieurs semaines. Nous avons d’abord réfléchi sur le projet avec tout le monde pendant une semaine. Ensuite nous avons réécrit le cahier des charges qui nous a pris environ deux semaines. Puis, nous avons fait en parallèle le développement et le rapport jusqu’au 18 décembre, date où le premier rapport devait être rendu. A cette date, les fonctionnalités de Traductions d'adresses IP, et de division de sous-réseaux avec la notation VLSM ont été programmer.Aussi une premiere page d'accueil et style du site à été créer. Enfin, nous avons continuer a developpé le reste des fonctionnalités, tout en améliorant l'aspect du site en général. De plus, on a continué d'écrire ce rapport jusqu'à la date finale de rendu le 07/04/2021.
 
 #### La gestion des compétences :
 
@@ -186,11 +186,11 @@ Tout d'abord voici la liste des risques qui pourrais arriver pendant notre proje
 
 Pour determiner la probabilitée des risques et leur impact on va créer des echelles définie ci-dessous :
 
-On va créer une échelle pour la probabilité de réalisation d’un risque qui va de 1 à 5, défini dans le tableau disponible en annexe 5
+On va créer une échelle pour la probabilité de réalisation d’un risque qui va de 1 à 5, défini dans le tableau disponible en annexe 4.2
 
-On va créer une deuxième échelle pour l’impact sur le projet allant de 1 à 3, défini dans le tableau disponible en annexe 6
+On va créer une deuxième échelle pour l’impact sur le projet allant de 1 à 3, défini dans le tableau disponible en annexe 4.3
 
-Et donc grace au differentes echelle on peux determiner un tableau avec les risque et leur probabilitée d'existences et leur impact qui est affichée dans l'annexe 7.
+Et donc grace au differentes echelle on peux determiner un tableau avec les risque et leur probabilitée d'existences et leur impact qui est affichée dans l'annexe 4.4.
 
 #### Les cas d'utilisations :
 
@@ -259,7 +259,7 @@ Les actions sont donc :
 - valider la saisie d'un mot pour le glossaire                                                     
 - erreur apparait si mauvais login ou mdp                                                     
 
-Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en Annexe 8.
+Les étudiants pourront utiliser ces fonctionnalités. Vous pourrez trouver le schéma des cas d'utilisations en Annexe 4.5.
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
 ## Partie 2 : analyse de la réalisation
@@ -373,7 +373,9 @@ Les fonctionnalités passent avant l'esthétique.
 |                                                                                           |                    |   |   |   |
 ![](../Manuel_Utilisateur/Image_utilisée/erreurCRC.png)
 
-## Annexe 4: diagramme de gantt represantant l'avancement du projet
+## Annexe 4: Analyse des besoins
+
+## Annexe 4.1: diagramme de gantt represantant l'avancement du projet
 
 
 | diagramme de gantt represantant l'avancement du projet | Version : 3        |   |   |   |
@@ -383,7 +385,7 @@ Les fonctionnalités passent avant l'esthétique.
 |                                                                                           |                    |   |   |   |
 ![](../projet_tuto.png)
 
-## Annexe 5 : tableau de l'echelle de probabilitée du risque 
+## Annexe 4.2 : tableau de l'echelle de probabilitée du risque 
 | tableau de l'echelle de probabilitée du risque | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : tableau de l'echelle de probabilitée du risque                                                          | Date: <20/11/2020> |   |   |   |
@@ -399,7 +401,7 @@ Tableau de l'echelle de probabilitée du risque.
 1 Improbable, 5 Déjà arrivé ou certain d’arriver
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-## Annexe 6 : tableau de l'echelle de l'impact d'un risque sur le projet
+## Annexe 4.3 : tableau de l'echelle de l'impact d'un risque sur le projet
 | tableau de l'echelle de l'impact d'un risque sur le projet | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : tableau de l'echelle de l'impact d'un risque sur le projet                     | Date: <18/12/2020> |   |   |   |
@@ -414,7 +416,7 @@ Tableau de l'echelle de l'impact d'un risque sur le projet.
 1 Impact faible, 3 Impact retard
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-## Annexe 7: tableau des differents risque avec leur impact
+## Annexe 4.4: tableau des differents risque avec leur impact
 | tableau des differents risque avec leur impact | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
 | Document : tableau des differents risque avec leur impact                                                           | Date: <18/12/2020> |   |   |   |
@@ -443,7 +445,7 @@ Tableau de l'echelle de l'impact d'un risque sur le projet.
 |Conflit au sein de l’équipe                |2                      |3        |
 
 
-## Annexe 8: les cas d'utilisations
+## Annexe 4.5: les cas d'utilisations
 
 | Les cas d’utilisations du projet tuteuré | Version : 2        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
