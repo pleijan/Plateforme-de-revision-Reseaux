@@ -1054,7 +1054,8 @@ Cas d'utilisation 60 : erreur apparait si mauvais login ou mdp
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
-|                                 |                                                                                                                                                                                                                                                                                                                                            |
+
+|                                 |                                                |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cas d'utilisation 23:**       | Diviser un réseau en Sous-réseaux avec la notation CIDR                                                                                                                                                                                                                                                                            |
 | **Nom:**                        | Diviser un réseau en Sous-réseaux avec la notation CIDR                                                                                                                                                                                                                                                                             |
@@ -1087,6 +1088,7 @@ Cas d'utilisation 60 : erreur apparait si mauvais login ou mdp
 | **Garantie en cas de succès :** | Divise le réseau en sous-réseaux                                                                                                                                                                                                                                                                                                                 |
 | **Déclencheur :**               | Valider                                                                                                                                                                                                                       |
 | **informations connexes :**     | Pour pouvoir executer cette traduction il faut se rendre sur la page Diviser un réseau en Sous-réseaux avec les notations VLSM                                                                                                                                                                          |
+
 
 
 `r if(knitr:::pandoc_to() == "latex") {paste("\\newpage")}`
