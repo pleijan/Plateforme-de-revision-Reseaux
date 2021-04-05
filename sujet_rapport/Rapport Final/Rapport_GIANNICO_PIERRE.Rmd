@@ -396,7 +396,7 @@ figure : La page d'accueil du site
 |                                                                                           |                    |   |   |   |
 ![Exemple d'une erreur qui guidera les étudiants](../Manuel_Utilisateur/Image_utilisée/erreurCRC.png)
 figure : Exemple d'une erreur qui guidera les étudiants
-## Annexe 2.2 : capture d'écran d'affichage d'un résultat
+## Annexe 2.2 : capture d'écran d'affichage d'un résultat (division sous-réseaux VLSM)
 
 | Exemple d'affichage d'un résultat (division sous-réseaux VLSM) | Version : 1        |   |   |   |
 |-------------------------------------------------------------------------------------------|--------------------|---|---|---|
