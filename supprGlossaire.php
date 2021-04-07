@@ -23,8 +23,11 @@ require("barreDeMenu.php");
         while (($data = fgetcsv($handle, 10000, ";")) !== FALSE) {
             $num = count($data);
             $row++;
-            echo "<tr>
-            <td><p align='center'>$data[0]</p></td>
+            if($row%2==0)
+                echo"<tr class='table-info'>";
+            else
+                echo"<tr>";
+            echo "<td><p align='center'>$data[0]</p></td>
             <td><p align='center'>$data[1]</p></td>
             <td align=center><a href='supprGlossaire.php?modifdef=$data[0]'><img src='img/crayon.png' id='imgGlossaire'></a></td>
             <td align=center><a href='actionSupprGloss.php?suppr=$data[0]'><img src='img/red-cross.png' id='imgGlossaire' ></a></td></tr>
