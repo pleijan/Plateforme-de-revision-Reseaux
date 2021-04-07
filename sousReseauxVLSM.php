@@ -273,7 +273,7 @@ $(document).ready(function(){
     	//
     	for (var i=0;i<valeurHotes.length-1;i++) {
     		x++; //Increment field counter
-            $(wrapper).append('<div>sous-réseau '+x+':<input style="margin-left:20px" type="number" name="hote[]" value="'+valeurHotes[x-1]+'" min="1" required/><a href="javascript:void(0);" class="remove_button"><img src="img/red-cross.png"/></a></div>'); //Add field html
+            $(wrapper).append('<div><span id='+x+'>sous-réseau '+x+':</span><input style="margin-left:20px" type="number" name="hote[]" value="'+valeurHotes[x-1]+'" min="1" required/><a href="javascript:void(0);" class="remove_button"><img src="img/red-cross.png"/></a></div>'); //Add field html
             document.getElementById("cmp").value=x;
     	}
 
@@ -285,7 +285,7 @@ $(document).ready(function(){
         e.preventDefault();
         if(x < maxField){ 
             x++; //Increment field counter
-            $(wrapper).append('<div> sous-réseau '+x+':<input style="margin-left:20px" type="number" name="hote[]" value="" min="1" required/><a href="javascript:void(0);" class="remove_button"><img src="img/red-cross.png"/></a></div>'); //Add field html
+            $(wrapper).append('<div> <span id='+x+'>sous-réseau '+x+':</span><input style="margin-left:20px" type="number" name="hote[]" value="" min="1" required/><a href="javascript:void(0);" class="remove_button"><img src="img/red-cross.png"/></a></div>'); //Add field html
             document.getElementById("cmp").value=x;
             document.getElementById('compteurNbrRes').innerHTML = ""+x;
         }
@@ -298,8 +298,22 @@ $(document).ready(function(){
          x--;//Decrement field counter
         document.getElementById("cmp").value=x;
         document.getElementById('compteurNbrRes').innerHTML = ""+x;
+        
+
+		for (var i = 1; i <= x; i++) {
+			var text = $("span").get();
+			//console.log($("span").get() )
+			console.log(text[i])
+			$(text[i]).val(i);
+			$(text[i]).html("sous-réseau "+i+':');
+			$(text[i]).attr("id",''+i);
+		}
     });
 });
+
+
+
+
 </script>
 
 
@@ -738,9 +752,11 @@ if(isset($_GET['ip'],$_GET['masque']))
         if(($part1 == $partRes1) && ($part2 == $partRes2) && ($part3 == $partRes3) && ($part4 == $partRes4)){
         
 
-	        echo"<table cellpadding='4' cellspacing='4' align='center' border ='2'>
+	        echo"<div style='margin-left: 10%'>
+	        <div style='width: 90%'><table cellpadding='4' cellspacing='4' align='center' border ='2' class='table table-bordered table-hover' >
 	        <thead>
 	        <tr>
+	        	<th scope='col'>#</th>
 	            <th>Adresse de Sous-Réseau</th>
 	            <th>1ère adresse utilisable</th>
 	            <th>Dernière adresse utilisable</th>
@@ -759,7 +775,10 @@ if(isset($_GET['ip'],$_GET['masque']))
 	            $Fpart2 = $part2;
 	            $Fpart3 = $part3;
 	            $Fpart4 = $part4;
-	        	echo"<tr>";
+	            if($j%2==0)
+	        		echo"<tr class='table-info'>";
+	        	else
+	        		echo"<tr>";
 
 	                
 
@@ -835,6 +854,9 @@ if(isset($_GET['ip'],$_GET['masque']))
 
 
 	            /**********************************************************************************************/
+	            
+				echo "<th scope='row'>".($j+1)."</th>";
+
 	            echo"<td>";
 	            echo($adrReseau[$j]);
 	            echo"</td>";
@@ -847,7 +869,7 @@ if(isset($_GET['ip'],$_GET['masque']))
 	            echo($sousReseauFIN[$j]);
 	            echo"</td>";
 
-	            echo"<td>";
+	            echo"<td style='width:15%'>";
 	            echo($broadcast[$j]);
 	            echo"</td>";
 
