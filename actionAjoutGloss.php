@@ -23,7 +23,7 @@ function ajout_glossaire($tuple){
 		
 		}
 		while (!feof($fp1)) {
-			fputcsv($fp2,array($line[0],$line[1]),";");
+			fputcsv($fp2,$line,";");
 			$line=fgetcsv($fp1, 1024,";");
 		}
 		fclose($fp1);
