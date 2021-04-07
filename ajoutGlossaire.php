@@ -20,16 +20,17 @@ if (isset($_SESSION['id'])){
     	$listeMot = explode( ',', $strlisteMot);
     }
     echo"
-    <table>
-    <div  class='tabMot'>
-    	<option value=''><b>Mots déjà entrés :</b></option>
+    <div style='margin-left: -20%'>
+    <div  class='tabMot' style='width: 20%'>
+    <table cellpadding='4' cellspacing='4' align='center' border ='2' class='table table-bordered table-hover' >
+    	<tr><td><b>Mots déjà entrés</b></td></tr>
     	";
     	foreach ($listeMot as $key => $val) {
-    		echo"<option value='$val'>$val</option>";
+    		echo"<tr><td>$val</td></tr>";
     	}
     echo"
-    </table
-	</div>
+    </table>
+	</div></div>
 
     <form action='actionAjoutGloss.php' method='post'>
     <div class='container'>
