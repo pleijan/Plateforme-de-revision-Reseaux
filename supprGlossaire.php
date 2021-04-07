@@ -15,7 +15,8 @@ require("barreDeMenu.php");
 
     $row = 1;
     if (($handle = fopen("cours/glossaire.csv", "r")) !== FALSE) {
-        echo "<table cellpading='10' cellspacing='10' align='center' border ='2'>
+        echo"<div style='margin-left: 10%'>
+            <div style='width: 90%'><table cellpadding='4' cellspacing='4' align='center' border ='2' class='table table-bordered table-hover' >
         <tr>
         <td><h4 align='center'><u>Mots</u></h4></td>
         <td colspan=3><h4 align='center'><u>Définition</u></h4></td>";
@@ -29,7 +30,7 @@ require("barreDeMenu.php");
             <td align=center><a href='actionSupprGloss.php?suppr=$data[0]'><img src='img/red-cross.png' id='imgGlossaire' ></a></td></tr>
             </tr>";
         }
-        echo"</table>";
+        echo"</table></div></div>";
         fclose($handle);
     }
 
