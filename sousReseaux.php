@@ -529,7 +529,8 @@ if(isset($_GET['ip'],$_GET['masque'])){
         if(($part1 == $partRes1) && ($part2 == $partRes2) && ($part3 == $partRes3) && ($part4 == $partRes4)){
         
 
-	        echo"<table cellpadding='4' cellspacing='4' align='center' border ='2'>
+	        echo"<div style='margin-left: 10%'>
+            <div style='width: 90%'><table cellpadding='4' cellspacing='4' align='center' border ='2' class='table table-bordered table-hover' >
 	        <thead>
 	        <tr>
 	            <th>Adresse de Sous-Réseau</th>
@@ -549,7 +550,10 @@ if(isset($_GET['ip'],$_GET['masque'])){
 	            $Fpart2 = $part2;
 	            $Fpart3 = $part3;
 	            $Fpart4 = $part4;
-	        	echo"<tr>";
+	        	if($j%2==0)
+                    echo"<tr class='table-info'>";
+                else
+                    echo"<tr>";
 
 	                
 
@@ -637,7 +641,7 @@ if(isset($_GET['ip'],$_GET['masque'])){
 	            echo($sousReseauFIN[$j]);
 	            echo"</td>";
 
-	            echo"<td>";
+	            echo"<td style='width:15%'>";
 	            echo($broadcast[$j]);
 	            echo"</td>";
 
