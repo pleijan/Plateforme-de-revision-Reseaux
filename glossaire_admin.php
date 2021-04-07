@@ -21,7 +21,11 @@ if (isset($_SESSION['id'])){
         while (($data = fgetcsv($handle, 10000, ";")) !== FALSE) {
             $num = count($data);
             $row++;
-            echo "<tr><td><p align='center'>$data[0]</p></td><td><p align='center'>$data[1]</p></td></tr>";
+            if($row%2==0)
+                echo"<tr class='table-info'>";
+            else
+                echo"<tr>";
+            echo "<td><p align='center'>$data[0]</p></td><td><p align='center'>$data[1]</p></td></tr>";
             $listemot[$i]= $data[0];
             $i++;
         }
