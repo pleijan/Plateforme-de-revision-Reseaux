@@ -204,7 +204,7 @@ function masqueValide(choix, affiche)
             $adrIP[2] = $dm3 & intval($adrIP[2]);
             $adrIP[3] = $dm4 & intval($adrIP[3]);
 
-       	 	echo "<h3>Adresse Réseau: <b>".$adrIP[0].".".$adrIP[1].".".$adrIP[2].".".$adrIP[3]."</b></h3>";
+       	 	echo "<h3>Adresse Réseau: <b>".$adrIP[0].".".$adrIP[1].".".$adrIP[2].".".$adrIP[3]." / $slash</b></h3>";
         }
 
     }
@@ -655,7 +655,7 @@ if(isset($_GET['ip'],$_GET['masque'])){
 	            
 	        }
 	        echo"</tr>
-	        </table>";
+	        </table></div></div>";
 
 	    }
 	    else{
