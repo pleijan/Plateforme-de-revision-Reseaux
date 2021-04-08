@@ -59,7 +59,7 @@
       <a class="nav-link" href="glossaire.php">Glossaire</a>
     </li>
     <li class="nav-item active">
-    <a class="nav-link" href='sujet_rapport/Manuel_Utilisateur/manuel_utilisateur.html' onclick="open('sujet_rapport/Manuel_Utilisateur/manuel_utilisateur.html','Popup','scrollbars=1,resizabl=1,height=750,width=750');return false;"> cours CIDR </a>
+    <a class="nav-link" href='sujet_rapport/Manuel_Utilisateur/manuel_utilisateur.html' onclick="open('sujet_rapport/Manuel_Utilisateur/manuel_utilisateur.html','Popup','scrollbars=1,resizabl=1,height=750,width=750');return false;">Manuel<br/>d'utilisation</a>
     </li>
   </ul>
 </nav>
