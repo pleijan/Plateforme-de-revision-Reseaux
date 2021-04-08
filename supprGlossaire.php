@@ -29,7 +29,7 @@ require("barreDeMenu.php");
                 echo"<tr>";
             echo "<td><p align='center'>$data[0]</p></td>
             <td><p align='center'>$data[1]</p></td>
-            <td align=center><a href='supprGlossaire.php?modifdef=$data[0]'><img src='img/crayon.png' id='imgGlossaire'></a></td>
+            <td align=center><a href='supprGlossaire.php?modifdef=$data[0]&def=$data[1]'><img src='img/crayon.png' id='imgGlossaire'></a></td>
             <td align=center><a href='actionSupprGloss.php?suppr=$data[0]'><img src='img/red-cross.png' id='imgGlossaire' ></a></td></tr>
             </tr>";
         }
@@ -37,16 +37,17 @@ require("barreDeMenu.php");
         fclose($handle);
     }
 
-    if (isset($_GET['modifdef']))
+    if (isset($_GET['modifdef'], $_GET['def']))
     {
         $getmodifdef = $_GET['modifdef'];
+        $def= $_GET['def'];
         echo"<hr><h2>Changer la def de $getmodifdef</h2><hr>
         <form action='actionSupprGloss.php' method='post'>
             <div class='container'>
                 <input type='hidden' name='motAModif' value='$getmodifdef'>
                 <h6>Nouvelle définition de <b>$getmodifdef</b> :</h6>
                 <div class='input-group'>
-                    <textarea name='newdef' class='form-control' placeholder='Entrez la nouvelle définition' required></textarea>
+                    <textarea name='newdef' class='form-control' required>$def</textarea>
                 </div>
                 <button name='confirmer' type='submit' class = 'btn btn-success btn-sm' value='ok'>Valider</button>
             </div>
