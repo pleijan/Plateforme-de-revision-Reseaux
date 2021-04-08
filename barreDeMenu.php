@@ -41,7 +41,7 @@
     </div>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="crc.php">Calculer un CRC<br>de type Ethernet</a>
+      <a class="nav-link" href="crc.php" style="margin-top: 10%">Calculs de CRC</a>
     </li>
     <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown">
@@ -56,7 +56,7 @@
     </div>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="glossaire.php">Glossaire</a>
+      <a class="nav-link" href="glossaire.php" style="margin-top: 14%">Glossaire</a>
     </li>
     <li class="nav-item active">
     <a class="nav-link" href='sujet_rapport/Manuel_Utilisateur/manuel_utilisateur.html' onclick="open('sujet_rapport/Manuel_Utilisateur/manuel_utilisateur.html','Popup','scrollbars=1,resizabl=1,height=750,width=750');return false;">Manuel<br/>d'utilisation</a>
